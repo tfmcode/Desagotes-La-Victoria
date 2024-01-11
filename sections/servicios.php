@@ -20,11 +20,11 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="active " href="../index.php">Inicio</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#proceso">Trabajos</a></li>
-          <li><a href="#consultenos">Contacto</a></li>
-          <li><a href="#consultenos">Blogs</a></li>
+          <li><a href="./nosotros.php">Nosotros</a></li>
+          <li><a href="./servicios.php">Servicios</a></li>
+          <li><a href="./trabajos.php">Trabajos</a></li>
+          <li><a href="./contacto.php">Contacto</a></li>
+          <li><a href="./blog.php">Blogs</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
