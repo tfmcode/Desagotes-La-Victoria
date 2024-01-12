@@ -1,0 +1,20 @@
+# Ignorar archivos temporales
+*.tmp
+*.log
+
+# Ignorar archivos de configuración locales
+.env
+config.local
+
+# Ignorar directorios generados por el sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar directorios y archivos específicos
+node_modules/
+build/
+dist/
+
+# Ignorar archivos de dependencias de desarrollo
+*.lock
+*.json

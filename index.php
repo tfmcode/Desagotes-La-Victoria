@@ -25,8 +25,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+ -->
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -115,7 +115,7 @@ if($recaptcha->score >= 0.5){
           <li><a href="./sections/servicios.php">Servicios</a></li>
           <li><a href="#proceso">Trabajos</a></li>
           <li><a href="./sections/contacto.php">Contacto</a></li>
-          <li><a href="#consultenos">Blogs</a></li>
+          <li><a href="./sections/blog.php">Blogs</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
