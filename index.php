@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -25,78 +27,80 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
  -->
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
   <script src='https://www.google.com/recaptcha/api.js?render=6LdHrLEUAAAAAM4CqjNR_lDOOV1Tv16uXk57Ng4o'></script>
   <script>
-        grecaptcha.ready(function() {
-        grecaptcha.execute('6LdHrLEUAAAAAM4CqjNR_lDOOV1Tv16uXk57Ng4o', {action: 'formulario'})
-        .then(function(token) {
-        var recaptchaResponse = document.getElementById('recaptchaResponse');
-        recaptchaResponse.value = token;
-        });});
-  </script>        
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6LdHrLEUAAAAAM4CqjNR_lDOOV1Tv16uXk57Ng4o', { action: 'formulario' })
+        .then(function (token) {
+          var recaptchaResponse = document.getElementById('recaptchaResponse');
+          recaptchaResponse.value = token;
+        });
+    });
+  </script>
 
-<meta name="google-site-verification" content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
+  <meta name="google-site-verification"
+    content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
 </head>
 
 
-<?php 
+<?php
 
-if($_SERVER['REQUEST_METHOD'] === 'POST'){ 
-// Realizamos la petición de control: 
-$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify'; 
-$recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa'; 
-$recaptcha_response = $_POST['recaptcha_response']; 
-$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response); 
-$recaptcha = json_decode($recaptcha); 
-// Miramos si se considera humano o robot: 
-if($recaptcha->score >= 0.5){
-      $_nombre=$_POST['nombre'];
-      $_email=$_POST['email'];
-      $_telefono=$_POST['telefono'];
-      $_asuntoform = $_POST['asunto'];
-      $_asunto="Desagotes La Victoria ==> Consulta desde el Formulario de Contacto";
-      $_consulta=$_POST['consulta'];
-      $from = "info@desagoteslavictoria.com.ar";
-      $to = "info@desagoteslavictoria.com.ar";
-      $subject = $_asunto;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_response = $_POST['recaptcha_response'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_nombre = $_POST['nombre'];
+    $_email = $_POST['email'];
+    $_telefono = $_POST['telefono'];
+    $_asuntoform = $_POST['asunto'];
+    $_asunto = "Desagotes La Victoria ==> Consulta desde el Formulario de Contacto";
+    $_consulta = $_POST['consulta'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
+    $subject = $_asunto;
 
 
-        $message = '<br>================================================<br><b>CONSULTA</b><br>================================================<br><b>Nombre: </b>'.$_nombre.'<br><br><b>Email: </b>'.$_email.'<br><br><b>Teléfono: </b>'.$_telefono. '<br><br><b>Consulta: </b>'.$_consulta.'<br><br>================================================<br>Enviado OK!<br><br><br><br>';
-        
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+    $message = '<br>================================================<br><b>CONSULTA</b><br>================================================<br><b>Nombre: </b>' . $_nombre . '<br><br><b>Email: </b>' . $_email . '<br><br><b>Teléfono: </b>' . $_telefono . '<br><br><b>Consulta: </b>' . $_consulta . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-       if (mail($to,$subject,$message, $headers)) {
-           echo '<script type="text/javascript">
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="index.php";
-           </script>';  
-      }
+           </script>';
+    }
 
-}else {
+  } else {
+
+  }
 
 }
 
-}
-    
-   
-?>        
+
+?>
 
 
 <body>
 
-<div class="btn-whatsapp">
-<a href="http://bit.ly/servicioslavictoria" target="_blank">
-<img src="assets/img/btn_whatsapp.png" alt="">
-</a>
-</div>
+  <div class="btn-whatsapp">
+    <a href="http://bit.ly/servicioslavictoria" target="_blank">
+      <img src="assets/img/btn_whatsapp.png" alt="">
+    </a>
+  </div>
 
 
   <!-- ======= Header ======= -->
@@ -111,9 +115,10 @@ if($recaptcha->score >= 0.5){
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="active " href="index.php">Inicio</a></li>
+          <li><a class="active " href="home.php">Home</a></li>
           <li><a href="./sections/nosotros.php">Nosotros</a></li>
           <li><a href="./sections/servicios.php">Servicios</a></li>
-          <li><a href="#proceso">Trabajos</a></li>
+          <li><a href="/sections/trabajos.php">Trabajos</a></li>
           <li><a href="./sections/contacto.php">Contacto</a></li>
           <li><a href="./sections/blog.php">Blogs</a></li>
         </ul>
@@ -131,7 +136,9 @@ if($recaptcha->score >= 0.5){
       <div class="carousel-item active">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">Tenemos un Objetivo</h2>
-          <p class="animate__animated animate__fadeInUp"><h3 style='color:white;'>Mantener sus Instalaciones en condiciones saludables</h3></p>
+          <p class="animate__animated animate__fadeInUp">
+          <h3 style='color:white;'>Mantener sus Instalaciones en condiciones saludables</h3>
+          </p>
           <a href="#proceso" class="btn-get-started animate__animated animate__fadeInUp">Conozca Nuestro Proceso</a>
         </div>
       </div>
@@ -140,7 +147,9 @@ if($recaptcha->score >= 0.5){
       <div class="carousel-item">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">La Clave de un Negocio Productivo</h2>
-          <p class="animate__animated animate__fadeInUp"><h3 style='color:white'>Mantenimiento Preventivo</h3></p>
+          <p class="animate__animated animate__fadeInUp">
+          <h3 style='color:white'>Mantenimiento Preventivo</h3>
+          </p>
           <a href="#proceso" class="btn-get-started animate__animated animate__fadeInUp">Conozca Nuestro Proceso</a>
         </div>
       </div>
@@ -175,7 +184,10 @@ if($recaptcha->score >= 0.5){
           <div class="col-lg-6 pt-4 pt-lg-0">
             <h2>Fundada en 1950 por el Sr. Juan Roberto Scozzino</h2>
             <p class="fst-italic">
-              Desde entonces, el trabajo en equipo, liderazgo en conocimiento, atención personalizada, seguridad y salud de nuestra gente, han sido nuestras principales fortalezas; aquellas que marcan la diferencia y nos posiciona como una empresa de garantía en el mercado y líder en Servicio de Transporte de Líquidos Peligrosos en Buenos Aires. En los últimos años...:
+              Desde entonces, el trabajo en equipo, liderazgo en conocimiento, atención personalizada, seguridad y salud
+              de nuestra gente, han sido nuestras principales fortalezas; aquellas que marcan la diferencia y nos
+              posiciona como una empresa de garantía en el mercado y líder en Servicio de Transporte de Líquidos
+              Peligrosos en Buenos Aires. En los últimos años...:
             </p>
             <ul>
               <li><i class="bi bi-check2-circle"></i> Expandimos nuestras operaciones</li>
@@ -183,7 +195,7 @@ if($recaptcha->score >= 0.5){
               <li><i class="bi bi-check2-circle"></i> Incrementamos el tamaño de servicios ofrecidos</li>
             </ul>
             <p>
-              <h3>Cuidando el medio ambiente desde 1950</h3>
+            <h3>Cuidando el medio ambiente desde 1950</h3>
             </p>
           </div>
         </div>
@@ -201,7 +213,8 @@ if($recaptcha->score >= 0.5){
             <div class="icon-box icon-box-pink">
               <div class="icon"><img src="assets/img/3.png" width="70"></div>
               <h4 class="title"><a href="">Asesoramiento Profesional</a></h4>
-              <p class="description">Al contactarse, nuestro equipo de profesionales, especializados se encarga de detectar las necesidas en su negocio y ofrecer un servicio a medida de sus mecesidades.</p>
+              <p class="description">Al contactarse, nuestro equipo de profesionales, especializados se encarga de
+                detectar las necesidas en su negocio y ofrecer un servicio a medida de sus mecesidades.</p>
             </div>
           </div>
 
@@ -209,7 +222,9 @@ if($recaptcha->score >= 0.5){
             <div class="icon-box icon-box-cyan">
               <div class="icon"><img src="assets/img/4.png" width="70"></div>
               <h4 class="title"><a href="">Recolección + Disposición</a></h4>
-              <p class="description">Según el servicio requerido, nuestro equipo de profesionales se encarga de retirar y transportar los residuos líquidos, realizando el recorrido hacia la planta de tratamiento correspondiente.</p>
+              <p class="description">Según el servicio requerido, nuestro equipo de profesionales se encarga de retirar
+                y transportar los residuos líquidos, realizando el recorrido hacia la planta de tratamiento
+                correspondiente.</p>
             </div>
           </div>
 
@@ -217,7 +232,8 @@ if($recaptcha->score >= 0.5){
             <div class="icon-box icon-box-green">
               <div class="icon"><img src="assets/img/5.png" width="70"></div>
               <h4 class="title"><a href="">Certificación Legal</a></h4>
-              <p class="description">Extendemos los manifiestos de transporte y certificado de disposición final de los residuos y sólidos retirados. Su empresa contará con una garantía de la realización del servicio.</p>
+              <p class="description">Extendemos los manifiestos de transporte y certificado de disposición final de los
+                residuos y sólidos retirados. Su empresa contará con una garantía de la realización del servicio.</p>
             </div>
           </div>
 
@@ -240,7 +256,10 @@ if($recaptcha->score >= 0.5){
             <div class="icon-box">
               <!-- <div class="icon"><i class="bx bx-fingerprint"></i></div> -->
               <h4 class="title"><a href="">HOLA! Soy Mr. Destapador</a></h4>
-              <p class="description">Mi misión es acompañar a su empresa en el proceso de mantenimiento preventivo de sus instalaciones. En este camino, contará con todo lo necesario para su tranquilidad: Equipos de última generación, personal altamente capacitado y la experiencia propia de contar con un equipo con más de <strong>65 años de experiencia en el mercado.</strong></p>
+              <p class="description">Mi misión es acompañar a su empresa en el proceso de mantenimiento preventivo de
+                sus instalaciones. En este camino, contará con todo lo necesario para su tranquilidad: Equipos de última
+                generación, personal altamente capacitado y la experiencia propia de contar con un equipo con más de
+                <strong>65 años de experiencia en el mercado.</strong></p>
             </div>
 
             <div class="icon-box">
@@ -263,7 +282,9 @@ if($recaptcha->score >= 0.5){
 
         <div class="section-title">
           <h2><strong>Servicios</strong><br>Según su necesidad</h2>
-          <p>Ponemos a su disposición las más modernas tecnologías para brindar un servicio óptimo, seguro y eficiente. Camiones y maquinarias de última generación son nuestras herramientas para brindar un servicio de máxima calidad</p>
+          <p>Ponemos a su disposición las más modernas tecnologías para brindar un servicio óptimo, seguro y eficiente.
+            Camiones y maquinarias de última generación son nuestras herramientas para brindar un servicio de máxima
+            calidad</p>
         </div>
 
         <div class="row no-gutters">
@@ -373,45 +394,57 @@ if($recaptcha->score >= 0.5){
           <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
 
             <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:one-key" data-width="128"></span></div>
+              <div class="icon"><span class="iconify" data-icon="icon-park-outline:one-key" data-width="128"></span>
+              </div>
               <h4 class="title"><a href="">Recepción de Pedido</a></h4>
-              <p class="description">Recibimos mediante nuestras vías de comunicación las diferentes solicitudes de nuestros clientes</p>
+              <p class="description">Recibimos mediante nuestras vías de comunicación las diferentes solicitudes de
+                nuestros clientes</p>
             </div>
 
             <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:two-key" data-width="128"></span></div>
+              <div class="icon"><span class="iconify" data-icon="icon-park-outline:two-key" data-width="128"></span>
+              </div>
               <h4 class="title"><a href="">Asesoría de Cliente</a></h4>
-              <p class="description">Asesoramos en base a la solicitud del cliente e indicamos el servicio que mejor se adapta a sus necesidades</p>
+              <p class="description">Asesoramos en base a la solicitud del cliente e indicamos el servicio que mejor se
+                adapta a sus necesidades</p>
             </div>
 
             <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:three-key" data-width="128"></span></div>
+              <div class="icon"><span class="iconify" data-icon="icon-park-outline:three-key" data-width="128"></span>
+              </div>
               <h4 class="title"><a href="">Visita Técnica y Diagnóstico</a></h4>
-              <p class="description">Realizamos la visita técnica y diagnosticamos gratuitamente en el lugar de trabajo</p>
+              <p class="description">Realizamos la visita técnica y diagnosticamos gratuitamente en el lugar de trabajo
+              </p>
             </div>
 
             <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:four-key" data-width="128"></span></div>
+              <div class="icon"><span class="iconify" data-icon="icon-park-outline:four-key" data-width="128"></span>
+              </div>
               <h4 class="title"><a href="">Cotización</a></h4>
               <p class="description">Cotizamos en base a la información recabada y el tipo de trabajo a realizar</p>
             </div>
 
             <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:five-key" data-width="128"></span></div>
+              <div class="icon"><span class="iconify" data-icon="icon-park-outline:five-key" data-width="128"></span>
+              </div>
               <h4 class="title"><a href="">Presupuesto</a></h4>
               <p class="description">Una vez enviado el presupuesto aguardamos confirmación por parte del cliente</p>
             </div>
 
             <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:six-key" data-width="128"></span></div>
+              <div class="icon"><span class="iconify" data-icon="icon-park-outline:six-key" data-width="128"></span>
+              </div>
               <h4 class="title"><a href="">Pago</a></h4>
-              <p class="description">Ponemos a disposición los distintos métodos de pago para hacer una transacción segura</p>
+              <p class="description">Ponemos a disposición los distintos métodos de pago para hacer una transacción
+                segura</p>
             </div>
 
             <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:seven-key" data-width="128"></span></div>
+              <div class="icon"><span class="iconify" data-icon="icon-park-outline:seven-key" data-width="128"></span>
+              </div>
               <h4 class="title"><a href="">Servicio</a></h4>
-              <p class="description">En plazos y condiciones establecidas en las etapas anteriores, procedemos con el servicio</p>
+              <p class="description">En plazos y condiciones establecidas en las etapas anteriores, procedemos con el
+                servicio</p>
             </div>
 
 
@@ -485,7 +518,8 @@ if($recaptcha->score >= 0.5){
               </div>
               <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
               <div class="text-center">
-                <button type="submit" style='color:white; background:blue; border-color:blue; border-radius:6px'>Enviar Consulta</button>
+                <button type="submit" style='color:white; background:blue; border-color:blue; border-radius:6px'>Enviar
+                  Consulta</button>
               </div>
             </form>
           </div>
@@ -498,7 +532,9 @@ if($recaptcha->score >= 0.5){
     <!-- ======= Map Section ======= -->
     <section class="map mt-2">
       <div class="container-fluid p-0">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.230287108302!2d-58.453161923444796!3d-34.57303915588002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c35b52a4e5%3A0xb3283a9804044595!2sAguilar%202878%2C%20C1426DTB%20CABA!5e0!3m2!1ses-419!2sar!4v1694650743906!5m2!1ses-419!2sar" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.230287108302!2d-58.453161923444796!3d-34.57303915588002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c35b52a4e5%3A0xb3283a9804044595!2sAguilar%202878%2C%20C1426DTB%20CABA!5e0!3m2!1ses-419!2sar!4v1694650743906!5m2!1ses-419!2sar"
+          frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
     </section><!-- End Map Section -->
 
@@ -551,11 +587,16 @@ if($recaptcha->score >= 0.5){
 
           <div class="col-lg-4 col-md-4 footer-info">
             <h3>Nosotros</h3>
-            <p>Servicios La Victoria es una empresa familiar fundada en el año 1950.<br><br>Desde entonces, el trabajo en equipo, liderazgo en conocimiento, atención personalizada, seguridad y salud de nuestrta gente, han sido nuestras principales fortalezas.</p>
+            <p>Servicios La Victoria es una empresa familiar fundada en el año 1950.<br><br>Desde entonces, el trabajo
+              en equipo, liderazgo en conocimiento, atención personalizada, seguridad y salud de nuestrta gente, han
+              sido nuestras principales fortalezas.</p>
             <div class="social-links mt-3">
-              <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i
+                  class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i
+                  class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i
+                  class="bx bxl-linkedin"></i></a>
             </div>
           </div>
 
@@ -572,7 +613,8 @@ if($recaptcha->score >= 0.5){
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
