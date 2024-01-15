@@ -208,7 +208,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
               <div class="col-lg-6">
                 <form action="" method="post">
-                  <input type="email" name="email"><input type="submit" value="Enviar">
+                  <input type="email" name="email" placeholder="Correo electrónico"><input type="submit" value="Enviar">
                 </form>
               </div>
             </div>
