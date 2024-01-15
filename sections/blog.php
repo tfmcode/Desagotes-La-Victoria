@@ -50,54 +50,49 @@
 
 </head>
 
-
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Realizamos la petición de control: 
-  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-  $recaptcha_response = $_POST['recaptcha_response'];
-  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
-  $recaptcha = json_decode($recaptcha);
-  // Miramos si se considera humano o robot: 
-  if ($recaptcha->score >= 0.5) {
-    $_nombre = $_POST['nombre'];
-    $_email = $_POST['email'];
-    $_telefono = $_POST['telefono'];
-    $_asuntoform = $_POST['asunto'];
-    $_asunto = "Desagotes La Victoria ==> Consulta desde el Formulario de Contacto";
-    $_consulta = $_POST['consulta'];
-    $from = "info@desagoteslavictoria.com.ar";
-    $to = "info@desagoteslavictoria.com.ar";
-    $subject = $_asunto;
+    // Realizamos la petición de control: 
+    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+    $recaptcha_response = $_POST['recaptcha_response'];
+    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+    $recaptcha = json_decode($recaptcha);
 
+    // Miramos si se considera humano o robot: 
+    if ($recaptcha->score >= 0.5) {
+        // Si la verificación de reCAPTCHA es exitosa, procesa el formulario y envía el correo electrónico
+        $_email = $_POST['email'];
+        $from = "info@desagoteslavictoria.com.ar";
+        $to = "info@desagoteslavictoria.com.ar";
+        $subject = "Desagotes La Victoria ==> Consulta desde el Formulario de Contacto";
 
-    $message = '<br>================================================<br><b>CONSULTA</b><br>================================================<br><b>Nombre: </b>' . $_nombre . '<br><br><b>Email: </b>' . $_email . '<br><br><b>Teléfono: </b>' . $_telefono . '<br><br><b>Consulta: </b>' . $_consulta . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+        $message = '<br>================================================<br><b>CONSULTA</b><br>================================================<br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-    if (mail($to, $subject, $message, $headers)) {
-      echo '<script type="text/javascript">
-            alert("Su Consulta será respondida a la brevedad. Gracias!");
+        if (mail($to, $subject, $message, $headers)) {
+            echo '<script type="text/javascript">
+            alert("Será contactado a la brevedad. Gracias!");
              window.location.href="index.php";
            </script>';
+        }
+    } else {
+        // Si la verificación de reCAPTCHA falla, puedes manejarlo aquí (puedes agregar un mensaje de error, por ejemplo).
+        echo '<script type="text/javascript">
+            alert("Error: No se ha superado la verificación de reCAPTCHA. Por favor, inténtelo de nuevo.");
+            </script>';
     }
-
-  } else {
-
-  }
-
 }
-
 
 ?>
 
 
 <body>
 
-  <div class="btn-whatsapp">
-    <a href="http://bit.ly/servicioslavictoria" target="_blank">
+<div class="btn-whatsapp">
+    <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank">
       <img src="../assets/img/btn_whatsapp.png" alt="">
     </a>
   </div>
@@ -132,11 +127,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <main id="main">
 
 
-    <section>
-      <h1>Cuidando el ambiente desde 1950</h1>
-      <div>
-        <button>¿Dudas? Click</button>
-      </div>
+  <section style="text-align: center;">
+        <h1 style="font-weight: bold;">Cuidando el ambiente desde 1950</h1>
+        <div>
+            <p class="d-inline-flex gap-1">
+                <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank" class="btn active btn-outline-primary" style="border-radius: 10px;">
+                    Dudas? Click aquí
+                </a>
+            </p>
+        </div>
     </section>
 
 
@@ -172,11 +171,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="footer-newsletter">
           <div class="container">
-            <div class="row">
-
+            <div class="row" style="display: flex;
+              justify-content: space-around;
+              align-items: flex-start;">
               <div class="col-lg-6">
-                <form action="" method="post">
-                  <input type="email" name="email" placeholder="Correo electrónico"><input type="submit" value="Enviar">
+                <form action="procesar-formulario.php" method="post">
+                  <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input type="submit" value="Enviar">
                 </form>
               </div>
             </div>

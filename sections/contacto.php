@@ -97,7 +97,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 
   <div class="btn-whatsapp">
-    <a href="http://bit.ly/servicioslavictoria" target="_blank">
+    <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank">
       <img src="../assets/img/btn_whatsapp.png" alt="">
     </a>
   </div>
@@ -213,11 +213,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
     </section><!-- End Map Section -->
 
-    <section>
-      <h1>Cuidando el ambiente desde 1950</h1>
-      <div>
-        <button>¿Dudas? Click</button>
-      </div>
+    <section style="text-align: center;">
+        <h1 style="font-weight: bold;">Cuidando el ambiente desde 1950</h1>
+        <div>
+            <p class="d-inline-flex gap-1">
+                <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank" class="btn active btn-outline-primary" style="border-radius: 10px;">
+                    Dudas? Click aquí
+                </a>
+            </p>
+        </div>
     </section>
 
 
@@ -229,9 +233,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
-
-
           <div class="col-lg-4 col-md-4 footer-contact">
             <h4>Consúltenos</h4>
             <p>
@@ -253,14 +254,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="footer-newsletter">
           <div class="container">
-            <div class="row">
+            <div class="row" style="display: flex;
+              justify-content: space-around;
+              align-items: flex-start;">
 
               <div class="col-lg-6">
                 <form action="" method="post">
                   <input type="email" name="email" placeholder="Correo electrónico"><input type="submit" value="Enviar">
                 </form>
               </div>
-            </div>
+</div>
           </div>
         </div>
       </div>
