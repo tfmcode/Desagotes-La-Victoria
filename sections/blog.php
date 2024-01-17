@@ -47,7 +47,7 @@
 
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
-    
+
 
 </head>
 
@@ -93,7 +93,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 
   <div class="btn-whatsapp">
-    <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank">
+    <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+      target="_blank">
       <img src="../assets/img/btn_whatsapp.png" alt="">
     </a>
   </div>
@@ -133,43 +134,44 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-  <h1 style="margin-left: 3%;">Blog</h1>
-        <div style="display: flex; align-items: center; text-align: center; justify-content: center; flex-direction: column; height: 100vh;">
-            <h4>POSTEOS RECIENTES</h4>
-            <h2 style="font-weight: bold;">Tips de Mr.Destapador</h2>
-        </div>
-       
-        <div class="img_trabajos">
-          <div class="img_trabajo">
-            <img src="imagen1.jpg" alt="Imagen 1">
-              <div class="img_info">
-                  <h3>Título de la imagen 1</h3>
-                  <p style="display:none;">Contenido de la imagen 1.</p>
-                  <button class="ver_mas">Ver más</button>
-              </div>
-          </div>
-          <div class="img_trabajo">
-            <img src="imagen2.jpg" alt="Imagen 2">
-              <div class="img_info">
-                <h3>Título de la imagen 2</h3>
-                <p style="display:none;">Contenido de la imagen 2.</p>
-                <button class="ver_mas">Ver más</button>
-          </div>
-        </div>
+    <h1 style="margin-left: 3%;">Blog</h1>
+    <div
+      style="display: flex; align-items: center; text-align: center; justify-content: center; flex-direction: column; height: 100vh;">
+      <h4>POSTEOS RECIENTES</h4>
+      <h2 style="font-weight: bold;">Tips de Mr.Destapador</h2>
+    </div>
 
-
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
-      <div>
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <p class="d-inline-flex gap-1"
-          style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
-          <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank"
-            style="color: blue;">
-            Dudas? Click aquí
-          </a>
-        </p>
+    <div class="img_trabajos">
+      <div class="img_trabajo">
+        <img src="imagen1.jpg" alt="Imagen 1">
+        <div class="img_info">
+          <h3>Título de la imagen 1</h3>
+          <p style="display:none;">Contenido de la imagen 1.</p>
+          <button class="ver_mas">Ver más</button>
+        </div>
       </div>
-    </section>
+      <div class="img_trabajo">
+        <img src="imagen2.jpg" alt="Imagen 2">
+        <div class="img_info">
+          <h3>Título de la imagen 2</h3>
+          <p style="display:none;">Contenido de la imagen 2.</p>
+          <button class="ver_mas">Ver más</button>
+        </div>
+      </div>
+
+
+      <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+        <div>
+          <h1>Cuidando el ambiente desde 1950</h1>
+          <p class="d-inline-flex gap-1"
+            style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
+            <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+              target="_blank" style="color: blue;">
+              Dudas? Click aquí
+            </a>
+          </p>
+        </div>
+      </section>
 
 
   </main><!-- End #main -->
@@ -243,23 +245,23 @@ width: 270px;">
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
   <script>
-        // JavaScript para mostrar/ocultar la información al hacer clic en "Ver más"
-        const imgTrabajos = document.querySelectorAll('.img_trabajo');
+    // JavaScript para mostrar/ocultar la información al hacer clic en "Ver más"
+    const imgTrabajos = document.querySelectorAll('.img_trabajo');
 
-        imgTrabajos.forEach((imgTrabajo) => {
-            const imgInfo = imgTrabajo.querySelector('.img_info');
-            const contenido = imgInfo.querySelector('p');
-            const verMasBtn = imgTrabajo.querySelector('.ver_mas');
+    imgTrabajos.forEach((imgTrabajo) => {
+      const imgInfo = imgTrabajo.querySelector('.img_info');
+      const contenido = imgInfo.querySelector('p');
+      const verMasBtn = imgTrabajo.querySelector('.ver_mas');
 
-            verMasBtn.addEventListener('click', () => {
-                if (contenido.style.display === 'none') {
-                    contenido.style.display = 'block';
-                } else {
-                    contenido.style.display = 'none';
-                }
-            });
-        });
-    </script>
+      verMasBtn.addEventListener('click', () => {
+        if (contenido.style.display === 'none') {
+          contenido.style.display = 'block';
+        } else {
+          contenido.style.display = 'none';
+        }
+      });
+    });
+  </script>
 
 </body>
 
