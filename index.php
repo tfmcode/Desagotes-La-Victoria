@@ -113,17 +113,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
 
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="active " href="index.php">Inicio</a></li>
-          <li><a class="active " href="home.php">Home</a></li>
-          <li><a href="./sections/nosotros.php">Nosotros</a></li>
-          <li><a href="./sections/servicios.php">Servicios</a></li>
-          <li><a href="/sections/trabajos.php">Trabajos</a></li>
-          <li><a href="./sections/contacto.php">Contacto</a></li>
-          <li><a href="./sections/blog.php">Blogs</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+                <ul>
+                    <li><a class="active " href="index.php">Inicio</a></li>
+                    <li><a class="active " href="home.php">Home</a></li>
+                    <li><a href="./sections/nosotros.php">Nosotros</a></li>
+                    <li><a href="./sections/servicios.php">Servicios</a></li>
+                    <li><a href="/sections/trabajos.php">Trabajos</a></li>
+                    <li><a href="./sections/contacto.php">Contacto</a></li>
+                    <li><a href="./sections/blog.php">Blogs</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->

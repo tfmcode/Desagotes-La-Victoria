@@ -1,10 +1,9 @@
 .btn-whatsapp {
         display:block;
-        width:150px;
-        height:85px;
+        width:100px;
+        height:70px;
         color:#fff;
         position: fixed;
-        right:25px;
         bottom:25px;
         border-radius:50%;
         line-height:80px;
@@ -78,7 +77,7 @@ h6,
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 80px;
+  height: 100px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
@@ -2157,7 +2156,7 @@ section {
 }
 
 #footer .footer-newsletter {
-  padding: 50px 0;
+  padding: 30px 0;
   background: #000000;
 }
 
@@ -2171,7 +2170,6 @@ section {
 }
 
 #footer .footer-newsletter form {
-  margin-top: 30px;
   background: #fff;
   padding: 6px 10px;
   position: relative;
@@ -2194,14 +2192,14 @@ section {
   font-size: 16px;
   padding: 0 20px;
   margin: 3px;
-  background: #68A4C4;
+  background: #033b5a;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #468db3;
+  background: #033b5a;
 }
 
 #footer .footer-top {

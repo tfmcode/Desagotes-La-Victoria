@@ -100,26 +100,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-        <div class="container d-flex justify-content-between align-items-center">
+    <header id="header" class="fixed-top d-flex align-items-center" style="background: none;">
+        <div class="container d-flex justify-content-between align-items-center"
+            style="background: white; border-radius: 20px;">
+            <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
 
             <div class="logo">
                 <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-                <a href="index.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+                <a href="home.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="active " href="index.php">Inicio</a></li>
-                    <li><a class="active " href="home.php">Home</a></li>
-                    <li><a href="./sections/nosotros.php">Nosotros</a></li>
-                    <li><a href="./sections/servicios.php">Servicios</a></li>
-                    <li><a href="/sections/trabajos.php">Trabajos</a></li>
-                    <li><a href="./sections/contacto.php">Contacto</a></li>
-                    <li><a href="./sections/blog.php">Blogs</a></li>
+                    <li><a href="index.php" style="color: black;">Inicio</a></li>
+                    <li><a href="home.php" style="color: black;">Home</a></li>
+                    <li><a href="./sections/nosotros.php" style="color: black;">Nosotros</a></li>
+                    <li><a href="./sections/servicios.php" style="color: black;">Servicios</a></li>
+                    <li><a href="./sections/trabajos.php" style="color: black;">Trabajos</a></li>
+                    <li><a href="./sections/contacto.php" style="color: black;">Contacto</a></li>
+                    <li><a href="./sections/blog.php" style="color: black;">Blogs</a></li>
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
+            <div style="height: 25px; width: 70px;">
+                <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
+                        style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
+                <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i
+                        class="bx bxl-instagram" style="color: black; font-size: 18px;  padding-right: 4px;"></i></a>
+                <i class="bi bi-search" style="color: black; font-size: 16px;"></i>
+            </div>
 
         </div>
     </header><!-- End Header -->
@@ -135,7 +143,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <p class="animate__animated animate__fadeInUp">
                     <h3 style='color:white;'>Mantener sus Instalaciones en condiciones saludables</h3>
                     </p>
-                    <a href="#proceso" class="btn-get-started animate__animated animate__fadeInUp">Conozca Nuestro
+                    <a href="#proceso" class="btn-get-started animate__animated animate__fadeInUp"
+                        style="background-color: black; border: black;   border-radius: 20px;">Conozca Nuestro
                         Proceso</a>
                 </div>
             </div>
@@ -147,7 +156,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <p class="animate__animated animate__fadeInUp">
                     <h3 style='color:white'>Mantenimiento Preventivo</h3>
                     </p>
-                    <a href="#proceso" class="btn-get-started animate__animated animate__fadeInUp">Conozca Nuestro
+                    <a href="#proceso" class="btn-get-started animate__animated animate__fadeInUp"
+                        style="background-color: black; border: black;   border-radius: 20px;">Conozca Nuestro
                         Proceso</a>
                 </div>
             </div>
@@ -167,16 +177,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         <!-- ======= Services Section ======= -->
-        <section class="services">
+        <section class="services" style=" padding-top: 0px;   padding-bottom: 0px;">
             <div class="container">
-
-                <div>
-                    <h3>LA CLAVE DE UN NEGOCIO PRODUCTIVO: </h3>
+                <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
+                    <p class="text-primary" style="letter-spacing: 0.3em;">LA CLAVE DE UN NEGOCIO PRODUCTIVO: </p>
                     <h1>MANTENIMIENTO PREVENTIVO</h1>
-                    <img src="" alt="">
-                    <h4>EL SERVICIO PARA UN NEGOCIO EXITOSO</h4>
+                    <p style="letter-spacing: 0.3em;">EL SERVICIO PARA UN NEGOCIO EXITOSO: </p>
                 </div>
-
                 <div class="row">
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
                         <div class="icon-box icon-box-pink">
@@ -249,7 +256,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         <!-- ======= Why Us Section ======= -->
-        <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200" id="proceso">
+        <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200" id="proceso"
+            style=" padding-top: 0px; ">
             <div class="container">
 
                 <div class="section-title">
@@ -328,16 +336,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
 
         </section><!-- End Why Us Section -->
-        <section style="text-align: center;">
-        <h1 style="font-weight: bold;">Cuidando el ambiente desde 1950</h1>
-        <div>
-            <p class="d-inline-flex gap-1">
-                <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank" class="btn active btn-outline-primary" style="border-radius: 10px;">
-                    Dudas? Click aquí
-                </a>
-            </p>
-        </div>
-    </section>
+        <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+            <div>
+                <h1>Cuidando el ambiente desde 1950</h1>
+                <p class="d-inline-flex gap-1"
+                    style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
+                    <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank"
+                        style="color: blue;">
+                        Dudas? Click aquí
+                    </a>
+                </p>
+            </div>
+        </section>
 
     </main><!-- End #main -->
 
@@ -346,10 +356,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <div class="footer-top">
             <div class="container">
-                <div class="row">
-
-
-
+                <div class="row" style="display: flex;  justify-content: space-evenly;   align-items: center;">
                     <div class="col-lg-4 col-md-4 footer-contact">
                         <h4>Consúltenos</h4>
                         <p>
@@ -364,7 +371,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col-lg-4 col-md-4 footer-contact">
                         <p>
-                            <img src="assets/img/logo-grande.png" class="img-fluid">
+                            <img src="assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
+width: 270px;">
                         </p>
                     </div>
 
@@ -372,11 +380,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="footer-newsletter">
                     <div class="container">
                         <div class="row" style="display: flex;
-                            justify-content: space-around;
-                            align-items: flex-start;">
+                    justify-content: space-around;
+                    align-items: flex-start;">
                             <div class="col-lg-6">
                                 <form action="procesar-formulario.php" method="post">
-                                    <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input type="submit" value="Enviar">
+                                    <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input
+                                        type="submit" value="Enviar">
                                 </form>
                             </div>
                         </div>
@@ -393,6 +402,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </div>
     </footer><!-- End Footer -->
+
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>

@@ -99,32 +99,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-        <div class="container d-flex justify-content-between align-items-center">
+    <header id="header" class="fixed-top d-flex align-items-center" style="background: none;">
+        <div class="container d-flex justify-content-between align-items-center"
+            style="background: white; border-radius: 20px;">
+            <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
 
             <div class="logo">
                 <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-                <a href="index.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+                <a href="../home.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="active " href="../index.php">Inicio</a></li>
-                    <li><a class="active " href="../home.php">Home</a></li>
-                    <li><a href="./nosotros.php">Nosotros</a></li>
-                    <li><a href="./servicios.php">Servicios</a></li>
-                    <li><a href="./trabajos.php">Trabajos</a></li>
-                    <li><a href="./contacto.php">Contacto</a></li>
-                    <li><a href="./blog.php">Blogs</a></li>
+                    <li><a href="../home.php" style="color: black;">Home</a></li>
+                    <li><a href="nosotros.php" style="color: black;">Nosotros</a></li>
+                    <li><a href="servicios.php" style="color: black;">Servicios</a></li>
+                    <li><a href="trabajos.php" style="color: black;">Trabajos</a></li>
+                    <li><a href="contacto.php" style="color: black;">Contacto</a></li>
+                    <li><a href="blog.php" style="color: black;">Blogs</a></li>
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
+            <div style="height: 25px; width: 70px;">
+                <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
+                        style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
+                <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i
+                        class="bx bxl-instagram" style="color: black; font-size: 18px;  padding-right: 4px;"></i></a>
+                <i class="bi bi-search" style="color: black; font-size: 16px;"></i>
+            </div>
 
         </div>
     </header><!-- End Header -->
     <main id="main">
         <h1 style="margin-left: 3%;">Trabajos Realizados</h1>
-        <div style="display: flex; align-items: center; text-align: center; justify-content: center; flex-direction: column; height: 100vh;">
+        <div
+            style="display: flex; align-items: center; text-align: center; justify-content: center; flex-direction: column; height: 100vh;">
             <h4>Nuestros trabajos</h4>
             <h2 style="font-weight: bold;">Excelencia operativa</h2>
         </div>
@@ -135,47 +143,63 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="" alt="">
         </div>
         <section>
-    <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Desobstrucción y limpieza de cañerías</h2>
-    <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
-        <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Destapaciones de cañerías en cocinas industriales.</li>
-        <li style="display: block; font-size: 24px;">✔️ Destapación de cañerías en sectores de producción.</li>
-        <li style="display: block; font-size: 24px;">✔️ Destapaciones en cañerías y desagüe de la red pluvial.</li>
-        <li style="display: block; font-size: 24px;">✔️ Destapación y limpieza de cañería cloacal.</li>
-        <li style="display: block; font-size: 24px;">✔️ Destapaciones en baños y vestuarios.</li>
-        <li style="display: block; font-size: 24px;">✔️ Limpieza hidrocinética de cañerías.</li>
-        <li style="display: block; font-size: 24px;">✔️ Limpieza en columnas y bajadas de techos.</li>
-        <li style="display: block; font-size: 24px;">✔️ Video inspección y diagnóstico para cañerías. Informe del estado de las cañerías.</li>
-    </ul>
-    <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones atmosféricos (4.000 litros hasta 18.000).</p>
-    <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones desobstructores.</p>
-    <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Maquinaria para desobstrucción industrial.</p>
-</section>
-<section>
-    <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Transportación y disposición residuos especial / no especiales</h2>
-    <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Empresa habilitada por la S.R.N y D.S., y la Secretaría de Política Ambiental de la Provincia de Bs.As.</p>
-    <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;"> Equipos y personal especializados.</p>
-    <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
-        <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Retiro de aceites usados y afines.</li>
-        <li style="display: block; font-size: 24px;">✔️ Retiro de residuos industriales líquidos, semisólidos y sólidos.</li>
-        <li style="display: block; font-size: 24px;">✔️ Retiro de barros, limpieza e hidrolavado de cámaras y rejillas industriales.</li>
-        <li style="display: block; font-size: 24px;">✔️ Retiro, transporte y disposición final de barros en lavaderos y estaciones de servicio.</li>
-        <li style="display: block; font-size: 24px;">✔️ Retiro de barros en plantas de efluentes.</li>
-        <li style="display: block; font-size: 24px;">✔️ Limpieza de fondos de tanques con hidrolavado.</li>
-        <li style="display: block; font-size: 24px;">✔️ Limpieza en trampas de grasas y aceites.</li>
-        <li style="display: block; font-size: 24px;">✔️ Limpieza en decantadores y graseras de cocina.</li>
-        <li style="display: block; font-size: 24px;">✔️ Limpieza de tanques y calderas con fueloil.</li>
-    </ul>
-</section>
-    <section style="text-align: center;">
-        <h1 style="font-weight: bold;">Cuidando el ambiente desde 1950</h1>
-        <div>
-            <p class="d-inline-flex gap-1">
-                <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank" class="btn active btn-outline-primary" style="border-radius: 10px;">
-                    Dudas? Click aquí
-                </a>
+            <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Desobstrucción y
+                limpieza de cañerías</h2>
+            <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
+                <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Destapaciones de cañerías en cocinas
+                    industriales.</li>
+                <li style="display: block; font-size: 24px;">✔️ Destapación de cañerías en sectores de producción.</li>
+                <li style="display: block; font-size: 24px;">✔️ Destapaciones en cañerías y desagüe de la red pluvial.
+                </li>
+                <li style="display: block; font-size: 24px;">✔️ Destapación y limpieza de cañería cloacal.</li>
+                <li style="display: block; font-size: 24px;">✔️ Destapaciones en baños y vestuarios.</li>
+                <li style="display: block; font-size: 24px;">✔️ Limpieza hidrocinética de cañerías.</li>
+                <li style="display: block; font-size: 24px;">✔️ Limpieza en columnas y bajadas de techos.</li>
+                <li style="display: block; font-size: 24px;">✔️ Video inspección y diagnóstico para cañerías. Informe
+                    del estado de las cañerías.</li>
+            </ul>
+            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones atmosféricos
+                (4.000 litros hasta 18.000).</p>
+            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones desobstructores.
             </p>
-        </div>
-    </section>
+            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Maquinaria para
+                desobstrucción industrial.</p>
+        </section>
+        <section>
+            <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Transportación y
+                disposición residuos especial / no especiales</h2>
+            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Empresa habilitada por la
+                S.R.N y D.S., y la Secretaría de Política Ambiental de la Provincia de Bs.As.</p>
+            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;"> Equipos y personal
+                especializados.</p>
+            <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
+                <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Retiro de aceites usados y afines.
+                </li>
+                <li style="display: block; font-size: 24px;">✔️ Retiro de residuos industriales líquidos, semisólidos y
+                    sólidos.</li>
+                <li style="display: block; font-size: 24px;">✔️ Retiro de barros, limpieza e hidrolavado de cámaras y
+                    rejillas industriales.</li>
+                <li style="display: block; font-size: 24px;">✔️ Retiro, transporte y disposición final de barros en
+                    lavaderos y estaciones de servicio.</li>
+                <li style="display: block; font-size: 24px;">✔️ Retiro de barros en plantas de efluentes.</li>
+                <li style="display: block; font-size: 24px;">✔️ Limpieza de fondos de tanques con hidrolavado.</li>
+                <li style="display: block; font-size: 24px;">✔️ Limpieza en trampas de grasas y aceites.</li>
+                <li style="display: block; font-size: 24px;">✔️ Limpieza en decantadores y graseras de cocina.</li>
+                <li style="display: block; font-size: 24px;">✔️ Limpieza de tanques y calderas con fueloil.</li>
+            </ul>
+        </section>
+        <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+            <div>
+                <h1>Cuidando el ambiente desde 1950</h1>
+                <p class="d-inline-flex gap-1"
+                    style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
+                    <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank"
+                        style="color: blue;">
+                        Dudas? Click aquí
+                    </a>
+                </p>
+            </div>
+        </section>
 
 
     </main><!-- End #main -->
@@ -185,9 +209,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <div class="footer-top">
             <div class="container">
-                <div class="row" style="display: flex;
-                    justify-content: space-around;
-                    align-items: flex-start;">
+                <div class="row" style="display: flex;  justify-content: space-evenly;   align-items: center;">
                     <div class="col-lg-4 col-md-4 footer-contact">
                         <h4>Consúltenos</h4>
                         <p>
@@ -202,7 +224,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col-lg-4 col-md-4 footer-contact">
                         <p>
-                            <img src="../assets/img/logo-grande.png" class="img-fluid">
+                            <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
+    width: 270px;">
                         </p>
                     </div>
 
@@ -214,7 +237,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             align-items: flex-start;">
                             <div class="col-lg-6">
                                 <form action="procesar-formulario.php" method="post">
-                                    <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input type="submit" value="Enviar">
+                                    <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input
+                                        type="submit" value="Enviar">
                                 </form>
                             </div>
                         </div>
