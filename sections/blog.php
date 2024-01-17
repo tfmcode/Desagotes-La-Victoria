@@ -47,6 +47,7 @@
 
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
+    
 
 </head>
 
@@ -125,13 +126,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
+  <h1 style="margin-left: 3%;">Blog</h1>
+        <div style="display: flex; align-items: center; text-align: center; justify-content: center; flex-direction: column; height: 100vh;">
+            <h4>POSTEOS RECIENTES</h4>
+            <h2 style="font-weight: bold;">Tips de Mr.Destapador</h2>
+        </div>
+       
+        <div class="img_trabajos">
+          <div class="img_trabajo">
+            <img src="imagen1.jpg" alt="Imagen 1">
+              <div class="img_info">
+                  <h3>Título de la imagen 1</h3>
+                  <p style="display:none;">Contenido de la imagen 1.</p>
+                  <button class="ver_mas">Ver más</button>
+              </div>
+          </div>
+          <div class="img_trabajo">
+            <img src="imagen2.jpg" alt="Imagen 2">
+              <div class="img_info">
+                <h3>Título de la imagen 2</h3>
+                <p style="display:none;">Contenido de la imagen 2.</p>
+                <button class="ver_mas">Ver más</button>
+          </div>
+        </div>
 
 
   <section style="text-align: center;">
         <h1 style="font-weight: bold;">Cuidando el ambiente desde 1950</h1>
         <div>
             <p class="d-inline-flex gap-1">
-                <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank" class="btn active btn-outline-primary" style="border-radius: 10px;">
+                <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información." target="_blank" class="btn active btn-outline-primary" style="border-radius: 10px;">
                     Dudas? Click aquí
                 </a>
             </p>
@@ -209,6 +233,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+  <script>
+        // JavaScript para mostrar/ocultar la información al hacer clic en "Ver más"
+        const imgTrabajos = document.querySelectorAll('.img_trabajo');
+
+        imgTrabajos.forEach((imgTrabajo) => {
+            const imgInfo = imgTrabajo.querySelector('.img_info');
+            const contenido = imgInfo.querySelector('p');
+            const verMasBtn = imgTrabajo.querySelector('.ver_mas');
+
+            verMasBtn.addEventListener('click', () => {
+                if (contenido.style.display === 'none') {
+                    contenido.style.display = 'block';
+                } else {
+                    contenido.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
 </body>
 

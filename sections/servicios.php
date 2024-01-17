@@ -149,7 +149,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <li><i class="bx bx-check"></i> Tratamiento de residuos especiales y no especiales</li>
               <li><i class="bx bx-check"></i> Emisión de certificado de tratamiento de residuos</li>
             </ul>
-            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" class="get-started-btn">Consultar</a>
+            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información%20sobre%20extracción%20y%20transportes." class="get-started-btn">Consultar</a>
           </div>
 
           <div class="col-lg-4 box"> <!-- featured -->
@@ -165,7 +165,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <li><i class="bx bx-check"></i> Servicio de video inspección y diagnóstico de cañerías</li>
 
             </ul>
-            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" class="get-started-btn">Consultar</a>
+            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información%20sobre%20destapaciones." class="get-started-btn">Consultar</a>
           </div>
 
           <div class="col-lg-4 box">
@@ -177,7 +177,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <li><i class="bx bx-check"></i> Certificado de disposición final</li>
               <li><i class="bx bx-check"></i> Personal capacitado para el manejo de residuos peligrosos</li>
             </ul>
-            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" class="get-started-btn">Consultar</a>
+            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información%20sobre%20retiro%20de%20solidos." class="get-started-btn">Consultar</a>
           </div>
 
         </div>
@@ -195,7 +195,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <li><i class="bx bx-check"></i> Certificado de disposición final de los barros retirados</li>
               <li><i class="bx bx-check"></i> Personal capacitado para limpiezas profundas en cámaras sépticas</li>
             </ul>
-            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" class="get-started-btn">Consultar</a>
+            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información%20sobre%20desagotes." class="get-started-btn">Consultar</a>
           </div>
 
           <div class="col-lg-4 box">
@@ -208,7 +208,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <li><i class="bx bx-check"></i> Certificado de disposición final de los barros retirados</li>
               <li><i class="bx bx-check"></i> Personal capacitado para limpiezas profundas</li>
             </ul>
-            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" class="get-started-btn">Consultar</a>
+            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información%20sobre%20hidrolavado%20de%20tanques." class="get-started-btn">Consultar</a>
           </div>
 
           <div class="col-lg-4 box">
@@ -219,7 +219,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <li><i class="bx bx-check"></i> Visita de técnicos al establecimiento</li>
               <li><i class="bx bx-check"></i> Entrega de informe</li>
             </ul>
-            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" class="get-started-btn">Consultar</a>
+            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información%20sobre%20mantenimiento." class="get-started-btn">Consultar</a>
           </div>
 
         </div>
@@ -354,7 +354,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h1 style="font-weight: bold;">Cuidando el ambiente desde 1950</h1>
         <div>
             <p class="d-inline-flex gap-1">
-                <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank" class="btn active btn-outline-primary" style="border-radius: 10px;">
+                <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información." target="_blank" class="btn active btn-outline-primary" style="border-radius: 10px;">
                     Dudas? Click aquí
                 </a>
             </p>

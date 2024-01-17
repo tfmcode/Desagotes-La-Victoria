@@ -151,7 +151,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Maquinaria para desobstrucción industrial.</p>
 </section>
 <section>
-    <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Transportación y disposición residuos especial / no especiales</h2>
+    <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Transportación y disposición residuos especiales / no especiales</h2>
     <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Empresa habilitada por la S.R.N y D.S., y la Secretaría de Política Ambiental de la Provincia de Bs.As.</p>
     <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;"> Equipos y personal especializados.</p>
     <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
@@ -170,7 +170,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h1 style="font-weight: bold;">Cuidando el ambiente desde 1950</h1>
         <div>
             <p class="d-inline-flex gap-1">
-                <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank" class="btn active btn-outline-primary" style="border-radius: 10px;">
+                <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información." target="_blank" class="btn active btn-outline-primary" style="border-radius: 10px;">
                     Dudas? Click aquí
                 </a>
             </p>

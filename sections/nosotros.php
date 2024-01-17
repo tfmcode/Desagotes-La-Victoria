@@ -163,7 +163,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h1 style="font-weight: bold;">Cuidando el ambiente desde 1950</h1>
         <div>
             <p class="d-inline-flex gap-1">
-                <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank" class="btn active btn-outline-primary" style="border-radius: 10px;">
+                <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información." target="_blank" class="btn active btn-outline-primary" style="border-radius: 10px;">
                     Dudas? Click aquí
                 </a>
             </p>
