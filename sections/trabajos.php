@@ -48,6 +48,28 @@
     <meta name="google-site-verification"
         content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
+        <style>
+    .img_trabajos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .img_trabajos img {
+        width: 20%;
+        height: auto;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .img_trabajos img:hover {
+        transform: scale(1.1);
+    }
+</style>
+
 </head>
 
 <?php
@@ -131,18 +153,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </header><!-- End Header -->
     <main id="main">
-        <h1 style="margin-left: 3%;">Trabajos Realizados</h1>
-        <div
-            style="display: flex; align-items: center; text-align: center; justify-content: center; flex-direction: column; height: 100vh;">
-            <h4>Nuestros trabajos</h4>
-            <h2 style="font-weight: bold;">Excelencia operativa</h2>
-        </div>
-        <div class=img_trabajos>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
+    <h1 style="margin-left: 3%; margin-bottom: 5px;">Trabajos Realizados</h1>
+    <div style="display: flex;text-align: center; justify-content: center; flex-direction: column; height: 50vh;">
+        <h4 style="margin-bottom: 2px; margin-top: 0;">Nuestros trabajos</h4>
+        <h2 style="font-weight: bold; margin-top: 0; margin-bottom: 5px;">Excelencia operativa</h2>
+    </div>
+    <div class="img_trabajos">
+        <img src="../assets/img/trabajo3.jpg" alt="">
+        <img src="../assets/img/trabajo1.jpg" alt="">
+        <img src="../assets/img/trabajo2.jpg" alt="">
+    </div>
         <section>
             <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Desobstrucción y
                 limpieza de cañerías</h2>
@@ -169,43 +189,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <section>
             <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Transportación y
                 disposición residuos especiales / no especiales</h2>
-            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Empresa habilitada por la
-                S.R.N y D.S., y la Secretaría de Política Ambiental de la Provincia de Bs.As.</p>
-            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;"> Equipos y personal
-                especializados.</p>
-            <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
-                <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Retiro de aceites usados y afines.
-                </li>
-                <li style="display: block; font-size: 24px;">✔️ Retiro de residuos industriales líquidos, semisólidos y
-                    sólidos.</li>
-                <li style="display: block; font-size: 24px;">✔️ Retiro de barros, limpieza e hidrolavado de cámaras y
-                    rejillas industriales.</li>
-                <li style="display: block; font-size: 24px;">✔️ Retiro, transporte y disposición final de barros en
-                    lavaderos y estaciones de servicio.</li>
-                <li style="display: block; font-size: 24px;">✔️ Retiro de barros en plantas de efluentes.</li>
-                <li style="display: block; font-size: 24px;">✔️ Limpieza de fondos de tanques con hidrolavado.</li>
-                <li style="display: block; font-size: 24px;">✔️ Limpieza en trampas de grasas y aceites.</li>
-                <li style="display: block; font-size: 24px;">✔️ Limpieza en decantadores y graseras de cocina.</li>
-                <li style="display: block; font-size: 24px;">✔️ Limpieza de tanques y calderas con fueloil.</li>
-            </ul>
-        </section>
-        <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
-            <div>
-                <h1>Cuidando el ambiente desde 1950</h1>
-                <p class="d-inline-flex gap-1"
-                    style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
-                    <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
-                        target="_blank" style="color: blue;">
-                        Dudas? Click aquí
-                    </a>
-                </p>
-                <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Maquinaria para
-                    desobstrucción industrial.</p>
-            </div>
-        </section>
-        <section>
-            <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Transportación y
-                disposición residuos especial / no especiales</h2>
             <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Empresa habilitada por la
                 S.R.N y D.S., y la Secretaría de Política Ambiental de la Provincia de Bs.As.</p>
             <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;"> Equipos y personal
