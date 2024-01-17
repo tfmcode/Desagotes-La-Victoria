@@ -93,7 +93,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 
   <div class="btn-whatsapp">
-    <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank">
+    <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+      target="_blank">
       <img src="../assets/img/btn_whatsapp.png" alt="">
     </a>
   </div>
@@ -156,7 +157,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <li><i class="bx bx-check"></i> Tratamiento de residuos especiales y no especiales</li>
               <li><i class="bx bx-check"></i> Emisión de certificado de tratamiento de residuos</li>
             </ul>
-            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información%20sobre%20extracción%20y%20transportes." class="get-started-btn">Consultar</a>
+            <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+              target="_blank" class="get-started-btn">Consultar</a>
           </div>
 
           <div class="col-lg-4 box"> <!-- featured -->
@@ -172,7 +174,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <li><i class="bx bx-check"></i> Servicio de video inspección y diagnóstico de cañerías</li>
 
             </ul>
-            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información%20sobre%20destapaciones." class="get-started-btn">Consultar</a>
+            <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+              target="_blank" class="get-started-btn">Consultar</a>
           </div>
 
           <div class="col-lg-4 box">
@@ -184,7 +187,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <li><i class="bx bx-check"></i> Certificado de disposición final</li>
               <li><i class="bx bx-check"></i> Personal capacitado para el manejo de residuos peligrosos</li>
             </ul>
-            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información%20sobre%20retiro%20de%20solidos." class="get-started-btn">Consultar</a>
+            <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+              target="_blank" class="get-started-btn">Consultar</a>
           </div>
 
         </div>
@@ -202,7 +206,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <li><i class="bx bx-check"></i> Certificado de disposición final de los barros retirados</li>
               <li><i class="bx bx-check"></i> Personal capacitado para limpiezas profundas en cámaras sépticas</li>
             </ul>
-            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información%20sobre%20desagotes." class="get-started-btn">Consultar</a>
+            <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+              target="_blank" class="get-started-btn">Consultar</a>
           </div>
 
           <div class="col-lg-4 box">
@@ -215,7 +220,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <li><i class="bx bx-check"></i> Certificado de disposición final de los barros retirados</li>
               <li><i class="bx bx-check"></i> Personal capacitado para limpiezas profundas</li>
             </ul>
-            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información%20sobre%20hidrolavado%20de%20tanques." class="get-started-btn">Consultar</a>
+            <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+              target="_blank" class="get-started-btn">Consultar</a>
           </div>
 
           <div class="col-lg-4 box">
@@ -226,7 +232,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <li><i class="bx bx-check"></i> Visita de técnicos al establecimiento</li>
               <li><i class="bx bx-check"></i> Entrega de informe</li>
             </ul>
-            <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información%20sobre%20mantenimiento." class="get-started-btn">Consultar</a>
+            <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+              target="_blank" class="get-started-btn">Consultar</a>
           </div>
 
         </div>
@@ -362,8 +369,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h1>Cuidando el ambiente desde 1950</h1>
         <p class="d-inline-flex gap-1"
           style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
-          <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información." target="_blank"
-            style="color: blue;">
+          <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+            target="_blank" style="color: blue;">
             Dudas? Click aquí
           </a>
         </p>
