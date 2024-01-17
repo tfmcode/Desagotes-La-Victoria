@@ -143,27 +143,50 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="" alt="">
         </div>
         <section>
-            <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Desobstrucción y
-                limpieza de cañerías</h2>
-            <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
-                <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Destapaciones de cañerías en cocinas
-                    industriales.</li>
-                <li style="display: block; font-size: 24px;">✔️ Destapación de cañerías en sectores de producción.</li>
-                <li style="display: block; font-size: 24px;">✔️ Destapaciones en cañerías y desagüe de la red pluvial.
-                </li>
-                <li style="display: block; font-size: 24px;">✔️ Destapación y limpieza de cañería cloacal.</li>
-                <li style="display: block; font-size: 24px;">✔️ Destapaciones en baños y vestuarios.</li>
-                <li style="display: block; font-size: 24px;">✔️ Limpieza hidrocinética de cañerías.</li>
-                <li style="display: block; font-size: 24px;">✔️ Limpieza en columnas y bajadas de techos.</li>
-                <li style="display: block; font-size: 24px;">✔️ Video inspección y diagnóstico para cañerías. Informe
-                    del estado de las cañerías.</li>
-            </ul>
-            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones atmosféricos
-                (4.000 litros hasta 18.000).</p>
-            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones desobstructores.
-            </p>
-            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Maquinaria para
+    <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Desobstrucción y limpieza de cañerías</h2>
+    <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
+        <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Destapaciones de cañerías en cocinas industriales.</li>
+        <li style="display: block; font-size: 24px;">✔️ Destapación de cañerías en sectores de producción.</li>
+        <li style="display: block; font-size: 24px;">✔️ Destapaciones en cañerías y desagüe de la red pluvial.</li>
+        <li style="display: block; font-size: 24px;">✔️ Destapación y limpieza de cañería cloacal.</li>
+        <li style="display: block; font-size: 24px;">✔️ Destapaciones en baños y vestuarios.</li>
+        <li style="display: block; font-size: 24px;">✔️ Limpieza hidrocinética de cañerías.</li>
+        <li style="display: block; font-size: 24px;">✔️ Limpieza en columnas y bajadas de techos.</li>
+        <li style="display: block; font-size: 24px;">✔️ Video inspección y diagnóstico para cañerías. Informe del estado de las cañerías.</li>
+    </ul>
+    <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones atmosféricos (4.000 litros hasta 18.000).</p>
+    <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones desobstructores.</p>
+    <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Maquinaria para desobstrucción industrial.</p>
+</section>
+<section>
+    <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Transportación y disposición residuos especiales / no especiales</h2>
+    <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Empresa habilitada por la S.R.N y D.S., y la Secretaría de Política Ambiental de la Provincia de Bs.As.</p>
+    <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;"> Equipos y personal especializados.</p>
+    <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
+        <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Retiro de aceites usados y afines.</li>
+        <li style="display: block; font-size: 24px;">✔️ Retiro de residuos industriales líquidos, semisólidos y sólidos.</li>
+        <li style="display: block; font-size: 24px;">✔️ Retiro de barros, limpieza e hidrolavado de cámaras y rejillas industriales.</li>
+        <li style="display: block; font-size: 24px;">✔️ Retiro, transporte y disposición final de barros en lavaderos y estaciones de servicio.</li>
+        <li style="display: block; font-size: 24px;">✔️ Retiro de barros en plantas de efluentes.</li>
+        <li style="display: block; font-size: 24px;">✔️ Limpieza de fondos de tanques con hidrolavado.</li>
+        <li style="display: block; font-size: 24px;">✔️ Limpieza en trampas de grasas y aceites.</li>
+        <li style="display: block; font-size: 24px;">✔️ Limpieza en decantadores y graseras de cocina.</li>
+        <li style="display: block; font-size: 24px;">✔️ Limpieza de tanques y calderas con fueloil.</li>
+    </ul>
+</section>
+     <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+            <div>
+                <h1>Cuidando el ambiente desde 1950</h1>
+                <p class="d-inline-flex gap-1"
+                    style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
+                    <a href="https://wa.me/1122589806?text=Hola%2C%20quiero%20más%20información" target="_blank"
+                        style="color: blue;">
+                        Dudas? Click aquí
+                    </a>
+                </p>
+               <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Maquinaria para
                 desobstrucción industrial.</p>
+            </div>
         </section>
         <section>
             <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Transportación y
