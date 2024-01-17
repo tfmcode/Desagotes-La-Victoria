@@ -141,17 +141,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="container">
 
         <div class="section-title">
-          <h2><strong>Servicios</strong><br>Según su necesidad</h2>
-          <p>Ponemos a su disposición las más modernas tecnologías para brindar un servicio óptimo, seguro y eficiente.
+          <p class="text-primary" style="letter-spacing: 0.3em;">Servicios</p>
+          <h1>Según su necesidad</h1>
+          <!--  <p>Ponemos a su disposición las más modernas tecnologías para brindar un servicio óptimo, seguro y eficiente.
             Camiones y maquinarias de última generación son nuestras herramientas para brindar un servicio de máxima
-            calidad</p>
+            calidad</p> -->
         </div>
 
         <div class="row no-gutters">
 
           <div class="col-lg-4 box">
-            <h3><strong>Extracción y Transporte</strong></h3>
-            <h4>Consultar $$<span> en CABA y GBA</span></h4>
+            <h2><strong>Extracción y Transporte</strong></h2>
+            <h4>Consultar precio</h4>
+            <p><strong>En CABA Y GBA</strong></p>
             <ul>
               <li><i class="bx bx-check"></i> Retiro, transporte y disposición final de residuos líquidos</li>
               <li><i class="bx bx-check"></i> Tratamiento de residuos especiales y no especiales</li>
@@ -162,8 +164,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
 
           <div class="col-lg-4 box"> <!-- featured -->
-            <h3><strong>Destapación</strong></h3>
-            <h4>Consultar $$<span> en CABA y GBA</span></h4>
+            <h2><strong>Destapación</strong></h2>
+            <h4>Consultar precio</h4>
+            <p><strong>En CABA Y GBA</strong></p>
             <ul>
               <li><i class="bx bx-check"></i> Desobstrucción industrial de cañerías cloacales</li>
               <li><i class="bx bx-check"></i> Limpieza hidrocinética de cañerías y desagües</li>
@@ -179,8 +182,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
 
           <div class="col-lg-4 box">
-            <h3><strong>Retiro de Sólidos</strong></h3>
-            <h4>Consultar $$<span> en CABA y GBA</span></h4>
+            <h2><strong>Retiro de Sólidos</strong></h2>
+            <h4>Consultar precio</h4>
+            <p><strong>En CABA Y GBA</strong></p>
             <ul>
               <li><i class="bx bx-check"></i> Retiro, transporte y disposición final de residuos sólidos peligrosos</li>
               <li><i class="bx bx-check"></i> Manifiesto de transporte</li>
@@ -197,22 +201,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="row no-gutters">
 
           <div class="col-lg-4 box">
-            <h3><strong>Desagote</strong></h3>
-            <h4>Consultar $$<span> en CABA y GBA</span></h4>
-            <ul>
-              <li><i class="bx bx-check"></i> Desagotes de tanques cisternas</li>
-              <li><i class="bx bx-check"></i> Desagote y limpieza de pozos de bombeo de aguas residuales</li>
-              <li><i class="bx bx-check"></i> Hidrolavado de cámaras séticas con alta presión</li>
-              <li><i class="bx bx-check"></i> Certificado de disposición final de los barros retirados</li>
-              <li><i class="bx bx-check"></i> Personal capacitado para limpiezas profundas en cámaras sépticas</li>
-            </ul>
-            <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
-              target="_blank" class="get-started-btn">Consultar</a>
+            <h2><strong></strong>Desagote</strong></h3>
+              <h4>Consultar precio</h4>
+              <p><strong>En CABA Y GBA</strong></p>
+              <ul>
+                <li><i class="bx bx-check"></i> Desagotes de tanques cisternas</li>
+                <li><i class="bx bx-check"></i> Desagote y limpieza de pozos de bombeo de aguas residuales</li>
+                <li><i class="bx bx-check"></i> Hidrolavado de cámaras séticas con alta presión</li>
+                <li><i class="bx bx-check"></i> Certificado de disposición final de los barros retirados</li>
+                <li><i class="bx bx-check"></i> Personal capacitado para limpiezas profundas en cámaras sépticas</li>
+              </ul>
+              <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+                target="_blank" class="get-started-btn">Consultar</a>
           </div>
 
           <div class="col-lg-4 box">
-            <h3><strong>Hidrolavado de Tanques</strong></h3>
-            <h4>Consultar $$<span> en CABA y GBA</span></h4>
+            <h2><strong>Hidrolavado de Tanques</strong></h2>
+            <h4>Consultar precio</h4>
+            <p><strong>En CABA Y GBA</strong></p>
             <ul>
               <li><i class="bx bx-check"></i> Retiro de barros contaminados con hidrocarburos</li>
               <li><i class="bx bx-check"></i> Limpieza en decantadores y fosas de lavaderos</li>
@@ -225,8 +231,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
 
           <div class="col-lg-4 box">
-            <h3><strong>Asesoría en Mantenimiento</strong></h3>
-            <h4>Consultar $$<span> en CABA y GBA</span></h4>
+            <h2><strong>Asesoría en Mantenimiento</strong></h2>
+            <h4>Consultar precio</h4>
+            <p><strong>En CABA Y GBA</strong></p>
             <ul>
               <li><i class="bx bx-check"></i> Reunión con equipo de asesoramiento de La Victoria</li>
               <li><i class="bx bx-check"></i> Visita de técnicos al establecimiento</li>
@@ -319,46 +326,80 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </section><!-- End Why Us Section -->
 
     <!--   SECTIONNN QUE FALTAAAAAAAAA-->
-    <section>
-      <h4>CUII</h4>
-      <h1>COMPROMETIDOS ETC ETC</h1>
-      <P></P>
-    </section>
+    <section class="services">
+      <div class="container">
+        <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
+          <p class="text-primary" style="letter-spacing: 0.3em;">CUIDAMOS SU NEGOCIO</p>
+          <h1>COMPROMETIDOS CON EL MEDIO AMBIENTE</h1>
+          <P>Servicios La Victoria es una empresa familiar fundada por Sr. Juan Roberto Scozzino en el
+            año 1950.</P>
+          <br>
+          <p>Desde entonces, el trabajo en equipo, liderezgo en conocimiento, atención personalizada, seguridad y salud
+            de
+            nuestra gente, han sido nuestras principales fortalezas; aquellas que marcan la diferencia y nos posiciona
+            como
+            una empresa de garantía en el mercado y líder en Servicio de Transporte de Líquidos Peligrosos en Buenos
+            Aíres.
+          </p>
+        </div>
+      </div>
 
+    </section>
     <!-- -->
     <!-- ======= RESTRUCTURIZAAAARRRRRRR Services Section ======= -->
     <section class="services">
       <div class="container">
-
+      <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
+          <p class="text-primary" style="letter-spacing: 0.3em;">NUESTRO DIFERENCIAL</p>
+          <h1>PRESTAMOS SERVICIO PREMIUN</h1>
+</div>
         <div class="row">
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="icon-box icon-box-pink">
-              <div class="icon"><img src="assets/img/3.png" width="70"></div>
-              <h4 class="title"><a href="">Asesoramiento Profesional</a></h4>
-              <p class="description">Al contactarse, nuestro equipo de profesionales, especializados se encarga de
-                detectar las necesidas en su negocio y ofrecer un servicio a medida de sus mecesidades.</p>
+          <div style="display: flex;
+       justify-content: space-evenly; margin-top: 20px;
+    margin-bottom: 20px;">
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
+              <div class="icon-box icon-box-pink">
+                <div class="icon"><img src="../assets/img/3.png" width="70"></div>
+                <h4 class="title"><a href="">Asesoramiento Profesional</a></h4>
+                <p class="description">Al contactarse, nuestro equipo de profesionales, especializados se encarga de
+                  detectar las necesidas en su negocio y ofrecer un servicio a medida de sus mecesidades.</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-box icon-box-cyan">
+                <div class="icon"><img src="../assets/img/4.png" width="70"></div>
+                <h4 class="title"><a href="">Recolección + Disposición</a></h4>
+                <p class="description">Según el servicio requerido, nuestro equipo de profesionales se encarga de retirar
+                  y transportar los residuos líquidos, realizando el recorrido hacia la planta de tratamiento
+                  correspondiente.</p>
+              </div>
             </div>
           </div>
+<div style="display: flex;
+        justify-content: space-evenly; margin-top: 20px;
+    margin-bottom: 20px;">
 
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box icon-box-cyan">
-              <div class="icon"><img src="assets/img/4.png" width="70"></div>
-              <h4 class="title"><a href="">Recolección + Disposición</a></h4>
-              <p class="description">Según el servicio requerido, nuestro equipo de profesionales se encarga de retirar
-                y transportar los residuos líquidos, realizando el recorrido hacia la planta de tratamiento
-                correspondiente.</p>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box icon-box-green">
-              <div class="icon"><img src="assets/img/5.png" width="70"></div>
-              <h4 class="title"><a href="">Certificación Legal</a></h4>
-              <p class="description">Extendemos los manifiestos de transporte y certificado de disposición final de los
-                residuos y sólidos retirados. Su empresa contará con una garantía de la realización del servicio.</p>
-            </div>
-          </div>
+  <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+    <div class="icon-box icon-box-green">
+      <div class="icon"><img src="../assets/img/5.png" width="70"></div>
+      <h4 class="title"><a href="">Certificación Legal</a></h4>
+      <p class="description">Extendemos los manifiestos de transporte y certificado de disposición final de los
+        residuos y sólidos retirados. Su empresa contará con una garantía de la realización del servicio.</p>
+    </div>
+  </div>
 
+  <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+    <div class="icon-box icon-box-green">
+      <div class="icon"><img src="../assets/img/5.png" width="70"></div>
+      <h4 class="title"><a href="">Certificación Legal</a></h4>
+      <p class="description">Extendemos los manifiestos de transporte y certificado de disposición final de los
+        residuos y sólidos retirados. Su empresa contará con una garantía de la realización del servicio.</p>
+    </div>
+  </div>
+</div>
         </div>
 
       </div>
