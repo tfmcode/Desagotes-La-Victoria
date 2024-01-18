@@ -217,6 +217,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 </div>
 
+                <a href="#proceso" class="btn-get-started animate__animated animate__fadeInUp"
+                    style="background-color: black; border: black;   border-radius: 20px;">Conozca Nuestro
+                    Proceso</a>
             </div>
         </section><!-- End Services Section -->
 
@@ -337,7 +340,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         </section> --><!-- End Why Us Section -->
         <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
-        <div class="container">
+            <div class="container">
                 <h1>Cuidando el ambiente desde 1950</h1>
                 <p class="d-inline-flex gap-1"
                     style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
