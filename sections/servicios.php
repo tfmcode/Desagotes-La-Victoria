@@ -154,12 +154,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="../home.php" style="color: black;">Home</a></li>
-          <li><a href="nosotros.php" style="color: black;">Nosotros</a></li>
+          <li><a href="../home.php" style="color: black;">Inicio</a></li>
           <li><a href="servicios.php" style="color: black;">Servicios</a></li>
+          <li><a href="nosotros.php" style="color: black;">Nosotros</a></li>
           <li><a href="trabajos.php" style="color: black;">Trabajos</a></li>
-          <li><a href="contacto.php" style="color: black;">Contacto</a></li>
           <li><a href="blog.php" style="color: black;">Blogs</a></li>
+          <li><a href="contacto.php" style="color: black;">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
       <div style="height: 25px; width: 70px;">
@@ -310,49 +310,68 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div class="container">
               <div>
-                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">1.</span>Recepción de Pedido</p></h4>
+                <h4 class=" title">
+                  <p href="" style="display: flex; align-items: baseline;"><span class="number">1.</span>Recepción de
+                    Pedido</p>
+                </h4>
               </div>
               <p class="description">Recibimos mediante nuestras vías de comunicación las diferentes solicitudes de
                 nuestros clientes.</p>
             </div>
             <div class="container">
               <div>
-                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">2.</span>Asesoría de Cliente</p></h4>
+                <h4 class=" title">
+                  <p href="" style="display: flex; align-items: baseline;"><span class="number">2.</span>Asesoría de
+                    Cliente</p>
+                </h4>
               </div>
               <p class="description">Asesoramos en base a la solicitud del cliente e indicamos el servicio que mejor se
                 adapta a sus necesidades.</p>
             </div>
             <div class="container">
               <div>
-                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">3.</span>Visita Técnica y Diagnóstico</p></h4>
+                <h4 class=" title">
+                  <p href="" style="display: flex; align-items: baseline;"><span class="number">3.</span>Visita Técnica
+                    y Diagnóstico</p>
+                </h4>
               </div>
-              <p class="description">Realizamos la visita técnica y diagnosticamos gratuitamente en el lugar de trabajo.</p>
+              <p class="description">Realizamos la visita técnica y diagnosticamos gratuitamente en el lugar de trabajo.
+              </p>
             </div>
             <div class="container">
               <div>
-                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">4.</span>Cotización</p></h4>
+                <h4 class=" title">
+                  <p href="" style="display: flex; align-items: baseline;"><span class="number">4.</span>Cotización</p>
+                </h4>
               </div>
               <p class="description">Cotizamos en base a la información recabada y el tipo de trabajo a realizar.</p>
             </div>
             <div class="container">
               <div>
-                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">5.</span>Presupuesto</p></h4>
+                <h4 class=" title">
+                  <p href="" style="display: flex; align-items: baseline;"><span class="number">5.</span>Presupuesto</p>
+                </h4>
               </div>
               <p class="description">Una vez enviado el presupuesto aguardamos confirmación por parte del cliente.</p>
             </div>
             <div class="container">
               <div>
-                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">6.</span>Pago</p></h4>
+                <h4 class=" title">
+                  <p href="" style="display: flex; align-items: baseline;"><span class="number">6.</span>Pago</p>
+                </h4>
               </div>
               <p class="description">Ponemos a disposición los distintos métodos de pago para hacer una transacción
                 segura.</p>
             </div>
             <div class="container">
               <div>
-                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">7.</span>Servicio</p></h4>
+                <h4 class=" title">
+                  <p href="" style="display: flex; align-items: baseline;"><span class="number">7.</span>Servicio</p>
+                </h4>
               </div>
-              <p class="description"></p>En plazos y condiciones establecidas en las etapas anteriores, procedemos con el
-                servicio.</p>
+              <p class="description"></p>En plazos y condiciones establecidas en las etapas anteriores, procedemos con
+              el
+              servicio.</p>
             </div>
           </div>
         </div>
@@ -388,9 +407,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="container">
         <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
           <p class="text-primary" style="letter-spacing: 0.3em;">NUESTRO DIFERENCIAL</p>
+
           <h1 class="title1">PRESTAMOS SERVICIO PREMIUM</h1>
         </div>
         <div class="row">
+          <div style="display: flex;
+        justify-content: space-evenly; margin-top: 20px;
+    margin-bottom: 20px;">
+
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box icon-box-green">
+                <div class="icon"><img src="../assets/img/5.png" width="70"></div>
+                <h4 class="title"><a href="">Certificaciónes</a></h4>
+                <p class="description">Extendemos certificado de disposición final de los líquidos retirados.</p>
+
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box icon-box-green">
+                <div class="icon"><img src="../assets/img/5.png" width="70"></div>
+                <h4 class="title"><a href="">Expertos</a></h4>
+                <p class="description">60 años de experiencia capacitándonos nos convierten en el equipo más capacitado
+                  del mercado.</p>
+
+              </div>
+            </div>
+          </div>
           <div style="display: flex;
        justify-content: space-evenly; margin-top: 20px;
     margin-bottom: 20px;">
@@ -409,38 +453,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <h4 class="title"><a href="">Modernas Tecnologías</a></h4>
                 <p class="description">Ponemos a disposición las más modernas tecnologías para brindar un servicio
                   óptimo, seguro y eficiente.</p>
+
               </div>
             </div>
           </div>
-          <div style="display: flex;
-        justify-content: space-evenly; margin-top: 20px;
-    margin-bottom: 20px;">
 
-
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon-box icon-box-green">
-                <div class="icon"><img src="../assets/img/5.png" width="70"></div>
-                <h4 class="title"><a href="">Certificaciónes</a></h4>
-                <p class="description">Extendemos certificado de disposición final de los líquidos retirados.</p>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon-box icon-box-green">
-                <div class="icon"><img src="../assets/img/5.png" width="70"></div>
-                <h4 class="title"><a href="">Expertos</a></h4>
-                <p class="description">60 años de experiencia capacitándonos nos convierten en el equipo más capacitado
-                  del mercado.</p>
-              </div>
-            </div>
-          </div>
         </div>
 
       </div>
     </section><!-- End Services Section -->
 
     <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
-      <div>
+      <div class="container">
         <h1>Cuidando el ambiente desde 1950</h1>
         <p class="d-inline-flex gap-1"
           style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
