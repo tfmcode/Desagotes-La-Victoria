@@ -125,7 +125,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
         <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
             style="color: black; font-size: 18px;  padding-right: 4px;"></i></a>
-        <i class="bi bi-search" style="color: black; font-size: 16px;"></i>
       </div>
 
     </div>
