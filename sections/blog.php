@@ -121,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="contacto.php" style="color: black;">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
-      <div style="height: 25px; width: 70px;">
+      <div class="icons-navbar" style="height: 25px; width: 70px;">
         <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
             style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
         <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
@@ -134,44 +134,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <h1 style="margin-left: 3%;">Blog</h1>
+    <!-- <h1 style="margin-left: 3%;">Blog</h1>
     <div
       style="display: flex; align-items: center; text-align: center; justify-content: center; flex-direction: column; height: 100vh;">
       <h4>POSTEOS RECIENTES</h4>
       <h2 style="font-weight: bold;">Tips de Mr.Destapador</h2>
+    </div> -->
+
+    <div class="container">
+      <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
+        <p class="text-primary" style="letter-spacing: 0.3em;">POSTEOS RECIENTES: </p>
+        <h1>Tips De Mr. Destapador</h1>
+      </div>
+      <div class="container">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="img_trabajos">
-      <div class="img_trabajo">
-        <img src="imagen1.jpg" alt="Imagen 1">
-        <div class="img_info">
-          <h3>Título de la imagen 1</h3>
-          <p style="display:none;">Contenido de la imagen 1.</p>
-          <button class="ver_mas">Ver más</button>
-        </div>
-      </div>
-      <div class="img_trabajo">
-        <img src="imagen2.jpg" alt="Imagen 2">
-        <div class="img_info">
-          <h3>Título de la imagen 2</h3>
-          <p style="display:none;">Contenido de la imagen 2.</p>
-          <button class="ver_mas">Ver más</button>
-        </div>
-      </div>
 
 
-      <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-          <h1>Cuidando el ambiente desde 1950</h1>
-          <p class="d-inline-flex gap-1"
-            style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
-            <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
-              target="_blank" style="color: blue;">
-              Dudas? Click aquí
-            </a>
-          </p>
-        </div>
-      </section>
+        <h1>Cuidando el ambiente desde 1950</h1>
+        <p class="d-inline-flex gap-1"
+          style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
+          <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+            target="_blank" style="color: blue;">
+            Dudas? Click aquí
+          </a>
+        </p>
+      </div>
+    </section>
 
 
   </main><!-- End #main -->
@@ -205,8 +207,8 @@ width: 270px;">
         <div class="footer-newsletter">
           <div class="container">
             <div class="row" style="display: flex;
-                    justify-content: space-around;
-                    align-items: flex-start;">
+                justify-content: space-around;
+                align-items: flex-start;">
               <div class="col-lg-6">
                 <form action="procesar-formulario.php" method="post">
                   <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input type="submit"
@@ -215,6 +217,15 @@ width: 270px;">
               </div>
             </div>
           </div>
+        </div>
+        <div style="    display: flex;
+justify-content: center;">
+          <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
+              style="color: white; font-size: 25px; padding-right: 5px;"></i></a>
+          <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
+              style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+          <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i class="bx bxl-linkedin"
+              style="color: white; font-size: 25px;"></i></a>
         </div>
       </div>
     </div>

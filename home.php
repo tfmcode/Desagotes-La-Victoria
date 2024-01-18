@@ -143,7 +143,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <p class="animate__animated animate__fadeInUp">
                     <h3 style='color:white;'>Mantener sus Instalaciones en condiciones saludables</h3>
                     </p>
-                    <a href="#proceso" class="btn-get-started animate__animated animate__fadeInUp"
+                    <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+                        target="_blank" class="btn-get-started animate__animated animate__fadeInUp"
                         style="background-color: black; border: black;   border-radius: 20px;">Conozca Nuestro
                         Proceso</a>
                 </div>
@@ -156,7 +157,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <p class="animate__animated animate__fadeInUp">
                     <h3 style='color:white'>Mantenimiento Preventivo</h3>
                     </p>
-                    <a href="#proceso" class="btn-get-started animate__animated animate__fadeInUp"
+                    <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+                        target="_blank" class="btn-get-started animate__animated animate__fadeInUp"
                         style="background-color: black; border: black;   border-radius: 20px;">Conozca Nuestro
                         Proceso</a>
                 </div>
@@ -216,10 +218,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                 </div>
+                <div style="display: flex; justify-content: center;">
 
-                <a href="#proceso" class="btn-get-started animate__animated animate__fadeInUp"
-                    style="background-color: black; border: black;   border-radius: 20px;">Conozca Nuestro
-                    Proceso</a>
+                    <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
+                        target="_blank" class="btn-get-started content_title animate__animated animate__fadeInUp"
+                        style="    background-color: black; color: white;   border-radius: 20px;   display: flex;   width: 160px;   height: 30px;   margin-bottom: 20px;   align-items: center;   justify-content: center;">Cotice
+                        su servicio</a>
+                </div>
+
             </div>
         </section><!-- End Services Section -->
 
@@ -339,7 +345,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
 
         </section> --><!-- End Why Us Section -->
-        <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+        <section id="heros" style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
             <div class="container">
                 <h1>Cuidando el ambiente desde 1950</h1>
                 <p class="d-inline-flex gap-1"
@@ -383,8 +389,8 @@ width: 270px;">
                 <div class="footer-newsletter">
                     <div class="container">
                         <div class="row" style="display: flex;
-                    justify-content: space-around;
-                    align-items: flex-start;">
+                justify-content: space-around;
+                align-items: flex-start;">
                             <div class="col-lg-6">
                                 <form action="procesar-formulario.php" method="post">
                                     <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input
@@ -393,6 +399,16 @@ width: 270px;">
                             </div>
                         </div>
                     </div>
+                </div>
+                <div style="    display: flex;
+justify-content: center;">
+                    <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
+                            style="color: white; font-size: 25px; padding-right: 5px;"></i></a>
+                    <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i
+                            class="bx bxl-instagram"
+                            style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+                    <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i
+                            class="bx bxl-linkedin" style="color: white; font-size: 25px;"></i></a>
                 </div>
             </div>
         </div>

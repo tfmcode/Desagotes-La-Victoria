@@ -162,7 +162,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="contacto.php" style="color: black;">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
-      <div style="height: 25px; width: 70px;">
+      <div class="icons-navbar" style="height: 25px; width: 70px;">
         <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
             style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
         <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
@@ -295,8 +295,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200" id="proceso">
       <div class="container">
 
-        <div class="section-title">
-          <h2><br><br><strong>Nuestro Proceso</strong><br>Modernas Tecnologías</h2>
+        <div
+          style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px; padding-top: 30px;">
+          <p class="text-primary" style="letter-spacing: 0.3em;">PROCESO DE TRABAJO</p>
+          <h1>MODERNAS TECNOLOGIAS</h1>
         </div>
         <p class="content_title">Ponemos a su disposición las más modernas tecnologías para brindar un servicio óptimo,
           seguro y eficiente. Camiones y maquinarias de última generación son nuestras herramientas para brindar un
@@ -374,13 +376,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               servicio.</p>
             </div>
           </div>
+          <div class="col-lg-6 video-box">
+            <img src="../assets/img/proceso.jpg" class="img-fluid" alt="">
+          </div>
         </div>
 
       </div>
     </section><!-- End Why Us Section -->
 
     <!--   SECTIONNN QUE FALTAAAAAAAAA-->
-    <section class="services">
+    <section class="services" style="padding-top: 30px;">
       <div class="container">
         <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
           <p class="text-primary" style="letter-spacing: 0.3em;">CUIDAMOS SU NEGOCIO</p>
@@ -511,8 +516,8 @@ width: 270px;">
         <div class="footer-newsletter">
           <div class="container">
             <div class="row" style="display: flex;
-                    justify-content: space-around;
-                    align-items: flex-start;">
+                justify-content: space-around;
+                align-items: flex-start;">
               <div class="col-lg-6">
                 <form action="procesar-formulario.php" method="post">
                   <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input type="submit"
@@ -521,6 +526,15 @@ width: 270px;">
               </div>
             </div>
           </div>
+        </div>
+        <div style="    display: flex;
+justify-content: center;">
+          <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
+              style="color: white; font-size: 25px; padding-right: 5px;"></i></a>
+          <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
+              style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+          <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i class="bx bxl-linkedin"
+              style="color: white; font-size: 25px;"></i></a>
         </div>
       </div>
     </div>

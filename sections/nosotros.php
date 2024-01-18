@@ -120,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="contacto.php" style="color: black;">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
-      <div style="height: 25px; width: 70px;">
+      <div class="icons-navbar" style="height: 25px; width: 70px;">
         <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
             style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
         <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
@@ -223,6 +223,15 @@ width: 270px;">
               </div>
             </div>
           </div>
+        </div>
+        <div style="    display: flex;
+    justify-content: center;">
+          <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
+              style="color: white; font-size: 25px; padding-right: 5px;"></i></a>
+          <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
+              style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+          <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i class="bx bxl-linkedin"
+              style="color: white; font-size: 25px;"></i></a>
         </div>
       </div>
     </div>
