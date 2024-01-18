@@ -113,12 +113,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="../home.php" style="color: black;">Home</a></li>
-          <li><a href="nosotros.php" style="color: black;">Nosotros</a></li>
+          <li><a href="../home.php" style="color: black;">Inicio</a></li>
           <li><a href="servicios.php" style="color: black;">Servicios</a></li>
+          <li><a href="nosotros.php" style="color: black;">Nosotros</a></li>
           <li><a href="trabajos.php" style="color: black;">Trabajos</a></li>
-          <li><a href="contacto.php" style="color: black;">Contacto</a></li>
           <li><a href="blog.php" style="color: black;">Blogs</a></li>
+          <li><a href="contacto.php" style="color: black;">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
       <div style="height: 25px; width: 70px;">
@@ -349,10 +349,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- ======= RESTRUCTURIZAAAARRRRRRR Services Section ======= -->
     <section class="services">
       <div class="container">
-      <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
+        <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
           <p class="text-primary" style="letter-spacing: 0.3em;">NUESTRO DIFERENCIAL</p>
           <h1>PRESTAMOS SERVICIO PREMIUN</h1>
-</div>
+        </div>
         <div class="row">
           <div style="display: flex;
        justify-content: space-evenly; margin-top: 20px;
@@ -366,47 +366,50 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                   detectar las necesidas en su negocio y ofrecer un servicio a medida de sus mecesidades.</p>
               </div>
             </div>
-  
+
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
               <div class="icon-box icon-box-cyan">
                 <div class="icon"><img src="../assets/img/4.png" width="70"></div>
                 <h4 class="title"><a href="">Recolección + Disposición</a></h4>
-                <p class="description">Según el servicio requerido, nuestro equipo de profesionales se encarga de retirar
+                <p class="description">Según el servicio requerido, nuestro equipo de profesionales se encarga de
+                  retirar
                   y transportar los residuos líquidos, realizando el recorrido hacia la planta de tratamiento
                   correspondiente.</p>
               </div>
             </div>
           </div>
-<div style="display: flex;
+          <div style="display: flex;
         justify-content: space-evenly; margin-top: 20px;
     margin-bottom: 20px;">
 
 
-  <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-    <div class="icon-box icon-box-green">
-      <div class="icon"><img src="../assets/img/5.png" width="70"></div>
-      <h4 class="title"><a href="">Certificación Legal</a></h4>
-      <p class="description">Extendemos los manifiestos de transporte y certificado de disposición final de los
-        residuos y sólidos retirados. Su empresa contará con una garantía de la realización del servicio.</p>
-    </div>
-  </div>
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box icon-box-green">
+                <div class="icon"><img src="../assets/img/5.png" width="70"></div>
+                <h4 class="title"><a href="">Certificación Legal</a></h4>
+                <p class="description">Extendemos los manifiestos de transporte y certificado de disposición final de
+                  los
+                  residuos y sólidos retirados. Su empresa contará con una garantía de la realización del servicio.</p>
+              </div>
+            </div>
 
-  <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-    <div class="icon-box icon-box-green">
-      <div class="icon"><img src="../assets/img/5.png" width="70"></div>
-      <h4 class="title"><a href="">Certificación Legal</a></h4>
-      <p class="description">Extendemos los manifiestos de transporte y certificado de disposición final de los
-        residuos y sólidos retirados. Su empresa contará con una garantía de la realización del servicio.</p>
-    </div>
-  </div>
-</div>
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box icon-box-green">
+                <div class="icon"><img src="../assets/img/5.png" width="70"></div>
+                <h4 class="title"><a href="">Certificación Legal</a></h4>
+                <p class="description">Extendemos los manifiestos de transporte y certificado de disposición final de
+                  los
+                  residuos y sólidos retirados. Su empresa contará con una garantía de la realización del servicio.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
     </section><!-- End Services Section -->
 
     <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
-      <div>
+    <div class="container">
         <h1>Cuidando el ambiente desde 1950</h1>
         <p class="d-inline-flex gap-1"
           style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">

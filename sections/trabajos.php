@@ -48,27 +48,27 @@
     <meta name="google-site-verification"
         content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
-        <style>
-    .img_trabajos {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px;
-        border-radius: 8px;
-    }
+    <style>
+        .img_trabajos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            border-radius: 8px;
+        }
 
-    .img_trabajos img {
-        width: 20%;
-        height: auto;
-        border-radius: 6px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
-    }
+        .img_trabajos img {
+            width: 20%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
 
-    .img_trabajos img:hover {
-        transform: scale(1.1);
-    }
-</style>
+        .img_trabajos img:hover {
+            transform: scale(1.1);
+        }
+    </style>
 
 </head>
 
@@ -134,12 +134,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="../home.php" style="color: black;">Home</a></li>
-                    <li><a href="nosotros.php" style="color: black;">Nosotros</a></li>
+                    <li><a href="../home.php" style="color: black;">Inicio</a></li>
                     <li><a href="servicios.php" style="color: black;">Servicios</a></li>
+                    <li><a href="nosotros.php" style="color: black;">Nosotros</a></li>
                     <li><a href="trabajos.php" style="color: black;">Trabajos</a></li>
-                    <li><a href="contacto.php" style="color: black;">Contacto</a></li>
                     <li><a href="blog.php" style="color: black;">Blogs</a></li>
+                    <li><a href="contacto.php" style="color: black;">Contacto</a></li>
                 </ul>
             </nav><!-- .navbar -->
             <div style="height: 25px; width: 70px;">
@@ -153,64 +153,80 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </header><!-- End Header -->
     <main id="main">
-    <h1 style="margin-left: 3%; margin-bottom: 5px;">Trabajos Realizados</h1>
-    <div style="display: flex;text-align: center; justify-content: center; flex-direction: column; height: 50vh;">
-        <h4 style="margin-bottom: 2px; margin-top: 0;">Nuestros trabajos</h4>
-        <h2 style="font-weight: bold; margin-top: 0; margin-bottom: 5px;">Excelencia operativa</h2>
-    </div>
-    <div class="img_trabajos">
-        <img src="../assets/img/trabajo3.jpg" alt="">
-        <img src="../assets/img/trabajo1.jpg" alt="">
-        <img src="../assets/img/trabajo2.jpg" alt="">
-    </div>
         <section>
-            <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Desobstrucción y
-                limpieza de cañerías</h2>
-            <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
-                <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Destapaciones de cañerías en cocinas
-                    industriales.</li>
-                <li style="display: block; font-size: 24px;">✔️ Destapación de cañerías en sectores de producción.</li>
-                <li style="display: block; font-size: 24px;">✔️ Destapaciones en cañerías y desagüe de la red pluvial.
-                </li>
-                <li style="display: block; font-size: 24px;">✔️ Destapación y limpieza de cañería cloacal.</li>
-                <li style="display: block; font-size: 24px;">✔️ Destapaciones en baños y vestuarios.</li>
-                <li style="display: block; font-size: 24px;">✔️ Limpieza hidrocinética de cañerías.</li>
-                <li style="display: block; font-size: 24px;">✔️ Limpieza en columnas y bajadas de techos.</li>
-                <li style="display: block; font-size: 24px;">✔️ Video inspección y diagnóstico para cañerías. Informe
-                    del estado de las cañerías.</li>
-            </ul>
-            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones atmosféricos
-                (4.000 litros hasta 18.000).</p>
-            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones desobstructores.
-            </p>
-            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Maquinaria para
-                desobstrucción industrial.</p>
+
+            <div class="container">
+    
+                <h1 style="margin-left: 3%; margin-bottom: 5px;">Trabajos Realizados</h1>
+        
+                <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
+                    <p class="text-primary" style="letter-spacing: 0.3em;">Nuestros trabajos</p>
+                    <h1>Excelencia operativa</h1>
+                </div>
+                <div class="img_trabajos">
+                    <img src="../assets/img/trabajo3.jpg" alt="" style="    width: 300px;
+            height: 340px;">
+                    <img src="../assets/img/trabajo1.jpg" alt="" style="    width: 300px;
+            height: 340px;">
+                    <img src="../assets/img/trabajo2.jpg" alt="" style="    width: 300px;
+            height: 340px;">
+                </div>
+            </div>
         </section>
         <section>
-            <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Transportación y
-                disposición residuos especiales / no especiales</h2>
-            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Empresa habilitada por la
-                S.R.N y D.S., y la Secretaría de Política Ambiental de la Provincia de Bs.As.</p>
-            <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;"> Equipos y personal
-                especializados.</p>
-            <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
-                <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Retiro de aceites usados y afines.
-                </li>
-                <li style="display: block; font-size: 24px;">✔️ Retiro de residuos industriales líquidos, semisólidos y
-                    sólidos.</li>
-                <li style="display: block; font-size: 24px;">✔️ Retiro de barros, limpieza e hidrolavado de cámaras y
-                    rejillas industriales.</li>
-                <li style="display: block; font-size: 24px;">✔️ Retiro, transporte y disposición final de barros en
-                    lavaderos y estaciones de servicio.</li>
-                <li style="display: block; font-size: 24px;">✔️ Retiro de barros en plantas de efluentes.</li>
-                <li style="display: block; font-size: 24px;">✔️ Limpieza de fondos de tanques con hidrolavado.</li>
-                <li style="display: block; font-size: 24px;">✔️ Limpieza en trampas de grasas y aceites.</li>
-                <li style="display: block; font-size: 24px;">✔️ Limpieza en decantadores y graseras de cocina.</li>
-                <li style="display: block; font-size: 24px;">✔️ Limpieza de tanques y calderas con fueloil.</li>
-            </ul>
+            <div class="container">
+
+                <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Transportación y
+                    disposición residuos especiales / no especiales</h2>
+                <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Empresa habilitada por la
+                    S.R.N y D.S., y la Secretaría de Política Ambiental de la Provincia de Bs.As.</p>
+                <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;"> Equipos y personal
+                    especializados.</p>
+                <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
+                    <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Retiro de aceites usados y afines.
+                    </li>
+                    <li style="display: block; font-size: 24px;">✔️ Retiro de residuos industriales líquidos, semisólidos y
+                        sólidos.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Retiro de barros, limpieza e hidrolavado de cámaras y
+                        rejillas industriales.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Retiro, transporte y disposición final de barros en
+                        lavaderos y estaciones de servicio.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Retiro de barros en plantas de efluentes.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Limpieza de fondos de tanques con hidrolavado.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Limpieza en trampas de grasas y aceites.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Limpieza en decantadores y graseras de cocina.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Limpieza de tanques y calderas con fueloil.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+
+                <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Desobstrucción y
+                    limpieza de cañerías</h2>
+                <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
+                    <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Destapaciones de cañerías en cocinas
+                        industriales.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Destapación de cañerías en sectores de producción.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Destapaciones en cañerías y desagüe de la red pluvial.
+                    </li>
+                    <li style="display: block; font-size: 24px;">✔️ Destapación y limpieza de cañería cloacal.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Destapaciones en baños y vestuarios.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Limpieza hidrocinética de cañerías.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Limpieza en columnas y bajadas de techos.</li>
+                    <li style="display: block; font-size: 24px;">✔️ Video inspección y diagnóstico para cañerías. Informe
+                        del estado de las cañerías.</li>
+                </ul>
+                <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones atmosféricos
+                    (4.000 litros hasta 18.000).</p>
+                <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones desobstructores.
+                </p>
+                <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Maquinaria para
+                    desobstrucción industrial.</p>
+            </div>
         </section>
         <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
-            <div>
+            <div class="container">
                 <h1>Cuidando el ambiente desde 1950</h1>
                 <p class="d-inline-flex gap-1"
                     style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">

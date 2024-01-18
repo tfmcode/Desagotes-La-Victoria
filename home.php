@@ -113,12 +113,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="home.php" style="color: black;">Home</a></li>
-                    <li><a href="./sections/nosotros.php" style="color: black;">Nosotros</a></li>
+                    <li><a href="home.php" style="color: black;">Inicio</a></li>
                     <li><a href="./sections/servicios.php" style="color: black;">Servicios</a></li>
+                    <li><a href="./sections/nosotros.php" style="color: black;">Nosotros</a></li>
                     <li><a href="./sections/trabajos.php" style="color: black;">Trabajos</a></li>
-                    <li><a href="./sections/contacto.php" style="color: black;">Contacto</a></li>
                     <li><a href="./sections/blog.php" style="color: black;">Blogs</a></li>
+                    <li><a href="./sections/contacto.php" style="color: black;">Contacto</a></li>
                 </ul>
             </nav><!-- .navbar -->
             <div class="icons-navbar" style="height: 25px; width: 70px;">
@@ -337,7 +337,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         </section> --><!-- End Why Us Section -->
         <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
-            <div>
+        <div class="container">
                 <h1>Cuidando el ambiente desde 1950</h1>
                 <p class="d-inline-flex gap-1"
                     style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
