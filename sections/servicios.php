@@ -48,6 +48,47 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
+  <style>
+    .content_title {
+      text-align: center;
+      max-width: 600px;
+      /* Ajusta el ancho máximo según sea necesario */
+      margin: 0 auto;
+      /* Centra el párrafo horizontalmente */
+      font-size: 16px;
+      /* Tamaño de fuente ajustado */
+      line-height: 1.5;
+      /* Altura de línea ajustada para una mejor legibilidad */
+    }
+
+    .title1 {
+      text-align: center;
+      /* Centra el texto horizontalmente */
+      margin-top: 0;
+      /* Elimina el margen superior predeterminado */
+      padding: 20px 0;
+    }
+
+    .number {
+      color: #3498db;
+      /* Color de texto blanco */
+      border-radius: 50%;
+      /* Bordes redondeados para formar un círculo */
+      width: 60px;
+      /* Ancho del contenedor del número (ajusta según sea necesario) */
+      height: 60px;
+      /* Altura del contenedor del número (ajusta según sea necesario) */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      /* Tamaño de fuente del número (ajusta según sea necesario) */
+      font-weight: bold;
+      /* Texto en negrita */
+      margin: 0;
+      /* Centrar horizontalmente */
+    }
+  </style>
 </head>
 
 
@@ -257,6 +298,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="section-title">
           <h2><br><br><strong>Nuestro Proceso</strong><br>Modernas Tecnologías</h2>
         </div>
+        <p class="content_title">Ponemos a su disposición las más modernas tecnologías para brindar un servicio óptimo,
+          seguro y eficiente. Camiones y maquinarias de última generación son nuestras herramientas para brindar un
+          servicio de máxima calidad.</p>
 
 
         <div class="row">
@@ -264,61 +308,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
           <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
 
-            <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:one-key" data-width="128"></span>
+            <div class="container">
+              <div>
+                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">1.</span>Recepción de Pedido</p></h4>
               </div>
-              <h4 class="title"><a href="">Recepción de Pedido</a></h4>
               <p class="description">Recibimos mediante nuestras vías de comunicación las diferentes solicitudes de
-                nuestros clientes</p>
+                nuestros clientes.</p>
             </div>
-
-            <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:two-key" data-width="128"></span>
+            <div class="container">
+              <div>
+                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">2.</span>Asesoría de Cliente</p></h4>
               </div>
-              <h4 class="title"><a href="">Asesoría de Cliente</a></h4>
               <p class="description">Asesoramos en base a la solicitud del cliente e indicamos el servicio que mejor se
-                adapta a sus necesidades</p>
+                adapta a sus necesidades.</p>
             </div>
-
-            <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:three-key" data-width="128"></span>
+            <div class="container">
+              <div>
+                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">3.</span>Visita Técnica y Diagnóstico</p></h4>
               </div>
-              <h4 class="title"><a href="">Visita Técnica y Diagnóstico</a></h4>
-              <p class="description">Realizamos la visita técnica y diagnosticamos gratuitamente en el lugar de trabajo
-              </p>
+              <p class="description">Realizamos la visita técnica y diagnosticamos gratuitamente en el lugar de trabajo.</p>
             </div>
-
-            <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:four-key" data-width="128"></span>
+            <div class="container">
+              <div>
+                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">4.</span>Cotización</p></h4>
               </div>
-              <h4 class="title"><a href="">Cotización</a></h4>
-              <p class="description">Cotizamos en base a la información recabada y el tipo de trabajo a realizar</p>
+              <p class="description">Cotizamos en base a la información recabada y el tipo de trabajo a realizar.</p>
             </div>
-
-            <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:five-key" data-width="128"></span>
+            <div class="container">
+              <div>
+                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">5.</span>Presupuesto</p></h4>
               </div>
-              <h4 class="title"><a href="">Presupuesto</a></h4>
-              <p class="description">Una vez enviado el presupuesto aguardamos confirmación por parte del cliente</p>
+              <p class="description">Una vez enviado el presupuesto aguardamos confirmación por parte del cliente.</p>
             </div>
-
-            <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:six-key" data-width="128"></span>
+            <div class="container">
+              <div>
+                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">6.</span>Pago</p></h4>
               </div>
-              <h4 class="title"><a href="">Pago</a></h4>
               <p class="description">Ponemos a disposición los distintos métodos de pago para hacer una transacción
-                segura</p>
+                segura.</p>
             </div>
-
-            <div class="icon-box">
-              <div class="icon"><span class="iconify" data-icon="icon-park-outline:seven-key" data-width="128"></span>
+            <div class="container">
+              <div>
+                <h4 class=" title"><p href=""  style="display: flex; align-items: baseline;"><span class="number">7.</span>Servicio</p></h4>
               </div>
-              <h4 class="title"><a href="">Servicio</a></h4>
-              <p class="description">En plazos y condiciones establecidas en las etapas anteriores, procedemos con el
-                servicio</p>
+              <p class="description"></p>En plazos y condiciones establecidas en las etapas anteriores, procedemos con el
+                servicio.</p>
             </div>
-
-
           </div>
         </div>
 
@@ -330,11 +365,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="container">
         <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
           <p class="text-primary" style="letter-spacing: 0.3em;">CUIDAMOS SU NEGOCIO</p>
-          <h1>COMPROMETIDOS CON EL MEDIO AMBIENTE</h1>
-          <P>Servicios La Victoria es una empresa familiar fundada por Sr. Juan Roberto Scozzino en el
-            año 1950.</P>
+          <h1 class="title1">COMPROMETIDOS CON EL MEDIO AMBIENTE</h1>
+          <p class="content_title">Servicios La Victoria es una empresa familiar fundada por Sr. Juan Roberto Scozzino
+            en el
+            año 1950.</p>
           <br>
-          <p>Desde entonces, el trabajo en equipo, liderezgo en conocimiento, atención personalizada, seguridad y salud
+          <p class="content_title">Desde entonces, el trabajo en equipo, liderezgo en conocimiento, atención
+            personalizada, seguridad y salud
             de
             nuestra gente, han sido nuestras principales fortalezas; aquellas que marcan la diferencia y nos posiciona
             como
@@ -349,10 +386,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- ======= RESTRUCTURIZAAAARRRRRRR Services Section ======= -->
     <section class="services">
       <div class="container">
-      <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
+        <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
           <p class="text-primary" style="letter-spacing: 0.3em;">NUESTRO DIFERENCIAL</p>
-          <h1>PRESTAMOS SERVICIO PREMIUN</h1>
-</div>
+          <h1 class="title1">PRESTAMOS SERVICIO PREMIUM</h1>
+        </div>
         <div class="row">
           <div style="display: flex;
        justify-content: space-evenly; margin-top: 20px;
@@ -361,45 +398,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
               <div class="icon-box icon-box-pink">
                 <div class="icon"><img src="../assets/img/3.png" width="70"></div>
-                <h4 class="title"><a href="">Asesoramiento Profesional</a></h4>
-                <p class="description">Al contactarse, nuestro equipo de profesionales, especializados se encarga de
-                  detectar las necesidas en su negocio y ofrecer un servicio a medida de sus mecesidades.</p>
+                <h4 class="title"><a href="">Medidas de Seguridad</a></h4>
+                <p class="description">Todos nuestros trabajadores cumplen estrictos protocolos de seguridad.</p>
               </div>
             </div>
-  
+
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
               <div class="icon-box icon-box-cyan">
                 <div class="icon"><img src="../assets/img/4.png" width="70"></div>
-                <h4 class="title"><a href="">Recolección + Disposición</a></h4>
-                <p class="description">Según el servicio requerido, nuestro equipo de profesionales se encarga de retirar
-                  y transportar los residuos líquidos, realizando el recorrido hacia la planta de tratamiento
-                  correspondiente.</p>
+                <h4 class="title"><a href="">Modernas Tecnologías</a></h4>
+                <p class="description">Ponemos a disposición las más modernas tecnologías para brindar un servicio
+                  óptimo, seguro y eficiente.</p>
               </div>
             </div>
           </div>
-<div style="display: flex;
+          <div style="display: flex;
         justify-content: space-evenly; margin-top: 20px;
     margin-bottom: 20px;">
 
 
-  <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-    <div class="icon-box icon-box-green">
-      <div class="icon"><img src="../assets/img/5.png" width="70"></div>
-      <h4 class="title"><a href="">Certificación Legal</a></h4>
-      <p class="description">Extendemos los manifiestos de transporte y certificado de disposición final de los
-        residuos y sólidos retirados. Su empresa contará con una garantía de la realización del servicio.</p>
-    </div>
-  </div>
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box icon-box-green">
+                <div class="icon"><img src="../assets/img/5.png" width="70"></div>
+                <h4 class="title"><a href="">Certificaciónes</a></h4>
+                <p class="description">Extendemos certificado de disposición final de los líquidos retirados.</p>
+              </div>
+            </div>
 
-  <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-    <div class="icon-box icon-box-green">
-      <div class="icon"><img src="../assets/img/5.png" width="70"></div>
-      <h4 class="title"><a href="">Certificación Legal</a></h4>
-      <p class="description">Extendemos los manifiestos de transporte y certificado de disposición final de los
-        residuos y sólidos retirados. Su empresa contará con una garantía de la realización del servicio.</p>
-    </div>
-  </div>
-</div>
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box icon-box-green">
+                <div class="icon"><img src="../assets/img/5.png" width="70"></div>
+                <h4 class="title"><a href="">Expertos</a></h4>
+                <p class="description">60 años de experiencia capacitándonos nos convierten en el equipo más capacitado
+                  del mercado.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
