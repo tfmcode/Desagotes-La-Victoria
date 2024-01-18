@@ -142,7 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <li><a href="contacto.php" style="color: black;">Contacto</a></li>
                 </ul>
             </nav><!-- .navbar -->
-            <div style="height: 25px; width: 70px;">
+            <div class="icons-navbar" style="height: 25px; width: 70px;">
                 <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
                         style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
                 <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i
@@ -155,9 +155,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <section>
 
             <div class="container">
-    
+
                 <h1 style="margin-left: 3%; margin-bottom: 5px;">Trabajos Realizados</h1>
-        
+
                 <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
                     <p class="text-primary" style="letter-spacing: 0.3em;">Nuestros trabajos</p>
                     <h1>Excelencia operativa</h1>
@@ -172,21 +172,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             </div>
         </section>
-        <section>
+        <section style="    padding-top: 30px;
+    padding-bottom: 30px;">
             <div class="container">
 
-                <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Transportación y
+                <h2 style="text-align: center; font-weight: bold; margin-bottom: 20px;">Transportación y
                     disposición residuos especiales / no especiales</h2>
-                <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Empresa habilitada por la
+                <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Empresa habilitada
+                    por la
                     S.R.N y D.S., y la Secretaría de Política Ambiental de la Provincia de Bs.As.</p>
                 <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;"> Equipos y personal
                     especializados.</p>
                 <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
                     <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Retiro de aceites usados y afines.
                     </li>
-                    <li style="display: block; font-size: 24px;">✔️ Retiro de residuos industriales líquidos, semisólidos y
+                    <li style="display: block; font-size: 24px;">✔️ Retiro de residuos industriales líquidos,
+                        semisólidos y
                         sólidos.</li>
-                    <li style="display: block; font-size: 24px;">✔️ Retiro de barros, limpieza e hidrolavado de cámaras y
+                    <li style="display: block; font-size: 24px;">✔️ Retiro de barros, limpieza e hidrolavado de cámaras
+                        y
                         rejillas industriales.</li>
                     <li style="display: block; font-size: 24px;">✔️ Retiro, transporte y disposición final de barros en
                         lavaderos y estaciones de servicio.</li>
@@ -198,27 +202,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </ul>
             </div>
         </section>
-        <section>
+        <section style="    padding-top: 30px;
+    padding-bottom: 30px;">
             <div class="container">
 
-                <h2 style="text-align: center; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Desobstrucción y
+                <h2 style="text-align: center; font-weight: bold;  margin-bottom: 20px;">Desobstrucción y
                     limpieza de cañerías</h2>
                 <ul style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">
-                    <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Destapaciones de cañerías en cocinas
+                    <li style="display: block; font-size: 24px; margin-top: 10px;">✔️ Destapaciones de cañerías en
+                        cocinas
                         industriales.</li>
-                    <li style="display: block; font-size: 24px;">✔️ Destapación de cañerías en sectores de producción.</li>
-                    <li style="display: block; font-size: 24px;">✔️ Destapaciones en cañerías y desagüe de la red pluvial.
+                    <li style="display: block; font-size: 24px;">✔️ Destapación de cañerías en sectores de producción.
+                    </li>
+                    <li style="display: block; font-size: 24px;">✔️ Destapaciones en cañerías y desagüe de la red
+                        pluvial.
                     </li>
                     <li style="display: block; font-size: 24px;">✔️ Destapación y limpieza de cañería cloacal.</li>
                     <li style="display: block; font-size: 24px;">✔️ Destapaciones en baños y vestuarios.</li>
                     <li style="display: block; font-size: 24px;">✔️ Limpieza hidrocinética de cañerías.</li>
                     <li style="display: block; font-size: 24px;">✔️ Limpieza en columnas y bajadas de techos.</li>
-                    <li style="display: block; font-size: 24px;">✔️ Video inspección y diagnóstico para cañerías. Informe
+                    <li style="display: block; font-size: 24px;">✔️ Video inspección y diagnóstico para cañerías.
+                        Informe
                         del estado de las cañerías.</li>
                 </ul>
                 <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones atmosféricos
                     (4.000 litros hasta 18.000).</p>
-                <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones desobstructores.
+                <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Camiones
+                    desobstructores.
                 </p>
                 <p style="list-style-type: none; padding: 0; text-align: left; margin-left: 30px;">Maquinaria para
                     desobstrucción industrial.</p>
@@ -261,7 +271,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="col-lg-4 col-md-4 footer-contact">
                         <p>
                             <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
-    width: 270px;">
+width: 270px;">
                         </p>
                     </div>
 
@@ -269,8 +279,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="footer-newsletter">
                     <div class="container">
                         <div class="row" style="display: flex;
-                            justify-content: space-around;
-                            align-items: flex-start;">
+                justify-content: space-around;
+                align-items: flex-start;">
                             <div class="col-lg-6">
                                 <form action="procesar-formulario.php" method="post">
                                     <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input
@@ -279,6 +289,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div style="    display: flex;
+justify-content: center;">
+                    <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
+                            style="color: white; font-size: 25px; padding-right: 5px;"></i></a>
+                    <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i
+                            class="bx bxl-instagram"
+                            style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+                    <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i
+                            class="bx bxl-linkedin" style="color: white; font-size: 25px;"></i></a>
                 </div>
             </div>
         </div>

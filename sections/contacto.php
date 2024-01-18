@@ -125,7 +125,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="contacto.php" style="color: black;">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
-      <div style="height: 25px; width: 70px;">
+      <div class="icons-navbar" style="height: 25px; width: 70px;">
         <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
             style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
         <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
@@ -148,34 +148,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         <div class="row">
-
-          <div class="col-lg-6">
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <i class="bx bx-map"></i>
-                  <h3>Dirección</h3>
-                  <p>Aguilar 2878<br>Ciudad de Buenos Aires</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Email</h3>
-                  <p>info@desagoteslavictoria.com.ar</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Teléfono</h3>
-                  <p>+54 11-4551-5191</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
 
           <div class="col-lg-6">
             <form action="index.php" method="post" role="form">
@@ -206,6 +178,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </form>
           </div>
 
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Teléfono</h3>
+                  <p>+54 11-4551-5191</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email</h3>
+                  <p>info@desagoteslavictoria.com.ar</p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Dirección</h3>
+                  <p>Aguilar 2878<br>Ciudad de Buenos Aires</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
       </div>
@@ -221,7 +221,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </section><!-- End Map Section -->
 
     <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
-    <div class="container">
+      <div class="container">
         <h1>Cuidando el ambiente desde 1950</h1>
         <p class="d-inline-flex gap-1"
           style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
@@ -275,6 +275,15 @@ width: 270px;">
               </div>
             </div>
           </div>
+        </div>
+        <div style="    display: flex;
+    justify-content: center;">
+          <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
+              style="color: white; font-size: 25px; padding-right: 5px;"></i></a>
+          <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
+              style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+          <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i class="bx bxl-linkedin"
+              style="color: white; font-size: 25px;"></i></a>
         </div>
       </div>
     </div>
