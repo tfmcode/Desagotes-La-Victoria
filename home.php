@@ -347,13 +347,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <section id="heros" style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
             <div class="container">
                 <h1>Cuidando el ambiente desde 1950</h1>
-                <p class="d-inline-flex gap-1"
-                    style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
-                    <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
-                        target="_blank" style="color: blue;">
-                        Dudas? Click aquí
-                    </a>
-                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="button" onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
+                Dudas? Click aquí
+                </button>
             </div>
         </section>
 

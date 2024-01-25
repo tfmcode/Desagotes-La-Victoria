@@ -48,6 +48,46 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
+
+    <style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+      .boxcontact{
+        text-align: center;
+        width: 18%; /* Ajusta el ancho según tus necesidades */
+      }
+      .boxcontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: px;
+        border: 5px solid lightblue;
+        border-radius: 10px;
+      }
+      .navbar-list {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-content: space-around;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      }
+      .navfooter a {
+        margin: 0.5%;
+        text-decoration: none;
+        color: #fff; /* Color de texto blanco */
+        padding: 10px;
+        display: block;
+      }
+      .navfooter a:hover { 
+      color: lightblue; /* Cambio de color de texto a blanco al pasar el cursor */
+      }
+    </style>
 </head>
 
 
@@ -146,11 +186,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <h2><strong>Consúltenos</strong><br>Respuesta inmediata</h2>
         </div>
 
-
-        <div class="row">
+        <div class="row" style="display: flex; flex-wrap: wrap">
 
           <div class="col-lg-6">
-            <form action="index.php" method="post" role="form">
+            <form action="../home.php" method="post" role="form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="nombre" class="form-control" id="name" placeholder="Su Nombre" required>
@@ -177,34 +216,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               </div>
             </form>
           </div>
-
           <div class="col-lg-6">
-
-            <div class="row">
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Teléfono</h3>
-                  <p>+54 11-4551-5191</p>
+            <div  class="boxcontainer" style="display: flex; justify-content: space-evenly; margin-top: 8%; margin-left: 10%;" >
+                <div class="boxcontact">
+                  <span style="font-size: 2em;"><iconify-icon icon="bi:telephone-fill" style="color: blueviolet;"></iconify-icon></span>
+                  <h4 style="font-weight: bold; font-size: 1em;">Teléfono</h4>
+                  <p style="margin: 0.5em 0;">(011) 4551-5191</p>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Email</h3>
-                  <p>info@desagoteslavictoria.com.ar</p>
+                <div class="boxcontact">
+                  <span style="font-size: 2em;"><iconify-icon icon="solar:map-point-bold" style="color: blueviolet;"></iconify-icon></span>
+                  <h4 style="font-weight: bold; font-size: 1em;">Dirección</h4>
+                  <p style="margin: 0.5em 0;">Aguilar 2878 Capital Federal</p>
+                  <!-- <p style="margin: 0.5em 0;">Capital Federal</p> -->
                 </div>
-              </div>
-              <div class="col-md-12">
-                <div class="info-box">
-                  <i class="bx bx-map"></i>
-                  <h3>Dirección</h3>
-                  <p>Aguilar 2878<br>Ciudad de Buenos Aires</p>
+                <div class="boxcontact">
+                  <span style="font-size: 2em;"><iconify-icon icon="carbon:time-filled" style="color: blueviolet;"></iconify-icon></span>
+                  <h4 style="font-weight: bold; font-size: 1em">Horario Laboral</h4>
+                  <p style="margin: 0.5em 0;">08:00hs a 18:00hs</p>
                 </div>
-              </div>
             </div>
 
           </div>
+          
 
         </div>
 
@@ -223,13 +256,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
         <h1>Cuidando el ambiente desde 1950</h1>
-        <p class="d-inline-flex gap-1"
-          style="border: 1px solid black;     border-radius: 5px; height: 35px;   width: 165px;   display: flex;   align-items: center;   justify-content: center;">
-          <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
-            target="_blank" style="color: blue;">
-            Dudas? Click aquí
-          </a>
-        </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="button" onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
+        Dudas? Click aquí
+        </button>   
       </div>
     </section>
 
@@ -260,7 +289,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 width: 270px;">
             </p>
           </div>
+          <div class="container">
+    <!-- Primera fila -->
+          <ul class="list-unstyled navbar-list">
+            <li class="navfooter">
+            <a href="../home.php">Inicio</a>
+            </li>
+            <li class="navfooter">
+            <a href="servicios.php">Servicios</a>
+            </li>
+            <li class="navfooter">
+            <a href="nosotros.php">Nosotros</a>
+            </li>
+          </ul>
 
+    <!-- Segunda fila -->
+          <ul class="list-unstyled navbar-list">
+            <li class="navfooter">
+            <a href="blog.php">Blogs</a>
+            </li>
+            <li class="navfooter">
+            <a href="trabajos.php">Trabajos</a>
+            </li>
+            <li class="navfooter">
+            <a href="contacto.php">Contacto</a>
+            </li>
+          </ul>
+  </div>
         </div>
         <div class="footer-newsletter">
           <div class="container">
@@ -313,6 +368,7 @@ width: 270px;">
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
 </body>
 
