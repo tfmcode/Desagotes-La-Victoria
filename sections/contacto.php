@@ -49,25 +49,29 @@
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
 
-    <style>
-      * {
+  <style>
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      }
-      .boxcontact{
-        text-align: center;
-        width: 18%; /* Ajusta el ancho según tus necesidades */
-      }
-      .boxcontainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: px;
-        border: 5px solid lightblue;
-        border-radius: 10px;
-      }
-      .navbar-list {
+    }
+
+    .boxcontact {
+      text-align: center;
+      width: 18%;
+      /* Ajusta el ancho según tus necesidades */
+    }
+
+    .boxcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: px;
+      border: 5px solid lightblue;
+      border-radius: 10px;
+    }
+
+    .navbar-list {
       display: flex;
       justify-content: center;
       padding: 0;
@@ -76,18 +80,22 @@
       align-content: space-around;
       flex-wrap: nowrap;
       flex-direction: row;
-      }
-      .navfooter a {
-        margin: 0.5%;
-        text-decoration: none;
-        color: #fff; /* Color de texto blanco */
-        padding: 10px;
-        display: block;
-      }
-      .navfooter a:hover { 
-      color: lightblue; /* Cambio de color de texto a blanco al pasar el cursor */
-      }
-    </style>
+    }
+
+    .navfooter a {
+      margin: 0.5%;
+      text-decoration: none;
+      color: #fff;
+      /* Color de texto blanco */
+      padding: 10px;
+      display: block;
+    }
+
+    .navfooter a:hover {
+      color: lightblue;
+      /* Cambio de color de texto a blanco al pasar el cursor */
+    }
+  </style>
 </head>
 
 
@@ -211,33 +219,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               </div>
               <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
               <div class="text-center">
-                <button type="submit" style='color:white; background:blue; border-color:blue; border-radius:6px'>Enviar
-                  Consulta</button>
+                <button type="submit" class="btn btn-primary" data-bs-toggle="button">
+                  Enviar Consulta
+                </button>
               </div>
             </form>
           </div>
           <div class="col-lg-6">
-            <div  class="boxcontainer" style="display: flex; justify-content: space-evenly; margin-top: 8%; margin-left: 10%;" >
-                <div class="boxcontact">
-                  <span style="font-size: 2em;"><iconify-icon icon="bi:telephone-fill" style="color: blueviolet;"></iconify-icon></span>
-                  <h4 style="font-weight: bold; font-size: 1em;">Teléfono</h4>
-                  <p style="margin: 0.5em 0;">(011) 4551-5191</p>
-                </div>
-                <div class="boxcontact">
-                  <span style="font-size: 2em;"><iconify-icon icon="solar:map-point-bold" style="color: blueviolet;"></iconify-icon></span>
-                  <h4 style="font-weight: bold; font-size: 1em;">Dirección</h4>
-                  <p style="margin: 0.5em 0;">Aguilar 2878 Capital Federal</p>
-                  <!-- <p style="margin: 0.5em 0;">Capital Federal</p> -->
-                </div>
-                <div class="boxcontact">
-                  <span style="font-size: 2em;"><iconify-icon icon="carbon:time-filled" style="color: blueviolet;"></iconify-icon></span>
-                  <h4 style="font-weight: bold; font-size: 1em">Horario Laboral</h4>
-                  <p style="margin: 0.5em 0;">08:00hs a 18:00hs</p>
-                </div>
+            <div class="boxcontainer"
+              style="display: flex; justify-content: space-evenly; margin-top: 8%; margin-left: 10%;">
+              <div class="boxcontact">
+                <span style="font-size: 2em;"><iconify-icon icon="bi:telephone-fill"
+                    style="color: blueviolet;"></iconify-icon></span>
+                <h4 style="font-weight: bold; font-size: 1em;">Teléfono</h4>
+                <p style="margin: 0.5em 0;">(011) 4551-5191</p>
+              </div>
+              <div class="boxcontact">
+                <span style="font-size: 2em;"><iconify-icon icon="solar:map-point-bold"
+                    style="color: blueviolet;"></iconify-icon></span>
+                <h4 style="font-weight: bold; font-size: 1em;">Dirección</h4>
+                <p style="margin: 0.5em 0;">Aguilar 2878 Capital Federal</p>
+                <!-- <p style="margin: 0.5em 0;">Capital Federal</p> -->
+              </div>
+              <div class="boxcontact">
+                <span style="font-size: 2em;"><iconify-icon icon="carbon:time-filled"
+                    style="color: blueviolet;"></iconify-icon></span>
+                <h4 style="font-weight: bold; font-size: 1em">Horario Laboral</h4>
+                <p style="margin: 0.5em 0;">08:00hs a 18:00hs</p>
+              </div>
             </div>
 
           </div>
-          
+
 
         </div>
 
@@ -256,9 +269,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
         <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button" onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
-        Dudas? Click aquí
-        </button>   
+        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+          onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
+          Dudas? Click aquí
+        </button>
       </div>
     </section>
 
@@ -290,32 +304,32 @@ width: 270px;">
             </p>
           </div>
           <div class="container">
-    <!-- Primera fila -->
-          <ul class="list-unstyled navbar-list">
-            <li class="navfooter">
-            <a href="../home.php">Inicio</a>
-            </li>
-            <li class="navfooter">
-            <a href="servicios.php">Servicios</a>
-            </li>
-            <li class="navfooter">
-            <a href="nosotros.php">Nosotros</a>
-            </li>
-          </ul>
+            <!-- Primera fila -->
+            <ul class="list-unstyled navbar-list">
+              <li class="navfooter">
+                <a href="../home.php">Inicio</a>
+              </li>
+              <li class="navfooter">
+                <a href="servicios.php">Servicios</a>
+              </li>
+              <li class="navfooter">
+                <a href="nosotros.php">Nosotros</a>
+              </li>
+            </ul>
 
-    <!-- Segunda fila -->
-          <ul class="list-unstyled navbar-list">
-            <li class="navfooter">
-            <a href="blog.php">Blogs</a>
-            </li>
-            <li class="navfooter">
-            <a href="trabajos.php">Trabajos</a>
-            </li>
-            <li class="navfooter">
-            <a href="contacto.php">Contacto</a>
-            </li>
-          </ul>
-  </div>
+            <!-- Segunda fila -->
+            <ul class="list-unstyled navbar-list">
+              <li class="navfooter">
+                <a href="blog.php">Blogs</a>
+              </li>
+              <li class="navfooter">
+                <a href="trabajos.php">Trabajos</a>
+              </li>
+              <li class="navfooter">
+                <a href="contacto.php">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-newsletter">
           <div class="container">
