@@ -47,6 +47,16 @@
 
     <meta name="google-site-verification"
         content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
+        <style>
+            @media only screen and (max-width: 768px) {
+            .container {
+                max-width: 90%; /* Ajusta el ancho máximo para pantallas pequeñas */
+            }
+        }
+        .title{
+
+        }
+        </style>
 
 </head>
 
@@ -182,7 +192,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="container">
                 <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
                     <p class="text-primary" style="letter-spacing: 0.3em;">LA CLAVE DE UN NEGOCIO PRODUCTIVO: </p>
-                    <h1>MANTENIMIENTO PREVENTIVO</h1>
+                    <h1 style="display: flex; justify-content: center;">MANTENIMIENTO PREVENTIVO</h1>
                     <p style="letter-spacing: 0.3em;">EL SERVICIO PARA UN NEGOCIO EXITOSO: </p>
                 </div>
                 <div class="row">
@@ -230,36 +240,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <!-- ======= Why Us Section ======= -->
         <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
-            <div class="container">
+    <div class="container">
 
-                <div class="row">
-                    <div class="col-lg-6 video-box">
-                        <img src="assets/img/mr-Destapador.png" class="img-fluid" alt="">
-                    </div>
+        <div class="row">
+            <div class="col-lg-6 video-box">
+                <img src="assets/img/mr-Destapador.png" class="img-fluid" alt="">
+            </div>
 
-                    <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-
-                        <div class="icon-box">
-                            <!-- <div class="icon"><i class="bx bx-fingerprint"></i></div> -->
-                            <h4 class="title"><a href="">HOLA! Soy Mr. Destapador</a></h4>
-                            <p class="description">Mi misión es acompañar a su empresa en el proceso de mantenimiento
-                                preventivo de sus instalaciones. En este camino, contará con todo lo necesario para su
-                                tranquilidad: Equipos de última generación, personal altamente capacitado y la
-                                experiencia propia de contar con un equipo con más de <strong>65 años de experiencia en
-                                    el mercado.</strong></p>
-                        </div>
-
-                        <div class="icon-box">
-                            <!-- <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4> -->
-                            <p class="description"><img src="assets/img/firma.png"></p>
-                        </div>
-
-                    </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center p-5">
+                <!-- Utilizamos align-items-center para centrar verticalmente -->
+                <div class="icon-box">
+                    <!-- <div class="icon"><i class="bx bx-fingerprint"></i></div> -->
+                    <h4 class="title"><a href="">HOLA! Soy Mr. Destapador</a></h4>
+                    <p class="description">Mi misión es acompañar a su empresa en el proceso de mantenimiento
+                        preventivo de sus instalaciones. En este camino, contará con todo lo necesario para su
+                        tranquilidad: Equipos de última generación, personal altamente capacitado y la
+                        experiencia propia de contar con un equipo con más de <strong>65 años de experiencia en el mercado.</strong></p>
                 </div>
 
+                <div class="icon-box">
+                    <!-- <div class="icon"><i class="bx bx-gift"></i></div>
+                    <h4 class="title"><a href="">Nemo Enim</a></h4> -->
+                    <p class="description"><img src="assets/img/firma.png"></p>
+                </div>
             </div>
-        </section><!-- End Why Us Section -->
+        </div>
+
+    </div>
+</section><!-- End Why Us Section -->
 
 
 
@@ -374,7 +382,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                     <div class="col-lg-4 col-md-4 footer-contact">
-                        <p>
+                        <p style="display: flex; justify-content: center;">
                             <img src="assets/img/logo-grande.png" class="img-fluid" style="    height: 200px; width: 270px;">
                         </p>
                     </div>

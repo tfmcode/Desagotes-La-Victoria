@@ -284,7 +284,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
 
           <div class="col-lg-4 col-md-4 footer-contact">
-            <p>
+            <p style="display: flex; justify-content: center;">
               <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
 width: 270px;">
             </p>
