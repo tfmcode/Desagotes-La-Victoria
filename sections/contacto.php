@@ -63,24 +63,21 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
-
-    .boxcontact {
-      text-align: center;
-      width: 18%;
-      /* Ajusta el ancho según tus necesidades */
-    }
-
-    .boxcontainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: px;
-      border: 5px solid lightblue;
-      border-radius: 10px;
-    }
-
-    .navbar-list {
+      }
+      .boxcontact{
+        text-align: center;
+        width: 18%; /* Ajusta el ancho según tus necesidades */
+      }
+      .boxcontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: px;
+        border: 5px solid lightblue;
+        border-radius: 10px;
+        margin-right: 40px;
+      }
+      .navbar-list {
       display: flex;
       justify-content: center;
       padding: 0;
@@ -341,7 +338,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
 
           <div class="col-lg-4 col-md-4 footer-contact">
-            <p>
+            <p style="display: flex; justify-content: center;">
               <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
 width: 270px;">
             </p>

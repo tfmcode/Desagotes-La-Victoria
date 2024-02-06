@@ -88,6 +88,14 @@
       margin: 0;
       /* Centrar horizontalmente */
     }
+    @media (max-width: 768px) {
+            .cards {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+      }
+
   </style>
 </head>
 
@@ -311,7 +319,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div class="container">
               <div>
-                <h4 class=" title">
+                <h4 class="title">
                   <p href="" style="display: flex; align-items: baseline;"><span class="number">1.</span>Recepción de
                     Pedido</p>
                 </h4>
@@ -415,7 +423,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <h1 class="title1">PRESTAMOS SERVICIO PREMIUM</h1>
         </div>
         <div class="row">
-          <div style="display: flex;
+          <div class="cards" style="display: flex;
         justify-content: space-evenly; margin-top: 20px;
     margin-bottom: 20px;">
 
@@ -439,7 +447,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               </div>
             </div>
           </div>
-          <div style="display: flex;
+          <div class="cards" style="display: flex;
        justify-content: space-evenly; margin-top: 20px;
     margin-bottom: 20px;">
 
@@ -498,7 +506,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
 
           <div class="col-lg-4 col-md-4 footer-contact">
-            <p>
+            <p style="display: flex; justify-content: center;">
               <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
 width: 270px;">
             </p>

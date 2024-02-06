@@ -156,7 +156,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div class="container">
 
-                <h1 style="margin-left: 3%; margin-bottom: 5px;">Trabajos Realizados</h1>
+                
 
                 <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
                     <p class="text-primary" style="letter-spacing: 0.3em;">Nuestros trabajos</p>
@@ -265,7 +265,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                     <div class="col-lg-4 col-md-4 footer-contact">
-                        <p>
+                        <p style="display: flex; justify-content: center;">
                             <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
 width: 270px;">
                         </p>
