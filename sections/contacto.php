@@ -44,6 +44,15 @@
         });
     });
   </script>
+  <script>
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6LdHrLEUAAAAAM4CqjNR_lDOOV1Tv16uXk57Ng4o', { action: 'formulario' })
+        .then(function (token) {
+          var recaptchaResponseF = document.getElementById('recaptchaResponseF');
+          recaptchaResponseF.value = token;
+        });
+    });
+  </script>
 
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
@@ -141,6 +150,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ?>
 
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
+
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
+            alert("Su Consulta será respondida a la brevedad. Gracias!");
+             window.location.href="contacto.php";
+           </script>';
+    }
+
+  } else {
+
+  }
+
+}
+
+?>
+
+
 
 <body>
 
@@ -197,7 +241,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="row" style="display: flex; flex-wrap: wrap">
 
           <div class="col-lg-6">
-            <form action="../home.php" method="post" role="form">
+            <form action="contacto.php" method="post" role="form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="nombre" class="form-control" id="name" placeholder="Su Nombre" required>
@@ -219,9 +263,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               </div>
               <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
               <div class="text-center">
-                <button type="submit" class="btn btn-primary" data-bs-toggle="button">
-                  Enviar Consulta
-                </button>
+                <button type="submit" style='color:white; background:blue; border-color:blue; border-radius:6px'>Enviar
+                  Consulta</button>
               </div>
             </form>
           </div>
@@ -336,10 +379,23 @@ width: 270px;">
             <div class="row" style="display: flex;
                     justify-content: space-around;
                     align-items: flex-start;">
-              <div class="col-lg-6">
+              <!--               <div class="col-lg-6">
                 <form action="procesar-formulario.php" method="post">
                   <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input type="submit"
                     value="Enviar">
+                </form>
+              </div> -->
+              <div class="col-lg-6">
+                <form action="contacto.php" method="post" role="form" style="display: flex;
+    align-items: center;
+    justify-content: space-evenly;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='color:white; background:blue; border-color:blue; border-radius:6px'>Enviar</button>
+                  </div>
                 </form>
               </div>
             </div>
