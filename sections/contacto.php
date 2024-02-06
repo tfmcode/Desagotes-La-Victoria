@@ -66,6 +66,7 @@
         padding: px;
         border: 5px solid lightblue;
         border-radius: 10px;
+        margin-right: 40px;
       }
       .navbar-list {
       display: flex;
