@@ -134,27 +134,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-      <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
-      <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
-      <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
-      <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
+    <h1>Beneficios de la atención preventiva a los problemas de cañerías</h1>
 
+    <p>La atención a los detalles puede darte señales respecto de un desorden en el funcionamiento de las cañerías en tu empresa o comercio. Eso significa que la solución está cerca y te ahorrará dolores de cabeza a futuro.</p>
+
+    <p>Como todos sabemos, el mantenimiento preventivo es una forma efectiva de evitar problemas mayores. A menudo se descuidan estos sistemas porque están fuera de la vista y cuando se descubre la raíz del problema ya es demasiado tarde.</p>
+
+    <p>Las amplias cañerías que forman la red de cloacas arrastran las aguas residuales hacia las plantas de tratamiento, más allá de su origen (doméstico o industrial). Si percibiste en algún momento un fuerte aroma, es hora de preguntarte si es necesario tratar el problema con ayuda de un equipo profesional.</p>
+
+    <p>¿Sabías que un mantenimiento adecuado disminuye la posibilidad de inconvenientes futuros?</p>
+
+    <p>Otro punto a tener en cuenta es que la acumulación de lodos y sedimentos es un inconveniente común en los pozos sépticos. Con el tiempo, los sólidos se acumulan y detienen el normal fluir de los líquidos, lo que puede provocar que los residuos regresen a los hogares y edificios. Esto eventualmente genera daños graves en el sistema, lo que puede ser costoso y difícil de reparar.</p>
+
+    <p>No subestimar la importancia de prevenir inconvenientes posibles en el normal funcionamiento del desagüe es una ganancia completa.  No esperes a que ocurra un problema para actuar, tomá medidas hoy para asegurarte de que todo funciona de manera óptima.</p>
+
+    <p>Para evitar estas situaciones, te recomendamos un mantenimiento de atención previa. Este consiste en la limpieza y el vaciado regular del pozo séptico o de la cámara, lo que elimina los sedimentos acumulados.</p>
+
+    <h2>Tips a considerar para evitar inconvenientes</h2>
+
+    <p>Desde <a href='../home.php'><strong>La Victoria</strong></a> te aconsejamos cómo mantener en óptimas condiciones el sistema cloacal:</p>
+
+    <ol>
+        <li>Evita arrojar elementos sólidos, químicos, aceites y grasas por las tuberías. Esta práctica puede ocasionar problemas graves en el funcionamiento normal de la red, y generar costosos arreglos en el futuro.</li>
+        <li>Realiza revisiones periódicas del drenaje y los conductos. Si se observa una disminución en la velocidad del desagüe de los líquidos, es importante actuar rápidamente, ya que este tipo de problemas suelen empeorar con el tiempo.</li>
+        <li>De vez en cuando, hacé correr agua caliente durante un corto período de tiempo. Esta práctica contribuirá a disolver y retirar los objetos que puedan obstruir las tuberías, manteniendo el sistema en óptimas condiciones.</li>
+    </ol>
+
+    <p>Somos especialistas y ofrecemos servicios de limpieza y mantenimiento preventivo. Nuestros profesionales garantizan una limpieza completa y efectiva del sistema, que significa ahorro de tiempo y dinero. En <a href='../home.php'><strong>Desagotes La Victoria</strong></a> tenemos una solución adaptable a tus requerimientos.</p>
 
     </div>
 

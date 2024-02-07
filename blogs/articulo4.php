@@ -134,28 +134,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-      <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
-      <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
-      <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
-      <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
-
-
+    <h1>Landfarming: Tratamiento Ambiental</h1>
+    <p>El impacto ambiental que provoca la producción petrolífera es notable, pero existe una solución para revitalizar los suelos que quedan inutilizados por influencia del derrame de hidrocarburos en las capas internas: se llama Landfarming.</p>
+    <p>También conocido como tratamiento superficial en tierra, el landfarming es un proceso biológico que utiliza microorganismos naturales del suelo (como las bacterias) para eliminar, reducir o transformar las sustancias contaminantes. Su propósito es minimizar el riesgo para la salud humana y el medio ambiente.</p>
+    <h2>Landfarming, una alternativa que reduce el impacto ambiental</h2>
+    <p>En <a href='../home.php'><strong>Desagotes La Victoria</strong></a> estamos muy interesados en el cuidado y protección del medio ambiente, por eso queremos mencionarte los puntos más relevantes de este tratamiento y contarte por qué cada vez se está aplicando más en la Argentina y en el mundo:</p>
+    <ul>
+        <li>Por el bajo costo de su proceso (pues no requiere más que la misma naturaleza).</li>
+        <li>La nula presencia posterior de sedimentos o residuos peligrosos derivados.</li>
+        <li>La eliminación de un considerable porcentaje de elementos contaminantes.</li>
+    </ul>
+    <h3>¿Cómo se aplica el Landfarming?</h3>
+    <p>El landfarming tiene la particularidad de encontrar la ubicación de las capas de suelo en que se filtró material contaminante y trabajar en ellas a través del descubrimiento de la microflora natural (hongos, bacterias, o levaduras), procediendo así a su estimulación.</p>
+    <p>Para que el tratamiento sea efectivo deben estar presentes determinadas condiciones de temperatura y humedad, lo mismo que una adecuada cantidad de nutrientes y microorganismos. El proceso se lleva a cabo por medio de la remoción del terreno con arado, el agregado de fertilizantes, y riego superficial.</p>
+    <h3>¿Cuánto tiempo necesita este tratamiento?</h3>
+    <p>El proceso de landfarming puede llevar desde algunas pocas semanas hasta varios meses. En este sentido, <strong>el tratamiento durará más si las concentraciones de los contaminantes son muy altas</strong>, si no son adecuadas las condiciones y hay que adecuar el medio (temperatura/humedad), o si los residuos contienen ciertas sustancias que son resistentes a los microorganismos.</p>
+    <p>En el caso de una demora mayor, la situación es la siguiente: durante los primeros 4 meses tras una adecuación del medio la degradación es más veloz; después <strong>el ritmo disminuye ligeramente luego de la desaparición de los hidrocarburos más ligeros</strong>, frente a los más aromáticos, los que mantienen su fuerte presencia por más tiempo.</p>
+    <h3>¿Es seguro el Landfarming?</h3>
+    <p>Es una técnica muy segura teniendo en cuenta que los microorganismos que intervienen en la biorrecuperación <strong>son presencias naturales en zonas como parques y jardines</strong>. Por otro lado, la cantidad incluida de microbios en el área a tratar es solamente la necesaria, con la mirada solamente puesta en inducir la actividad biológica natural.</p>
+    <h3>¿Por qué elegir el Landfarming para tu empresa o industria?</h3>
+    <p>En condiciones adecuadas, este proceso no genera peligro de contaminación posterior, y puede llevarse a cabo en contextos climáticos diferentes, sin perjuicio del éxito de su aplicación.</p>
+    <p>Decimos que los resultados <strong>no generan peligro porque tomamos en cuenta que los microorganismos se aprovechan y nutren de los elementos nocivos</strong> para procurar energía y alimento, generando a modo de cambio agua y gases, como por ejemplo el dióxido de carbono.</p>
+    <p>Elegí la sustentabilidad e invertí en un mejor futuro. La elección de nuevos métodos y herramientas para la limpieza y tratamiento con conciencia, es un paso para mejorar la calidad de vida de todos y cada uno de quienes habitamos este planeta. <a href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'>Consulta aquí qué tipo de servicio de recolección y disposición final de residuos es el más conveniente para tu industria o comercio.</a></p>
     </div>
 
     

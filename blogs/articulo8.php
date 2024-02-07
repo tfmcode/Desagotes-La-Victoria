@@ -134,27 +134,58 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-      <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
-      <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
-      <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
-      <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
+    <h1>Beneficios de la Limpieza Profunda en Cámaras Sépticas y Decantadoras de Barros</h1>
 
+<p>¿Te has puesto a pensar en lo que pasa cuando no mantienes adecuadamente la limpieza de tu cámara séptica? La primera señal es el mal olor, pero también existen distintas señales que demuestran que el sistema cloacal puede colapsar en cualquier momento.</p>
+
+<p>En lo que sigue, desde <strong>La Victoria</strong> te dejamos algunos consejos para lograr un buen funcionamiento de la cámara séptica, y te contamos qué herramientas son necesarias para su preservación, como es el caso de los pozos de bombeo. Prestar atención a este punto será muy útil para mantenerla en buen estado y así evitar gastos a futuro.</p>
+
+<h2>¿Sabes qué son los pozos de bombeo?</h2>
+
+<p>Los pozos de bombeo son una herramienta efectiva para eliminar residuos líquidos, además de eventuales desechos acumulados. Utilizan la fuerza de la succión para elevar fluidos o agua, que por accidente o consecuencia del atasco, quedó debajo del nivel mínimo de desagüe, y por esto, estacionada en ese punto.</p>
+
+<p>El proceso de elevación de fluidos se lleva a cabo por medio del funcionamiento de las bombas, que con el sistema de succión logran evacuar aguas residuales (como las que provienen de los desechos de la industria) y también limpias o pluviales.</p>
+
+<p>La cantidad de líquido esperado debe establecerse en un acuerdo entre el volumen de generación de agua residual y la capacidad de extracción del tipo de bomba elegida.</p>
+
+<p>Para lograr el paso escalonado del agua a retirar, la definición de la magnitud del tanque es un punto a tener en cuenta de manera previa, para evitar un innecesario funcionamiento de impulso y retroceso de la bomba.</p>
+
+<h3>Existen dos clases diferentes de pozos de bombeo</h3>
+
+<ul>
+    <li>El de pedestal, que se concentra en altura, en referencia a la línea media de ubicación de la fosa. Este punto permite mayor facilidad a la hora del mantenimiento.</li>
+    <li>El sumergible, como su nombre señala se presenta en el interior de la cámara, y con la finalidad de evitar situaciones que puedan generar un cortocircuito, se sellan por completo.</li>
+</ul>
+
+<h2>¿Cómo se limpia la cámara séptica?</h2>
+
+<p><strong>Pasos para la limpieza de fosa séptica de un modo profesional:</strong></p>
+
+<ol>
+    <li>Es importante abrir la tapa con extremo cuidado y de forma gradual, ya que los gases que se acumulan en su interior son sumamente tóxicos y puede resultar peligroso inhalarlos.</li>
+    <li>Luego de la aplicación de agua a presión, a fin de eliminar el atasco, el retiro de la capa superficial de desperdicios utilizando aspirado, es lo que sigue.</li>
+    <li>La absorción de lodo (sólidos + agua), conformado tras la acción anterior, preparará el terreno para la fase final.</li>
+    <li>La limpieza de los filtros para asegurar el correcto fluir del líquido es recomendable, para enfocarse después en la recuperación de la circulación natural.</li>
+    <li>El relleno posterior del tanque debe incorporar cantidad de agua que no supere el lodo residual eliminado.</li>
+</ol>
+
+<h2>¿Cuál es la duración estimada de una fosa séptica?</h2>
+
+<p>Con el mantenimiento adecuado, la vida útil de una fosa séptica en promedio gira en torno de los 10 a 20 años, aproximadamente.</p>
+
+<h2>Aguas limpias vs aguas residuales</h2>
+
+<p><strong>¿Qué son las aguas limpias?</strong><br>
+Se trata de agua apta para su utilización exenta de riesgos, libre de toda contaminación, que pasa por un proceso previo de tratamiento en planta, y que es utilizada para lavado de alimentos, o simplemente para beber. Otro punto importante señala su utilidad para la mantención de los diferentes ecosistemas.</p>
+
+<p><strong>Lo que hay que saber sobre las aguas residuales:</strong><br>
+Las aguas residuales están conformadas por distintas clases de desechos, impurezas con origen en procesos que pueden ser tanto domésticos o industriales, y que pueden contar en su constitución con distintas formas contaminantes.</p>
+
+<p>Este tipo de desechos, ya sean urbanos o derivados de cualquier clase de industria (independientemente del lugar de emplazamiento) son la causa directa de una situación de peligro potencial, por supuesto, que es muy importante evitar, o, en su defecto, resolver, si el mal ya está hecho.</p>
+
+<p>El cuidado del medio ambiente forma parte de la filosofía de Desagotes La Victoria, y por eso estamos convencidos de la importancia de realizar acciones previas que eliminen los riesgos de inhabilitación de los sistemas de desagüe, y del sostenimiento de los procesos de control que permitan un adecuado funcionamiento a futuro.</p>
+
+<p>¿Quieres consultar costos o solicitar un presupuesto? <a><strong>Escríbenos y cotiza tu servicio en La Victoria.</strong></a></p>
 
     </div>
 
