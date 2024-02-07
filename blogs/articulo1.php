@@ -133,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div>
+    <div class="container">
         hola
     </div>
 
