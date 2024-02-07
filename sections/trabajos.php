@@ -156,8 +156,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div class="container">
 
-                
-
                 <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
                     <p class="text-primary" style="letter-spacing: 0.3em;">Nuestros trabajos</p>
                     <h1>Excelencia operativa</h1>
