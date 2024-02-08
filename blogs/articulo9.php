@@ -48,66 +48,64 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
-    <style>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-h1 {
-text-align: center;
-font-size: 28px;
-margin-bottom: 20px;
-}
+    h4 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-h4 {
-font-size: 20px;
-margin-top: 30px;
-margin-bottom: 10px;
-}
+    p {
+      margin-bottom: 15px;
+    }
 
-p {
-margin-bottom: 15px;
-}
+    strong {
+      font-weight: bold;
+    }
 
-strong {
-font-weight: bold;
-}
-
-a {
-color: blue;
-text-decoration: none;
-}
-
-</style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
 
 </head>
 
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_responseF = $_POST['recaptcha_responseF'];
-    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-    $recaptcha = json_decode($recaptcha);
-    // Miramos si se considera humano o robot: 
-    if ($recaptcha->score >= 0.5) {
-        $_email = $_POST['email'];
-        $from = "info@desagoteslavictoria.com.ar";
-        $to = "info@desagoteslavictoria.com.ar";
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
 
-        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<script type="text/javascript">
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
-        }
-
-    } else {
-
     }
+
+  } else {
+
+  }
 
 }
 
@@ -158,55 +156,91 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-    <h1>Generación de residuos: ¿Cuánto contaminamos?</h1>
+      <h1>Generación de residuos: ¿Cuánto contaminamos?</h1>
 
-        <p>El origen de los desperdicios urbanos es consecuencia de las actividades que el hombre realiza. Por supuesto, esto nos incluye a cada uno de nosotros. En el marco del desarrollo productivo, los derivados, que serían en principio imposibles de reutilizar, presentan una serie de posibilidades más que interesantes.</p>
+      <p>El origen de los desperdicios urbanos es consecuencia de las actividades que el hombre realiza. Por supuesto,
+        esto nos incluye a cada uno de nosotros. En el marco del desarrollo productivo, los derivados, que serían en
+        principio imposibles de reutilizar, presentan una serie de posibilidades más que interesantes.</p>
 
-        <p>¿Se te ocurrió alguna vez pensar en la derivación de los desechos y su recolección?</p>
+      <p>¿Se te ocurrió alguna vez pensar en la derivación de los desechos y su recolección?</p>
 
-        <p>La disposición de los residuos de cualquier tipo impactan en el estilo de vida de toda la comunidad, más allá de cuál sea el comercio o la industria desde la que provienen. La huella de carbono (cada paso que tomas en tus elecciones diarias de consumo, y la eliminación de basura) señala tu presencia como generador de esos sobrantes. Las decisiones que tomes al respecto harán la diferencia.</p>
+      <p>La disposición de los residuos de cualquier tipo impactan en el estilo de vida de toda la comunidad, más allá
+        de cuál sea el comercio o la industria desde la que provienen. La huella de carbono (cada paso que tomas en tus
+        elecciones diarias de consumo, y la eliminación de basura) señala tu presencia como generador de esos sobrantes.
+        Las decisiones que tomes al respecto harán la diferencia.</p>
 
-        <p>Esas formas de producción y posterior desecho señalan hoy interés en la disminución de la contaminación. Las acciones, que ponen el foco en la reducción de esos efectos, son múltiples y específicas. En cada caso, su activación se acerca para contrarrestar su influencia, y minimizar las complicaciones.</p>
+      <p>Esas formas de producción y posterior desecho señalan hoy interés en la disminución de la contaminación. Las
+        acciones, que ponen el foco en la reducción de esos efectos, son múltiples y específicas. En cada caso, su
+        activación se acerca para contrarrestar su influencia, y minimizar las complicaciones.</p>
 
-        <h4>Todos hablan de impacto ambiental y sostenibilidad. ¿De qué se trata en realidad estos términos?</h4>
+      <h4>Todos hablan de impacto ambiental y sostenibilidad. ¿De qué se trata en realidad estos términos?</h4>
 
-        <p>El impacto ambiental se define por cada una de las intervenciones que provoca la actividad diaria en el medio ambiente. Eso teniendo en cuenta la producción de bienes determinados (entre otras cuestiones), resultantes en elementos de contaminación. El más relevante, y en el que <a href='../home.php'><strong>La Victoria</strong></a> puede ayudarte, se refiere a los hábitos de consumo y la generación de desperdicios.</p>
+      <p>El impacto ambiental se define por cada una de las intervenciones que provoca la actividad diaria en el medio
+        ambiente. Eso teniendo en cuenta la producción de bienes determinados (entre otras cuestiones), resultantes en
+        elementos de contaminación. El más relevante, y en el que <a href='../home.php'><strong>La Victoria</strong></a>
+        puede ayudarte, se refiere a los hábitos de consumo y la generación de desperdicios.</p>
 
-        <p>De este modo surge la idea de sostenibilidad. Se trata de la aplicación de modernas acciones que reformulan el trabajo con los desperdicios, sin modificar el desarrollo productivo y comercial. Además, resuelve situaciones de contaminación en el agua y en la tierra, entre otras, que impactan la vida de todos.<a href='../sections/trabajos.php'> Acá te contamos algunos de los trabajos que realizamos en La Victoria, en pos de reducir el impacto ambiental desde tu empresa.</a></p>
+      <p>De este modo surge la idea de sostenibilidad. Se trata de la aplicación de modernas acciones que reformulan el
+        trabajo con los desperdicios, sin modificar el desarrollo productivo y comercial. Además, resuelve situaciones
+        de contaminación en el agua y en la tierra, entre otras, que impactan la vida de todos.<a
+          href='../sections/trabajos.php'> Acá te contamos algunos de los trabajos que realizamos en La Victoria, en pos
+          de reducir el impacto ambiental desde tu empresa.</a></p>
 
-        <h4>La definición de la sostenibilidad: Todo un desafío.</h4>
+      <h4>La definición de la sostenibilidad: Todo un desafío.</h4>
 
-        <p>Principalmente, la idea de sostenibilidad y su impacto determinante en la calidad de vida implica avance económico sin amenaza al ecosistema del que todos formamos parte. La visión principal de este modo de hacer, en un adecuado balance ambiental, se resuelve en el cuidado de los recursos, correcta manipulación de los residuos peligrosos, la aplicación de medidas de seguridad, y la reutilización de todos aquellos elementos que lo permitan.</p>
+      <p>Principalmente, la idea de sostenibilidad y su impacto determinante en la calidad de vida implica avance
+        económico sin amenaza al ecosistema del que todos formamos parte. La visión principal de este modo de hacer, en
+        un adecuado balance ambiental, se resuelve en el cuidado de los recursos, correcta manipulación de los residuos
+        peligrosos, la aplicación de medidas de seguridad, y la reutilización de todos aquellos elementos que lo
+        permitan.</p>
 
-        <h4>Tip ambiental de La Victoria: Una elección práctica para la vida diaria.</h4>
+      <h4>Tip ambiental de La Victoria: Una elección práctica para la vida diaria.</h4>
 
-        <p>Considerando nuestra experiencia, aquí te dejamos una serie de consejos para iniciar el cambio desde tu lugar, mientras tienes en cuenta las mejores opciones de traslado de los residuos eventualmente peligrosos. Las explicaciones te serán muy útiles, y verás que considerar  esto te ayudará a tomar decisiones. Prestar atención a este punto será muy útil en pos de modificar hacia el futuro.</p>
+      <p>Considerando nuestra experiencia, aquí te dejamos una serie de consejos para iniciar el cambio desde tu lugar,
+        mientras tienes en cuenta las mejores opciones de traslado de los residuos eventualmente peligrosos. Las
+        explicaciones te serán muy útiles, y verás que considerar esto te ayudará a tomar decisiones. Prestar atención a
+        este punto será muy útil en pos de modificar hacia el futuro.</p>
 
-        <h4>Consejos para hacer la diferencia:</h4>
+      <h4>Consejos para hacer la diferencia:</h4>
 
-        <ul>
-            <li>Los utensilios comunes, de plástico descartable, son prácticos en su utilización ocasional. Pero el mismo hecho de que solamente  puedan ser utilizados en una ocasión los vuelve una idea inestable. Botellas de vidrio, y elementos de bambú, como por ejemplo sorbetes, pueden ser una alternativa práctica e inteligente.</li>
-            <li>El cambio comienza por casa. Todos conocemos el dicho; aplicarlo en la experiencia cotidiana puede parecer complejo, pero es más sencillo de lo que parece. La distribución de los elementos que decidas desechar pueden ser convenientemente catalogados. Los recuperadores urbanos te lo agradecerán.</li>
-            <li>Reciclar es el punto que sigue. Bolsas de polietileno, frascos o botellas de vidrio, todo ello ayuda a resolver en favor de los elementos mencionados, teniendo en cuenta que su reutilización es posible.</li>
-            <li>Los paquetes y envoltorios provenientes de una alternativa de reciclado se ha vuelto una interesante opción para muchas compañías. Estar atento a los productos que ofrecen es una muy buena idea para colaborar.</li>
-        </ul>
+      <ul>
+        <li>Los utensilios comunes, de plástico descartable, son prácticos en su utilización ocasional. Pero el mismo
+          hecho de que solamente puedan ser utilizados en una ocasión los vuelve una idea inestable. Botellas de vidrio,
+          y elementos de bambú, como por ejemplo sorbetes, pueden ser una alternativa práctica e inteligente.</li>
+        <li>El cambio comienza por casa. Todos conocemos el dicho; aplicarlo en la experiencia cotidiana puede parecer
+          complejo, pero es más sencillo de lo que parece. La distribución de los elementos que decidas desechar pueden
+          ser convenientemente catalogados. Los recuperadores urbanos te lo agradecerán.</li>
+        <li>Reciclar es el punto que sigue. Bolsas de polietileno, frascos o botellas de vidrio, todo ello ayuda a
+          resolver en favor de los elementos mencionados, teniendo en cuenta que su reutilización es posible.</li>
+        <li>Los paquetes y envoltorios provenientes de una alternativa de reciclado se ha vuelto una interesante opción
+          para muchas compañías. Estar atento a los productos que ofrecen es una muy buena idea para colaborar.</li>
+      </ul>
 
-        <p><strong>Últimos detalles a tener en cuenta: Definiendo acciones</strong></p>
+      <p><strong>Últimos detalles a tener en cuenta: Definiendo acciones</strong></p>
 
-        <p>La coordinación respecto de los recursos resulta en un cambio en la clasificación de residuos. Las diferentes etapas que el sistema ofrece hoy frente al retiro de desechos, con la posibilidad de  una nueva instancia de uso, es una idea superadora.</p>
+      <p>La coordinación respecto de los recursos resulta en un cambio en la clasificación de residuos. Las diferentes
+        etapas que el sistema ofrece hoy frente al retiro de desechos, con la posibilidad de una nueva instancia de uso,
+        es una idea superadora.</p>
 
-        <p>En algunos casos, su resignificación es una perfecta solución. Pero en otros simplemente su traslado controlado, con los cuidados respectivos, permite una idea positiva para el medio  ambiente. Esos cuidados son determinantes para nosotros y para las futuras generaciones, y forman parte de la filosofía de Desagotes La Victoria.</p>
+      <p>En algunos casos, su resignificación es una perfecta solución. Pero en otros simplemente su traslado
+        controlado, con los cuidados respectivos, permite una idea positiva para el medio ambiente. Esos cuidados son
+        determinantes para nosotros y para las futuras generaciones, y forman parte de la filosofía de Desagotes La
+        Victoria.</p>
 
-        <p>¿Te interesa consultar costos o pedir un presupuesto acorde a las necesidades de tu empresa? <a><strong>Escríbenos y cotiza tu servicio en La Victoria.</strong></a></p>
+      <p>¿Te interesa consultar costos o pedir un presupuesto acorde a las necesidades de tu empresa?
+        <a><strong>Escríbenos y cotiza tu servicio en La Victoria.</strong></a></p>
 
     </div>
 
-    
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>
@@ -243,23 +277,23 @@ width: 270px;">
 
         </div>
         <div class="footer-newsletter">
-                    <div class="container">
-                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
-                            <div class="col-lg-6">
-                                <form action="articulo9.php" method="post" role="form"
-                                    style="display: flex; align-items: center;   justify-content: flex-start;">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Su correo electrónico" required>
-                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
-                                    <div class="text-center">
-                                        <button type="submit"
-                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+              <div class="col-lg-6">
+                <form action="articulo9.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="    display: flex;
 justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"

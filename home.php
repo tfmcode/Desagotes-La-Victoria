@@ -75,61 +75,62 @@
         }
 
         * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .boxcontact {
-      text-align: center;
-      width: 18%;
-      /* Ajusta el ancho según tus necesidades */
-    }
+        .boxcontact {
+            text-align: center;
+            width: 18%;
+            /* Ajusta el ancho según tus necesidades */
+        }
 
-    .boxcontainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: px;
-      border: 5px solid lightblue;
-      border-radius: 10px;
-      margin-right: 40px;
-    }
+        .boxcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: px;
+            border: 5px solid lightblue;
+            border-radius: 10px;
+            margin-right: 40px;
+        }
 
-    .navbar-list {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      align-content: space-around;
-      flex-wrap: nowrap;
-      flex-direction: row;
-    }
+        .navbar-list {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            align-content: space-around;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
 
-    .navfooter a {
-      margin: 0.5%;
-      text-decoration: none;
-      color: #fff;
-      /* Color de texto blanco */
-      padding: 10px;
-      display: block;
-    }
+        .navfooter a {
+            margin: 0.5%;
+            text-decoration: none;
+            color: #fff;
+            /* Color de texto blanco */
+            padding: 10px;
+            display: block;
+        }
 
-    .navfooter a:hover {
-      color: lightblue;
-      /* Cambio de color de texto a blanco al pasar el cursor */
-    }
+        .navfooter a:hover {
+            color: lightblue;
+            /* Cambio de color de texto a blanco al pasar el cursor */
+        }
 
-@media (max-width: 990px) {
-    .row {
-    display: flex;
-    flex-direction: column; 
-    align-content: center;/* Asegura que el texto esté centrado en dispositivos con ancho de pantalla de hasta 380px */
-    }
-}
+        @media (max-width: 990px) {
+            .row {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                /* Asegura que el texto esté centrado en dispositivos con ancho de pantalla de hasta 380px */
+            }
+        }
     </style>
-   
+
 
 </head>
 
@@ -234,9 +235,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <!-- Slide 2 -->
             <div class="carousel-item">
                 <div class="carousel-container">
-                    <h5 class="animate__animated animate__fadeInDown" style="color: white; letter-spacing: 0.3em;">LA CLAVE DE UN NEGOCIO PRODUCTIVO:</h5>
+                    <h5 class="animate__animated animate__fadeInDown" style="color: white; letter-spacing: 0.3em;">LA
+                        CLAVE DE UN NEGOCIO PRODUCTIVO:</h5>
                     <p class="animate__animated animate__fadeInUp">
-                    <h2 style='color:white'> <strong> Mantenimiento<h2 style="color: black; ">preventivo</strong></h2></h2>
+                    <h2 style='color:white'> <strong> Mantenimiento<h2 style="color: black; ">preventivo</strong></h2>
+                    </h2>
                     </p>
                     <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
                         target="_blank" class="btn-get-started animate__animated animate__fadeInUp"
@@ -324,7 +327,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="icon-box">
                             <!-- <div class="icon"><i class="bx bx-fingerprint"></i></div> -->
                             <p class="text-primary" style="letter-spacing: 0.3em;">HOLA !</p>
-                            <h4 >Soy Mr. Destapador</h4>
+                            <h4>Soy Mr. Destapador</h4>
                             <p class="description">Mi misión es acompañar a su empresa en el proceso de mantenimiento
                                 preventivo de sus instalaciones. En este camino, contará con todo lo necesario para su
                                 tranquilidad: Equipos de última generación, personal altamente capacitado y la
@@ -427,10 +430,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
 
         </section> --><!-- End Why Us Section -->
-        <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+        <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
             <div class="container">
-                <h1>Cuidando el ambiente desde 1950</h1>
-                <button type="button" class="btn btn-primary" data-bs-toggle="button"
+                <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+                </h2>
+                <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
                     onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
                     ¿Dudas? Click aquí
                 </button>
@@ -445,7 +451,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="footer-top">
             <div class="container">
                 <div class="row" style="display: flex;  justify-content: space-evenly;   align-items: center;">
-                   
+
 
                     <div class="col-lg-4 col-md-4 footer-contact">
                         <p style="display: flex; justify-content: center;">
@@ -454,32 +460,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </p>
                     </div>
                     <div class="container">
-            <!-- Primera fila -->
-            <ul class="list-unstyled navbar-list">
-              <li class="navfooter">
-                <a href="../home.php">Inicio</a>
-              </li>
-              <li class="navfooter">
-                <a href="servicios.php">Servicios</a>
-              </li>
-              <li class="navfooter">
-                <a href="nosotros.php">Nosotros</a>
-              </li>
-            </ul>
+                        <!-- Primera fila -->
+                        <ul class="list-unstyled navbar-list">
+                            <li class="navfooter">
+                                <a href="../home.php">Inicio</a>
+                            </li>
+                            <li class="navfooter">
+                                <a href="servicios.php">Servicios</a>
+                            </li>
+                            <li class="navfooter">
+                                <a href="nosotros.php">Nosotros</a>
+                            </li>
+                        </ul>
 
-            <!-- Segunda fila -->
-            <ul class="list-unstyled navbar-list">
-              <li class="navfooter">
-                <a href="trabajos.php">Trabajos</a>
-              </li>
-              <li class="navfooter">
-                <a href="blog.php">Blogs</a>
-              </li>
-              <li class="navfooter">
-                <a href="contacto.php">Contacto</a>
-              </li>
-            </ul>
-          </div>
+                        <!-- Segunda fila -->
+                        <ul class="list-unstyled navbar-list">
+                            <li class="navfooter">
+                                <a href="trabajos.php">Trabajos</a>
+                            </li>
+                            <li class="navfooter">
+                                <a href="blog.php">Blogs</a>
+                            </li>
+                            <li class="navfooter">
+                                <a href="contacto.php">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
                 <div class="footer-newsletter">

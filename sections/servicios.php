@@ -88,16 +88,17 @@
       margin: 0;
       /* Centrar horizontalmente */
     }
+
     @media (max-width: 768px) {
-            .cards {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-        }
+      .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
+    }
 
 
-      * {
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -143,11 +144,10 @@
       color: lightblue;
       /* Cambio de color de texto a blanco al pasar el cursor */
     }
-
   </style>
-  
-  
-  
+
+
+
 
 </head>
 
@@ -229,6 +229,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </header><!-- End Header -->
 
 
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade">
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h3 class="animate__animated animate__fadeInUp" style="color: white; letter-spacing: 0.3em;">
+            SERVICIOS</h3>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+
   <main id="main">
 
 
@@ -282,7 +296,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h4>Consultar precio</h4>
             <p><strong>En CABA Y GBA</strong></p>
             <ul>
-              <li><i class="bx bx-check"></i> Retiro, transporte y disposición final de residuos sólidos peligrosos.</li>
+              <li><i class="bx bx-check"></i> Retiro, transporte y disposición final de residuos sólidos peligrosos.
+              </li>
               <li><i class="bx bx-check"></i> Manifiesto de transporte.</li>
               <li><i class="bx bx-check"></i> Certificado de disposición final.</li>
               <li><i class="bx bx-check"></i> Personal capacitado para el manejo de residuos peligrosos.</li>
@@ -439,7 +454,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
     </section><!-- End Why Us Section -->
 
-    <!--   SECTIONNN QUE FALTAAAAAAAAA-->
     <section class="services" style="padding-top: 30px;">
       <div class="container">
         <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
@@ -461,8 +475,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
 
     </section>
-    <!-- -->
-    <!-- ======= RESTRUCTURIZAAAARRRRRRR Services Section ======= -->
+    <!-- Services Section ======= -->
     <section class="services">
       <div class="container">
         <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
@@ -477,8 +490,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon-box icon-box-green">
-                <div class="icon"><img src="../assets/img/5.png" width="70"></div>
+              <div class="icon-box icon-box-blue">
+                <div><img src="../assets/img/certificaciones.png" width="70"></div>
                 <h4 class="title"><a href="">Certificaciónes</a></h4>
                 <p class="description">Extendemos certificado de disposición final de los líquidos retirados.</p>
 
@@ -487,7 +500,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
               <div class="icon-box icon-box-green">
-                <div class="icon"><img src="../assets/img/5.png" width="70"></div>
+                <div><img src="../assets/img/expertos.png" width="70"></div>
                 <h4 class="title"><a href="">Expertos</a></h4>
                 <p class="description">60 años de experiencia capacitándonos nos convierten en el equipo más capacitado
                   del mercado.</p>
@@ -501,7 +514,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
               <div class="icon-box icon-box-pink">
-                <div class="icon"><img src="../assets/img/3.png" width="70"></div>
+                <div><img src="../assets/img/seguridad.png" width="70"></div>
                 <h4 class="title"><a href="">Medidas de Seguridad</a></h4>
                 <p class="description">Todos nuestros trabajadores cumplen estrictos protocolos de seguridad.</p>
               </div>
@@ -509,7 +522,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
               <div class="icon-box icon-box-cyan">
-                <div class="icon"><img src="../assets/img/4.png" width="70"></div>
+                <div><img src="../assets/img/tecnologias.png" width="70"></div>
                 <h4 class="title"><a href="">Modernas Tecnologías</a></h4>
                 <p class="description">Ponemos a disposición las más modernas tecnologías para brindar un servicio
                   óptimo, seguro y eficiente.</p>
@@ -523,11 +536,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
     </section><!-- End Services Section -->
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button" onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
-        ¿Dudas? Click aquí
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
+          onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
+          ¿Dudas? Click aquí
         </button>
       </div>
     </section>

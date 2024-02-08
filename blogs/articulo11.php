@@ -48,66 +48,64 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
-    <style>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-h1 {
-text-align: center;
-font-size: 28px;
-margin-bottom: 20px;
-}
+    h4 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-h4 {
-font-size: 20px;
-margin-top: 30px;
-margin-bottom: 10px;
-}
+    p {
+      margin-bottom: 15px;
+    }
 
-p {
-margin-bottom: 15px;
-}
+    strong {
+      font-weight: bold;
+    }
 
-strong {
-font-weight: bold;
-}
-
-a {
-color: blue;
-text-decoration: none;
-}
-
-</style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
 
 </head>
 
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_responseF = $_POST['recaptcha_responseF'];
-    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-    $recaptcha = json_decode($recaptcha);
-    // Miramos si se considera humano o robot: 
-    if ($recaptcha->score >= 0.5) {
-        $_email = $_POST['email'];
-        $from = "info@desagoteslavictoria.com.ar";
-        $to = "info@desagoteslavictoria.com.ar";
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
 
-        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<script type="text/javascript">
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
-        }
-
-    } else {
-
     }
+
+  } else {
+
+  }
 
 }
 
@@ -158,42 +156,65 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-    <h1>Beneficios de la atención preventiva a los problemas de cañerías</h1>
+      <h1>Beneficios de la atención preventiva a los problemas de cañerías</h1>
 
-    <p>La atención a los detalles puede darte señales respecto de un desorden en el funcionamiento de las cañerías en tu empresa o comercio. Eso significa que la solución está cerca y te ahorrará dolores de cabeza a futuro.</p>
+      <p>La atención a los detalles puede darte señales respecto de un desorden en el funcionamiento de las cañerías en
+        tu empresa o comercio. Eso significa que la solución está cerca y te ahorrará dolores de cabeza a futuro.</p>
 
-    <p>Como todos sabemos, el mantenimiento preventivo es una forma efectiva de evitar problemas mayores. A menudo se descuidan estos sistemas porque están fuera de la vista y cuando se descubre la raíz del problema ya es demasiado tarde.</p>
+      <p>Como todos sabemos, el mantenimiento preventivo es una forma efectiva de evitar problemas mayores. A menudo se
+        descuidan estos sistemas porque están fuera de la vista y cuando se descubre la raíz del problema ya es
+        demasiado tarde.</p>
 
-    <p>Las amplias cañerías que forman la red de cloacas arrastran las aguas residuales hacia las plantas de tratamiento, más allá de su origen (doméstico o industrial). Si percibiste en algún momento un fuerte aroma, es hora de preguntarte si es necesario tratar el problema con ayuda de un equipo profesional.</p>
+      <p>Las amplias cañerías que forman la red de cloacas arrastran las aguas residuales hacia las plantas de
+        tratamiento, más allá de su origen (doméstico o industrial). Si percibiste en algún momento un fuerte aroma, es
+        hora de preguntarte si es necesario tratar el problema con ayuda de un equipo profesional.</p>
 
-    <p>¿Sabías que un mantenimiento adecuado disminuye la posibilidad de inconvenientes futuros?</p>
+      <p>¿Sabías que un mantenimiento adecuado disminuye la posibilidad de inconvenientes futuros?</p>
 
-    <p>Otro punto a tener en cuenta es que la acumulación de lodos y sedimentos es un inconveniente común en los pozos sépticos. Con el tiempo, los sólidos se acumulan y detienen el normal fluir de los líquidos, lo que puede provocar que los residuos regresen a los hogares y edificios. Esto eventualmente genera daños graves en el sistema, lo que puede ser costoso y difícil de reparar.</p>
+      <p>Otro punto a tener en cuenta es que la acumulación de lodos y sedimentos es un inconveniente común en los pozos
+        sépticos. Con el tiempo, los sólidos se acumulan y detienen el normal fluir de los líquidos, lo que puede
+        provocar que los residuos regresen a los hogares y edificios. Esto eventualmente genera daños graves en el
+        sistema, lo que puede ser costoso y difícil de reparar.</p>
 
-    <p>No subestimar la importancia de prevenir inconvenientes posibles en el normal funcionamiento del desagüe es una ganancia completa.  No esperes a que ocurra un problema para actuar, tomá medidas hoy para asegurarte de que todo funciona de manera óptima.</p>
+      <p>No subestimar la importancia de prevenir inconvenientes posibles en el normal funcionamiento del desagüe es una
+        ganancia completa. No esperes a que ocurra un problema para actuar, tomá medidas hoy para asegurarte de que todo
+        funciona de manera óptima.</p>
 
-    <p>Para evitar estas situaciones, te recomendamos un mantenimiento de atención previa. Este consiste en la limpieza y el vaciado regular del pozo séptico o de la cámara, lo que elimina los sedimentos acumulados.</p>
+      <p>Para evitar estas situaciones, te recomendamos un mantenimiento de atención previa. Este consiste en la
+        limpieza y el vaciado regular del pozo séptico o de la cámara, lo que elimina los sedimentos acumulados.</p>
 
-    <h4>Tips a considerar para evitar inconvenientes:</h4>
+      <h4>Tips a considerar para evitar inconvenientes:</h4>
 
-    <p>Desde <a href='../home.php'><strong>La Victoria</strong></a> te aconsejamos cómo mantener en óptimas condiciones el sistema cloacal:</p>
+      <p>Desde <a href='../home.php'><strong>La Victoria</strong></a> te aconsejamos cómo mantener en óptimas
+        condiciones el sistema cloacal:</p>
 
-    <ol>
-        <li>Evita arrojar elementos sólidos, químicos, aceites y grasas por las tuberías. Esta práctica puede ocasionar problemas graves en el funcionamiento normal de la red, y generar costosos arreglos en el futuro.</li>
-        <li>Realiza revisiones periódicas del drenaje y los conductos. Si se observa una disminución en la velocidad del desagüe de los líquidos, es importante actuar rápidamente, ya que este tipo de problemas suelen empeorar con el tiempo.</li>
-        <li>De vez en cuando, hacé correr agua caliente durante un corto período de tiempo. Esta práctica contribuirá a disolver y retirar los objetos que puedan obstruir las tuberías, manteniendo el sistema en óptimas condiciones.</li>
-    </ol>
+      <ol>
+        <li>Evita arrojar elementos sólidos, químicos, aceites y grasas por las tuberías. Esta práctica puede ocasionar
+          problemas graves en el funcionamiento normal de la red, y generar costosos arreglos en el futuro.</li>
+        <li>Realiza revisiones periódicas del drenaje y los conductos. Si se observa una disminución en la velocidad del
+          desagüe de los líquidos, es importante actuar rápidamente, ya que este tipo de problemas suelen empeorar con
+          el tiempo.</li>
+        <li>De vez en cuando, hacé correr agua caliente durante un corto período de tiempo. Esta práctica contribuirá a
+          disolver y retirar los objetos que puedan obstruir las tuberías, manteniendo el sistema en óptimas
+          condiciones.</li>
+      </ol>
 
-    <p>Somos especialistas y ofrecemos servicios de limpieza y mantenimiento preventivo. Nuestros profesionales garantizan una limpieza completa y efectiva del sistema, que significa ahorro de tiempo y dinero. En <a href='../home.php'><strong>Desagotes La Victoria</strong></a> tenemos una solución adaptable a tus requerimientos.</p>
+      <p>Somos especialistas y ofrecemos servicios de limpieza y mantenimiento preventivo. Nuestros profesionales
+        garantizan una limpieza completa y efectiva del sistema, que significa ahorro de tiempo y dinero. En <a
+          href='../home.php'><strong>Desagotes La Victoria</strong></a> tenemos una solución adaptable a tus
+        requerimientos.</p>
 
     </div>
 
-    
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>
@@ -230,23 +251,23 @@ width: 270px;">
 
         </div>
         <div class="footer-newsletter">
-                    <div class="container">
-                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
-                            <div class="col-lg-6">
-                                <form action="articulo11.php" method="post" role="form"
-                                    style="display: flex; align-items: center;   justify-content: flex-start;">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Su correo electrónico" required>
-                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
-                                    <div class="text-center">
-                                        <button type="submit"
-                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+              <div class="col-lg-6">
+                <form action="articulo11.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="    display: flex;
 justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"

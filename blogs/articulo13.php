@@ -49,65 +49,63 @@
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
 
-    <style>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-h1 {
-text-align: center;
-font-size: 28px;
-margin-bottom: 20px;
-}
+    h4 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-h4 {
-font-size: 20px;
-margin-top: 30px;
-margin-bottom: 10px;
-}
+    p {
+      margin-bottom: 15px;
+    }
 
-p {
-margin-bottom: 15px;
-}
+    strong {
+      font-weight: bold;
+    }
 
-strong {
-font-weight: bold;
-}
-
-a {
-color: blue;
-text-decoration: none;
-}
-
-</style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_responseF = $_POST['recaptcha_responseF'];
-    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-    $recaptcha = json_decode($recaptcha);
-    // Miramos si se considera humano o robot: 
-    if ($recaptcha->score >= 0.5) {
-        $_email = $_POST['email'];
-        $from = "info@desagoteslavictoria.com.ar";
-        $to = "info@desagoteslavictoria.com.ar";
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
 
-        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<script type="text/javascript">
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
-        }
-
-    } else {
-
     }
+
+  } else {
+
+  }
 
 }
 
@@ -158,40 +156,75 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-    <h1>Beneficios de la limpieza adecuada de tanques de transporte</h1>
-    <p>¿Sabías que el cuidado de los tanques de transporte puede maximizar el rendimiento de tu empresa? Una simple limpieza de las cisternas de almacenamiento puede marcar la diferencia en la eficiencia de tus equipos. En <a href='../home.php'><strong>La Victoria</strong></a> entendemos la importancia de mantener las herramientas de trabajo en óptimas condiciones para un desempeño excepcional. Aquí te contamos cómo nuestras soluciones pueden potenciar tu negocio.</p>
-    <p>Nuestros expertos se especializan en la limpieza interior de tanques de cualquier tipo. Tenemos la experiencia y los recursos para adaptar nuestros servicios a tu necesidad.</p>
-    <h4>Descubrí la importancia de manejar adecuadamente los residuos peligrosos.</h4>
-    <p>Sin las medidas de protección necesarias, estos materiales pueden resultar en una complicación para la salud humana y el medio ambiente. Es crucial tomar medidas responsables respecto de los residuos peligrosos.</p>
-    <p>En cada etapa, desde la generación hasta la disposición final, se requiere una gestión eficiente. Almacenar, transportar, tratar y eliminar correctamente estos materiales es fundamental para evitar la contaminación del aire, el agua y el suelo, y salvaguardar la salud de todos.</p>
-    <h4>¿Qué tipo de residuo es el aceite?</h4>
-    <p>En cuanto a los residuos posibles, el aceite es uno de los más comunes. Utilizado en comercios o pequeñas industrias, requiere del cumplimiento de protocolos certeros en su manipulación.</p>
-    <p>Los residuos de aceites de cocina usados se clasifican como residuos no peligrosos; sin embargo, el inadecuado manejo puede generar contaminación en el agua y suelo al ser vertidos sin los cuidados recomendados, y a su vez resultar en daños en las tuberías.</p>
-    <h4>Consejo especial de La Victoria</h4>
-    <p>Desde <a href='../home.php'><strong>Desagotes La Victoria</strong></a> contribuimos a proteger tu salud y el medio ambiente mediante la gestión responsable de los residuos peligrosos. Juntos podemos crear un futuro más limpio y saludable.</p>
-    <p>Imagina tu negocio funcionando de manera eficiente, sin problemas derivados del mal funcionamiento de los tanques. El proceso de higiene sigue los más altos estándares de calidad para brindarte los mejores resultados.</p>
-    <p>Nuestro equipo se encarga de gestionar adecuadamente los residuos, garantizando una disposición final responsable y respetuosa con el espacio que habitamos.</p>
-    <h4>¡Descubrí por qué limpiar tus tanques de combustible con <a><strong>La Victoria</strong></a> es una decisión inteligente y rentable!</h4>
-    <ul>
-        <li>Con nuestro proceso de limpieza, los tanques de transporte de tu empresa funcionarán de manera más productiva, limitando la posibilidad de obstrucciones por residuos y la presencia de inconvenientes posteriores.</li>
-        <li>Es posible lograr que los elementos que pueden generar deterioro disminuyan considerablemente. Proteger tu inversión es lo más importante para el sostén de tu comercio o industria. Los tanques sucios pueden causar daños e inconvenientes económicos significativos. Al limpiarlos regularmente, evitarás el deterioro prematuro y los costosos desperdicios de combustible.</li>
-        <li>La correcta limpieza constituye también el respeto a los requerimientos que garantizan la seguridad en el almacenamiento y transporte. En La Victoria creemos que el cumplimiento de las regulaciones básicas ayudan a evitar riesgos y sanciones innecesarias que solamente te perjudicarán.</li>
-        <li>La consideración y el cuidado de los espacios de almacenamiento colabora en disminuir la contaminación de las áreas en las que vivimos, e implica un medio ambiente más sano. Al tomar medidas responsables, demostrás tu compromiso con la sostenibilidad.</li>
-        <li>Para cerrar, una última consideración: Los tanques deteriorados pueden causar fugas y derivar en fallas costosas. Al mantener tus tanques en buen estado, reducirás los costos de reparación y minimizarás el riesgo de interrupciones en tu negocio.</li>
-    </ul>
-    <h4>¿Por qué es conveniente pensar en la prevención?</h4>
-    <p>Tus equipos funcionarán con mayor eficiencia, reduciendo la posibilidad de averías costosas. Notarás una mejor respuesta y un menor consumo de combustible, lo que se traducirá en ahorro significativo.</p>
-    <p>Asegurate y prevení para mantener las operaciones sin contratiempos. Confía en La Victoria y aprovecha nuestros servicios. Juntos podemos optimizar tus operaciones y llevar tu negocio al siguiente nivel.</p>
-    <p>¡No esperes más! <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.">Contáctanos hoy mismo</a> y descubrí cómo La Victoria puede potenciar el rendimiento de tus equipos.</p>
+      <h1>Beneficios de la limpieza adecuada de tanques de transporte</h1>
+      <p>¿Sabías que el cuidado de los tanques de transporte puede maximizar el rendimiento de tu empresa? Una simple
+        limpieza de las cisternas de almacenamiento puede marcar la diferencia en la eficiencia de tus equipos. En <a
+          href='../home.php'><strong>La Victoria</strong></a> entendemos la importancia de mantener las herramientas de
+        trabajo en óptimas condiciones para un desempeño excepcional. Aquí te contamos cómo nuestras soluciones pueden
+        potenciar tu negocio.</p>
+      <p>Nuestros expertos se especializan en la limpieza interior de tanques de cualquier tipo. Tenemos la experiencia
+        y los recursos para adaptar nuestros servicios a tu necesidad.</p>
+      <h4>Descubrí la importancia de manejar adecuadamente los residuos peligrosos.</h4>
+      <p>Sin las medidas de protección necesarias, estos materiales pueden resultar en una complicación para la salud
+        humana y el medio ambiente. Es crucial tomar medidas responsables respecto de los residuos peligrosos.</p>
+      <p>En cada etapa, desde la generación hasta la disposición final, se requiere una gestión eficiente. Almacenar,
+        transportar, tratar y eliminar correctamente estos materiales es fundamental para evitar la contaminación del
+        aire, el agua y el suelo, y salvaguardar la salud de todos.</p>
+      <h4>¿Qué tipo de residuo es el aceite?</h4>
+      <p>En cuanto a los residuos posibles, el aceite es uno de los más comunes. Utilizado en comercios o pequeñas
+        industrias, requiere del cumplimiento de protocolos certeros en su manipulación.</p>
+      <p>Los residuos de aceites de cocina usados se clasifican como residuos no peligrosos; sin embargo, el inadecuado
+        manejo puede generar contaminación en el agua y suelo al ser vertidos sin los cuidados recomendados, y a su vez
+        resultar en daños en las tuberías.</p>
+      <h4>Consejo especial de La Victoria</h4>
+      <p>Desde <a href='../home.php'><strong>Desagotes La Victoria</strong></a> contribuimos a proteger tu salud y el
+        medio ambiente mediante la gestión responsable de los residuos peligrosos. Juntos podemos crear un futuro más
+        limpio y saludable.</p>
+      <p>Imagina tu negocio funcionando de manera eficiente, sin problemas derivados del mal funcionamiento de los
+        tanques. El proceso de higiene sigue los más altos estándares de calidad para brindarte los mejores resultados.
+      </p>
+      <p>Nuestro equipo se encarga de gestionar adecuadamente los residuos, garantizando una disposición final
+        responsable y respetuosa con el espacio que habitamos.</p>
+      <h4>¡Descubrí por qué limpiar tus tanques de combustible con <a><strong>La Victoria</strong></a> es una decisión
+        inteligente y rentable!</h4>
+      <ul>
+        <li>Con nuestro proceso de limpieza, los tanques de transporte de tu empresa funcionarán de manera más
+          productiva, limitando la posibilidad de obstrucciones por residuos y la presencia de inconvenientes
+          posteriores.</li>
+        <li>Es posible lograr que los elementos que pueden generar deterioro disminuyan considerablemente. Proteger tu
+          inversión es lo más importante para el sostén de tu comercio o industria. Los tanques sucios pueden causar
+          daños e inconvenientes económicos significativos. Al limpiarlos regularmente, evitarás el deterioro prematuro
+          y los costosos desperdicios de combustible.</li>
+        <li>La correcta limpieza constituye también el respeto a los requerimientos que garantizan la seguridad en el
+          almacenamiento y transporte. En La Victoria creemos que el cumplimiento de las regulaciones básicas ayudan a
+          evitar riesgos y sanciones innecesarias que solamente te perjudicarán.</li>
+        <li>La consideración y el cuidado de los espacios de almacenamiento colabora en disminuir la contaminación de
+          las áreas en las que vivimos, e implica un medio ambiente más sano. Al tomar medidas responsables, demostrás
+          tu compromiso con la sostenibilidad.</li>
+        <li>Para cerrar, una última consideración: Los tanques deteriorados pueden causar fugas y derivar en fallas
+          costosas. Al mantener tus tanques en buen estado, reducirás los costos de reparación y minimizarás el riesgo
+          de interrupciones en tu negocio.</li>
+      </ul>
+      <h4>¿Por qué es conveniente pensar en la prevención?</h4>
+      <p>Tus equipos funcionarán con mayor eficiencia, reduciendo la posibilidad de averías costosas. Notarás una mejor
+        respuesta y un menor consumo de combustible, lo que se traducirá en ahorro significativo.</p>
+      <p>Asegurate y prevení para mantener las operaciones sin contratiempos. Confía en La Victoria y aprovecha nuestros
+        servicios. Juntos podemos optimizar tus operaciones y llevar tu negocio al siguiente nivel.</p>
+      <p>¡No esperes más! <a
+          href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.">Contáctanos
+          hoy mismo</a> y descubrí cómo La Victoria puede potenciar el rendimiento de tus equipos.</p>
 
     </div>
 
-    
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>
@@ -228,23 +261,23 @@ width: 270px;">
 
         </div>
         <div class="footer-newsletter">
-                    <div class="container">
-                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
-                            <div class="col-lg-6">
-                                <form action="articulo13.php" method="post" role="form"
-                                    style="display: flex; align-items: center;   justify-content: flex-start;">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Su correo electrónico" required>
-                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
-                                    <div class="text-center">
-                                        <button type="submit"
-                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+              <div class="col-lg-6">
+                <form action="articulo13.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="    display: flex;
 justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"

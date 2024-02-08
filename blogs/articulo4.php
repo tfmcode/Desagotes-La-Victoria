@@ -48,66 +48,64 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
-    <style>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-h1 {
-text-align: center;
-font-size: 28px;
-margin-bottom: 20px;
-}
+    h4 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-h4 {
-font-size: 20px;
-margin-top: 30px;
-margin-bottom: 10px;
-}
+    p {
+      margin-bottom: 15px;
+    }
 
-p {
-margin-bottom: 15px;
-}
+    strong {
+      font-weight: bold;
+    }
 
-strong {
-font-weight: bold;
-}
-
-a {
-color: blue;
-text-decoration: none;
-}
-
-</style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
 
 </head>
 
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_responseF = $_POST['recaptcha_responseF'];
-    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-    $recaptcha = json_decode($recaptcha);
-    // Miramos si se considera humano o robot: 
-    if ($recaptcha->score >= 0.5) {
-        $_email = $_POST['email'];
-        $from = "info@desagoteslavictoria.com.ar";
-        $to = "info@desagoteslavictoria.com.ar";
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
 
-        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<script type="text/javascript">
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
-        }
-
-    } else {
-
     }
+
+  } else {
+
+  }
 
 }
 
@@ -158,36 +156,66 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-    <h1>Landfarming: Tratamiento Ambiental</h1>
-    <p>El impacto ambiental que provoca la producción petrolífera es notable, pero existe una solución para revitalizar los suelos que quedan inutilizados por influencia del derrame de hidrocarburos en las capas internas: se llama Landfarming.</p>
-    <p>También conocido como tratamiento superficial en tierra, el landfarming es un proceso biológico que utiliza microorganismos naturales del suelo (como las bacterias) para eliminar, reducir o transformar las sustancias contaminantes. Su propósito es minimizar el riesgo para la salud humana y el medio ambiente.</p>
-    <h2>Landfarming, una alternativa que reduce el impacto ambiental.</h2>
-    <p>En <a href='../home.php'><strong>Desagotes La Victoria</strong></a> estamos muy interesados en el cuidado y protección del medio ambiente, por eso queremos mencionarte los puntos más relevantes de este tratamiento y contarte por qué cada vez se está aplicando más en la Argentina y en el mundo:</p>
-    <ul>
+      <h1>Landfarming: Tratamiento Ambiental</h1>
+      <p>El impacto ambiental que provoca la producción petrolífera es notable, pero existe una solución para
+        revitalizar los suelos que quedan inutilizados por influencia del derrame de hidrocarburos en las capas
+        internas: se llama Landfarming.</p>
+      <p>También conocido como tratamiento superficial en tierra, el landfarming es un proceso biológico que utiliza
+        microorganismos naturales del suelo (como las bacterias) para eliminar, reducir o transformar las sustancias
+        contaminantes. Su propósito es minimizar el riesgo para la salud humana y el medio ambiente.</p>
+      <h2>Landfarming, una alternativa que reduce el impacto ambiental.</h2>
+      <p>En <a href='../home.php'><strong>Desagotes La Victoria</strong></a> estamos muy interesados en el cuidado y
+        protección del medio ambiente, por eso queremos mencionarte los puntos más relevantes de este tratamiento y
+        contarte por qué cada vez se está aplicando más en la Argentina y en el mundo:</p>
+      <ul>
         <li>Por el bajo costo de su proceso (pues no requiere más que la misma naturaleza).</li>
         <li>La nula presencia posterior de sedimentos o residuos peligrosos derivados.</li>
         <li>La eliminación de un considerable porcentaje de elementos contaminantes.</li>
-    </ul>
-    <h3>¿Cómo se aplica el Landfarming?</h3>
-    <p>El landfarming tiene la particularidad de encontrar la ubicación de las capas de suelo en que se filtró material contaminante y trabajar en ellas a través del descubrimiento de la microflora natural (hongos, bacterias, o levaduras), procediendo así a su estimulación.</p>
-    <p>Para que el tratamiento sea efectivo deben estar presentes determinadas condiciones de temperatura y humedad, lo mismo que una adecuada cantidad de nutrientes y microorganismos. El proceso se lleva a cabo por medio de la remoción del terreno con arado, el agregado de fertilizantes, y riego superficial.</p>
-    <h3>¿Cuánto tiempo necesita este tratamiento?</h3>
-    <p>El proceso de landfarming puede llevar desde algunas pocas semanas hasta varios meses. En este sentido, <strong>el tratamiento durará más si las concentraciones de los contaminantes son muy altas</strong>, si no son adecuadas las condiciones y hay que adecuar el medio (temperatura/humedad), o si los residuos contienen ciertas sustancias que son resistentes a los microorganismos.</p>
-    <p>En el caso de una demora mayor, la situación es la siguiente: durante los primeros 4 meses tras una adecuación del medio la degradación es más veloz; después <strong>el ritmo disminuye ligeramente luego de la desaparición de los hidrocarburos más ligeros</strong>, frente a los más aromáticos, los que mantienen su fuerte presencia por más tiempo.</p>
-    <h3>¿Es seguro el Landfarming?</h3>
-    <p>Es una técnica muy segura teniendo en cuenta que los microorganismos que intervienen en la biorrecuperación <strong>son presencias naturales en zonas como parques y jardines</strong>. Por otro lado, la cantidad incluida de microbios en el área a tratar es solamente la necesaria, con la mirada solamente puesta en inducir la actividad biológica natural.</p>
-    <h3>¿Por qué elegir el Landfarming para tu empresa o industria?</h3>
-    <p>En condiciones adecuadas, este proceso no genera peligro de contaminación posterior, y puede llevarse a cabo en contextos climáticos diferentes, sin perjuicio del éxito de su aplicación.</p>
-    <p>Decimos que los resultados <strong>no generan peligro porque tomamos en cuenta que los microorganismos se aprovechan y nutren de los elementos nocivos</strong> para procurar energía y alimento, generando a modo de cambio agua y gases, como por ejemplo el dióxido de carbono.</p>
-    <p>Elegí la sustentabilidad e invertí en un mejor futuro. La elección de nuevos métodos y herramientas para la limpieza y tratamiento con conciencia, es un paso para mejorar la calidad de vida de todos y cada uno de quienes habitamos este planeta. <a href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'>Consulta aquí qué tipo de servicio de recolección y disposición final de residuos es el más conveniente para tu industria o comercio.</a></p>
+      </ul>
+      <h3>¿Cómo se aplica el Landfarming?</h3>
+      <p>El landfarming tiene la particularidad de encontrar la ubicación de las capas de suelo en que se filtró
+        material contaminante y trabajar en ellas a través del descubrimiento de la microflora natural (hongos,
+        bacterias, o levaduras), procediendo así a su estimulación.</p>
+      <p>Para que el tratamiento sea efectivo deben estar presentes determinadas condiciones de temperatura y humedad,
+        lo mismo que una adecuada cantidad de nutrientes y microorganismos. El proceso se lleva a cabo por medio de la
+        remoción del terreno con arado, el agregado de fertilizantes, y riego superficial.</p>
+      <h3>¿Cuánto tiempo necesita este tratamiento?</h3>
+      <p>El proceso de landfarming puede llevar desde algunas pocas semanas hasta varios meses. En este sentido,
+        <strong>el tratamiento durará más si las concentraciones de los contaminantes son muy altas</strong>, si no son
+        adecuadas las condiciones y hay que adecuar el medio (temperatura/humedad), o si los residuos contienen ciertas
+        sustancias que son resistentes a los microorganismos.</p>
+      <p>En el caso de una demora mayor, la situación es la siguiente: durante los primeros 4 meses tras una adecuación
+        del medio la degradación es más veloz; después <strong>el ritmo disminuye ligeramente luego de la desaparición
+          de los hidrocarburos más ligeros</strong>, frente a los más aromáticos, los que mantienen su fuerte presencia
+        por más tiempo.</p>
+      <h3>¿Es seguro el Landfarming?</h3>
+      <p>Es una técnica muy segura teniendo en cuenta que los microorganismos que intervienen en la biorrecuperación
+        <strong>son presencias naturales en zonas como parques y jardines</strong>. Por otro lado, la cantidad incluida
+        de microbios en el área a tratar es solamente la necesaria, con la mirada solamente puesta en inducir la
+        actividad biológica natural.</p>
+      <h3>¿Por qué elegir el Landfarming para tu empresa o industria?</h3>
+      <p>En condiciones adecuadas, este proceso no genera peligro de contaminación posterior, y puede llevarse a cabo en
+        contextos climáticos diferentes, sin perjuicio del éxito de su aplicación.</p>
+      <p>Decimos que los resultados <strong>no generan peligro porque tomamos en cuenta que los microorganismos se
+          aprovechan y nutren de los elementos nocivos</strong> para procurar energía y alimento, generando a modo de
+        cambio agua y gases, como por ejemplo el dióxido de carbono.</p>
+      <p>Elegí la sustentabilidad e invertí en un mejor futuro. La elección de nuevos métodos y herramientas para la
+        limpieza y tratamiento con conciencia, es un paso para mejorar la calidad de vida de todos y cada uno de quienes
+        habitamos este planeta. <a
+          href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'>Consulta
+          aquí qué tipo de servicio de recolección y disposición final de residuos es el más conveniente para tu
+          industria o comercio.</a></p>
     </div>
 
-    
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>
@@ -224,23 +252,23 @@ width: 270px;">
 
         </div>
         <div class="footer-newsletter">
-                    <div class="container">
-                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
-                            <div class="col-lg-6">
-                                <form action="articulo4.php" method="post" role="form"
-                                    style="display: flex; align-items: center;   justify-content: flex-start;">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Su correo electrónico" required>
-                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
-                                    <div class="text-center">
-                                        <button type="submit"
-                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+              <div class="col-lg-6">
+                <form action="articulo4.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="    display: flex;
 justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"

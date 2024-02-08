@@ -49,65 +49,63 @@
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
 
-    <style>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-h1 {
-text-align: center;
-font-size: 28px;
-margin-bottom: 20px;
-}
+    h4 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-h4 {
-font-size: 20px;
-margin-top: 30px;
-margin-bottom: 10px;
-}
+    p {
+      margin-bottom: 15px;
+    }
 
-p {
-margin-bottom: 15px;
-}
+    strong {
+      font-weight: bold;
+    }
 
-strong {
-font-weight: bold;
-}
-
-a {
-color: blue;
-text-decoration: none;
-}
-
-</style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_responseF = $_POST['recaptcha_responseF'];
-    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-    $recaptcha = json_decode($recaptcha);
-    // Miramos si se considera humano o robot: 
-    if ($recaptcha->score >= 0.5) {
-        $_email = $_POST['email'];
-        $from = "info@desagoteslavictoria.com.ar";
-        $to = "info@desagoteslavictoria.com.ar";
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
 
-        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<script type="text/javascript">
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
-        }
-
-    } else {
-
     }
+
+  } else {
+
+  }
 
 }
 
@@ -158,57 +156,85 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-    <h1>Las 4 fallas más frecuentes en las cañerías industriales (y cómo detectarlas)</h1>
+      <h1>Las 4 fallas más frecuentes en las cañerías industriales (y cómo detectarlas)</h1>
 
-    <p>El buen estado de una cañería es vital para el trabajo seguro de una empresa o industria. Un <strong>problema en el desagüe</strong> ocasiona demoras, incomodidad y hasta <strong>fallas durante el proceso productivo.</strong>  ¿Por qué suceden?  </p>
-    <p>Hay diversos motivos que podrían ocasionar fallas en los caños, y estos, en la mayoría de las ocasiones, <strong>solo puede determinarse a través de una inspección o diagnóstico</strong> de las mismas.</p>
-    <p>En algunos casos, cuando la <strong>falla es profunda y de gravedad alta</strong>, debe recurrirse a un sistema de inspección con cámara para poder detectar el inconveniente.</p>
-    <h4>Las 4 fallas más comunes en las cañerías</h4>
+      <p>El buen estado de una cañería es vital para el trabajo seguro de una empresa o industria. Un <strong>problema
+          en el desagüe</strong> ocasiona demoras, incomodidad y hasta <strong>fallas durante el proceso
+          productivo.</strong> ¿Por qué suceden? </p>
+      <p>Hay diversos motivos que podrían ocasionar fallas en los caños, y estos, en la mayoría de las ocasiones,
+        <strong>solo puede determinarse a través de una inspección o diagnóstico</strong> de las mismas.</p>
+      <p>En algunos casos, cuando la <strong>falla es profunda y de gravedad alta</strong>, debe recurrirse a un sistema
+        de inspección con cámara para poder detectar el inconveniente.</p>
+      <h4>Las 4 fallas más comunes en las cañerías</h4>
 
-    <ol>
+      <ol>
         <li>
-            <strong>Cañerías ruidosas</strong>
-            <p>La dilatación de las cañerías por el contacto con el agua caliente es una falla bastante frecuente. Como <strong>consecuencia de las altas temperaturas la cañería se dilata</strong> y produce sonidos molestos y repetitivos debido al roce con las abrazaderas.</p>
+          <strong>Cañerías ruidosas</strong>
+          <p>La dilatación de las cañerías por el contacto con el agua caliente es una falla bastante frecuente. Como
+            <strong>consecuencia de las altas temperaturas la cañería se dilata</strong> y produce sonidos molestos y
+            repetitivos debido al roce con las abrazaderas.</p>
         </li>
         <li>
-            <strong>Presión baja del flujo de agua</strong>
-            <p>Si bien es un problema de categoría leve, es cierto que puede ocasionar bastante incomodidad en el flujo de trabajo de una industria.</p>
-            <p>Más que nadie sabrás que la normalidad del flujo de agua o de los líquidos que se vierten para la red productiva <strong>afectan directamente a tu producto final</strong>.</p>
-            <p>Ten en cuenta que a medida que aumenta la pérdida de presión, también incrementa la energía que requiere el sistema para compensarla, lo cual lleva a <strong>aumentar los costos de operación</strong>.</p>
+          <strong>Presión baja del flujo de agua</strong>
+          <p>Si bien es un problema de categoría leve, es cierto que puede ocasionar bastante incomodidad en el flujo de
+            trabajo de una industria.</p>
+          <p>Más que nadie sabrás que la normalidad del flujo de agua o de los líquidos que se vierten para la red
+            productiva <strong>afectan directamente a tu producto final</strong>.</p>
+          <p>Ten en cuenta que a medida que aumenta la pérdida de presión, también incrementa la energía que requiere el
+            sistema para compensarla, lo cual lleva a <strong>aumentar los costos de operación</strong>.</p>
         </li>
         <li>
-            <strong>Cañerías obstruidas por presencia de sedimentos</strong>
-            <p>La acumulación en la tubería de <strong>materiales y desechos sólidos</strong> es un problema bastante común, y es uno de los inconvenientes que podemos solucionar desde La Victoria mediante una serie de procedimientos, como la inspección televisiva de cañerías industriales y con una <strong>limpieza hidrocinética de alta presión</strong>.</p>
+          <strong>Cañerías obstruidas por presencia de sedimentos</strong>
+          <p>La acumulación en la tubería de <strong>materiales y desechos sólidos</strong> es un problema bastante
+            común, y es uno de los inconvenientes que podemos solucionar desde La Victoria mediante una serie de
+            procedimientos, como la inspección televisiva de cañerías industriales y con una <strong>limpieza
+              hidrocinética de alta presión</strong>.</p>
         </li>
         <li>
-            <strong>Desgaste y roturas en la cañería</strong>
-            <p>El desgaste físico de cañerías antiguas pueden resultar en problemas futuros de compleja resolución, como por ejemplo, la inundación del espacio de trabajo, o roturas que implican desmontar grandes partes de la instalación.</p>
+          <strong>Desgaste y roturas en la cañería</strong>
+          <p>El desgaste físico de cañerías antiguas pueden resultar en problemas futuros de compleja resolución, como
+            por ejemplo, la inundación del espacio de trabajo, o roturas que implican desmontar grandes partes de la
+            instalación.</p>
         </li>
-    </ol>
+      </ol>
 
-    <p>Recuerda que el mantenimiento preventivo es una de las primeras recomendaciones que te brindamos, porque previene futuras complicaciones, pérdidas de tiempo y de dinero para tu empresa. En La Victoria Destapaciones tenemos presente una conciencia ecológica a la hora de cuidar el funcionamiento natural de las cañerías, y la posterior eliminación de los desechos de forma correcta. Es por eso que el resultado del desagote tiene que ser destinado a las plantas de tratamiento habilitadas. Consulta más información de los servicios de La Victoria en nuestra página web.</p>
+      <p>Recuerda que el mantenimiento preventivo es una de las primeras recomendaciones que te brindamos, porque
+        previene futuras complicaciones, pérdidas de tiempo y de dinero para tu empresa. En La Victoria Destapaciones
+        tenemos presente una conciencia ecológica a la hora de cuidar el funcionamiento natural de las cañerías, y la
+        posterior eliminación de los desechos de forma correcta. Es por eso que el resultado del desagote tiene que ser
+        destinado a las plantas de tratamiento habilitadas. Consulta más información de los servicios de La Victoria en
+        nuestra página web.</p>
 
-    <h4>Tips de La Victoria para el cuidado de tus cañerías</h4>
-    <ul>
+      <h4>Tips de La Victoria para el cuidado de tus cañerías</h4>
+      <ul>
         <li>Protege tus cañerías utilizando los materiales adecuados.</li>
         <li>Realiza un diagnóstico frecuente para ver su estado general.</li>
         <li>Presta atención si se presenta alguno de los puntos mencionados arriba.</li>
         <li>Realiza el trabajo con expertos que puedan darte un diagnóstico preciso.</li>
-    </ul>
+      </ul>
 
-    <h4>La importancia del mantenimiento de cañerías industriales</h4>
-    <p>El adecuado mantenimiento del sistema de tuberías, y la detección a tiempo de los problemas posibles resulta en notorios beneficios para el desarrollo, los procesos industriales, y el ahorro en costos.  </p>
-    <p>Luego de realizar una limpieza que permita lograr un diagnóstico claro de la afectación de las cañerías, la revisión visual por medio de cámaras es el paso siguiente para detectar los problemas por resolver. Como adelantamos, la inspección en video es la forma más útil para conocer el origen de las fallas o complicaciones.</p>
-    <p>El registro de la información en los diferentes soportes disponibles es otro de los servicios que brinda La Victoria, y es una herramienta de seguridad para resguardar los datos y facilitar el seguimiento a futuro de las necesidades de conservación.<a>Cotiza el diagnóstico para tus cañerías haciendo clic acá.</a></p>
+      <h4>La importancia del mantenimiento de cañerías industriales</h4>
+      <p>El adecuado mantenimiento del sistema de tuberías, y la detección a tiempo de los problemas posibles resulta en
+        notorios beneficios para el desarrollo, los procesos industriales, y el ahorro en costos. </p>
+      <p>Luego de realizar una limpieza que permita lograr un diagnóstico claro de la afectación de las cañerías, la
+        revisión visual por medio de cámaras es el paso siguiente para detectar los problemas por resolver. Como
+        adelantamos, la inspección en video es la forma más útil para conocer el origen de las fallas o complicaciones.
+      </p>
+      <p>El registro de la información en los diferentes soportes disponibles es otro de los servicios que brinda La
+        Victoria, y es una herramienta de seguridad para resguardar los datos y facilitar el seguimiento a futuro de las
+        necesidades de conservación.<a>Cotiza el diagnóstico para tus cañerías haciendo clic acá.</a></p>
 
     </div>
 
-    
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>
@@ -245,23 +271,23 @@ width: 270px;">
 
         </div>
         <div class="footer-newsletter">
-                    <div class="container">
-                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
-                            <div class="col-lg-6">
-                                <form action="articulo6.php" method="post" role="form"
-                                    style="display: flex; align-items: center;   justify-content: flex-start;">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Su correo electrónico" required>
-                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
-                                    <div class="text-center">
-                                        <button type="submit"
-                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+              <div class="col-lg-6">
+                <form action="articulo6.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="    display: flex;
 justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"

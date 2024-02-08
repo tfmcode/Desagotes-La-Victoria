@@ -48,66 +48,64 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
-    <style>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-h1 {
-text-align: center;
-font-size: 28px;
-margin-bottom: 20px;
-}
+    h4 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-h4 {
-font-size: 20px;
-margin-top: 30px;
-margin-bottom: 10px;
-}
+    p {
+      margin-bottom: 15px;
+    }
 
-p {
-margin-bottom: 15px;
-}
+    strong {
+      font-weight: bold;
+    }
 
-strong {
-font-weight: bold;
-}
-
-a {
-color: blue;
-text-decoration: none;
-}
-
-</style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
 
 </head>
 
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_responseF = $_POST['recaptcha_responseF'];
-    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-    $recaptcha = json_decode($recaptcha);
-    // Miramos si se considera humano o robot: 
-    if ($recaptcha->score >= 0.5) {
-        $_email = $_POST['email'];
-        $from = "info@desagoteslavictoria.com.ar";
-        $to = "info@desagoteslavictoria.com.ar";
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
 
-        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<script type="text/javascript">
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
-        }
-
-    } else {
-
     }
+
+  } else {
+
+  }
 
 }
 
@@ -158,30 +156,57 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-    <h1>La verdad sobre las cámaras sépticas</h1>
-    <p>Las cámaras sépticas son una parte esencial del sistema de tratamiento de aguas residuales. Sin embargo, a menudo pasan desapercibidas en la rutina diaria. ¿Pero qué sucede realmente dentro de estas estructuras subterráneas? Desde <a href='../home.php'><strong>La Victoria</strong></a> te explicamos todos los secretos.</p>
-    <h4>¿Qué es una fosa séptica y cómo funciona?</h4>
-    <p>Se trata de sistemas de almacenamiento y eliminación segura de residuos. A través de un proceso de decantación se separan los sólidos presentes en los efluentes, evitando la contaminación de suelos y fuentes de agua dulce.</p>
-    <p>Para instalar una fosa séptica, se realiza una excavación de un pequeño pozo donde se construye un tanque que recibe los líquidos generados en cualquier edificación que esté alejada de un sistema de alcantarillado. Existen fosas de una y dos cámaras, y cada una funciona de manera diferente.</p>
-    <h4>Residuos acumulados en cámaras sépticas</h4>
-    <p>El proceso de descomposición de las escorias es un tema de vital importancia para el correcto funcionamiento de estos sistemas. A lo largo del tiempo, los residuos acumulados pueden tener un impacto significativo en el rendimiento y la vida útil de esta clase de estructuras.</p>
-    <p>Uno de los inconvenientes más comunes es el almacenamiento de lodos en el fondo de la fosa. Estos materiales son el resultado de la descomposición de los desechos sólidos y líquidos que ingresan en ella; con el tiempo, los lodos forman una capa espesa en el interior de la cámara. Esto puede obstruir los conductos de entrada y salida, reduciendo la capacidad total para tratar de manera adecuada los desperdicios.</p>
-    <p>Esto también puede causar olores desagradables; a medida que los restos se descomponen, producen gases malolientes que eventualmente causan aromas ofensivos en las áreas cercanas. Esto no solo es incómodo para los residentes cercanos, sino que también puede ser un problema de salud pública.</p>
-    <p>Cuando los conductos están obstruidos, el flujo de agua se reduce, lo que puede provocar que los desechos se acumulen en la superficie del agua en la fosa y no se descompongan como es esperable.</p>
-    <p>Como es sabido, estas situaciones suelen resultar en gastos inesperados. Quienes conformamos <a href='../home.php'><strong>La Victoria</strong></a> estamos a tu servicio para evitar desembolsos improductivos que podrían afectar el normal funcionamiento económico de tu negocio o empresa.</p>
-    <h4>¿Qué se puede hacer para evitar el depósito de residuos en las cámaras sépticas?</h4>
-    <p>Es importante tener en cuenta la importancia de verificar el buen funcionamiento del desagüe y evitar arrojar productos químicos o materiales no biodegradables que puedan obstruir los conductos. Como ya mencionamos, la carga de contaminantes puede repercutir negativamente en la calidad del agua y, definitivamente, en el sostenimiento del medio ambiente.</p>
-    <p>El mantenimiento regular de estos espacios es el primer punto a considerar; por eso es esencial vaciar y limpiar periódicamente las cámaras para eliminar los depósitos innecesarios. La utilización del equipo adecuado, operado por profesionales capacitados, garantiza un manejo seguro de los desperdicios. Ese es uno de los principios de <a href='../home.php'><strong>La Victoria</strong></a>, y estamos listos para ayudarte.</p>
-    <p>En el siguiente <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.">enlace</a> podés consultar un presupuesto justo para vos. Escribinos y cotizá tu servicio en La Victoria.</p>
+      <h1>La verdad sobre las cámaras sépticas</h1>
+      <p>Las cámaras sépticas son una parte esencial del sistema de tratamiento de aguas residuales. Sin embargo, a
+        menudo pasan desapercibidas en la rutina diaria. ¿Pero qué sucede realmente dentro de estas estructuras
+        subterráneas? Desde <a href='../home.php'><strong>La Victoria</strong></a> te explicamos todos los secretos.</p>
+      <h4>¿Qué es una fosa séptica y cómo funciona?</h4>
+      <p>Se trata de sistemas de almacenamiento y eliminación segura de residuos. A través de un proceso de decantación
+        se separan los sólidos presentes en los efluentes, evitando la contaminación de suelos y fuentes de agua dulce.
+      </p>
+      <p>Para instalar una fosa séptica, se realiza una excavación de un pequeño pozo donde se construye un tanque que
+        recibe los líquidos generados en cualquier edificación que esté alejada de un sistema de alcantarillado. Existen
+        fosas de una y dos cámaras, y cada una funciona de manera diferente.</p>
+      <h4>Residuos acumulados en cámaras sépticas</h4>
+      <p>El proceso de descomposición de las escorias es un tema de vital importancia para el correcto funcionamiento de
+        estos sistemas. A lo largo del tiempo, los residuos acumulados pueden tener un impacto significativo en el
+        rendimiento y la vida útil de esta clase de estructuras.</p>
+      <p>Uno de los inconvenientes más comunes es el almacenamiento de lodos en el fondo de la fosa. Estos materiales
+        son el resultado de la descomposición de los desechos sólidos y líquidos que ingresan en ella; con el tiempo,
+        los lodos forman una capa espesa en el interior de la cámara. Esto puede obstruir los conductos de entrada y
+        salida, reduciendo la capacidad total para tratar de manera adecuada los desperdicios.</p>
+      <p>Esto también puede causar olores desagradables; a medida que los restos se descomponen, producen gases
+        malolientes que eventualmente causan aromas ofensivos en las áreas cercanas. Esto no solo es incómodo para los
+        residentes cercanos, sino que también puede ser un problema de salud pública.</p>
+      <p>Cuando los conductos están obstruidos, el flujo de agua se reduce, lo que puede provocar que los desechos se
+        acumulen en la superficie del agua en la fosa y no se descompongan como es esperable.</p>
+      <p>Como es sabido, estas situaciones suelen resultar en gastos inesperados. Quienes conformamos <a
+          href='../home.php'><strong>La Victoria</strong></a> estamos a tu servicio para evitar desembolsos
+        improductivos que podrían afectar el normal funcionamiento económico de tu negocio o empresa.</p>
+      <h4>¿Qué se puede hacer para evitar el depósito de residuos en las cámaras sépticas?</h4>
+      <p>Es importante tener en cuenta la importancia de verificar el buen funcionamiento del desagüe y evitar arrojar
+        productos químicos o materiales no biodegradables que puedan obstruir los conductos. Como ya mencionamos, la
+        carga de contaminantes puede repercutir negativamente en la calidad del agua y, definitivamente, en el
+        sostenimiento del medio ambiente.</p>
+      <p>El mantenimiento regular de estos espacios es el primer punto a considerar; por eso es esencial vaciar y
+        limpiar periódicamente las cámaras para eliminar los depósitos innecesarios. La utilización del equipo adecuado,
+        operado por profesionales capacitados, garantiza un manejo seguro de los desperdicios. Ese es uno de los
+        principios de <a href='../home.php'><strong>La Victoria</strong></a>, y estamos listos para ayudarte.</p>
+      <p>En el siguiente <a
+          href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.">enlace</a>
+        podés consultar un presupuesto justo para vos. Escribinos y cotizá tu servicio en La Victoria.</p>
 
     </div>
 
-    
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>
@@ -218,23 +243,23 @@ width: 270px;">
 
         </div>
         <div class="footer-newsletter">
-                    <div class="container">
-                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
-                            <div class="col-lg-6">
-                                <form action="articulo12.php" method="post" role="form"
-                                    style="display: flex; align-items: center;   justify-content: flex-start;">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Su correo electrónico" required>
-                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
-                                    <div class="text-center">
-                                        <button type="submit"
-                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+              <div class="col-lg-6">
+                <form action="articulo12.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="    display: flex;
 justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"

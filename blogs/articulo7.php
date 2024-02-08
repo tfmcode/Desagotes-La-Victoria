@@ -49,34 +49,32 @@
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
 
-    <style>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-h1 {
-text-align: center;
-font-size: 28px;
-margin-bottom: 20px;
-}
+    h4 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-h4 {
-font-size: 20px;
-margin-top: 30px;
-margin-bottom: 10px;
-}
+    p {
+      margin-bottom: 15px;
+    }
 
-p {
-margin-bottom: 15px;
-}
+    strong {
+      font-weight: bold;
+    }
 
-strong {
-font-weight: bold;
-}
-
-a {
-color: blue;
-text-decoration: none;
-}
-
-</style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <?php
@@ -162,43 +160,65 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-        <h1>Atención: 4 síntomas del mal funcionamiento cloacal</h1>
-        <p>¿Has sentido un olor pestilente proveniente de las cloacas? Presta atención, hay ciertos indicios de que el sistema cloacal de tu empresa, industria u hogar está presentando algún tipo de problema.</p>
-        <p>Como bien sabemos, la red cloacal está compuesta por cañerías de amplias dimensiones que funcionan tanto para negocios e industrias, como para el servicio hogareño. Tras su uso, el agua residual viaja a través de las cañerías, y posteriormente se traslada a plantas de tratamiento.</p>
-        <p>¿Pero qué sucede cuando este proceso no puede desarrollarse correctamente? ¿Cómo impactan estos problemas en el funcionamiento de las industrias?</p>
-        <p>A continuación, desde La Victoria te contamos sobre las mejores prácticas para preservar el sistema cloacal y las <strong>señales a prestar atención para poder identificar un mal funcionamiento u obstrucción.</strong></p>
-        <h4>Cuidado de la red cloacal. ¿Por qué las cloacas se obstruyen?</h4>
-        <p>La falta de supervisión respecto a la manipulación y descarte de residuos, el uso inadecuado de los espacios de trabajo, y por sobre todo, <strong>no contar con el mantenimiento preventivo de las cloacas de tu comercio o industria, puede ocasionar inconvenientes más graves a futuro.</strong></p>
-        <p>Estos problemas requerirán de reparación y tendrán un costo más elevado, ya que además de mano de obra, <strong>requerirá de la interrupción momentánea o permanente de los servicios o producción que su negocio ofrece, con las pérdidas monetarias consecuentes derivadas.</strong></p>
-        <h4>Tips de La Victoria para el adecuado funcionamiento del sistema cloacal</h4>
-        <ul>
-            <li><strong>Control sobre los desperdicios que se vierten en la red.</strong> Echar grasa, aceite, elementos químicos o sólidos a través de las tuberías es absolutamente desaconsejable, y se puede convertir a la larga en un problema sostenido, que llegará acompañado de graves complicaciones en el funcionamiento normal de la red.</li>
-            <li><strong>Revisar de manera asidua los conductos y el drenaje.</strong> Si se nota un desagüe lento de los líquidos, quizá sea momento de prestar atención y actuar con servicio técnico preventivo, dado que este tipo de inconvenientes suelen acentuarse con el tiempo.</li>
-            <li><strong>De tanto en tanto, dejar correr el agua caliente</strong> al menos por un período breve de tiempo, para que los objetos que puedan resultar en molestia se disuelvan o retiren.</li>
-        </ul>
-        <h4>Características más notorias de un sistema en mal funcionamiento u obstruido</h4>
-        <ul>
-            <li>Olor desagradable o pestilente.</li>
-            <li>Sonidos que puedan ser señales de drenaje incorrecto o complicado.</li>
-            <li>Aparición de manchas que denotan en la zona presencia de humedad.</li>
-            <li>Bocas o salidas de agua con atasco.</li>
-        </ul>
-        <p>La importancia de controlar los desechos presenta beneficios que, aunque no puedan ser considerados a simple vista, generan el adecuado funcionamiento que se espera para el sostén de una actividad regular. Y a futuro ahorran inconvenientes y pérdida de dinero para las empresas.</p>
-        <p>De manera previa, recordemos que también es importante establecer un buen diseño del pozo séptico y, en paralelo, de las cañerías en general, con la mira puesta en evitar tanto como sea posible problemas que deriven en un bloqueo del sistema.</p>
-        <p>La periodicidad del cuidado mínimo necesario se relaciona con la búsqueda de la seguridad, y de mayor calidad de vida para el futuro de cada uno de nosotros.</p>
-        <p>¿Quieres consultar un presupuesto a tu medida? <a>Escribinos y cotizá tu servicio en La Victoria.</a></p>
+      <h1>Atención: 4 síntomas del mal funcionamiento cloacal</h1>
+      <p>¿Has sentido un olor pestilente proveniente de las cloacas? Presta atención, hay ciertos indicios de que el
+        sistema cloacal de tu empresa, industria u hogar está presentando algún tipo de problema.</p>
+      <p>Como bien sabemos, la red cloacal está compuesta por cañerías de amplias dimensiones que funcionan tanto para
+        negocios e industrias, como para el servicio hogareño. Tras su uso, el agua residual viaja a través de las
+        cañerías, y posteriormente se traslada a plantas de tratamiento.</p>
+      <p>¿Pero qué sucede cuando este proceso no puede desarrollarse correctamente? ¿Cómo impactan estos problemas en el
+        funcionamiento de las industrias?</p>
+      <p>A continuación, desde La Victoria te contamos sobre las mejores prácticas para preservar el sistema cloacal y
+        las <strong>señales a prestar atención para poder identificar un mal funcionamiento u obstrucción.</strong></p>
+      <h4>Cuidado de la red cloacal. ¿Por qué las cloacas se obstruyen?</h4>
+      <p>La falta de supervisión respecto a la manipulación y descarte de residuos, el uso inadecuado de los espacios de
+        trabajo, y por sobre todo, <strong>no contar con el mantenimiento preventivo de las cloacas de tu comercio o
+          industria, puede ocasionar inconvenientes más graves a futuro.</strong></p>
+      <p>Estos problemas requerirán de reparación y tendrán un costo más elevado, ya que además de mano de obra,
+        <strong>requerirá de la interrupción momentánea o permanente de los servicios o producción que su negocio
+          ofrece, con las pérdidas monetarias consecuentes derivadas.</strong></p>
+      <h4>Tips de La Victoria para el adecuado funcionamiento del sistema cloacal</h4>
+      <ul>
+        <li><strong>Control sobre los desperdicios que se vierten en la red.</strong> Echar grasa, aceite, elementos
+          químicos o sólidos a través de las tuberías es absolutamente desaconsejable, y se puede convertir a la larga
+          en un problema sostenido, que llegará acompañado de graves complicaciones en el funcionamiento normal de la
+          red.</li>
+        <li><strong>Revisar de manera asidua los conductos y el drenaje.</strong> Si se nota un desagüe lento de los
+          líquidos, quizá sea momento de prestar atención y actuar con servicio técnico preventivo, dado que este tipo
+          de inconvenientes suelen acentuarse con el tiempo.</li>
+        <li><strong>De tanto en tanto, dejar correr el agua caliente</strong> al menos por un período breve de tiempo,
+          para que los objetos que puedan resultar en molestia se disuelvan o retiren.</li>
+      </ul>
+      <h4>Características más notorias de un sistema en mal funcionamiento u obstruido</h4>
+      <ul>
+        <li>Olor desagradable o pestilente.</li>
+        <li>Sonidos que puedan ser señales de drenaje incorrecto o complicado.</li>
+        <li>Aparición de manchas que denotan en la zona presencia de humedad.</li>
+        <li>Bocas o salidas de agua con atasco.</li>
+      </ul>
+      <p>La importancia de controlar los desechos presenta beneficios que, aunque no puedan ser considerados a simple
+        vista, generan el adecuado funcionamiento que se espera para el sostén de una actividad regular. Y a futuro
+        ahorran inconvenientes y pérdida de dinero para las empresas.</p>
+      <p>De manera previa, recordemos que también es importante establecer un buen diseño del pozo séptico y, en
+        paralelo, de las cañerías en general, con la mira puesta en evitar tanto como sea posible problemas que deriven
+        en un bloqueo del sistema.</p>
+      <p>La periodicidad del cuidado mínimo necesario se relaciona con la búsqueda de la seguridad, y de mayor calidad
+        de vida para el futuro de cada uno de nosotros.</p>
+      <p>¿Quieres consultar un presupuesto a tu medida? <a>Escribinos y cotizá tu servicio en La Victoria.</a></p>
     </div>
-    
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
-          Dudas? Click aquí
+          ¿Dudas? Click aquí
         </button>
       </div>
     </section>
-
 
   </main><!-- End #main -->
 

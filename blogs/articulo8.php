@@ -49,65 +49,63 @@
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
 
-    <style>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-h1 {
-text-align: center;
-font-size: 28px;
-margin-bottom: 20px;
-}
+    h4 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-h4 {
-font-size: 20px;
-margin-top: 30px;
-margin-bottom: 10px;
-}
+    p {
+      margin-bottom: 15px;
+    }
 
-p {
-margin-bottom: 15px;
-}
+    strong {
+      font-weight: bold;
+    }
 
-strong {
-font-weight: bold;
-}
-
-a {
-color: blue;
-text-decoration: none;
-}
-
-</style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_responseF = $_POST['recaptcha_responseF'];
-    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-    $recaptcha = json_decode($recaptcha);
-    // Miramos si se considera humano o robot: 
-    if ($recaptcha->score >= 0.5) {
-        $_email = $_POST['email'];
-        $from = "info@desagoteslavictoria.com.ar";
-        $to = "info@desagoteslavictoria.com.ar";
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
 
-        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<script type="text/javascript">
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
-        }
-
-    } else {
-
     }
+
+  } else {
+
+  }
 
 }
 
@@ -158,67 +156,99 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-    <h1>Beneficios de la Limpieza Profunda en Cámaras Sépticas y Decantadoras de Barros</h1>
+      <h1>Beneficios de la Limpieza Profunda en Cámaras Sépticas y Decantadoras de Barros</h1>
 
-<p>¿Te has puesto a pensar en lo que pasa cuando no mantienes adecuadamente la limpieza de tu cámara séptica? La primera señal es el mal olor, pero también existen distintas señales que demuestran que el sistema cloacal puede colapsar en cualquier momento.</p>
+      <p>¿Te has puesto a pensar en lo que pasa cuando no mantienes adecuadamente la limpieza de tu cámara séptica? La
+        primera señal es el mal olor, pero también existen distintas señales que demuestran que el sistema cloacal puede
+        colapsar en cualquier momento.</p>
 
-<p>En lo que sigue, desde <strong>La Victoria</strong> te dejamos algunos consejos para lograr un buen funcionamiento de la cámara séptica, y te contamos qué herramientas son necesarias para su preservación, como es el caso de los pozos de bombeo. Prestar atención a este punto será muy útil para mantenerla en buen estado y así evitar gastos a futuro.</p>
+      <p>En lo que sigue, desde <strong>La Victoria</strong> te dejamos algunos consejos para lograr un buen
+        funcionamiento de la cámara séptica, y te contamos qué herramientas son necesarias para su preservación, como es
+        el caso de los pozos de bombeo. Prestar atención a este punto será muy útil para mantenerla en buen estado y así
+        evitar gastos a futuro.</p>
 
-<h4>¿Sabes qué son los pozos de bombeo?</h4>
+      <h4>¿Sabes qué son los pozos de bombeo?</h4>
 
-<p>Los pozos de bombeo son una herramienta efectiva para eliminar residuos líquidos, además de eventuales desechos acumulados. Utilizan la fuerza de la succión para elevar fluidos o agua, que por accidente o consecuencia del atasco, quedó debajo del nivel mínimo de desagüe, y por esto, estacionada en ese punto.</p>
+      <p>Los pozos de bombeo son una herramienta efectiva para eliminar residuos líquidos, además de eventuales desechos
+        acumulados. Utilizan la fuerza de la succión para elevar fluidos o agua, que por accidente o consecuencia del
+        atasco, quedó debajo del nivel mínimo de desagüe, y por esto, estacionada en ese punto.</p>
 
-<p>El proceso de elevación de fluidos se lleva a cabo por medio del funcionamiento de las bombas, que con el sistema de succión logran evacuar aguas residuales (como las que provienen de los desechos de la industria) y también limpias o pluviales.</p>
+      <p>El proceso de elevación de fluidos se lleva a cabo por medio del funcionamiento de las bombas, que con el
+        sistema de succión logran evacuar aguas residuales (como las que provienen de los desechos de la industria) y
+        también limpias o pluviales.</p>
 
-<p>La cantidad de líquido esperado debe establecerse en un acuerdo entre el volumen de generación de agua residual y la capacidad de extracción del tipo de bomba elegida.</p>
+      <p>La cantidad de líquido esperado debe establecerse en un acuerdo entre el volumen de generación de agua residual
+        y la capacidad de extracción del tipo de bomba elegida.</p>
 
-<p>Para lograr el paso escalonado del agua a retirar, la definición de la magnitud del tanque es un punto a tener en cuenta de manera previa, para evitar un innecesario funcionamiento de impulso y retroceso de la bomba.</p>
+      <p>Para lograr el paso escalonado del agua a retirar, la definición de la magnitud del tanque es un punto a tener
+        en cuenta de manera previa, para evitar un innecesario funcionamiento de impulso y retroceso de la bomba.</p>
 
-<h4>Existen dos clases diferentes de pozos de bombeo</h4>
+      <h4>Existen dos clases diferentes de pozos de bombeo</h4>
 
-<ul>
-    <li>El de pedestal, que se concentra en altura, en referencia a la línea media de ubicación de la fosa. Este punto permite mayor facilidad a la hora del mantenimiento.</li>
-    <li>El sumergible, como su nombre señala se presenta en el interior de la cámara, y con la finalidad de evitar situaciones que puedan generar un cortocircuito, se sellan por completo.</li>
-</ul>
+      <ul>
+        <li>El de pedestal, que se concentra en altura, en referencia a la línea media de ubicación de la fosa. Este
+          punto permite mayor facilidad a la hora del mantenimiento.</li>
+        <li>El sumergible, como su nombre señala se presenta en el interior de la cámara, y con la finalidad de evitar
+          situaciones que puedan generar un cortocircuito, se sellan por completo.</li>
+      </ul>
 
-<h4>¿Cómo se limpia la cámara séptica?</h4>
+      <h4>¿Cómo se limpia la cámara séptica?</h4>
 
-<p><strong>Pasos para la limpieza de fosa séptica de un modo profesional:</strong></p>
+      <p><strong>Pasos para la limpieza de fosa séptica de un modo profesional:</strong></p>
 
-<ol>
-    <li>Es importante abrir la tapa con extremo cuidado y de forma gradual, ya que los gases que se acumulan en su interior son sumamente tóxicos y puede resultar peligroso inhalarlos.</li>
-    <li>Luego de la aplicación de agua a presión, a fin de eliminar el atasco, el retiro de la capa superficial de desperdicios utilizando aspirado, es lo que sigue.</li>
-    <li>La absorción de lodo (sólidos + agua), conformado tras la acción anterior, preparará el terreno para la fase final.</li>
-    <li>La limpieza de los filtros para asegurar el correcto fluir del líquido es recomendable, para enfocarse después en la recuperación de la circulación natural.</li>
-    <li>El relleno posterior del tanque debe incorporar cantidad de agua que no supere el lodo residual eliminado.</li>
-</ol>
+      <ol>
+        <li>Es importante abrir la tapa con extremo cuidado y de forma gradual, ya que los gases que se acumulan en su
+          interior son sumamente tóxicos y puede resultar peligroso inhalarlos.</li>
+        <li>Luego de la aplicación de agua a presión, a fin de eliminar el atasco, el retiro de la capa superficial de
+          desperdicios utilizando aspirado, es lo que sigue.</li>
+        <li>La absorción de lodo (sólidos + agua), conformado tras la acción anterior, preparará el terreno para la fase
+          final.</li>
+        <li>La limpieza de los filtros para asegurar el correcto fluir del líquido es recomendable, para enfocarse
+          después en la recuperación de la circulación natural.</li>
+        <li>El relleno posterior del tanque debe incorporar cantidad de agua que no supere el lodo residual eliminado.
+        </li>
+      </ol>
 
-<h4>¿Cuál es la duración estimada de una fosa séptica?</h4>
+      <h4>¿Cuál es la duración estimada de una fosa séptica?</h4>
 
-<p>Con el mantenimiento adecuado, la vida útil de una fosa séptica en promedio gira en torno de los 10 a 20 años, aproximadamente.</p>
+      <p>Con el mantenimiento adecuado, la vida útil de una fosa séptica en promedio gira en torno de los 10 a 20 años,
+        aproximadamente.</p>
 
-<h4>Aguas limpias vs aguas residuales</h4>
+      <h4>Aguas limpias vs aguas residuales</h4>
 
-<p><strong>¿Qué son las aguas limpias?</strong><br>
-Se trata de agua apta para su utilización exenta de riesgos, libre de toda contaminación, que pasa por un proceso previo de tratamiento en planta, y que es utilizada para lavado de alimentos, o simplemente para beber. Otro punto importante señala su utilidad para la mantención de los diferentes ecosistemas.</p>
+      <p><strong>¿Qué son las aguas limpias?</strong><br>
+        Se trata de agua apta para su utilización exenta de riesgos, libre de toda contaminación, que pasa por un
+        proceso previo de tratamiento en planta, y que es utilizada para lavado de alimentos, o simplemente para beber.
+        Otro punto importante señala su utilidad para la mantención de los diferentes ecosistemas.</p>
 
-<p><strong>Lo que hay que saber sobre las aguas residuales:</strong><br>
-Las aguas residuales están conformadas por distintas clases de desechos, impurezas con origen en procesos que pueden ser tanto domésticos o industriales, y que pueden contar en su constitución con distintas formas contaminantes.</p>
+      <p><strong>Lo que hay que saber sobre las aguas residuales:</strong><br>
+        Las aguas residuales están conformadas por distintas clases de desechos, impurezas con origen en procesos que
+        pueden ser tanto domésticos o industriales, y que pueden contar en su constitución con distintas formas
+        contaminantes.</p>
 
-<p>Este tipo de desechos, ya sean urbanos o derivados de cualquier clase de industria (independientemente del lugar de emplazamiento) son la causa directa de una situación de peligro potencial, por supuesto, que es muy importante evitar, o, en su defecto, resolver, si el mal ya está hecho.</p>
+      <p>Este tipo de desechos, ya sean urbanos o derivados de cualquier clase de industria (independientemente del
+        lugar de emplazamiento) son la causa directa de una situación de peligro potencial, por supuesto, que es muy
+        importante evitar, o, en su defecto, resolver, si el mal ya está hecho.</p>
 
-<p>El cuidado del medio ambiente forma parte de la filosofía de Desagotes La Victoria, y por eso estamos convencidos de la importancia de realizar acciones previas que eliminen los riesgos de inhabilitación de los sistemas de desagüe, y del sostenimiento de los procesos de control que permitan un adecuado funcionamiento a futuro.</p>
+      <p>El cuidado del medio ambiente forma parte de la filosofía de Desagotes La Victoria, y por eso estamos
+        convencidos de la importancia de realizar acciones previas que eliminen los riesgos de inhabilitación de los
+        sistemas de desagüe, y del sostenimiento de los procesos de control que permitan un adecuado funcionamiento a
+        futuro.</p>
 
-<p>¿Quieres consultar costos o solicitar un presupuesto? <a><strong>Escríbenos y cotiza tu servicio en La Victoria.</strong></a></p>
+      <p>¿Quieres consultar costos o solicitar un presupuesto? <a><strong>Escríbenos y cotiza tu servicio en La
+            Victoria.</strong></a></p>
 
     </div>
 
-    
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>
@@ -255,23 +285,23 @@ width: 270px;">
 
         </div>
         <div class="footer-newsletter">
-                    <div class="container">
-                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
-                            <div class="col-lg-6">
-                                <form action="articulo8.php" method="post" role="form"
-                                    style="display: flex; align-items: center;   justify-content: flex-start;">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Su correo electrónico" required>
-                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
-                                    <div class="text-center">
-                                        <button type="submit"
-                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+              <div class="col-lg-6">
+                <form action="articulo8.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="    display: flex;
 justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"

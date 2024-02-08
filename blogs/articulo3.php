@@ -48,66 +48,64 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
-    <style>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-h1 {
-text-align: center;
-font-size: 28px;
-margin-bottom: 20px;
-}
+    h4 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-h4 {
-font-size: 20px;
-margin-top: 30px;
-margin-bottom: 10px;
-}
+    p {
+      margin-bottom: 15px;
+    }
 
-p {
-margin-bottom: 15px;
-}
+    strong {
+      font-weight: bold;
+    }
 
-strong {
-font-weight: bold;
-}
-
-a {
-color: blue;
-text-decoration: none;
-}
-
-</style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
 
 </head>
 
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_responseF = $_POST['recaptcha_responseF'];
-    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-    $recaptcha = json_decode($recaptcha);
-    // Miramos si se considera humano o robot: 
-    if ($recaptcha->score >= 0.5) {
-        $_email = $_POST['email'];
-        $from = "info@desagoteslavictoria.com.ar";
-        $to = "info@desagoteslavictoria.com.ar";
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
 
-        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<script type="text/javascript">
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
-        }
-
-    } else {
-
     }
+
+  } else {
+
+  }
 
 }
 
@@ -158,45 +156,77 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-    <h1>¿Sabés por qué es tan importante definir cuáles son los principales desechos generados  por la producción agroalimentaria?</h1>
-    <h3>Estos son los tres principales desechos agroalimentarios:</h3>
-    <ol>
+      <h1>¿Sabés por qué es tan importante definir cuáles son los principales desechos generados por la producción
+        agroalimentaria?</h1>
+      <h3>Estos son los tres principales desechos agroalimentarios:</h3>
+      <ol>
         <li><strong>Biorresiduos, o desechos biodegradables</strong></li>
-        <p>Este tipo de descarte proviene principalmente de las industrias que procesan los alimentos que consumimos. En otra proporción importante, son residuos orgánicos habituales de la actividad gastronómica, y también en un gran porcentaje; del uso doméstico y comercial.</p>
-        <p>Este segmento incluye desperdicios de la preparación de alimentos, restos de verduras y frutas, granos, cáscaras de huevo; los restos del café por medio de su preparación, y a esto puede sumarse también las diferentes bebidas aromáticas. Los elementos generados en la cría de animales como la gallina, como viruta o aserrín, o las excreciones derivadas.</p>
-        <p><strong>Tip ambiental de <a href='../home.php'><strong>La Victoria</strong></a>: Una elección práctica para casa es el compost.</strong></p>
-        <p>El reciclaje de residuos domésticos puede derivar en compost. Si se cuenta con el espacio, es recomendable depositar los residuos en un sector especial de la casa y favorecer la descomposición natural, convirtiendo los desechos orgánicos en tierra fértil. Esto se logra a través de la acción e interacción de bacterias y elementos naturales como son el agua y la luz</p>
+        <p>Este tipo de descarte proviene principalmente de las industrias que procesan los alimentos que consumimos. En
+          otra proporción importante, son residuos orgánicos habituales de la actividad gastronómica, y también en un
+          gran porcentaje; del uso doméstico y comercial.</p>
+        <p>Este segmento incluye desperdicios de la preparación de alimentos, restos de verduras y frutas, granos,
+          cáscaras de huevo; los restos del café por medio de su preparación, y a esto puede sumarse también las
+          diferentes bebidas aromáticas. Los elementos generados en la cría de animales como la gallina, como viruta o
+          aserrín, o las excreciones derivadas.</p>
+        <p><strong>Tip ambiental de <a href='../home.php'><strong>La Victoria</strong></a>: Una elección práctica para
+            casa es el compost.</strong></p>
+        <p>El reciclaje de residuos domésticos puede derivar en compost. Si se cuenta con el espacio, es recomendable
+          depositar los residuos en un sector especial de la casa y favorecer la descomposición natural, convirtiendo
+          los desechos orgánicos en tierra fértil. Esto se logra a través de la acción e interacción de bacterias y
+          elementos naturales como son el agua y la luz</p>
         <p>Algunos de los desechos que son aptos para el compostado, son:</p>
         <ul>
-            <li>Productos de plantas</li>
-            <li>Residuos de origen animal</li>
-            <li>Pasto cortado, hojas de árboles</li>
-            <li>Papel, madera natural</li>
+          <li>Productos de plantas</li>
+          <li>Residuos de origen animal</li>
+          <li>Pasto cortado, hojas de árboles</li>
+          <li>Papel, madera natural</li>
         </ul>
         <li><strong>Residuos de la industria</strong></li>
-        <p>A través de los diferentes pasos que tiene el proceso de producción siempre se obtienen desechos industriales. Ya sea durante la fase de fabricación, el consumo, la distribución, la transformación o la limpieza del espacio productivo.</p>
-        <p>Las principales industrias alimenticias que generan los desechos están relacionados con la producción/fraccionado y envase de carnes rojas, pescado, oleaginosas, lácteos, azúcar, pastas, bebidas, y otras particularidades nutricionales.</p>
-        <p>En relación a otros sectores de la industria, la agroalimentaria se toma como una contaminación de bajo impacto, esto quiere decir que los residuos no son peligrosos en sí, pero si no se desechan correctamente pueden provocar contaminación, sobre todo del agua y del suelo.</p>
-        <p>Consultá ahora por los <a href='../sections/servicios.php'>servicios de desagote y limpieza de trampas de grasa y aceite industrial proporcionados por La Victoria.</a></p>
+        <p>A través de los diferentes pasos que tiene el proceso de producción siempre se obtienen desechos
+          industriales. Ya sea durante la fase de fabricación, el consumo, la distribución, la transformación o la
+          limpieza del espacio productivo.</p>
+        <p>Las principales industrias alimenticias que generan los desechos están relacionados con la
+          producción/fraccionado y envase de carnes rojas, pescado, oleaginosas, lácteos, azúcar, pastas, bebidas, y
+          otras particularidades nutricionales.</p>
+        <p>En relación a otros sectores de la industria, la agroalimentaria se toma como una contaminación de bajo
+          impacto, esto quiere decir que los residuos no son peligrosos en sí, pero si no se desechan correctamente
+          pueden provocar contaminación, sobre todo del agua y del suelo.</p>
+        <p>Consultá ahora por los <a href='../sections/servicios.php'>servicios de desagote y limpieza de trampas de
+            grasa y aceite industrial proporcionados por La Victoria.</a></p>
         <p><strong>Un terrible enemigo ambiental llamado plástico</strong></p>
-        <p>Entre los muchos objetos con los que lidiamos diariamente podemos ver al plástico como un residuo común utilizado en la producción alimentaria, y es normal contarlo como desecho. Sin embargo, existe la posibilidad de limitar su uso o utilizar tipos de plásticos productos del reciclaje.</p>
-        <p>El cartón es otro de los productos que presentan características que permiten su reciclaje, y que reducen la sobreexplotación de los recursos naturales.</p>
-        <p>A la lista de residuos de la industria alimentaria se le pueden sumar las latas y el vidrio, que tienen posibilidad de reciclado completo múltiples veces. Su manipulación debe realizarse de manera separada de los demás residuos.</p>
+        <p>Entre los muchos objetos con los que lidiamos diariamente podemos ver al plástico como un residuo común
+          utilizado en la producción alimentaria, y es normal contarlo como desecho. Sin embargo, existe la posibilidad
+          de limitar su uso o utilizar tipos de plásticos productos del reciclaje.</p>
+        <p>El cartón es otro de los productos que presentan características que permiten su reciclaje, y que reducen la
+          sobreexplotación de los recursos naturales.</p>
+        <p>A la lista de residuos de la industria alimentaria se le pueden sumar las latas y el vidrio, que tienen
+          posibilidad de reciclado completo múltiples veces. Su manipulación debe realizarse de manera separada de los
+          demás residuos.</p>
         <li><strong>Residuos peligrosos</strong></li>
-        <p>A la lista de residuos de la industria alimentaria se le pueden sumar las latas y el vidrio, que tienen posibilidad de reciclado completo múltiples veces. Su manipulación debe realizarse de manera separada de los demás residuos.</p>
+        <p>A la lista de residuos de la industria alimentaria se le pueden sumar las latas y el vidrio, que tienen
+          posibilidad de reciclado completo múltiples veces. Su manipulación debe realizarse de manera separada de los
+          demás residuos.</p>
         <p><strong>¿Qué se debe tener en cuenta con los residuos peligrosos?</strong></p>
-        <p>Uno de los puntos más importantes es la jurisdiccionalidad; si en nuestra zona de residencia no se cuenta con empresas que tengan la posibilidad y herramientas necesarias para el traslado adecuado y seguro, es importante que el mismo se lleve a cabo con la intervención de compañías que sí cuenten con esa opción.</p>
-        <p>Desagotes la Victoria cuenta con las mejores herramientas para ocuparse de los desechos peligrosos de la producción de alimentos.<a href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'>Consultá tu mejor presupuesto acá.</a></p>
-    </ol>
+        <p>Uno de los puntos más importantes es la jurisdiccionalidad; si en nuestra zona de residencia no se cuenta con
+          empresas que tengan la posibilidad y herramientas necesarias para el traslado adecuado y seguro, es importante
+          que el mismo se lleve a cabo con la intervención de compañías que sí cuenten con esa opción.</p>
+        <p>Desagotes la Victoria cuenta con las mejores herramientas para ocuparse de los desechos peligrosos de la
+          producción de alimentos.<a
+            href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'>Consultá
+            tu mejor presupuesto acá.</a></p>
+      </ol>
 
     </div>
 
-    
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>
@@ -233,23 +263,23 @@ width: 270px;">
 
         </div>
         <div class="footer-newsletter">
-                    <div class="container">
-                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
-                            <div class="col-lg-6">
-                                <form action="articulo3.php" method="post" role="form"
-                                    style="display: flex; align-items: center;   justify-content: flex-start;">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Su correo electrónico" required>
-                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
-                                    <div class="text-center">
-                                        <button type="submit"
-                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+              <div class="col-lg-6">
+                <form action="articulo3.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="    display: flex;
 justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"

@@ -48,7 +48,7 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
-    <style>
+  <style>
     .content_title {
       text-align: center;
       max-width: 600px;
@@ -88,16 +88,17 @@
       margin: 0;
       /* Centrar horizontalmente */
     }
+
     @media (max-width: 768px) {
-            .cards {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-        }
+      .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
+    }
 
 
-      * {
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -143,21 +144,24 @@
       color: lightblue;
       /* Cambio de color de texto a blanco al pasar el cursor */
     }
-    
+
     @media (max-width: 990px) {
-    .card3 {
-      flex-direction: column; /* Cambia la dirección de las tarjetas a columnas en dispositivos más pequeños */
-      align-items: center; /* Centra las tarjetas horizontalmente */
-      gap: 15px; /* Agrega un espacio entre las tarjetas */
+      .card3 {
+        flex-direction: column;
+        /* Cambia la dirección de las tarjetas a columnas en dispositivos más pequeños */
+        align-items: center;
+        /* Centra las tarjetas horizontalmente */
+        gap: 15px;
+        /* Agrega un espacio entre las tarjetas */
+      }
     }
-  }
 
-  @media (max-width: 575px) {
-    .card {
-      width: 100%; /* Hace que las tarjetas ocupen todo el ancho de la pantalla en dispositivos pequeños */
+    @media (max-width: 575px) {
+      .card {
+        width: 100%;
+        /* Hace que las tarjetas ocupen todo el ancho de la pantalla en dispositivos pequeños */
+      }
     }
-  }
-
   </style>
 </head>
 
@@ -359,10 +363,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     </div>
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>

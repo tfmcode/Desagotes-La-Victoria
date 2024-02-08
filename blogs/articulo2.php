@@ -49,66 +49,64 @@
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
 
-    
-    <style>
 
+  <style>
     h1 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-h4 {
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
+    h4 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-p {
-  margin-bottom: 15px;
-}
+    p {
+      margin-bottom: 15px;
+    }
 
-strong {
-  font-weight: bold;
-}
+    strong {
+      font-weight: bold;
+    }
 
-a {
-  color: blue;
-  text-decoration: none;
-}
-
-    </style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_responseF = $_POST['recaptcha_responseF'];
-    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-    $recaptcha = json_decode($recaptcha);
-    // Miramos si se considera humano o robot: 
-    if ($recaptcha->score >= 0.5) {
-        $_email = $_POST['email'];
-        $from = "info@desagoteslavictoria.com.ar";
-        $to = "info@desagoteslavictoria.com.ar";
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
 
-        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<script type="text/javascript">
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
-        }
-
-    } else {
-
     }
+
+  } else {
+
+  }
 
 }
 
@@ -159,41 +157,70 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-        <h1>Beneficios de limpiar los tanques de almacenamiento de hidrocarburos</h1>
-        <p>Si deseas garantizar el correcto almacenamiento, transporte y custodia de las reservas energéticas del país, el método más efectivo es realizando una limpieza periódica de los tanques de hidrocarburos.</p>
-        <p>De este modo, asegurás su funcionamiento y durabilidad, al mismo tiempo que cuidas de una gran inversión sin perder tiempo ni calidad. ¿Sabés si ya es momento de efectuar una limpieza de tus tanques? <a href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'>Consultá cuándo sería el momento justo haciendo clic acá.</a></p>
-        <h4>4 razones por las que debes limpiar los tanques de hidrocarburos.</h4>
-        <ol>
-            <li>Solucionan el problema de taponamiento de tuberías por la formación de masas viscosas en el fondo de los tanques y la consiguiente reducción de su capacidad.</li>
-            <li>Limitan la incidencia negativa en la calidad del combustible a despachar.</li>
-            <li>Evitan el deterioro del tanque de transporte y por transición la modificación de las sustancias que contiene, situación que podría generar además pérdidas económicas por mayores desperdicios de los esperables y emisión extra de gases de efecto invernadero.</li>
-            <li>Porque es parte de las exigencias legales de seguridad. Todos los tanques deben ser seguros, herméticos y cumplir con todos los controles y accesos determinados por las regulaciones del sistema de almacenamiento y comercialización de hidrocarburos.</li>
-        </ol>
-        <h4>¿Sabías que una limpieza adecuada disminuye el impacto ambiental?</h4>
-        <p>Es una instancia en la que todos ganan. La limpieza regular de los tanques, siguiendo la normativa específica, disminuye considerablemente el riesgo de contaminación del suelo y del agua. <a href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'>Acá te contamos cómo puedes reducir el impacto ambiental desde tu empresa.</a></p>
-        <h4>3 modos inteligentes de eliminar los lodos.</h4>
-        <p>Los lodos o sobrantes resultan eventualmente en líquidos o gases inflamables, y estos son los modos prácticos de deshacerse de ellos:</p>
-        <ol>
-            <li><strong>Eliminarlos con agua:</strong> El agua elimina el líquido inflamable de un tanque si se vacía y se llena el depósito una y otra vez hasta que se logra el descarte por completo.</li>
-            <li><strong>Eliminarlos con aire:</strong> Los vapores inflamables se eliminan si se ventila el espacio que los contiene mientras en paralelo se ingresa aire ventilando de manera continua por sistema de baja presión</li>
-            <li><strong>Eliminarlos con gas inerte:</strong> La acción en la que se inyectan gases como dióxido de carbono o nitrógeno significa que se reduce el peligro de incendio en la eliminación de los elementos sobrantes en el depósito. </li>
-        </ol>
-        <h4>¿Cómo se limpia un tanque de hidrocarburos?</h4>
-        <p>La limpieza de un tanque de almacenamiento consiste en una fluidificación de los barros depositados en el fondo del tanque. Esto se lleva a cabo con la ayuda de personal suficientemente protegido contra los vapores y demás sustancias tóxicas.</p>
-        <p>Ellos se encargan de extraer los contaminantes con la ayuda de bombas neumáticas para finalmente limpiar y micro filtrar el combustible, dejándolo libre de impurezas.</p>
-        <h4>Evita aumentar los costos y poner en riesgo el capital.</h4>
-        <p>Por la naturaleza propia de los hidrocarburos que se transportan en los tanques y camiones, los contenedores ven modificada su estructura y seguridad, lo que deriva en oxidación y aparición posible de microbios que afectan la calidad del combustible.</p>
-        <p>Esta modificación resulta  en un probable aumento de los costos generales planificados y riesgos eventuales de contaminación para los empleados durante la manipulación como también para el ambiente que los rodea. Estar atento a estos cuidados pueden favorecer los movimientos y presencia de tu empresa.</p>
-        <p>En Desagotes La Victoria somos especialistas en limpieza de tanques de combustible y gestión de sus residuos peligrosos.<a href='../sections/servicios.php'>Encontrá el presupuesto a la medida de tus necesidades y cuidá tu inversión.</a></p>
+      <h1>Beneficios de limpiar los tanques de almacenamiento de hidrocarburos</h1>
+      <p>Si deseas garantizar el correcto almacenamiento, transporte y custodia de las reservas energéticas del país, el
+        método más efectivo es realizando una limpieza periódica de los tanques de hidrocarburos.</p>
+      <p>De este modo, asegurás su funcionamiento y durabilidad, al mismo tiempo que cuidas de una gran inversión sin
+        perder tiempo ni calidad. ¿Sabés si ya es momento de efectuar una limpieza de tus tanques? <a
+          href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'>Consultá
+          cuándo sería el momento justo haciendo clic acá.</a></p>
+      <h4>4 razones por las que debes limpiar los tanques de hidrocarburos.</h4>
+      <ol>
+        <li>Solucionan el problema de taponamiento de tuberías por la formación de masas viscosas en el fondo de los
+          tanques y la consiguiente reducción de su capacidad.</li>
+        <li>Limitan la incidencia negativa en la calidad del combustible a despachar.</li>
+        <li>Evitan el deterioro del tanque de transporte y por transición la modificación de las sustancias que
+          contiene, situación que podría generar además pérdidas económicas por mayores desperdicios de los esperables y
+          emisión extra de gases de efecto invernadero.</li>
+        <li>Porque es parte de las exigencias legales de seguridad. Todos los tanques deben ser seguros, herméticos y
+          cumplir con todos los controles y accesos determinados por las regulaciones del sistema de almacenamiento y
+          comercialización de hidrocarburos.</li>
+      </ol>
+      <h4>¿Sabías que una limpieza adecuada disminuye el impacto ambiental?</h4>
+      <p>Es una instancia en la que todos ganan. La limpieza regular de los tanques, siguiendo la normativa específica,
+        disminuye considerablemente el riesgo de contaminación del suelo y del agua. <a
+          href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'>Acá
+          te contamos cómo puedes reducir el impacto ambiental desde tu empresa.</a></p>
+      <h4>3 modos inteligentes de eliminar los lodos.</h4>
+      <p>Los lodos o sobrantes resultan eventualmente en líquidos o gases inflamables, y estos son los modos prácticos
+        de deshacerse de ellos:</p>
+      <ol>
+        <li><strong>Eliminarlos con agua:</strong> El agua elimina el líquido inflamable de un tanque si se vacía y se
+          llena el depósito una y otra vez hasta que se logra el descarte por completo.</li>
+        <li><strong>Eliminarlos con aire:</strong> Los vapores inflamables se eliminan si se ventila el espacio que los
+          contiene mientras en paralelo se ingresa aire ventilando de manera continua por sistema de baja presión</li>
+        <li><strong>Eliminarlos con gas inerte:</strong> La acción en la que se inyectan gases como dióxido de carbono o
+          nitrógeno significa que se reduce el peligro de incendio en la eliminación de los elementos sobrantes en el
+          depósito. </li>
+      </ol>
+      <h4>¿Cómo se limpia un tanque de hidrocarburos?</h4>
+      <p>La limpieza de un tanque de almacenamiento consiste en una fluidificación de los barros depositados en el fondo
+        del tanque. Esto se lleva a cabo con la ayuda de personal suficientemente protegido contra los vapores y demás
+        sustancias tóxicas.</p>
+      <p>Ellos se encargan de extraer los contaminantes con la ayuda de bombas neumáticas para finalmente limpiar y
+        micro filtrar el combustible, dejándolo libre de impurezas.</p>
+      <h4>Evita aumentar los costos y poner en riesgo el capital.</h4>
+      <p>Por la naturaleza propia de los hidrocarburos que se transportan en los tanques y camiones, los contenedores
+        ven modificada su estructura y seguridad, lo que deriva en oxidación y aparición posible de microbios que
+        afectan la calidad del combustible.</p>
+      <p>Esta modificación resulta en un probable aumento de los costos generales planificados y riesgos eventuales de
+        contaminación para los empleados durante la manipulación como también para el ambiente que los rodea. Estar
+        atento a estos cuidados pueden favorecer los movimientos y presencia de tu empresa.</p>
+      <p>En Desagotes La Victoria somos especialistas en limpieza de tanques de combustible y gestión de sus residuos
+        peligrosos.<a href='../sections/servicios.php'>Encontrá el presupuesto a la medida de tus necesidades y cuidá tu
+          inversión.</a></p>
 
     </div>
 
-    
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>
@@ -230,23 +257,23 @@ width: 270px;">
 
         </div>
         <div class="footer-newsletter">
-                    <div class="container">
-                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
-                            <div class="col-lg-6">
-                                <form action="articulo2.php" method="post" role="form"
-                                    style="display: flex; align-items: center;   justify-content: flex-start;">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Su correo electrónico" required>
-                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
-                                    <div class="text-center">
-                                        <button type="submit"
-                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+              <div class="col-lg-6">
+                <form action="articulo2.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="    display: flex;
 justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"

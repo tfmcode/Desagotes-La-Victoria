@@ -48,67 +48,65 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
-    
-    <style>
 
+  <style>
     h1 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-h4 {
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
+    h4 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-p {
-  margin-bottom: 15px;
-}
+    p {
+      margin-bottom: 15px;
+    }
 
-strong {
-  font-weight: bold;
-}
+    strong {
+      font-weight: bold;
+    }
 
-a {
-  color: blue;
-  text-decoration: none;
-}
-
-    </style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
 
 </head>
 
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_responseF = $_POST['recaptcha_responseF'];
-    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-    $recaptcha = json_decode($recaptcha);
-    // Miramos si se considera humano o robot: 
-    if ($recaptcha->score >= 0.5) {
-        $_email = $_POST['email'];
-        $from = "info@desagoteslavictoria.com.ar";
-        $to = "info@desagoteslavictoria.com.ar";
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
 
-        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<script type="text/javascript">
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
-        }
-
-    } else {
-
     }
+
+  } else {
+
+  }
 
 }
 
@@ -160,35 +158,65 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <main id="main">
     <div class="container">
       <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
+      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el
+        impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
+      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la
+          Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina
+        (ACU) sin generar contaminación ni impacto medioambiental.</p>
+      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de
+        las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el
+        cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la
+        diferencia.</p>
+      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.
+      </h4>
+      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo
+        plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos
+        de agua.</p>
+      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la
+        vida de las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
       <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
+      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil
+        veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
+      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>
+      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el
+        comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
+      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento
+        de telas, cueros y pieles, que incluye contaminación en todos los pasos atravesados: obtención, producción y
+        tratamiento.</p>
       <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
+      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras), hace
+        tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los
+        desechos de aceite en otros tipos de combustibles.</p>
+      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el
+        aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
+      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus
+        clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos
+        peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación
+        de CO2 (dióxido de carbono) es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada
+        su relación con el avance del cambio climático.</p>
       <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
+      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un
+        futuro más saludable.</p>
+      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e
+        idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en
+        accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer
+          aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
+      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones
+        futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y
+        habitar un mundo mejor.</p>
 
 
     </div>
 
-    
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>
@@ -225,23 +253,23 @@ width: 270px;">
 
         </div>
         <div class="footer-newsletter">
-                    <div class="container">
-                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
-                            <div class="col-lg-6">
-                                <form action="articulo1.php" method="post" role="form"
-                                    style="display: flex; align-items: center;   justify-content: flex-start;">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Su correo electrónico" required>
-                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
-                                    <div class="text-center">
-                                        <button type="submit"
-                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+              <div class="col-lg-6">
+                <form action="articulo1.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="    display: flex;
 justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"

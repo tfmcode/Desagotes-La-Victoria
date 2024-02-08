@@ -48,66 +48,64 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
-    <style>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-h1 {
-text-align: center;
-font-size: 28px;
-margin-bottom: 20px;
-}
+    h4 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-h4 {
-font-size: 20px;
-margin-top: 30px;
-margin-bottom: 10px;
-}
+    p {
+      margin-bottom: 15px;
+    }
 
-p {
-margin-bottom: 15px;
-}
+    strong {
+      font-weight: bold;
+    }
 
-strong {
-font-weight: bold;
-}
-
-a {
-color: blue;
-text-decoration: none;
-}
-
-</style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
 
 </head>
 
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_responseF = $_POST['recaptcha_responseF'];
-    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-    $recaptcha = json_decode($recaptcha);
-    // Miramos si se considera humano o robot: 
-    if ($recaptcha->score >= 0.5) {
-        $_email = $_POST['email'];
-        $from = "info@desagoteslavictoria.com.ar";
-        $to = "info@desagoteslavictoria.com.ar";
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
 
-        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<script type="text/javascript">
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
-        }
-
-    } else {
-
     }
+
+  } else {
+
+  }
 
 }
 
@@ -158,43 +156,70 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-    <h1>Las falencias más comunes en el funcionamiento de la cañerías</h1>
+      <h1>Las falencias más comunes en el funcionamiento de la cañerías</h1>
 
-<p>¿Notaste que últimamente las cañerías de tu comercio o industria presentan inconvenientes en su funcionamiento? La correcta limpieza es un tema de vital importancia, teniendo en cuenta que una obstrucción puede causar serios problemas.</p>
+      <p>¿Notaste que últimamente las cañerías de tu comercio o industria presentan inconvenientes en su funcionamiento?
+        La correcta limpieza es un tema de vital importancia, teniendo en cuenta que una obstrucción puede causar serios
+        problemas.</p>
 
-<p>Sabemos que en muchas ocasiones, la acumulación de grasa, tierra y otros residuos pueden ser la causa de inconvenientes que complican el funcionamiento normal. A menudo se recurre a la utilización de químicos agresivos para resolver estos problemas, lo que puede generar consecuencias negativas para la salud y el medio ambiente.</p>
+      <p>Sabemos que en muchas ocasiones, la acumulación de grasa, tierra y otros residuos pueden ser la causa de
+        inconvenientes que complican el funcionamiento normal. A menudo se recurre a la utilización de químicos
+        agresivos para resolver estos problemas, lo que puede generar consecuencias negativas para la salud y el medio
+        ambiente.</p>
 
-<p>Es preciso recordar que el uso irregular de estos productos para terminar con la falla puede ser peligroso para la salud; es por eso que te recomendamos que siempre acudas a expertos.</p>
+      <p>Es preciso recordar que el uso irregular de estos productos para terminar con la falla puede ser peligroso para
+        la salud; es por eso que te recomendamos que siempre acudas a expertos.</p>
 
-<h4>La importancia de la planificación:</h4>
+      <h4>La importancia de la planificación:</h4>
 
-<p>Además de las situaciones mencionadas, es importante destacar que la obstrucción en las cañerías puede ser un indicador de otros fallos en la red de saneamiento, como la acumulación de sedimentos en las tuberías o la necesidad de reemplazar algunas piezas del sistema. Al acudir a expertos, no solo se resuelve el problema inmediato, sino que también se pueden detectar y prevenir futuros inconvenientes, lo cual puede ahorrar tiempo y dinero a largo plazo.</p>
+      <p>Además de las situaciones mencionadas, es importante destacar que la obstrucción en las cañerías puede ser un
+        indicador de otros fallos en la red de saneamiento, como la acumulación de sedimentos en las tuberías o la
+        necesidad de reemplazar algunas piezas del sistema. Al acudir a expertos, no solo se resuelve el problema
+        inmediato, sino que también se pueden detectar y prevenir futuros inconvenientes, lo cual puede ahorrar tiempo y
+        dinero a largo plazo.</p>
 
-<p>La amplia experiencia de <a href='../home.php'><strong>La Victoria</strong></a> nos permite conocer cuáles son los inconvenientes que pueden derivar del uso inadecuado de esta clase de químicos.</p>
+      <p>La amplia experiencia de <a href='../home.php'><strong>La Victoria</strong></a> nos permite conocer cuáles son
+        los inconvenientes que pueden derivar del uso inadecuado de esta clase de químicos.</p>
 
-<h4>A continuación te contamos las derivaciones de una decisión equivocada para resolver un mal funcionamiento u obstrucción, que llevarían severo daño al sistema, y un costo financiero innecesario.</h4>
+      <h4>A continuación te contamos las derivaciones de una decisión equivocada para resolver un mal funcionamiento u
+        obstrucción, que llevarían severo daño al sistema, y un costo financiero innecesario.</h4>
 
-<ol>
-    <li>Muchos productos para destapación contienen ácidos corrosivos que pueden dañar la estructura. Ello puede resultar en fugas y otros problemas en el sistema de saneamiento.</li>
-    <li>La utilización de productos agresivos puede generar gases tóxicos que pueden generar irritación en la piel y las mucosas.</li>
-    <li>Esta clase de productos pueden generar un impacto negativo en el espacio que habitamos, contaminando el agua y el suelo.</li>
-</ol>
+      <ol>
+        <li>Muchos productos para destapación contienen ácidos corrosivos que pueden dañar la estructura. Ello puede
+          resultar en fugas y otros problemas en el sistema de saneamiento.</li>
+        <li>La utilización de productos agresivos puede generar gases tóxicos que pueden generar irritación en la piel y
+          las mucosas.</li>
+        <li>Esta clase de productos pueden generar un impacto negativo en el espacio que habitamos, contaminando el agua
+          y el suelo.</li>
+      </ol>
 
-<p>Nuestra prioridad es ofrecer soluciones seguras y efectivas para nuestros clientes, cuidando al mismo tiempo el medioambiente. Utilizamos técnicas y equipos de última generación para resolver todo tipo de problemas de obstrucción sin impactar en las tuberías ni el entorno. Podés encontrar más información disponible de los servicios de La Victoria en <a href='../sections/servicios.php'><strong>nuestra página web.</strong></a></p>
+      <p>Nuestra prioridad es ofrecer soluciones seguras y efectivas para nuestros clientes, cuidando al mismo tiempo el
+        medioambiente. Utilizamos técnicas y equipos de última generación para resolver todo tipo de problemas de
+        obstrucción sin impactar en las tuberías ni el entorno. Podés encontrar más información disponible de los
+        servicios de La Victoria en <a href='../sections/servicios.php'><strong>nuestra página web.</strong></a></p>
 
-<p>Otro punto a tener en cuenta es que la falla y excesiva suciedad del desagüe pueden afectar la calidad del agua potable. Si las tuberías están corroídas, es posible que contaminen el agua. El mantenimiento preventivo puede garantizar que estén limpias y en buen estado, lo que asegurará la calidad del agua que se consume.</p>
+      <p>Otro punto a tener en cuenta es que la falla y excesiva suciedad del desagüe pueden afectar la calidad del agua
+        potable. Si las tuberías están corroídas, es posible que contaminen el agua. El mantenimiento preventivo puede
+        garantizar que estén limpias y en buen estado, lo que asegurará la calidad del agua que se consume.</p>
 
-<p>En este sentido, es importante contar con una empresa especializada que ofrezca soluciones efectivas y seguras para resolver estos problemas sin dañar el entorno. Contamos con los equipos y la experiencia necesaria para realizar destapaciones sin necesidad de utilizar herramientas nocivas para el medioambiente.</p>
+      <p>En este sentido, es importante contar con una empresa especializada que ofrezca soluciones efectivas y seguras
+        para resolver estos problemas sin dañar el entorno. Contamos con los equipos y la experiencia necesaria para
+        realizar destapaciones sin necesidad de utilizar herramientas nocivas para el medioambiente.</p>
 
-<p>Si estás experimentando problemas de obstrucción como los señalados, no dudes en contactarnos para conseguir una solución rápida y eficiente. <a>Confiá en Destapaciones La Victoria y pedí un presupuesto que se ajuste a tus necesidades.</a></p>
+      <p>Si estás experimentando problemas de obstrucción como los señalados, no dudes en contactarnos para conseguir
+        una solución rápida y eficiente. <a>Confiá en Destapaciones La Victoria y pedí un presupuesto que se ajuste a
+          tus necesidades.</a></p>
     </div>
 
-    
 
-    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+
+    <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h1>Cuidando el ambiente desde 1950</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button"
+        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+        </h2>
+        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>
@@ -231,23 +256,23 @@ width: 270px;">
 
         </div>
         <div class="footer-newsletter">
-                    <div class="container">
-                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
-                            <div class="col-lg-6">
-                                <form action="articulo10.php" method="post" role="form"
-                                    style="display: flex; align-items: center;   justify-content: flex-start;">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Su correo electrónico" required>
-                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
-                                    <div class="text-center">
-                                        <button type="submit"
-                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+              <div class="col-lg-6">
+                <form action="articulo10.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="    display: flex;
 justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"

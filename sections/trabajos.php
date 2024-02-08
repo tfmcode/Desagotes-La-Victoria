@@ -69,22 +69,22 @@
             transform: scale(1.1);
         }
 
-        @media (max-width: 990px){
+        @media (max-width: 990px) {
             .img1 {
                 margin: 2%
             }
         }
 
-        @media (max-width: 620px){
+        @media (max-width: 620px) {
             .img_trabajos {
                 display: flex;
                 flex-direction: column;
             }
+
             .img1 {
                 margin: 3%;
             }
         }
-
     </style>
 
 </head>
@@ -92,32 +92,32 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Realizamos la petición de control: 
-  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-  $recaptcha_responseF = $_POST['recaptcha_responseF'];
-  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-  $recaptcha = json_decode($recaptcha);
-  // Miramos si se considera humano o robot: 
-  if ($recaptcha->score >= 0.5) {
-    $_email = $_POST['email'];
-    $from = "info@desagoteslavictoria.com.ar";
-    $to = "info@desagoteslavictoria.com.ar";
+    // Realizamos la petición de control: 
+    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+    $recaptcha_responseF = $_POST['recaptcha_responseF'];
+    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+    $recaptcha = json_decode($recaptcha);
+    // Miramos si se considera humano o robot: 
+    if ($recaptcha->score >= 0.5) {
+        $_email = $_POST['email'];
+        $from = "info@desagoteslavictoria.com.ar";
+        $to = "info@desagoteslavictoria.com.ar";
 
-    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-    if (mail($to, $subject, $message, $headers)) {
-      echo '<script type="text/javascript">
+        if (mail($to, $subject, $message, $headers)) {
+            echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
+        }
+
+    } else {
+
     }
-
-  } else {
-
-  }
 
 }
 
@@ -245,10 +245,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     desobstrucción industrial.</p>
             </div>
         </section>
-        <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+        <section style="text-align: center;
+    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
             <div class="container">
-                <h1>Cuidando el ambiente desde 1950</h1>
-                <button type="button" class="btn btn-primary" data-bs-toggle="button"
+                <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
+                </h2>
+                <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
+    color: rgb(45, 143, 255);"
                     onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
                     ¿Dudas? Click aquí
                 </button>
