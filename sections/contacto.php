@@ -67,7 +67,7 @@
 
     .boxcontact {
       text-align: center;
-      width: 18%;
+      /* width: 18%; */
       /* Ajusta el ancho según tus necesidades */
     }
 
@@ -107,12 +107,13 @@
     }
 
     @media screen and (max-width: 768px) {
-      .boxcontainer {
-        flex-direction: column;
-        align-items: center;
-      }
+        .boxcontainer {
+            flex-direction: column;
+            align-items: center;
+          
+        }
     }
-  </style>
+    </style>
 </head>
 
 
@@ -243,7 +244,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="container">
 
         <div class="section-title">
-          <p class="text-primary" style="letter-spacing: 0.3em;">CONTÁCTENOS</p>
+        <p class="text-primary" style="letter-spacing: 0.3em;">CONTÁCTENOS</p>
           <h2>Respuesta inmediata</h2>
         </div>
 
@@ -290,7 +291,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <span style="font-size: 2em;"><iconify-icon icon="solar:map-point-bold"
                     style="color: blueviolet;"></iconify-icon></span>
                 <h4 style="font-weight: bold; font-size: 1em;">Dirección</h4>
-                <p class="p1" style="margin: 0.5em 0;">Aguilar 2878 Capital Federal</p>
+                <p class="p1" style="margin: 0.5em 0;">Aguilar 2878, Capital Federal.</p>
                 <!-- <p style="margin: 0.5em 0;">Capital Federal</p> -->
               </div>
               <div class="boxcontact">
@@ -318,13 +319,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
     </section><!-- End Map Section -->
 
-    <section style="text-align: center;
-    background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
+    <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <h2 style="color: black">Cuidando el ambiente<h2 style="color: white;"> desde 1950</h2>
-        </h2>
-        <button type="button" class="btn " data-bs-toggle="button" style="    background: white;
-    color: rgb(45, 143, 255);"
+        <h1>Cuidando el ambiente desde 1950</h1>
+        <button type="button" class="btn btn-primary" data-bs-toggle="button"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
           ¿Dudas? Click aquí
         </button>

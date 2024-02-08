@@ -129,6 +129,15 @@
                 /* Asegura que el texto esté centrado en dispositivos con ancho de pantalla de hasta 380px */
             }
         }
+
+        @media (max-width: 450px) {
+            .why-us .icon-box .description {
+                margin-left: auto;
+                line-height: 24px;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
     </style>
 
 

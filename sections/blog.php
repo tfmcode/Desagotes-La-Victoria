@@ -95,6 +95,10 @@
         flex-direction: column;
         align-items: center;
       }
+      .img-fluid1{
+        display: flex;
+        justify-content: center;
+      }
     }
 
 
@@ -160,6 +164,10 @@
       .card {
         width: 100%;
         /* Hace que las tarjetas ocupen todo el ancho de la pantalla en dispositivos pequeños */
+      }
+      .img-fluid1 {
+        display: flex;
+        justify-content: center;
       }
     }
   </style>
@@ -387,9 +395,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="row" style="display: flex;  justify-content: space-evenly;   align-items: center;">
 
           <div class="col-lg-4 col-md-4 footer-contact">
-            <p>
-              <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
-width: 270px;">
+            <p class='img-fluid1'>
+              <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px; width: 300px;">
             </p>
           </div>
           <div class="container">
