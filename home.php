@@ -47,12 +47,14 @@
 
     <meta name="google-site-verification"
         content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
-        <style>
-            @media only screen and (max-width: 768px) {
+    <style>
+        @media only screen and (max-width: 768px) {
             .container {
-                max-width: 90%; /* Ajusta el ancho máximo para pantallas pequeñas */
+                max-width: 90%;
+                /* Ajusta el ancho máximo para pantallas pequeñas */
             }
         }
+
         .title3 {
             display: flex;
             flex-direction: column;
@@ -71,7 +73,7 @@
             justify-content: center;
             margin: 0;
         }
-        </style>
+    </style>
 
 </head>
 
@@ -79,37 +81,33 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_response = $_POST['recaptcha_response'];
-    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
-    $recaptcha = json_decode($recaptcha);
+  // Realizamos la petición de control: 
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+  $recaptcha_responseF = $_POST['recaptcha_responseF'];
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+  $recaptcha = json_decode($recaptcha);
+  // Miramos si se considera humano o robot: 
+  if ($recaptcha->score >= 0.5) {
+    $_email = $_POST['email'];
+    $from = "info@desagoteslavictoria.com.ar";
+    $to = "info@desagoteslavictoria.com.ar";
 
-    // Miramos si se considera humano o robot: 
-    if ($recaptcha->score >= 0.5) {
-        // Si la verificación de reCAPTCHA es exitosa, procesa el formulario y envía el correo electrónico
-        $_email = $_POST['email'];
-        $from = "info@desagoteslavictoria.com.ar";
-        $to = "info@desagoteslavictoria.com.ar";
-        $subject = "Desagotes La Victoria ==> Consulta desde el Formulario de Contacto";
+    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-        $message = '<br>================================================<br><b>CONSULTA</b><br>================================================<br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
-
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<script type="text/javascript">
-            alert("Será contactado a la brevedad. Gracias!");
-             window.location.href="index.php";
+    if (mail($to, $subject, $message, $headers)) {
+      echo '<script type="text/javascript">
+            alert("Su Consulta será respondida a la brevedad. Gracias!");
+             window.location.href="contacto.php";
            </script>';
-        }
-    } else {
-        // Si la verificación de reCAPTCHA falla, puedes manejarlo aquí (puedes agregar un mensaje de error, por ejemplo).
-        echo '<script type="text/javascript">
-            alert("Error: No se ha superado la verificación de reCAPTCHA. Por favor, inténtelo de nuevo.");
-            </script>';
     }
+
+  } else {
+
+  }
+
 }
 
 ?>
@@ -205,7 +203,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- ======= Services Section ======= -->
         <section class="services" style=" padding-top: 0px;   padding-bottom: 0px;">
             <div class="container">
-                <div class="title3" style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
+                <div class="title3"
+                    style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
                     <p class="text-primary" style="letter-spacing: 0.3em;">LA CLAVE DE UN NEGOCIO PRODUCTIVO: </p>
                     <h1 style="display: flex; justify-content: center;">MANTENIMIENTO PREVENTIVO</h1>
                     <p style="letter-spacing: 0.3em;">EL SERVICIO PARA UN NEGOCIO EXITOSO: </p>
@@ -255,34 +254,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <!-- ======= Why Us Section ======= -->
         <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
-    <div class="container">
+            <div class="container">
 
-        <div class="row">
-            <div class="col-lg-6 video-box">
-                <img src="assets/img/mr-Destapador.png" class="img-fluid" alt="">
-            </div>
+                <div class="row">
+                    <div class="col-lg-6 video-box">
+                        <img src="assets/img/mr-Destapador.png" class="img-fluid" alt="">
+                    </div>
 
-            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center p-5">
-    <div class="icon-box">
-        <!-- <div class="icon"><i class="bx bx-fingerprint"></i></div> -->
-        <h4 class="title"><a href="">HOLA! Soy Mr. Destapador</a></h4>
-        <p class="description">Mi misión es acompañar a su empresa en el proceso de mantenimiento
-            preventivo de sus instalaciones. En este camino, contará con todo lo necesario para su
-            tranquilidad: Equipos de última generación, personal altamente capacitado y la
-            experiencia propia de contar con un equipo con más de <strong>65 años de experiencia en el mercado.</strong>
-        </p>
-    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center p-5">
+                        <div class="icon-box">
+                            <!-- <div class="icon"><i class="bx bx-fingerprint"></i></div> -->
+                            <h4 class="title"><a href="">HOLA! Soy Mr. Destapador</a></h4>
+                            <p class="description">Mi misión es acompañar a su empresa en el proceso de mantenimiento
+                                preventivo de sus instalaciones. En este camino, contará con todo lo necesario para su
+                                tranquilidad: Equipos de última generación, personal altamente capacitado y la
+                                experiencia propia de contar con un equipo con más de <strong>65 años de experiencia en
+                                    el mercado.</strong>
+                            </p>
+                        </div>
 
-    <div class="icon-box">
-        <!-- <div class="icon"><i class="bx bx-gift"></i></div>
+                        <div class="icon-box">
+                            <!-- <div class="icon"><i class="bx bx-gift"></i></div>
         <h4 class="title"><a href="">Nemo Enim</a></h4> -->
-        <p class="description"><img src="assets/img/firma.png"></p>
-    </div>
-</div>
-        </div>
+                            <p class="description"><img src="assets/img/firma.png"></p>
+                        </div>
+                    </div>
+                </div>
 
-    </div>
-</section><!-- End Why Us Section -->
+            </div>
+        </section><!-- End Why Us Section -->
 
 
 
@@ -370,8 +370,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <section id="heros" style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
             <div class="container">
                 <h1>Cuidando el ambiente desde 1950</h1>
-                <button type="button" class="btn btn-primary" data-bs-toggle="button" onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
-                Dudas? Click aquí
+                <button type="button" class="btn btn-primary" data-bs-toggle="button"
+                    onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
+                    Dudas? Click aquí
                 </button>
             </div>
         </section>
@@ -398,20 +399,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col-lg-4 col-md-4 footer-contact">
                         <p style="display: flex; justify-content: center;">
-                            <img src="assets/img/logo-grande.png" class="img-fluid" style="    height: 200px; width: 270px;">
+                            <img src="assets/img/logo-grande.png" class="img-fluid"
+                                style="    height: 200px; width: 270px;">
                         </p>
                     </div>
 
                 </div>
                 <div class="footer-newsletter">
                     <div class="container">
-                        <div class="row" style="display: flex;
-                justify-content: space-around;
-                align-items: flex-start;">
+                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
                             <div class="col-lg-6">
-                                <form action="procesar-formulario.php" method="post">
-                                    <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input
-                                        type="submit" value="Enviar">
+                                <form action="home.php" method="post" role="form"
+                                    style="display: flex; align-items: center;   justify-content: flex-start;">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Correo electrónico" required>
+                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                                    <div class="text-center">
+                                        <button type="submit"
+                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>

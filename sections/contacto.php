@@ -63,21 +63,25 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      }
-      .boxcontact{
-        text-align: center;
-        width: 18%; /* Ajusta el ancho según tus necesidades */
-      }
-      .boxcontainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: px;
-        border: 5px solid lightblue;
-        border-radius: 10px;
-        margin-right: 40px;
-      }
-      .navbar-list {
+    }
+
+    .boxcontact {
+      text-align: center;
+      width: 18%;
+      /* Ajusta el ancho según tus necesidades */
+    }
+
+    .boxcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: px;
+      border: 5px solid lightblue;
+      border-radius: 10px;
+      margin-right: 40px;
+    }
+
+    .navbar-list {
       display: flex;
       justify-content: center;
       padding: 0;
@@ -260,7 +264,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               </div>
               <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
               <div class="text-center">
-                <button type="submit" style='color:white; background:blue; border-color:blue; border-radius:6px'>Enviar
+                <button type="submit" class="btn btn-primary">Enviar
                   Consulta</button>
               </div>
             </form>
@@ -373,25 +377,16 @@ width: 270px;">
         </div>
         <div class="footer-newsletter">
           <div class="container">
-            <div class="row" style="display: flex;
-                    justify-content: space-around;
-                    align-items: flex-start;">
-              <!--               <div class="col-lg-6">
-                <form action="procesar-formulario.php" method="post">
-                  <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input type="submit"
-                    value="Enviar">
-                </form>
-              </div> -->
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
               <div class="col-lg-6">
-                <form action="contacto.php" method="post" role="form" style="display: flex;
-    align-items: center;
-    justify-content: space-evenly;">
+                <form action="contacto.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico"
                     required>
                   <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
                   <div class="text-center">
                     <button type="submit"
-                      style='color:white; background:blue; border-color:blue; border-radius:6px'>Enviar</button>
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
                   </div>
                 </form>
               </div>
