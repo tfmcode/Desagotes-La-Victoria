@@ -251,9 +251,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h4>Consultar precio</h4>
             <p><strong>En CABA Y GBA</strong></p>
             <ul>
-              <li><i class="bx bx-check"></i> Retiro, transporte y disposición final de residuos líquidos</li>
-              <li><i class="bx bx-check"></i> Tratamiento de residuos especiales y no especiales</li>
-              <li><i class="bx bx-check"></i> Emisión de certificado de tratamiento de residuos</li>
+              <li><i class="bx bx-check"></i> Retiro, transporte y disposición final de residuos líquidos.</li>
+              <li><i class="bx bx-check"></i> Tratamiento de residuos especiales y no especiales.</li>
+              <li><i class="bx bx-check"></i> Emisión de certificado de tratamiento de residuos.</li>
             </ul>
             <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
               target="_blank" class="get-started-btn">CONSULTAR</a>
@@ -264,13 +264,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h4>Consultar precio</h4>
             <p><strong>En CABA Y GBA</strong></p>
             <ul>
-              <li><i class="bx bx-check"></i> Desobstrucción industrial de cañerías cloacales</li>
-              <li><i class="bx bx-check"></i> Limpieza hidrocinética de cañerías y desagües</li>
-              <li><i class="bx bx-check"></i> Destapación electromecánica de las cañerias</li>
-              <li><i class="bx bx-check"></i> Limpieza de columnas y bajadas en cañerías pluviales</li>
-              <li><i class="bx bx-check"></i> Destapación de sumideros y colectores principales de los desagües</li>
-              <li><i class="bx bx-check"></i> Destapación de cámaras sépticas y decantadores de residuos</li>
-              <li><i class="bx bx-check"></i> Servicio de video inspección y diagnóstico de cañerías</li>
+              <li><i class="bx bx-check"></i> Desobstrucción industrial de cañerías cloacales.</li>
+              <li><i class="bx bx-check"></i> Limpieza hidrocinética de cañerías y desagües.</li>
+              <li><i class="bx bx-check"></i> Destapación electromecánica de las cañerias.</li>
+              <li><i class="bx bx-check"></i> Limpieza de columnas y bajadas en cañerías pluviales.</li>
+              <li><i class="bx bx-check"></i> Destapación de sumideros y colectores principales de los desagües.</li>
+              <li><i class="bx bx-check"></i> Destapación de cámaras sépticas y decantadores de residuos.</li>
+              <li><i class="bx bx-check"></i> Servicio de video inspección y diagnóstico de cañerías.</li>
 
             </ul>
             <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
@@ -282,10 +282,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h4>Consultar precio</h4>
             <p><strong>En CABA Y GBA</strong></p>
             <ul>
-              <li><i class="bx bx-check"></i> Retiro, transporte y disposición final de residuos sólidos peligrosos</li>
-              <li><i class="bx bx-check"></i> Manifiesto de transporte</li>
-              <li><i class="bx bx-check"></i> Certificado de disposición final</li>
-              <li><i class="bx bx-check"></i> Personal capacitado para el manejo de residuos peligrosos</li>
+              <li><i class="bx bx-check"></i> Retiro, transporte y disposición final de residuos sólidos peligrosos.</li>
+              <li><i class="bx bx-check"></i> Manifiesto de transporte.</li>
+              <li><i class="bx bx-check"></i> Certificado de disposición final.</li>
+              <li><i class="bx bx-check"></i> Personal capacitado para el manejo de residuos peligrosos.</li>
             </ul>
             <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
               target="_blank" class="get-started-btn">CONSULTAR</a>
@@ -301,11 +301,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <h4>Consultar precio</h4>
               <p><strong>En CABA Y GBA</strong></p>
               <ul>
-                <li><i class="bx bx-check"></i> Desagotes de tanques cisternas</li>
-                <li><i class="bx bx-check"></i> Desagote y limpieza de pozos de bombeo de aguas residuales</li>
-                <li><i class="bx bx-check"></i> Hidrolavado de cámaras sépticas con alta presión</li>
-                <li><i class="bx bx-check"></i> Certificado de disposición final de los barros retirados</li>
-                <li><i class="bx bx-check"></i> Personal capacitado para limpiezas profundas en cámaras sépticas</li>
+                <li><i class="bx bx-check"></i> Desagotes de tanques cisternas.</li>
+                <li><i class="bx bx-check"></i> Desagote y limpieza de pozos de bombeo de aguas residuales.</li>
+                <li><i class="bx bx-check"></i> Hidrolavado de cámaras sépticas con alta presión.</li>
+                <li><i class="bx bx-check"></i> Certificado de disposición final de los barros retirados.</li>
+                <li><i class="bx bx-check"></i> Personal capacitado para limpiezas profundas en cámaras sépticas.</li>
               </ul>
               <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
                 target="_blank" class="get-started-btn">CONSULTAR</a>
@@ -316,11 +316,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h4>Consultar precio</h4>
             <p><strong>En CABA Y GBA</strong></p>
             <ul>
-              <li><i class="bx bx-check"></i> Retiro de barros contaminados con hidrocarburos</li>
-              <li><i class="bx bx-check"></i> Limpieza en decantadores y fosas de lavaderos</li>
-              <li><i class="bx bx-check"></i> Hidrolavado de cámaras sépticas con alta presión</li>
-              <li><i class="bx bx-check"></i> Certificado de disposición final de los barros retirados</li>
-              <li><i class="bx bx-check"></i> Personal capacitado para limpiezas profundas</li>
+              <li><i class="bx bx-check"></i> Retiro de barros contaminados con hidrocarburos.</li>
+              <li><i class="bx bx-check"></i> Limpieza en decantadores y fosas de lavaderos.</li>
+              <li><i class="bx bx-check"></i> Hidrolavado de cámaras sépticas con alta presión.</li>
+              <li><i class="bx bx-check"></i> Certificado de disposición final de los barros retirados.</li>
+              <li><i class="bx bx-check"></i> Personal capacitado para limpiezas profundas.</li>
             </ul>
             <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
               target="_blank" class="get-started-btn">CONSULTAR</a>
@@ -331,9 +331,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h4>Consultar precio</h4>
             <p><strong>En CABA Y GBA</strong></p>
             <ul>
-              <li><i class="bx bx-check"></i> Reunión con equipo de asesoramiento de La Victoria</li>
-              <li><i class="bx bx-check"></i> Visita de técnicos al establecimiento</li>
-              <li><i class="bx bx-check"></i> Entrega de informe</li>
+              <li><i class="bx bx-check"></i> Reunión con equipo de asesoramiento de La Victoria.</li>
+              <li><i class="bx bx-check"></i> Visita de técnicos al establecimiento.</li>
+              <li><i class="bx bx-check"></i> Entrega de informe.</li>
             </ul>
             <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
               target="_blank" class="get-started-btn">CONSULTAR</a>

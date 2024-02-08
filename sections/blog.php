@@ -244,21 +244,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Beneficios de la Limpieza adecuada de tanques de transporte</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Beneficios de limpiar los tanques de almacenamiento de hidrocarburos</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Principales residuos de la actividad agroalimentaria</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
         </div>
@@ -267,21 +267,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Todos hablan de Landfarming ¿De qué se trata?</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"> 9 preguntas más frecuentes sobre camiones atmosféricos </h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">4 fallas más frecuentes en la cañerías industriales (y cómo detectarlas)</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
         </div>
@@ -290,21 +290,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Todos hablan de Landfarming ¿De qué se trata?</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"> 9 preguntas más frecuentes sobre camiones atmosféricos </h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">4 fallas más frecuentes en la cañerías industriales (y cómo detectarlas)</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
         </div>
@@ -313,7 +313,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Atención: 4 síntomas del mal funcionamiento cloacal</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -321,14 +321,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="card-body">
               <h5 class="card-title"> Beneficios de la Limpieza Profunda en Cámaras Sépticas y Decantadoras de Barros
               </h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Generación de residuos: ¿Cuánto contaminamos?</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
         </div>
@@ -337,21 +337,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Las falencias más comunes en el funcionamiento de la cañerías </h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"> Beneficios de la atención preventiva a los problemas de cañerías</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Daño de los residuos acumulados en cámaras sépticas</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
         </div>
@@ -360,7 +360,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Beneficios de la Limpieza adecuada de tanques de transporte</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <a href="#" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
         </div>

@@ -54,37 +54,33 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Realizamos la petición de control: 
-  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-  $recaptcha_response = $_POST['recaptcha_response'];
-  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
-  $recaptcha = json_decode($recaptcha);
+    // Realizamos la petición de control: 
+    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+    $recaptcha_responseF = $_POST['recaptcha_responseF'];
+    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+    $recaptcha = json_decode($recaptcha);
+    // Miramos si se considera humano o robot: 
+    if ($recaptcha->score >= 0.5) {
+        $_email = $_POST['email'];
+        $from = "info@desagoteslavictoria.com.ar";
+        $to = "info@desagoteslavictoria.com.ar";
 
-  // Miramos si se considera humano o robot: 
-  if ($recaptcha->score >= 0.5) {
-    // Si la verificación de reCAPTCHA es exitosa, procesa el formulario y envía el correo electrónico
-    $_email = $_POST['email'];
-    $from = "info@desagoteslavictoria.com.ar";
-    $to = "info@desagoteslavictoria.com.ar";
-    $subject = "Desagotes La Victoria ==> Consulta desde el Formulario de Contacto";
+        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-    $message = '<br>================================================<br><b>CONSULTA</b><br>================================================<br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
-
-    if (mail($to, $subject, $message, $headers)) {
-      echo '<script type="text/javascript">
-            alert("Será contactado a la brevedad. Gracias!");
-             window.location.href="index.php";
+        if (mail($to, $subject, $message, $headers)) {
+            echo '<script type="text/javascript">
+            alert("Su Consulta será respondida a la brevedad. Gracias!");
+             window.location.href="contacto.php";
            </script>';
+        }
+
+    } else {
+
     }
-  } else {
-    // Si la verificación de reCAPTCHA falla, puedes manejarlo aquí (puedes agregar un mensaje de error, por ejemplo).
-    echo '<script type="text/javascript">
-            alert("Error: No se ha superado la verificación de reCAPTCHA. Por favor, inténtelo de nuevo.");
-            </script>';
-  }
+
 }
 
 ?>
@@ -209,19 +205,23 @@ width: 270px;">
 
         </div>
         <div class="footer-newsletter">
-          <div class="container">
-            <div class="row" style="display: flex;
-                justify-content: space-around;
-                align-items: flex-start;">
-              <div class="col-lg-6">
-                <form action="procesar-formulario.php" method="post">
-                  <input id="correo" type="email" name="email" placeholder="Correo electrónico"><input type="submit"
-                    value="Enviar">
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+                    <div class="container">
+                        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+                            <div class="col-lg-6">
+                                <form action="articulo3.php" method="post" role="form"
+                                    style="display: flex; align-items: center;   justify-content: flex-start;">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Su correo electrónico" required>
+                                    <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                                    <div class="text-center">
+                                        <button type="submit"
+                                            style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         <div style="    display: flex;
 justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
