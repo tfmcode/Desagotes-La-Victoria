@@ -44,6 +44,54 @@
         });
     });
   </script>
+   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .boxcontact {
+      text-align: center;
+      width: 18%;
+      /* Ajusta el ancho según tus necesidades */
+    }
+
+    .boxcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: px;
+      border: 5px solid lightblue;
+      border-radius: 10px;
+      margin-right: 40px;
+    }
+
+    .navbar-list {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-content: space-around;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+
+    .navfooter a {
+      margin: 0.5%;
+      text-decoration: none;
+      color: #fff;
+      /* Color de texto blanco */
+      padding: 10px;
+      display: block;
+    }
+
+    .navfooter a:hover {
+      color: lightblue;
+      /* Cambio de color de texto a blanco al pasar el cursor */
+    }
+  </style>
 
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
@@ -148,7 +196,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               Desde entonces, el trabajo en equipo, liderazgo en conocimiento, atención personalizada, seguridad y salud
               de nuestra gente, han sido nuestras principales fortalezas; aquellas que marcan la diferencia y nos
               posiciona como una empresa de garantía en el mercado, y líder en Servicio de Transporte de Líquidos
-              Peligrosos en Buenos Aires. En los últimos años...:
+              Peligrosos en Buenos Aires. En los últimos años...
             </p>
             <ul style="display: flex;flex-direction: column; align-items: center;">
               <li><i class="bi bi-check2-circle"></i> Incrementamos el tamaño de servicios ofrecidos</li>
@@ -167,7 +215,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="container">
         <h1>Cuidando el ambiente desde 1950</h1>
         <button type="button" class="btn btn-primary" data-bs-toggle="button" onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
-        Dudas? Click aquí
+        ¿Dudas? Click aquí
         </button>      
     </div>
     </section>
@@ -181,23 +229,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="footer-top">
       <div class="container">
         <div class="row" style="display: flex;  justify-content: space-evenly;   align-items: center;">
-          <div class="col-lg-4 col-md-4 footer-contact">
-            <h4>Consúltenos</h4>
-            <p>
-              Aguilar 2878 <br>
-              Ciudad de Buenos Aires<br>
-              Argentina<br><br>
-              <strong>Teléfono:</strong> +54 11-4551-5191<br>
-              <strong>Email:</strong> info@desagoteslavictoria.com.ar<br>
-            </p>
-
-          </div>
+          
 
           <div class="col-lg-4 col-md-4 footer-contact">
             <p style="display: flex; justify-content: center;">
               <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
 width: 270px;">
             </p>
+          </div>
+          <div class="container">
+            <!-- Primera fila -->
+            <ul class="list-unstyled navbar-list">
+              <li class="navfooter">
+                <a href="../home.php">Inicio</a>
+              </li>
+              <li class="navfooter">
+                <a href="servicios.php">Servicios</a>
+              </li>
+              <li class="navfooter">
+                <a href="nosotros.php">Nosotros</a>
+              </li>
+            </ul>
+
+            <!-- Segunda fila -->
+            <ul class="list-unstyled navbar-list">
+              <li class="navfooter">
+                <a href="trabajos.php">Trabajos</a>
+              </li>
+              <li class="navfooter">
+                <a href="blog.php">Blogs</a>
+              </li>
+              <li class="navfooter">
+                <a href="contacto.php">Contacto</a>
+              </li>
+            </ul>
           </div>
 
         </div>
@@ -207,7 +272,7 @@ width: 270px;">
               <div class="col-lg-6">
                 <form action="nosotros.php" method="post" role="form"
                   style="display: flex; align-items: center;   justify-content: flex-start;">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico"
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
                     required>
                   <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
                   <div class="text-center">

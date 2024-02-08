@@ -73,7 +73,55 @@
             justify-content: center;
             margin: 0;
         }
+
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .boxcontact {
+      text-align: center;
+      width: 18%;
+      /* Ajusta el ancho según tus necesidades */
+    }
+
+    .boxcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: px;
+      border: 5px solid lightblue;
+      border-radius: 10px;
+      margin-right: 40px;
+    }
+
+    .navbar-list {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-content: space-around;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+
+    .navfooter a {
+      margin: 0.5%;
+      text-decoration: none;
+      color: #fff;
+      /* Color de texto blanco */
+      padding: 10px;
+      display: block;
+    }
+
+    .navfooter a:hover {
+      color: lightblue;
+      /* Cambio de color de texto a blanco al pasar el cursor */
+    }
     </style>
+   
 
 </head>
 
@@ -81,32 +129,32 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Realizamos la petición de control: 
-  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-  $recaptcha_responseF = $_POST['recaptcha_responseF'];
-  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-  $recaptcha = json_decode($recaptcha);
-  // Miramos si se considera humano o robot: 
-  if ($recaptcha->score >= 0.5) {
-    $_email = $_POST['email'];
-    $from = "info@desagoteslavictoria.com.ar";
-    $to = "info@desagoteslavictoria.com.ar";
+    // Realizamos la petición de control: 
+    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+    $recaptcha_responseF = $_POST['recaptcha_responseF'];
+    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+    $recaptcha = json_decode($recaptcha);
+    // Miramos si se considera humano o robot: 
+    if ($recaptcha->score >= 0.5) {
+        $_email = $_POST['email'];
+        $from = "info@desagoteslavictoria.com.ar";
+        $to = "info@desagoteslavictoria.com.ar";
 
-    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
+        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-    if (mail($to, $subject, $message, $headers)) {
-      echo '<script type="text/javascript">
+        if (mail($to, $subject, $message, $headers)) {
+            echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
+        }
+
+    } else {
+
     }
-
-  } else {
-
-  }
 
 }
 
@@ -161,9 +209,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <!-- Slide 1 -->
             <div class="carousel-item active">
                 <div class="carousel-container">
-                    <h2 class="animate__animated animate__fadeInDown">Tenemos un Objetivo</h2>
+                    <h5 class="animate__animated animate__fadeInDown" style="color: white; letter-spacing: 0.3em;">
+                        TENEMOS UN OBJETIVO:</h5>
                     <p class="animate__animated animate__fadeInUp">
-                    <h3 style='color:white;'>Mantener sus Instalaciones en condiciones saludables</h3>
+                    <h2 style='color:white;'> <strong> Mantener sus Instalaciones <h2 style="color: black; ">en
+                                condiciones
+                                saludables</strong> </h2>
                     </p>
                     <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
                         target="_blank" class="btn-get-started animate__animated animate__fadeInUp"
@@ -175,9 +226,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <!-- Slide 2 -->
             <div class="carousel-item">
                 <div class="carousel-container">
-                    <h2 class="animate__animated animate__fadeInDown">La Clave de un Negocio Productivo</h2>
+                    <h5 class="animate__animated animate__fadeInDown" style="color: white; letter-spacing: 0.3em;">LA CLAVE DE UN NEGOCIO PRODUCTIVO:</h5>
                     <p class="animate__animated animate__fadeInUp">
-                    <h3 style='color:white'>Mantenimiento Preventivo</h3>
+                    <h2 style='color:white'> <strong> Mantenimiento<h2 style="color: black; ">preventivo</strong></h2></h2>
                     </p>
                     <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores."
                         target="_blank" class="btn-get-started animate__animated animate__fadeInUp"
@@ -264,7 +315,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center p-5">
                         <div class="icon-box">
                             <!-- <div class="icon"><i class="bx bx-fingerprint"></i></div> -->
-                            <h4 class="title"><a href="">HOLA! Soy Mr. Destapador</a></h4>
+                            <p class="text-primary" style="letter-spacing: 0.3em;">HOLA !</p>
+                            <h4 >Soy Mr. Destapador</h4>
                             <p class="description">Mi misión es acompañar a su empresa en el proceso de mantenimiento
                                 preventivo de sus instalaciones. En este camino, contará con todo lo necesario para su
                                 tranquilidad: Equipos de última generación, personal altamente capacitado y la
@@ -367,12 +419,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
 
         </section> --><!-- End Why Us Section -->
-        <section id="heros" style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
+        <section style="text-align: center;" data-aos="fade-up" date-aos-delay="200">
             <div class="container">
                 <h1>Cuidando el ambiente desde 1950</h1>
                 <button type="button" class="btn btn-primary" data-bs-toggle="button"
                     onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
-                    Dudas? Click aquí
+                    ¿Dudas? Click aquí
                 </button>
             </div>
         </section>
@@ -385,17 +437,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="footer-top">
             <div class="container">
                 <div class="row" style="display: flex;  justify-content: space-evenly;   align-items: center;">
-                    <div class="col-lg-4 col-md-4 footer-contact">
-                        <h4>Consúltenos</h4>
-                        <p>
-                            Aguilar 2878 <br>
-                            Ciudad de Buenos Aires<br>
-                            Argentina<br><br>
-                            <strong>Teléfono:</strong> +54 11-4551-5191<br>
-                            <strong>Email:</strong> info@desagoteslavictoria.com.ar<br>
-                        </p>
-
-                    </div>
+                   
 
                     <div class="col-lg-4 col-md-4 footer-contact">
                         <p style="display: flex; justify-content: center;">
@@ -403,6 +445,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 style="    height: 200px; width: 270px;">
                         </p>
                     </div>
+                    <div class="container">
+            <!-- Primera fila -->
+            <ul class="list-unstyled navbar-list">
+              <li class="navfooter">
+                <a href="../home.php">Inicio</a>
+              </li>
+              <li class="navfooter">
+                <a href="servicios.php">Servicios</a>
+              </li>
+              <li class="navfooter">
+                <a href="nosotros.php">Nosotros</a>
+              </li>
+            </ul>
+
+            <!-- Segunda fila -->
+            <ul class="list-unstyled navbar-list">
+              <li class="navfooter">
+                <a href="trabajos.php">Trabajos</a>
+              </li>
+              <li class="navfooter">
+                <a href="blog.php">Blogs</a>
+              </li>
+              <li class="navfooter">
+                <a href="contacto.php">Contacto</a>
+              </li>
+            </ul>
+          </div>
 
                 </div>
                 <div class="footer-newsletter">
@@ -412,7 +481,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <form action="home.php" method="post" role="form"
                                     style="display: flex; align-items: center;   justify-content: flex-start;">
                                     <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Correo electrónico" required>
+                                        placeholder="Su correo electrónico" required>
                                     <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
                                     <div class="text-center">
                                         <button type="submit"

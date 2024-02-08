@@ -236,7 +236,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="container">
 
         <div class="section-title">
-          <h2><strong>Consúltenos</strong><br>Respuesta inmediata</h2>
+        <p class="text-primary" style="letter-spacing: 0.3em;">CONTÁCTENOS</p>
+          <h2>Respuesta inmediata</h2>
         </div>
 
         <div class="row" style="display: flex; flex-wrap: wrap">
@@ -315,7 +316,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h1>Cuidando el ambiente desde 1950</h1>
         <button type="button" class="btn btn-primary" data-bs-toggle="button"
           onclick="window.location.href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'">
-          Dudas? Click aquí
+          ¿Dudas? Click aquí
         </button>
       </div>
     </section>
@@ -329,17 +330,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="footer-top">
       <div class="container">
         <div class="row" style="display: flex;  justify-content: space-evenly;   align-items: center;">
-          <div class="col-lg-4 col-md-4 footer-contact">
-            <h4>Consúltenos</h4>
-            <p>
-              Aguilar 2878 <br>
-              Ciudad de Buenos Aires<br>
-              Argentina<br><br>
-              <strong>Teléfono:</strong> +54 11-4551-5191<br>
-              <strong>Email:</strong> info@desagoteslavictoria.com.ar<br>
-            </p>
-
-          </div>
 
           <div class="col-lg-4 col-md-4 footer-contact">
             <p style="display: flex; justify-content: center;">
@@ -364,10 +354,10 @@ width: 270px;">
             <!-- Segunda fila -->
             <ul class="list-unstyled navbar-list">
               <li class="navfooter">
-                <a href="blog.php">Blogs</a>
+                <a href="trabajos.php">Trabajos</a>
               </li>
               <li class="navfooter">
-                <a href="trabajos.php">Trabajos</a>
+                <a href="blog.php">Blogs</a>
               </li>
               <li class="navfooter">
                 <a href="contacto.php">Contacto</a>
@@ -381,7 +371,7 @@ width: 270px;">
               <div class="col-lg-6">
                 <form action="contacto.php" method="post" role="form"
                   style="display: flex; align-items: center;   justify-content: flex-start;">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico"
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
                     required>
                   <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
                   <div class="text-center">
