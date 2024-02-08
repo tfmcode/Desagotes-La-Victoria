@@ -49,6 +49,34 @@
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
 
+    <style>
+
+h1 {
+text-align: center;
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+h4 {
+font-size: 20px;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+p {
+margin-bottom: 15px;
+}
+
+strong {
+font-weight: bold;
+}
+
+a {
+color: blue;
+text-decoration: none;
+}
+
+</style>
 </head>
 
 <?php
@@ -136,7 +164,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <p>En lo que sigue, desde <strong>La Victoria</strong> te dejamos algunos consejos para lograr un buen funcionamiento de la cámara séptica, y te contamos qué herramientas son necesarias para su preservación, como es el caso de los pozos de bombeo. Prestar atención a este punto será muy útil para mantenerla en buen estado y así evitar gastos a futuro.</p>
 
-<h2>¿Sabes qué son los pozos de bombeo?</h2>
+<h4>¿Sabes qué son los pozos de bombeo?</h4>
 
 <p>Los pozos de bombeo son una herramienta efectiva para eliminar residuos líquidos, además de eventuales desechos acumulados. Utilizan la fuerza de la succión para elevar fluidos o agua, que por accidente o consecuencia del atasco, quedó debajo del nivel mínimo de desagüe, y por esto, estacionada en ese punto.</p>
 
@@ -146,14 +174,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <p>Para lograr el paso escalonado del agua a retirar, la definición de la magnitud del tanque es un punto a tener en cuenta de manera previa, para evitar un innecesario funcionamiento de impulso y retroceso de la bomba.</p>
 
-<h3>Existen dos clases diferentes de pozos de bombeo</h3>
+<h4>Existen dos clases diferentes de pozos de bombeo</h4>
 
 <ul>
     <li>El de pedestal, que se concentra en altura, en referencia a la línea media de ubicación de la fosa. Este punto permite mayor facilidad a la hora del mantenimiento.</li>
     <li>El sumergible, como su nombre señala se presenta en el interior de la cámara, y con la finalidad de evitar situaciones que puedan generar un cortocircuito, se sellan por completo.</li>
 </ul>
 
-<h2>¿Cómo se limpia la cámara séptica?</h2>
+<h4>¿Cómo se limpia la cámara séptica?</h4>
 
 <p><strong>Pasos para la limpieza de fosa séptica de un modo profesional:</strong></p>
 
@@ -165,11 +193,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <li>El relleno posterior del tanque debe incorporar cantidad de agua que no supere el lodo residual eliminado.</li>
 </ol>
 
-<h2>¿Cuál es la duración estimada de una fosa séptica?</h2>
+<h4>¿Cuál es la duración estimada de una fosa séptica?</h4>
 
 <p>Con el mantenimiento adecuado, la vida útil de una fosa séptica en promedio gira en torno de los 10 a 20 años, aproximadamente.</p>
 
-<h2>Aguas limpias vs aguas residuales</h2>
+<h4>Aguas limpias vs aguas residuales</h4>
 
 <p><strong>¿Qué son las aguas limpias?</strong><br>
 Se trata de agua apta para su utilización exenta de riesgos, libre de toda contaminación, que pasa por un proceso previo de tratamiento en planta, y que es utilizada para lavado de alimentos, o simplemente para beber. Otro punto importante señala su utilidad para la mantención de los diferentes ecosistemas.</p>

@@ -49,6 +49,34 @@
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
 
+    <style>
+
+h1 {
+text-align: center;
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+h4 {
+font-size: 20px;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+p {
+margin-bottom: 15px;
+}
+
+strong {
+font-weight: bold;
+}
+
+a {
+color: blue;
+text-decoration: none;
+}
+
+</style>
 </head>
 
 <?php
@@ -135,7 +163,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>Muchas personas buscan respuestas en Google sobre qué son, para qué se utilizan, cuáles son los diferentes tipos y cómo funcionan los camiones atmosféricos.</p>
         <p>Incluso, <strong>muchos usuarios indagan sobre su problema de cañerías en su casa o empresa</strong> sin saber que lo que están necesitando en realidad es un servicio en destapación o desobstrucción.</p>
         <p>Desde <a href='../home.php'>La Victoria Destapaciones</a> recopilamos algunas de las búsquedas más frecuentes sobre camiones atmosféricos y simplificamos las respuestas de forma que podamos comprenderlo de un modo más sencillo.</p>
-        <h2>9 preguntas que los usuarios más hacen en Google sobre camiones atmosféricos</h2>
+        <h3>9 preguntas que los usuarios más hacen en Google sobre camiones atmosféricos</h3>
 
         <ol>
             <li>

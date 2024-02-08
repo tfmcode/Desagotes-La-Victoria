@@ -68,6 +68,23 @@
         .img_trabajos img:hover {
             transform: scale(1.1);
         }
+
+        @media (max-width: 990px){
+            .img1 {
+                margin: 2%
+            }
+        }
+
+        @media (max-width: 620px){
+            .img_trabajos {
+                display: flex;
+                flex-direction: column;
+            }
+            .img1 {
+                margin: 3%;
+            }
+        }
+
     </style>
 
 </head>
@@ -157,11 +174,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <h1>Excelencia operativa</h1>
                 </div>
                 <div class="img_trabajos">
-                    <img src="../assets/img/trabajo3.jpg" alt="" style="    width: 300px;
+                    <img class="img1" src="../assets/img/trabajo3.jpg" alt="" style="    width: 300px;
             height: 340px;">
-                    <img src="../assets/img/trabajo1.jpg" alt="" style="    width: 300px;
+                    <img class="img1" src="../assets/img/trabajo1.jpg" alt="" style="    width: 300px;
             height: 340px;">
-                    <img src="../assets/img/trabajo2.jpg" alt="" style="    width: 300px;
+                    <img class="img1" src="../assets/img/trabajo2.jpg" alt="" style="    width: 300px;
             height: 340px;">
                 </div>
             </div>

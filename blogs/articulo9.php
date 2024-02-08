@@ -48,6 +48,34 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
+    <style>
+
+h1 {
+text-align: center;
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+h4 {
+font-size: 20px;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+p {
+margin-bottom: 15px;
+}
+
+strong {
+font-weight: bold;
+}
+
+a {
+color: blue;
+text-decoration: none;
+}
+
+</style>
 
 </head>
 
@@ -140,21 +168,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <p>Esas formas de producción y posterior desecho señalan hoy interés en la disminución de la contaminación. Las acciones, que ponen el foco en la reducción de esos efectos, son múltiples y específicas. En cada caso, su activación se acerca para contrarrestar su influencia, y minimizar las complicaciones.</p>
 
-        <h2>Todos hablan de impacto ambiental y sostenibilidad. ¿De qué se trata en realidad estos términos?</h2>
+        <h4>Todos hablan de impacto ambiental y sostenibilidad. ¿De qué se trata en realidad estos términos?</h4>
 
         <p>El impacto ambiental se define por cada una de las intervenciones que provoca la actividad diaria en el medio ambiente. Eso teniendo en cuenta la producción de bienes determinados (entre otras cuestiones), resultantes en elementos de contaminación. El más relevante, y en el que <a href='../home.php'><strong>La Victoria</strong></a> puede ayudarte, se refiere a los hábitos de consumo y la generación de desperdicios.</p>
 
         <p>De este modo surge la idea de sostenibilidad. Se trata de la aplicación de modernas acciones que reformulan el trabajo con los desperdicios, sin modificar el desarrollo productivo y comercial. Además, resuelve situaciones de contaminación en el agua y en la tierra, entre otras, que impactan la vida de todos.<a href='../sections/trabajos.php'> Acá te contamos algunos de los trabajos que realizamos en La Victoria, en pos de reducir el impacto ambiental desde tu empresa.</a></p>
 
-        <h3>La definición de la sostenibilidad: Todo un desafío</h3>
+        <h4>La definición de la sostenibilidad: Todo un desafío.</h4>
 
         <p>Principalmente, la idea de sostenibilidad y su impacto determinante en la calidad de vida implica avance económico sin amenaza al ecosistema del que todos formamos parte. La visión principal de este modo de hacer, en un adecuado balance ambiental, se resuelve en el cuidado de los recursos, correcta manipulación de los residuos peligrosos, la aplicación de medidas de seguridad, y la reutilización de todos aquellos elementos que lo permitan.</p>
 
-        <h3>Tip ambiental de La Victoria: Una elección práctica para la vida diaria</h3>
+        <h4>Tip ambiental de La Victoria: Una elección práctica para la vida diaria.</h4>
 
         <p>Considerando nuestra experiencia, aquí te dejamos una serie de consejos para iniciar el cambio desde tu lugar, mientras tienes en cuenta las mejores opciones de traslado de los residuos eventualmente peligrosos. Las explicaciones te serán muy útiles, y verás que considerar  esto te ayudará a tomar decisiones. Prestar atención a este punto será muy útil en pos de modificar hacia el futuro.</p>
 
-        <h4>Consejos para hacer la diferencia</h4>
+        <h4>Consejos para hacer la diferencia:</h4>
 
         <ul>
             <li>Los utensilios comunes, de plástico descartable, son prácticos en su utilización ocasional. Pero el mismo hecho de que solamente  puedan ser utilizados en una ocasión los vuelve una idea inestable. Botellas de vidrio, y elementos de bambú, como por ejemplo sorbetes, pueden ser una alternativa práctica e inteligente.</li>

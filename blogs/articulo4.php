@@ -48,6 +48,34 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
+    <style>
+
+h1 {
+text-align: center;
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+h4 {
+font-size: 20px;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+p {
+margin-bottom: 15px;
+}
+
+strong {
+font-weight: bold;
+}
+
+a {
+color: blue;
+text-decoration: none;
+}
+
+</style>
 
 </head>
 
@@ -133,7 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h1>Landfarming: Tratamiento Ambiental</h1>
     <p>El impacto ambiental que provoca la producción petrolífera es notable, pero existe una solución para revitalizar los suelos que quedan inutilizados por influencia del derrame de hidrocarburos en las capas internas: se llama Landfarming.</p>
     <p>También conocido como tratamiento superficial en tierra, el landfarming es un proceso biológico que utiliza microorganismos naturales del suelo (como las bacterias) para eliminar, reducir o transformar las sustancias contaminantes. Su propósito es minimizar el riesgo para la salud humana y el medio ambiente.</p>
-    <h2>Landfarming, una alternativa que reduce el impacto ambiental</h2>
+    <h2>Landfarming, una alternativa que reduce el impacto ambiental.</h2>
     <p>En <a href='../home.php'><strong>Desagotes La Victoria</strong></a> estamos muy interesados en el cuidado y protección del medio ambiente, por eso queremos mencionarte los puntos más relevantes de este tratamiento y contarte por qué cada vez se está aplicando más en la Argentina y en el mundo:</p>
     <ul>
         <li>Por el bajo costo de su proceso (pues no requiere más que la misma naturaleza).</li>

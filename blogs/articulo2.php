@@ -49,6 +49,35 @@
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
 
+    
+    <style>
+
+    h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+    </style>
 </head>
 
 <?php

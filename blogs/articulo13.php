@@ -49,6 +49,34 @@
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
 
+    <style>
+
+h1 {
+text-align: center;
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+h4 {
+font-size: 20px;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+p {
+margin-bottom: 15px;
+}
+
+strong {
+font-weight: bold;
+}
+
+a {
+color: blue;
+text-decoration: none;
+}
+
+</style>
 </head>
 
 <?php
@@ -133,17 +161,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h1>Beneficios de la limpieza adecuada de tanques de transporte</h1>
     <p>¿Sabías que el cuidado de los tanques de transporte puede maximizar el rendimiento de tu empresa? Una simple limpieza de las cisternas de almacenamiento puede marcar la diferencia en la eficiencia de tus equipos. En <a href='../home.php'><strong>La Victoria</strong></a> entendemos la importancia de mantener las herramientas de trabajo en óptimas condiciones para un desempeño excepcional. Aquí te contamos cómo nuestras soluciones pueden potenciar tu negocio.</p>
     <p>Nuestros expertos se especializan en la limpieza interior de tanques de cualquier tipo. Tenemos la experiencia y los recursos para adaptar nuestros servicios a tu necesidad.</p>
-    <h2>Descubrí la importancia de manejar adecuadamente los residuos peligrosos.</h2>
+    <h4>Descubrí la importancia de manejar adecuadamente los residuos peligrosos.</h4>
     <p>Sin las medidas de protección necesarias, estos materiales pueden resultar en una complicación para la salud humana y el medio ambiente. Es crucial tomar medidas responsables respecto de los residuos peligrosos.</p>
     <p>En cada etapa, desde la generación hasta la disposición final, se requiere una gestión eficiente. Almacenar, transportar, tratar y eliminar correctamente estos materiales es fundamental para evitar la contaminación del aire, el agua y el suelo, y salvaguardar la salud de todos.</p>
-    <h3>¿Qué tipo de residuo es el aceite?</h3>
+    <h4>¿Qué tipo de residuo es el aceite?</h4>
     <p>En cuanto a los residuos posibles, el aceite es uno de los más comunes. Utilizado en comercios o pequeñas industrias, requiere del cumplimiento de protocolos certeros en su manipulación.</p>
     <p>Los residuos de aceites de cocina usados se clasifican como residuos no peligrosos; sin embargo, el inadecuado manejo puede generar contaminación en el agua y suelo al ser vertidos sin los cuidados recomendados, y a su vez resultar en daños en las tuberías.</p>
-    <h3>Consejo especial de La Victoria</h3>
+    <h4>Consejo especial de La Victoria</h4>
     <p>Desde <a href='../home.php'><strong>Desagotes La Victoria</strong></a> contribuimos a proteger tu salud y el medio ambiente mediante la gestión responsable de los residuos peligrosos. Juntos podemos crear un futuro más limpio y saludable.</p>
     <p>Imagina tu negocio funcionando de manera eficiente, sin problemas derivados del mal funcionamiento de los tanques. El proceso de higiene sigue los más altos estándares de calidad para brindarte los mejores resultados.</p>
     <p>Nuestro equipo se encarga de gestionar adecuadamente los residuos, garantizando una disposición final responsable y respetuosa con el espacio que habitamos.</p>
-    <h3>¡Descubrí por qué limpiar tus tanques de combustible con <a><strong>La Victoria</strong></a> es una decisión inteligente y rentable!</h3>
+    <h4>¡Descubrí por qué limpiar tus tanques de combustible con <a><strong>La Victoria</strong></a> es una decisión inteligente y rentable!</h4>
     <ul>
         <li>Con nuestro proceso de limpieza, los tanques de transporte de tu empresa funcionarán de manera más productiva, limitando la posibilidad de obstrucciones por residuos y la presencia de inconvenientes posteriores.</li>
         <li>Es posible lograr que los elementos que pueden generar deterioro disminuyan considerablemente. Proteger tu inversión es lo más importante para el sostén de tu comercio o industria. Los tanques sucios pueden causar daños e inconvenientes económicos significativos. Al limpiarlos regularmente, evitarás el deterioro prematuro y los costosos desperdicios de combustible.</li>
@@ -151,7 +179,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <li>La consideración y el cuidado de los espacios de almacenamiento colabora en disminuir la contaminación de las áreas en las que vivimos, e implica un medio ambiente más sano. Al tomar medidas responsables, demostrás tu compromiso con la sostenibilidad.</li>
         <li>Para cerrar, una última consideración: Los tanques deteriorados pueden causar fugas y derivar en fallas costosas. Al mantener tus tanques en buen estado, reducirás los costos de reparación y minimizarás el riesgo de interrupciones en tu negocio.</li>
     </ul>
-    <h3>¿Por qué es conveniente pensar en la prevención?</h3>
+    <h4>¿Por qué es conveniente pensar en la prevención?</h4>
     <p>Tus equipos funcionarán con mayor eficiencia, reduciendo la posibilidad de averías costosas. Notarás una mejor respuesta y un menor consumo de combustible, lo que se traducirá en ahorro significativo.</p>
     <p>Asegurate y prevení para mantener las operaciones sin contratiempos. Confía en La Victoria y aprovecha nuestros servicios. Juntos podemos optimizar tus operaciones y llevar tu negocio al siguiente nivel.</p>
     <p>¡No esperes más! <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.">Contáctanos hoy mismo</a> y descubrí cómo La Victoria puede potenciar el rendimiento de tus equipos.</p>

@@ -48,6 +48,34 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
+    <style>
+
+h1 {
+text-align: center;
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+h4 {
+font-size: 20px;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+p {
+margin-bottom: 15px;
+}
+
+strong {
+font-weight: bold;
+}
+
+a {
+color: blue;
+text-decoration: none;
+}
+
+</style>
 
 </head>
 
@@ -138,7 +166,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <p>Es preciso recordar que el uso irregular de estos productos para terminar con la falla puede ser peligroso para la salud; es por eso que te recomendamos que siempre acudas a expertos.</p>
 
-<h2>La importancia de la planificación</h2>
+<h4>La importancia de la planificación:</h4>
 
 <p>Además de las situaciones mencionadas, es importante destacar que la obstrucción en las cañerías puede ser un indicador de otros fallos en la red de saneamiento, como la acumulación de sedimentos en las tuberías o la necesidad de reemplazar algunas piezas del sistema. Al acudir a expertos, no solo se resuelve el problema inmediato, sino que también se pueden detectar y prevenir futuros inconvenientes, lo cual puede ahorrar tiempo y dinero a largo plazo.</p>
 

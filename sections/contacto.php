@@ -105,7 +105,14 @@
       color: lightblue;
       /* Cambio de color de texto a blanco al pasar el cursor */
     }
-  </style>
+
+    @media screen and (max-width: 768px) {
+        .boxcontainer {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    </style>
 </head>
 
 
@@ -277,20 +284,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <span style="font-size: 2em;"><iconify-icon icon="bi:telephone-fill"
                     style="color: blueviolet;"></iconify-icon></span>
                 <h4 style="font-weight: bold; font-size: 1em;">Teléfono</h4>
-                <p style="margin: 0.5em 0;">(011) 4551-5191</p>
+                <p class="p1" style="margin: 0.5em 0;">(011) 4551-5191</p>
               </div>
               <div class="boxcontact">
                 <span style="font-size: 2em;"><iconify-icon icon="solar:map-point-bold"
                     style="color: blueviolet;"></iconify-icon></span>
                 <h4 style="font-weight: bold; font-size: 1em;">Dirección</h4>
-                <p style="margin: 0.5em 0;">Aguilar 2878 Capital Federal</p>
+                <p class="p1" style="margin: 0.5em 0;">Aguilar 2878 Capital Federal</p>
                 <!-- <p style="margin: 0.5em 0;">Capital Federal</p> -->
               </div>
               <div class="boxcontact">
                 <span style="font-size: 2em;"><iconify-icon icon="carbon:time-filled"
                     style="color: blueviolet;"></iconify-icon></span>
                 <h4 style="font-weight: bold; font-size: 1em">Horario Laboral</h4>
-                <p style="margin: 0.5em 0;">08:00hs a 18:00hs</p>
+                <p class="p1" style="margin: 0.5em 0;">08:00hs a 18:00hs</p>
               </div>
             </div>
 

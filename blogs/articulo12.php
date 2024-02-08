@@ -48,6 +48,34 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
+    <style>
+
+h1 {
+text-align: center;
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+h4 {
+font-size: 20px;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+p {
+margin-bottom: 15px;
+}
+
+strong {
+font-weight: bold;
+}
+
+a {
+color: blue;
+text-decoration: none;
+}
+
+</style>
 
 </head>
 
@@ -132,16 +160,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="container">
     <h1>La verdad sobre las cámaras sépticas</h1>
     <p>Las cámaras sépticas son una parte esencial del sistema de tratamiento de aguas residuales. Sin embargo, a menudo pasan desapercibidas en la rutina diaria. ¿Pero qué sucede realmente dentro de estas estructuras subterráneas? Desde <a href='../home.php'><strong>La Victoria</strong></a> te explicamos todos los secretos.</p>
-    <h2>¿Qué es una fosa séptica y cómo funciona?</h2>
+    <h4>¿Qué es una fosa séptica y cómo funciona?</h4>
     <p>Se trata de sistemas de almacenamiento y eliminación segura de residuos. A través de un proceso de decantación se separan los sólidos presentes en los efluentes, evitando la contaminación de suelos y fuentes de agua dulce.</p>
     <p>Para instalar una fosa séptica, se realiza una excavación de un pequeño pozo donde se construye un tanque que recibe los líquidos generados en cualquier edificación que esté alejada de un sistema de alcantarillado. Existen fosas de una y dos cámaras, y cada una funciona de manera diferente.</p>
-    <h2>Residuos acumulados en cámaras sépticas</h2>
+    <h4>Residuos acumulados en cámaras sépticas</h4>
     <p>El proceso de descomposición de las escorias es un tema de vital importancia para el correcto funcionamiento de estos sistemas. A lo largo del tiempo, los residuos acumulados pueden tener un impacto significativo en el rendimiento y la vida útil de esta clase de estructuras.</p>
     <p>Uno de los inconvenientes más comunes es el almacenamiento de lodos en el fondo de la fosa. Estos materiales son el resultado de la descomposición de los desechos sólidos y líquidos que ingresan en ella; con el tiempo, los lodos forman una capa espesa en el interior de la cámara. Esto puede obstruir los conductos de entrada y salida, reduciendo la capacidad total para tratar de manera adecuada los desperdicios.</p>
     <p>Esto también puede causar olores desagradables; a medida que los restos se descomponen, producen gases malolientes que eventualmente causan aromas ofensivos en las áreas cercanas. Esto no solo es incómodo para los residentes cercanos, sino que también puede ser un problema de salud pública.</p>
     <p>Cuando los conductos están obstruidos, el flujo de agua se reduce, lo que puede provocar que los desechos se acumulen en la superficie del agua en la fosa y no se descompongan como es esperable.</p>
     <p>Como es sabido, estas situaciones suelen resultar en gastos inesperados. Quienes conformamos <a href='../home.php'><strong>La Victoria</strong></a> estamos a tu servicio para evitar desembolsos improductivos que podrían afectar el normal funcionamiento económico de tu negocio o empresa.</p>
-    <h2>¿Qué se puede hacer para evitar el depósito de residuos en las cámaras sépticas?</h2>
+    <h4>¿Qué se puede hacer para evitar el depósito de residuos en las cámaras sépticas?</h4>
     <p>Es importante tener en cuenta la importancia de verificar el buen funcionamiento del desagüe y evitar arrojar productos químicos o materiales no biodegradables que puedan obstruir los conductos. Como ya mencionamos, la carga de contaminantes puede repercutir negativamente en la calidad del agua y, definitivamente, en el sostenimiento del medio ambiente.</p>
     <p>El mantenimiento regular de estos espacios es el primer punto a considerar; por eso es esencial vaciar y limpiar periódicamente las cámaras para eliminar los depósitos innecesarios. La utilización del equipo adecuado, operado por profesionales capacitados, garantiza un manejo seguro de los desperdicios. Ese es uno de los principios de <a href='../home.php'><strong>La Victoria</strong></a>, y estamos listos para ayudarte.</p>
     <p>En el siguiente <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.">enlace</a> podés consultar un presupuesto justo para vos. Escribinos y cotizá tu servicio en La Victoria.</p>

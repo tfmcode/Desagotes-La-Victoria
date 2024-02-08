@@ -49,6 +49,34 @@
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
 
+    <style>
+
+h1 {
+text-align: center;
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+h4 {
+font-size: 20px;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+p {
+margin-bottom: 15px;
+}
+
+strong {
+font-weight: bold;
+}
+
+a {
+color: blue;
+text-decoration: none;
+}
+
+</style>
 </head>
 
 <?php
@@ -135,7 +163,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <p>El buen estado de una cañería es vital para el trabajo seguro de una empresa o industria. Un <strong>problema en el desagüe</strong> ocasiona demoras, incomodidad y hasta <strong>fallas durante el proceso productivo.</strong>  ¿Por qué suceden?  </p>
     <p>Hay diversos motivos que podrían ocasionar fallas en los caños, y estos, en la mayoría de las ocasiones, <strong>solo puede determinarse a través de una inspección o diagnóstico</strong> de las mismas.</p>
     <p>En algunos casos, cuando la <strong>falla es profunda y de gravedad alta</strong>, debe recurrirse a un sistema de inspección con cámara para poder detectar el inconveniente.</p>
-    <h2>Las 4 fallas más comunes en las cañerías</h2>
+    <h4>Las 4 fallas más comunes en las cañerías</h4>
 
     <ol>
         <li>
@@ -160,7 +188,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <p>Recuerda que el mantenimiento preventivo es una de las primeras recomendaciones que te brindamos, porque previene futuras complicaciones, pérdidas de tiempo y de dinero para tu empresa. En La Victoria Destapaciones tenemos presente una conciencia ecológica a la hora de cuidar el funcionamiento natural de las cañerías, y la posterior eliminación de los desechos de forma correcta. Es por eso que el resultado del desagote tiene que ser destinado a las plantas de tratamiento habilitadas. Consulta más información de los servicios de La Victoria en nuestra página web.</p>
 
-    <h3>Tips de La Victoria para el cuidado de tus cañerías</h3>
+    <h4>Tips de La Victoria para el cuidado de tus cañerías</h4>
     <ul>
         <li>Protege tus cañerías utilizando los materiales adecuados.</li>
         <li>Realiza un diagnóstico frecuente para ver su estado general.</li>
@@ -168,7 +196,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <li>Realiza el trabajo con expertos que puedan darte un diagnóstico preciso.</li>
     </ul>
 
-    <h3>La importancia del mantenimiento de cañerías industriales</h3>
+    <h4>La importancia del mantenimiento de cañerías industriales</h4>
     <p>El adecuado mantenimiento del sistema de tuberías, y la detección a tiempo de los problemas posibles resulta en notorios beneficios para el desarrollo, los procesos industriales, y el ahorro en costos.  </p>
     <p>Luego de realizar una limpieza que permita lograr un diagnóstico claro de la afectación de las cañerías, la revisión visual por medio de cámaras es el paso siguiente para detectar los problemas por resolver. Como adelantamos, la inspección en video es la forma más útil para conocer el origen de las fallas o complicaciones.</p>
     <p>El registro de la información en los diferentes soportes disponibles es otro de los servicios que brinda La Victoria, y es una herramienta de seguridad para resguardar los datos y facilitar el seguimiento a futuro de las necesidades de conservación.<a>Cotiza el diagnóstico para tus cañerías haciendo clic acá.</a></p>

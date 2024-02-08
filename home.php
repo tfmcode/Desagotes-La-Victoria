@@ -120,6 +120,14 @@
       color: lightblue;
       /* Cambio de color de texto a blanco al pasar el cursor */
     }
+
+@media (max-width: 990px) {
+    .row {
+    display: flex;
+    flex-direction: column; 
+    align-content: center;/* Asegura que el texto esté centrado en dispositivos con ancho de pantalla de hasta 380px */
+    }
+}
     </style>
    
 

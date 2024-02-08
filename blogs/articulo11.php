@@ -48,6 +48,34 @@
   <meta name="google-site-verification"
     content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
 
+    <style>
+
+h1 {
+text-align: center;
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+h4 {
+font-size: 20px;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+p {
+margin-bottom: 15px;
+}
+
+strong {
+font-weight: bold;
+}
+
+a {
+color: blue;
+text-decoration: none;
+}
+
+</style>
 
 </head>
 
@@ -146,7 +174,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <p>Para evitar estas situaciones, te recomendamos un mantenimiento de atención previa. Este consiste en la limpieza y el vaciado regular del pozo séptico o de la cámara, lo que elimina los sedimentos acumulados.</p>
 
-    <h2>Tips a considerar para evitar inconvenientes</h2>
+    <h4>Tips a considerar para evitar inconvenientes:</h4>
 
     <p>Desde <a href='../home.php'><strong>La Victoria</strong></a> te aconsejamos cómo mantener en óptimas condiciones el sistema cloacal:</p>
 
