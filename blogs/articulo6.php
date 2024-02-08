@@ -134,27 +134,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-      <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
-      <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
-      <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
-      <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
+    <h1>Las 4 fallas más frecuentes en las cañerías industriales (y cómo detectarlas)</h1>
 
+    <p>El buen estado de una cañería es vital para el trabajo seguro de una empresa o industria. Un <strong>problema en el desagüe</strong> ocasiona demoras, incomodidad y hasta <strong>fallas durante el proceso productivo.</strong>  ¿Por qué suceden?  </p>
+    <p>Hay diversos motivos que podrían ocasionar fallas en los caños, y estos, en la mayoría de las ocasiones, <strong>solo puede determinarse a través de una inspección o diagnóstico</strong> de las mismas.</p>
+    <p>En algunos casos, cuando la <strong>falla es profunda y de gravedad alta</strong>, debe recurrirse a un sistema de inspección con cámara para poder detectar el inconveniente.</p>
+    <h2>Las 4 fallas más comunes en las cañerías</h2>
+
+    <ol>
+        <li>
+            <strong>Cañerías ruidosas</strong>
+            <p>La dilatación de las cañerías por el contacto con el agua caliente es una falla bastante frecuente. Como <strong>consecuencia de las altas temperaturas la cañería se dilata</strong> y produce sonidos molestos y repetitivos debido al roce con las abrazaderas.</p>
+        </li>
+        <li>
+            <strong>Presión baja del flujo de agua</strong>
+            <p>Si bien es un problema de categoría leve, es cierto que puede ocasionar bastante incomodidad en el flujo de trabajo de una industria.</p>
+            <p>Más que nadie sabrás que la normalidad del flujo de agua o de los líquidos que se vierten para la red productiva <strong>afectan directamente a tu producto final</strong>.</p>
+            <p>Ten en cuenta que a medida que aumenta la pérdida de presión, también incrementa la energía que requiere el sistema para compensarla, lo cual lleva a <strong>aumentar los costos de operación</strong>.</p>
+        </li>
+        <li>
+            <strong>Cañerías obstruidas por presencia de sedimentos</strong>
+            <p>La acumulación en la tubería de <strong>materiales y desechos sólidos</strong> es un problema bastante común, y es uno de los inconvenientes que podemos solucionar desde La Victoria mediante una serie de procedimientos, como la inspección televisiva de cañerías industriales y con una <strong>limpieza hidrocinética de alta presión</strong>.</p>
+        </li>
+        <li>
+            <strong>Desgaste y roturas en la cañería</strong>
+            <p>El desgaste físico de cañerías antiguas pueden resultar en problemas futuros de compleja resolución, como por ejemplo, la inundación del espacio de trabajo, o roturas que implican desmontar grandes partes de la instalación.</p>
+        </li>
+    </ol>
+
+    <p>Recuerda que el mantenimiento preventivo es una de las primeras recomendaciones que te brindamos, porque previene futuras complicaciones, pérdidas de tiempo y de dinero para tu empresa. En La Victoria Destapaciones tenemos presente una conciencia ecológica a la hora de cuidar el funcionamiento natural de las cañerías, y la posterior eliminación de los desechos de forma correcta. Es por eso que el resultado del desagote tiene que ser destinado a las plantas de tratamiento habilitadas. Consulta más información de los servicios de La Victoria en nuestra página web.</p>
+
+    <h3>Tips de La Victoria para el cuidado de tus cañerías</h3>
+    <ul>
+        <li>Protege tus cañerías utilizando los materiales adecuados.</li>
+        <li>Realiza un diagnóstico frecuente para ver su estado general.</li>
+        <li>Presta atención si se presenta alguno de los puntos mencionados arriba.</li>
+        <li>Realiza el trabajo con expertos que puedan darte un diagnóstico preciso.</li>
+    </ul>
+
+    <h3>La importancia del mantenimiento de cañerías industriales</h3>
+    <p>El adecuado mantenimiento del sistema de tuberías, y la detección a tiempo de los problemas posibles resulta en notorios beneficios para el desarrollo, los procesos industriales, y el ahorro en costos.  </p>
+    <p>Luego de realizar una limpieza que permita lograr un diagnóstico claro de la afectación de las cañerías, la revisión visual por medio de cámaras es el paso siguiente para detectar los problemas por resolver. Como adelantamos, la inspección en video es la forma más útil para conocer el origen de las fallas o complicaciones.</p>
+    <p>El registro de la información en los diferentes soportes disponibles es otro de los servicios que brinda La Victoria, y es una herramienta de seguridad para resguardar los datos y facilitar el seguimiento a futuro de las necesidades de conservación.<a>Cotiza el diagnóstico para tus cañerías haciendo clic acá.</a></p>
 
     </div>
 

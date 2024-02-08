@@ -134,27 +134,61 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-      <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
-      <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
-      <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
-      <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
+    <h1>Las 9 preguntas más frecuentes sobre camiones atmosféricos</h1>
 
+        <p>Muchas personas buscan respuestas en Google sobre qué son, para qué se utilizan, cuáles son los diferentes tipos y cómo funcionan los camiones atmosféricos.</p>
+        <p>Incluso, <strong>muchos usuarios indagan sobre su problema de cañerías en su casa o empresa</strong> sin saber que lo que están necesitando en realidad es un servicio en destapación o desobstrucción.</p>
+        <p>Desde <a href='../home.php'>La Victoria Destapaciones</a> recopilamos algunas de las búsquedas más frecuentes sobre camiones atmosféricos y simplificamos las respuestas de forma que podamos comprenderlo de un modo más sencillo.</p>
+        <h2>9 preguntas que los usuarios más hacen en Google sobre camiones atmosféricos</h2>
+
+        <ol>
+            <li>
+                <strong>¿Qué es y para qué sirve un camión atmosférico?</strong>
+                <p>Los camiones atmosféricos pueden almacenar de manera temporal, grandes cantidades de líquidos residuales, luego de realizado el desagote en una casa particular, empresa o industria. Las condiciones internas de los camiones permiten evitar la descomposición del material, por su diferente naturaleza.</p>
+            </li>
+            <li>
+                <strong>¿Cuál es la diferencia entre un camión atmosférico y un camión desobstructor de cañerías?</strong>
+                <p>La principal diferencia reside en las tareas que cada uno de los camiones cumple en su servicio; en el caso del desobstructor, se utiliza para destapar cañerías obstruidas utilizando un sistema de agua a presión. Por otra parte, el camión atmosférico realiza tareas de succión y transporte de residuos líquidos.</p>
+            </li>
+            <li>
+                <strong>¿Cómo se realizan las tareas de desagote?</strong>
+                <p>El desagote se produce por la extracción de los líquidos a través de la succión. Estos tanques se posicionan de manera horizontal; desplegando mangueras plásticas con uniones reforzadas para realizar la extracción. El tipo de presión dentro de un camión es similar a la presión atmosférica del espacio en que se encuentran.</p>
+            </li>
+            <li>
+                <strong>¿Cómo funcionan los camiones desobstructores?</strong>
+                <p>Son camiones con equipos para limpieza y mantenimiento de cañerías y sumideros, que operan a través de un sistema de presión que expulsa agua a razón promedio de 150 a 180 LPM (litros por minuto). La atención del tratamiento se enfoca en cañerías que van desde los 110 mm hasta 400 mm, y redes con extensiones lineales de hasta 150 metros de longitud.</p>
+            </li>
+            <li>
+                <strong>¿Cuándo se necesita un camión desobstructor?</strong>
+                <p>Muchas veces habrás visto las bocas de tormenta cubiertas de residuos, situación que origina el anegamiento de las calles y la interrupción de la circulación normal de vehículos. A la hora de despejar las bocas de tormenta, los camiones desobstructores trabajan en la limpieza de sumideros. El objetivo es regularizar el tránsito en las zonas anegadas por la tormenta.</p>
+            </li>
+            <li>
+                <strong>Motivos por los que debes realizar una limpieza asidua de cañerías</strong>
+                <p>Ya sea a partir de los desperdicios generados en tu casa, como en las que se presentan a través del funcionamiento en las industrias, la acción de desechos sobre los espacios de cañerías pueden derivar en la necesidad de acudir a un servicio de desagote o desobstrucción.</p>
+                <ul>
+                    <li>La limpieza periódica genera mejor funcionamiento de las cañerías.</li>
+                    <li>El tratamiento produce mayor duración de la limpieza sin daño a las tuberías.</li>
+                    <li>La aparición de olores desagradables disminuye.</li>
+                    <li>El mantenimiento adecuado evita la formación de fugas.</li>
+                    <li>El drenaje es más eficiente y rápido.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>¿Por qué se producen obstrucciones en las cañerías hogareñas o de pequeñas empresas?</strong>
+                <p>La obstrucción del paso de agua se forma por acumulación de desechos comunes como jabón, papel, cabello y dentífrico, por ejemplo. Estos elementos que impiden el paso normal del agua forman una masa sólida, y pueden generar un desborde.</p>
+            </li>
+            <li>
+                <strong>¿Por qué se debe contratar un servicio especializado de destape?</strong>
+                <p>La manipulación de las herramientas incluye el manejo de mangueras de alta presión que limpian los conductos a descomprimir. Los operarios trabajan con un protocolo de higiene y seguridad, y es muy importante tener en cuenta ello a fin de evitar accidentes.</p>
+            </li>
+            <li>
+                <strong>¿Qué provoca el mal tratamiento de aguas cloacales?</strong>
+                <p>A las aguas cloacales, también se les conoce como aguas residuales, aguas servidas o aguas negras. Estos términos hacen referencia a cómo queda el agua luego de la intervención humana (que altera su composición debido a los desechos orgánicos y químicos). </p>
+                <p>El tratamiento inadecuado de las aguas negras puede generar un grave problema ambiental, pero también provocar enfermedades en el ser humano, además de transformaciones severas al ecosistema debido a que se componen de sustancias orgánicas y minerales que vienen de la materia fecal y otros desechos.</p>
+            </li>
+        </ol>
+
+        <p>En La Victoria Destapaciones tenemos presente una conciencia ecológica a la hora de cuidar el funcionamiento natural de las cañerías, y la posterior eliminación de los desechos de forma correcta. Es por eso que el resultado del desagote tiene que ser destinado a las plantas de tratamiento habilitadas. <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.">Consultá ahora por los servicios de desagotes y destapaciones que proporciona La Victoria.</a></p>
 
     </div>
 

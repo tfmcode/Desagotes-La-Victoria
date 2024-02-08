@@ -134,27 +134,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-      <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
-      <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
-      <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
-      <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
-
+    <h1>Beneficios de la limpieza adecuada de tanques de transporte</h1>
+    <p>¿Sabías que el cuidado de los tanques de transporte puede maximizar el rendimiento de tu empresa? Una simple limpieza de las cisternas de almacenamiento puede marcar la diferencia en la eficiencia de tus equipos. En <a href='../home.php'><strong>La Victoria</strong></a> entendemos la importancia de mantener las herramientas de trabajo en óptimas condiciones para un desempeño excepcional. Aquí te contamos cómo nuestras soluciones pueden potenciar tu negocio.</p>
+    <p>Nuestros expertos se especializan en la limpieza interior de tanques de cualquier tipo. Tenemos la experiencia y los recursos para adaptar nuestros servicios a tu necesidad.</p>
+    <h2>Descubrí la importancia de manejar adecuadamente los residuos peligrosos.</h2>
+    <p>Sin las medidas de protección necesarias, estos materiales pueden resultar en una complicación para la salud humana y el medio ambiente. Es crucial tomar medidas responsables respecto de los residuos peligrosos.</p>
+    <p>En cada etapa, desde la generación hasta la disposición final, se requiere una gestión eficiente. Almacenar, transportar, tratar y eliminar correctamente estos materiales es fundamental para evitar la contaminación del aire, el agua y el suelo, y salvaguardar la salud de todos.</p>
+    <h3>¿Qué tipo de residuo es el aceite?</h3>
+    <p>En cuanto a los residuos posibles, el aceite es uno de los más comunes. Utilizado en comercios o pequeñas industrias, requiere del cumplimiento de protocolos certeros en su manipulación.</p>
+    <p>Los residuos de aceites de cocina usados se clasifican como residuos no peligrosos; sin embargo, el inadecuado manejo puede generar contaminación en el agua y suelo al ser vertidos sin los cuidados recomendados, y a su vez resultar en daños en las tuberías.</p>
+    <h3>Consejo especial de La Victoria</h3>
+    <p>Desde <a href='../home.php'><strong>Desagotes La Victoria</strong></a> contribuimos a proteger tu salud y el medio ambiente mediante la gestión responsable de los residuos peligrosos. Juntos podemos crear un futuro más limpio y saludable.</p>
+    <p>Imagina tu negocio funcionando de manera eficiente, sin problemas derivados del mal funcionamiento de los tanques. El proceso de higiene sigue los más altos estándares de calidad para brindarte los mejores resultados.</p>
+    <p>Nuestro equipo se encarga de gestionar adecuadamente los residuos, garantizando una disposición final responsable y respetuosa con el espacio que habitamos.</p>
+    <h3>¡Descubrí por qué limpiar tus tanques de combustible con <a><strong>La Victoria</strong></a> es una decisión inteligente y rentable!</h3>
+    <ul>
+        <li>Con nuestro proceso de limpieza, los tanques de transporte de tu empresa funcionarán de manera más productiva, limitando la posibilidad de obstrucciones por residuos y la presencia de inconvenientes posteriores.</li>
+        <li>Es posible lograr que los elementos que pueden generar deterioro disminuyan considerablemente. Proteger tu inversión es lo más importante para el sostén de tu comercio o industria. Los tanques sucios pueden causar daños e inconvenientes económicos significativos. Al limpiarlos regularmente, evitarás el deterioro prematuro y los costosos desperdicios de combustible.</li>
+        <li>La correcta limpieza constituye también el respeto a los requerimientos que garantizan la seguridad en el almacenamiento y transporte. En La Victoria creemos que el cumplimiento de las regulaciones básicas ayudan a evitar riesgos y sanciones innecesarias que solamente te perjudicarán.</li>
+        <li>La consideración y el cuidado de los espacios de almacenamiento colabora en disminuir la contaminación de las áreas en las que vivimos, e implica un medio ambiente más sano. Al tomar medidas responsables, demostrás tu compromiso con la sostenibilidad.</li>
+        <li>Para cerrar, una última consideración: Los tanques deteriorados pueden causar fugas y derivar en fallas costosas. Al mantener tus tanques en buen estado, reducirás los costos de reparación y minimizarás el riesgo de interrupciones en tu negocio.</li>
+    </ul>
+    <h3>¿Por qué es conveniente pensar en la prevención?</h3>
+    <p>Tus equipos funcionarán con mayor eficiencia, reduciendo la posibilidad de averías costosas. Notarás una mejor respuesta y un menor consumo de combustible, lo que se traducirá en ahorro significativo.</p>
+    <p>Asegurate y prevení para mantener las operaciones sin contratiempos. Confía en La Victoria y aprovecha nuestros servicios. Juntos podemos optimizar tus operaciones y llevar tu negocio al siguiente nivel.</p>
+    <p>¡No esperes más! <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.">Contáctanos hoy mismo</a> y descubrí cómo La Victoria puede potenciar el rendimiento de tus equipos.</p>
 
     </div>
 

@@ -134,27 +134,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-      <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
-      <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
-      <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
-      <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
+    <h1>Atención: 4 síntomas del mal funcionamiento cloacal</h1>
 
+    <p>¿Has sentido un olor pestilente proveniente de las cloacas? Presta atención, hay ciertos indicios de que el sistema cloacal de tu empresa, industria u hogar está presentando algún tipo de problema.</p>
+
+    <p>Como bien sabemos, la red cloacal está compuesta por cañerías de amplias dimensiones que funcionan tanto para negocios e industrias, como para el servicio hogareño. Tras su uso, el agua residual viaja a través de las cañerías, y posteriormente se traslada a plantas de tratamiento.</p>
+
+    <p>¿Pero qué sucede cuando este proceso no puede desarrollarse correctamente? ¿Cómo impactan estos problemas en el funcionamiento de las industrias?</p>
+
+    <p>A continuación, desde La Victoria te contamos sobre las mejores prácticas para preservar el sistema cloacal y las <strong>señales a prestar atención para poder identificar un mal funcionamiento u obstrucción.</strong></p>
+
+    <h2>Cuidado de la red cloacal. ¿Por qué las cloacas se obstruyen?</h2>
+
+    <p>La falta de supervisión respecto a la manipulación y descarte de residuos, el uso inadecuado de los espacios de trabajo, y por sobre todo, <strong>no contar con el mantenimiento preventivo de las cloacas de tu comercio o industria, puede ocasionar inconvenientes más graves a futuro.</strong></p>
+
+    <p>Estos problemas requerirán de reparación y tendrán un costo más elevado, ya que además de mano de obra, <strong>requerirá de la interrupción momentánea o permanente de los servicios o producción que su negocio ofrece, con las pérdidas monetarias consecuentes derivadas.</strong></p>
+
+    <h2>Tips de La Victoria para el adecuado funcionamiento del sistema cloacal</h2>
+
+    <ul>
+        <li><strong>Control sobre los desperdicios que se vierten en la red.</strong> Echar grasa, aceite, elementos químicos o sólidos a través de las tuberías es absolutamente desaconsejable, y se puede convertir a la larga en un problema sostenido, que llegará acompañado de graves complicaciones en el funcionamiento normal de la red.</li>
+        <li><strong>Revisar de manera asidua los conductos y el drenaje.</strong> Si se nota un desagüe lento de los líquidos, quizá sea momento de prestar atención y actuar con servicio técnico preventivo, dado que este tipo de inconvenientes suelen acentuarse con el tiempo.</li>
+        <li><strong>De tanto en tanto, dejar correr el agua caliente</strong> al menos por un período breve de tiempo, para que los objetos que puedan resultar en molestia se disuelvan o retiren.</li>
+    </ul>
+
+    <h2>Características más notorias de un sistema en mal funcionamiento u obstruido</h2>
+
+    <ul>
+        <li>Olor desagradable o pestilente.</li>
+        <li>Sonidos que puedan ser señales de drenaje incorrecto o complicado.</li>
+        <li>Aparición de manchas que denotan en la zona presencia de humedad.</li>
+        <li>Bocas o salidas de agua con atasco.</li>
+    </ul>
+
+    <p>La importancia de controlar los desechos presenta beneficios que, aunque no puedan ser considerados a simple vista, generan el adecuado funcionamiento que se espera para el sostén de una actividad regular. Y a futuro ahorran inconvenientes y pérdida de dinero para las empresas.</p>
+
+    <p>De manera previa, recordemos que también es importante establecer un buen diseño del pozo séptico y, en paralelo, de las cañerías en general, con la mira puesta en evitar tanto como sea posible problemas que deriven en un bloqueo del sistema.</p>
+
+    <p>La periodicidad del cuidado mínimo necesario se relaciona con la búsqueda de la seguridad, y de mayor calidad de vida para el futuro de cada uno de nosotros.</p>
+
+    <p>¿Quieres consultar un presupuesto a tu medida? <a>Escribinos y cotizá tu servicio en La Victoria.</a></p>
 
     </div>
 

@@ -134,27 +134,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-      <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
-      <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
-      <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
-      <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
-
+    <h1>¿Sabés por qué es tan importante definir cuáles son los principales desechos generados  por la producción agroalimentaria?</h1>
+    <h3>Estos son los tres principales desechos agroalimentarios:</h3>
+    <ol>
+        <li><strong>Biorresiduos, o desechos biodegradables</strong></li>
+        <p>Este tipo de descarte proviene principalmente de las industrias que procesan los alimentos que consumimos. En otra proporción importante, son residuos orgánicos habituales de la actividad gastronómica, y también en un gran porcentaje; del uso doméstico y comercial.</p>
+        <p>Este segmento incluye desperdicios de la preparación de alimentos, restos de verduras y frutas, granos, cáscaras de huevo; los restos del café por medio de su preparación, y a esto puede sumarse también las diferentes bebidas aromáticas. Los elementos generados en la cría de animales como la gallina, como viruta o aserrín, o las excreciones derivadas.</p>
+        <p><strong>Tip ambiental de <a href='../home.php'><strong>La Victoria</strong></a>: Una elección práctica para casa es el compost.</strong></p>
+        <p>El reciclaje de residuos domésticos puede derivar en compost. Si se cuenta con el espacio, es recomendable depositar los residuos en un sector especial de la casa y favorecer la descomposición natural, convirtiendo los desechos orgánicos en tierra fértil. Esto se logra a través de la acción e interacción de bacterias y elementos naturales como son el agua y la luz</p>
+        <p>Algunos de los desechos que son aptos para el compostado, son:</p>
+        <ul>
+            <li>Productos de plantas</li>
+            <li>Residuos de origen animal</li>
+            <li>Pasto cortado, hojas de árboles</li>
+            <li>Papel, madera natural</li>
+        </ul>
+        <li><strong>Residuos de la industria</strong></li>
+        <p>A través de los diferentes pasos que tiene el proceso de producción siempre se obtienen desechos industriales. Ya sea durante la fase de fabricación, el consumo, la distribución, la transformación o la limpieza del espacio productivo.</p>
+        <p>Las principales industrias alimenticias que generan los desechos están relacionados con la producción/fraccionado y envase de carnes rojas, pescado, oleaginosas, lácteos, azúcar, pastas, bebidas, y otras particularidades nutricionales.</p>
+        <p>En relación a otros sectores de la industria, la agroalimentaria se toma como una contaminación de bajo impacto, esto quiere decir que los residuos no son peligrosos en sí, pero si no se desechan correctamente pueden provocar contaminación, sobre todo del agua y del suelo.</p>
+        <p>Consultá ahora por los <a href='../sections/servicios.php'>servicios de desagote y limpieza de trampas de grasa y aceite industrial proporcionados por La Victoria.</a></p>
+        <p><strong>Un terrible enemigo ambiental llamado plástico</strong></p>
+        <p>Entre los muchos objetos con los que lidiamos diariamente podemos ver al plástico como un residuo común utilizado en la producción alimentaria, y es normal contarlo como desecho. Sin embargo, existe la posibilidad de limitar su uso o utilizar tipos de plásticos productos del reciclaje.</p>
+        <p>El cartón es otro de los productos que presentan características que permiten su reciclaje, y que reducen la sobreexplotación de los recursos naturales.</p>
+        <p>A la lista de residuos de la industria alimentaria se le pueden sumar las latas y el vidrio, que tienen posibilidad de reciclado completo múltiples veces. Su manipulación debe realizarse de manera separada de los demás residuos.</p>
+        <li><strong>Residuos peligrosos</strong></li>
+        <p>A la lista de residuos de la industria alimentaria se le pueden sumar las latas y el vidrio, que tienen posibilidad de reciclado completo múltiples veces. Su manipulación debe realizarse de manera separada de los demás residuos.</p>
+        <p><strong>¿Qué se debe tener en cuenta con los residuos peligrosos?</strong></p>
+        <p>Uno de los puntos más importantes es la jurisdiccionalidad; si en nuestra zona de residencia no se cuenta con empresas que tengan la posibilidad y herramientas necesarias para el traslado adecuado y seguro, es importante que el mismo se lleve a cabo con la intervención de compañías que sí cuenten con esa opción.</p>
+        <p>Desagotes la Victoria cuenta con las mejores herramientas para ocuparse de los desechos peligrosos de la producción de alimentos.<a href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'>Consultá tu mejor presupuesto acá.</a></p>
+    </ol>
 
     </div>
 

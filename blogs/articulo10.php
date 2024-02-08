@@ -134,28 +134,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-      <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
-      <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
-      <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
-      <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
+    <h1>Las falencias más comunes en el funcionamiento de la cañerías</h1>
 
+<p>¿Notaste que últimamente las cañerías de tu comercio o industria presentan inconvenientes en su funcionamiento? La correcta limpieza es un tema de vital importancia, teniendo en cuenta que una obstrucción puede causar serios problemas.</p>
 
+<p>Sabemos que en muchas ocasiones, la acumulación de grasa, tierra y otros residuos pueden ser la causa de inconvenientes que complican el funcionamiento normal. A menudo se recurre a la utilización de químicos agresivos para resolver estos problemas, lo que puede generar consecuencias negativas para la salud y el medio ambiente.</p>
+
+<p>Es preciso recordar que el uso irregular de estos productos para terminar con la falla puede ser peligroso para la salud; es por eso que te recomendamos que siempre acudas a expertos.</p>
+
+<h2>La importancia de la planificación</h2>
+
+<p>Además de las situaciones mencionadas, es importante destacar que la obstrucción en las cañerías puede ser un indicador de otros fallos en la red de saneamiento, como la acumulación de sedimentos en las tuberías o la necesidad de reemplazar algunas piezas del sistema. Al acudir a expertos, no solo se resuelve el problema inmediato, sino que también se pueden detectar y prevenir futuros inconvenientes, lo cual puede ahorrar tiempo y dinero a largo plazo.</p>
+
+<p>La amplia experiencia de <a href='../home.php'><strong>La Victoria</strong></a> nos permite conocer cuáles son los inconvenientes que pueden derivar del uso inadecuado de esta clase de químicos.</p>
+
+<h4>A continuación te contamos las derivaciones de una decisión equivocada para resolver un mal funcionamiento u obstrucción, que llevarían severo daño al sistema, y un costo financiero innecesario.</h4>
+
+<ol>
+    <li>Muchos productos para destapación contienen ácidos corrosivos que pueden dañar la estructura. Ello puede resultar en fugas y otros problemas en el sistema de saneamiento.</li>
+    <li>La utilización de productos agresivos puede generar gases tóxicos que pueden generar irritación en la piel y las mucosas.</li>
+    <li>Esta clase de productos pueden generar un impacto negativo en el espacio que habitamos, contaminando el agua y el suelo.</li>
+</ol>
+
+<p>Nuestra prioridad es ofrecer soluciones seguras y efectivas para nuestros clientes, cuidando al mismo tiempo el medioambiente. Utilizamos técnicas y equipos de última generación para resolver todo tipo de problemas de obstrucción sin impactar en las tuberías ni el entorno. Podés encontrar más información disponible de los servicios de La Victoria en <a href='../sections/servicios.php'><strong>nuestra página web.</strong></a></p>
+
+<p>Otro punto a tener en cuenta es que la falla y excesiva suciedad del desagüe pueden afectar la calidad del agua potable. Si las tuberías están corroídas, es posible que contaminen el agua. El mantenimiento preventivo puede garantizar que estén limpias y en buen estado, lo que asegurará la calidad del agua que se consume.</p>
+
+<p>En este sentido, es importante contar con una empresa especializada que ofrezca soluciones efectivas y seguras para resolver estos problemas sin dañar el entorno. Contamos con los equipos y la experiencia necesaria para realizar destapaciones sin necesidad de utilizar herramientas nocivas para el medioambiente.</p>
+
+<p>Si estás experimentando problemas de obstrucción como los señalados, no dudes en contactarnos para conseguir una solución rápida y eficiente. <a>Confiá en Destapaciones La Victoria y pedí un presupuesto que se ajuste a tus necesidades.</a></p>
     </div>
 
     

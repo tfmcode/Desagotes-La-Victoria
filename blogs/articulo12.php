@@ -134,27 +134,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-      <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
-      <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
-      <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
-      <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
-
+    <h1>La verdad sobre las cámaras sépticas</h1>
+    <p>Las cámaras sépticas son una parte esencial del sistema de tratamiento de aguas residuales. Sin embargo, a menudo pasan desapercibidas en la rutina diaria. ¿Pero qué sucede realmente dentro de estas estructuras subterráneas? Desde <a href='../home.php'><strong>La Victoria</strong></a> te explicamos todos los secretos.</p>
+    <h2>¿Qué es una fosa séptica y cómo funciona?</h2>
+    <p>Se trata de sistemas de almacenamiento y eliminación segura de residuos. A través de un proceso de decantación se separan los sólidos presentes en los efluentes, evitando la contaminación de suelos y fuentes de agua dulce.</p>
+    <p>Para instalar una fosa séptica, se realiza una excavación de un pequeño pozo donde se construye un tanque que recibe los líquidos generados en cualquier edificación que esté alejada de un sistema de alcantarillado. Existen fosas de una y dos cámaras, y cada una funciona de manera diferente.</p>
+    <h2>Residuos acumulados en cámaras sépticas</h2>
+    <p>El proceso de descomposición de las escorias es un tema de vital importancia para el correcto funcionamiento de estos sistemas. A lo largo del tiempo, los residuos acumulados pueden tener un impacto significativo en el rendimiento y la vida útil de esta clase de estructuras.</p>
+    <p>Uno de los inconvenientes más comunes es el almacenamiento de lodos en el fondo de la fosa. Estos materiales son el resultado de la descomposición de los desechos sólidos y líquidos que ingresan en ella; con el tiempo, los lodos forman una capa espesa en el interior de la cámara. Esto puede obstruir los conductos de entrada y salida, reduciendo la capacidad total para tratar de manera adecuada los desperdicios.</p>
+    <p>Esto también puede causar olores desagradables; a medida que los restos se descomponen, producen gases malolientes que eventualmente causan aromas ofensivos en las áreas cercanas. Esto no solo es incómodo para los residentes cercanos, sino que también puede ser un problema de salud pública.</p>
+    <p>Cuando los conductos están obstruidos, el flujo de agua se reduce, lo que puede provocar que los desechos se acumulen en la superficie del agua en la fosa y no se descompongan como es esperable.</p>
+    <p>Como es sabido, estas situaciones suelen resultar en gastos inesperados. Quienes conformamos <a href='../home.php'><strong>La Victoria</strong></a> estamos a tu servicio para evitar desembolsos improductivos que podrían afectar el normal funcionamiento económico de tu negocio o empresa.</p>
+    <h2>¿Qué se puede hacer para evitar el depósito de residuos en las cámaras sépticas?</h2>
+    <p>Es importante tener en cuenta la importancia de verificar el buen funcionamiento del desagüe y evitar arrojar productos químicos o materiales no biodegradables que puedan obstruir los conductos. Como ya mencionamos, la carga de contaminantes puede repercutir negativamente en la calidad del agua y, definitivamente, en el sostenimiento del medio ambiente.</p>
+    <p>El mantenimiento regular de estos espacios es el primer punto a considerar; por eso es esencial vaciar y limpiar periódicamente las cámaras para eliminar los depósitos innecesarios. La utilización del equipo adecuado, operado por profesionales capacitados, garantiza un manejo seguro de los desperdicios. Ese es uno de los principios de <a href='../home.php'><strong>La Victoria</strong></a>, y estamos listos para ayudarte.</p>
+    <p>En el siguiente <a href="https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.">enlace</a> podés consultar un presupuesto justo para vos. Escribinos y cotizá tu servicio en La Victoria.</p>
 
     </div>
 

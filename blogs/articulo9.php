@@ -134,27 +134,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-      <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
-      <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
-      <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
-      <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
+    <h1>Generación de residuos: ¿Cuánto contaminamos?</h1>
 
+        <p>El origen de los desperdicios urbanos es consecuencia de las actividades que el hombre realiza. Por supuesto, esto nos incluye a cada uno de nosotros. En el marco del desarrollo productivo, los derivados, que serían en principio imposibles de reutilizar, presentan una serie de posibilidades más que interesantes.</p>
+
+        <p>¿Se te ocurrió alguna vez pensar en la derivación de los desechos y su recolección?</p>
+
+        <p>La disposición de los residuos de cualquier tipo impactan en el estilo de vida de toda la comunidad, más allá de cuál sea el comercio o la industria desde la que provienen. La huella de carbono (cada paso que tomas en tus elecciones diarias de consumo, y la eliminación de basura) señala tu presencia como generador de esos sobrantes. Las decisiones que tomes al respecto harán la diferencia.</p>
+
+        <p>Esas formas de producción y posterior desecho señalan hoy interés en la disminución de la contaminación. Las acciones, que ponen el foco en la reducción de esos efectos, son múltiples y específicas. En cada caso, su activación se acerca para contrarrestar su influencia, y minimizar las complicaciones.</p>
+
+        <h2>Todos hablan de impacto ambiental y sostenibilidad. ¿De qué se trata en realidad estos términos?</h2>
+
+        <p>El impacto ambiental se define por cada una de las intervenciones que provoca la actividad diaria en el medio ambiente. Eso teniendo en cuenta la producción de bienes determinados (entre otras cuestiones), resultantes en elementos de contaminación. El más relevante, y en el que <a href='../home.php'><strong>La Victoria</strong></a> puede ayudarte, se refiere a los hábitos de consumo y la generación de desperdicios.</p>
+
+        <p>De este modo surge la idea de sostenibilidad. Se trata de la aplicación de modernas acciones que reformulan el trabajo con los desperdicios, sin modificar el desarrollo productivo y comercial. Además, resuelve situaciones de contaminación en el agua y en la tierra, entre otras, que impactan la vida de todos.<a href='../sections/trabajos.php'> Acá te contamos algunos de los trabajos que realizamos en La Victoria, en pos de reducir el impacto ambiental desde tu empresa.</a></p>
+
+        <h3>La definición de la sostenibilidad: Todo un desafío</h3>
+
+        <p>Principalmente, la idea de sostenibilidad y su impacto determinante en la calidad de vida implica avance económico sin amenaza al ecosistema del que todos formamos parte. La visión principal de este modo de hacer, en un adecuado balance ambiental, se resuelve en el cuidado de los recursos, correcta manipulación de los residuos peligrosos, la aplicación de medidas de seguridad, y la reutilización de todos aquellos elementos que lo permitan.</p>
+
+        <h3>Tip ambiental de La Victoria: Una elección práctica para la vida diaria</h3>
+
+        <p>Considerando nuestra experiencia, aquí te dejamos una serie de consejos para iniciar el cambio desde tu lugar, mientras tienes en cuenta las mejores opciones de traslado de los residuos eventualmente peligrosos. Las explicaciones te serán muy útiles, y verás que considerar  esto te ayudará a tomar decisiones. Prestar atención a este punto será muy útil en pos de modificar hacia el futuro.</p>
+
+        <h4>Consejos para hacer la diferencia</h4>
+
+        <ul>
+            <li>Los utensilios comunes, de plástico descartable, son prácticos en su utilización ocasional. Pero el mismo hecho de que solamente  puedan ser utilizados en una ocasión los vuelve una idea inestable. Botellas de vidrio, y elementos de bambú, como por ejemplo sorbetes, pueden ser una alternativa práctica e inteligente.</li>
+            <li>El cambio comienza por casa. Todos conocemos el dicho; aplicarlo en la experiencia cotidiana puede parecer complejo, pero es más sencillo de lo que parece. La distribución de los elementos que decidas desechar pueden ser convenientemente catalogados. Los recuperadores urbanos te lo agradecerán.</li>
+            <li>Reciclar es el punto que sigue. Bolsas de polietileno, frascos o botellas de vidrio, todo ello ayuda a resolver en favor de los elementos mencionados, teniendo en cuenta que su reutilización es posible.</li>
+            <li>Los paquetes y envoltorios provenientes de una alternativa de reciclado se ha vuelto una interesante opción para muchas compañías. Estar atento a los productos que ofrecen es una muy buena idea para colaborar.</li>
+        </ul>
+
+        <p><strong>Últimos detalles a tener en cuenta: Definiendo acciones</strong></p>
+
+        <p>La coordinación respecto de los recursos resulta en un cambio en la clasificación de residuos. Las diferentes etapas que el sistema ofrece hoy frente al retiro de desechos, con la posibilidad de  una nueva instancia de uso, es una idea superadora.</p>
+
+        <p>En algunos casos, su resignificación es una perfecta solución. Pero en otros simplemente su traslado controlado, con los cuidados respectivos, permite una idea positiva para el medio  ambiente. Esos cuidados son determinantes para nosotros y para las futuras generaciones, y forman parte de la filosofía de Desagotes La Victoria.</p>
+
+        <p>¿Te interesa consultar costos o pedir un presupuesto acorde a las necesidades de tu empresa? <a><strong>Escríbenos y cotiza tu servicio en La Victoria.</strong></a></p>
 
     </div>
 

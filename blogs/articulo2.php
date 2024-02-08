@@ -134,27 +134,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <main id="main">
     <div class="container">
-      <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
-      <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>
-      <p>En el caso doméstico es más sencillo, dadas las pequeñas cantidades utilizadas. Sin embargo, <strong>la Industria necesita contar con una alternativa eficiente</strong> para deshacerse de su aceite usado de cocina (ACU) sin generar contaminación ni impacto medioambiental.</p>
-      <p>De cara al 22 de abril, fecha en la que se conmemora el Día de la Tierra, es interesante reflexionar acerca de las políticas y las acciones que las empresas llevamos a cabo diariamente para el sostenimiento de la vida y el cuidado del planeta. Tu decisión puede prevenir la contaminación de aguas residuales urbanas y marcar la diferencia.</p>
-      <h4>Sumate a las empresas argentinas con ética ambiental y colaborá con el correcto tratamiento del aceite usado.</h4>
-      <p>El aceite usado vertido a gran escala a través de comercios e industrias provoca a corto, mediano y largo plazo, la degradación de conductos, cloacas, canales, generando un efecto negativo y contaminante de los cursos de agua.</p>
-      <p>Es importante mencionar, que dicho aceite desechado sin el cuidado correspondiente puede afectar también la vida de  las personas que participan de las actividades relacionadas a la generación de los desechos.</p>
-      <h4>¿Sabías por qué es tan contaminante?</h4>
-      <p>El ACU tiene un alto poder de toxicidad pues contiene materia orgánica. Esto significa que cuenta con 5 mil veces más carga contaminante que el agua residual que circula por las alcantarillas y redes de saneamiento.</p>
-      <h4>¿Cuáles son las actividades que más desperdicio de aceite generan?</h4>  
-      <p>En el grupo de industrias que más generan desperdicios varios de aceite se encuentran la agricultura, el comercio, la construcción, la gastronomía/hotelería, y el transporte.</p>
-      <p>Dentro de estos casos se encuentran Industrias como la curtiembre, en que el aceite se utiliza para tratamiento de telas, cueros y pieles, que incluye contaminación  en todos los pasos atravesados: obtención, producción y tratamiento.</p>
-      <h4>Regulaciones y coordinación: ¿qué debemos saber al respecto?</h4>
-      <p>Si bien existen marcos legislativos relacionados, (que pueden no ser suficientes o necesitar mejoras),  hace tiempo se llevan a cabo diversas acciones referidas a la toma de consciencia en la transformación de los desechos de aceite en otros tipos de combustibles.</p>
-      <p>En varios países las compañías de reciclaje trabajan el contenido y procesan el líquido para convertirlo en el aceite conocido como Biodiesel, que puede ser utilizado como reemplazo de los combustibles tradicionales.</p>
-      <p>En Argentina contamos con la Ley 24.051, que define y regula la acción respecto de los diferentes desechos, sus clases, el transporte y los registros de control, y señala las responsabilidades en el manejo de los residuos peligrosos; ese es el caso del aceite y su transformación en biocarburantes para usos múltiples, cuya generación de CO2 (dióxido de carbono)  es menor que en el caso de los combustibles fósiles (derivados del petróleo), dada su relación con el avance del cambio climático.</p>
-      <h4>La decisión de cuidar el planeta es una inversión a futuro</h4>
-      <p>Elegir desechar el aceite usado de una manera sustentable y sin contaminación es un primer gran paso hacia un futuro más saludable.</p>
-      <p>Es importante delegar el retiro y transporte de los desechos tóxicos y peligrosos a empresas habilitadas e idóneas que trabajen con sumo cuidado y responsabilidad. Su manipulación incorrecta podría resultar en accidentes y consecuencias indeseadas para el ecosistema.<a href='../sections/servicios.php'>Puedes conocer aquí, cómo es el tratamiento que realizamos en La Victoria.</a></p>
-      <p>El cuidado del planeta se relaciona íntimamente con la calidad de vida de las personas y de las generaciones futuras. Y es desde cada pequeño lugar y a través de cada acción, el modo en que contribuimos para construir y habitar un mundo mejor.</p>
-
+        <h1>Beneficios de limpiar los tanques de almacenamiento de hidrocarburos</h1>
+        <p>Si deseas garantizar el correcto almacenamiento, transporte y custodia de las reservas energéticas del país, el método más efectivo es realizando una limpieza periódica de los tanques de hidrocarburos.</p>
+        <p>De este modo, asegurás su funcionamiento y durabilidad, al mismo tiempo que cuidas de una gran inversión sin perder tiempo ni calidad. ¿Sabés si ya es momento de efectuar una limpieza de tus tanques? <a href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'>Consultá cuándo sería el momento justo haciendo clic acá.</a></p>
+        <h4>4 razones por las que debes limpiar los tanques de hidrocarburos.</h4>
+        <ol>
+            <li>Solucionan el problema de taponamiento de tuberías por la formación de masas viscosas en el fondo de los tanques y la consiguiente reducción de su capacidad.</li>
+            <li>Limitan la incidencia negativa en la calidad del combustible a despachar.</li>
+            <li>Evitan el deterioro del tanque de transporte y por transición la modificación de las sustancias que contiene, situación que podría generar además pérdidas económicas por mayores desperdicios de los esperables y emisión extra de gases de efecto invernadero.</li>
+            <li>Porque es parte de las exigencias legales de seguridad. Todos los tanques deben ser seguros, herméticos y cumplir con todos los controles y accesos determinados por las regulaciones del sistema de almacenamiento y comercialización de hidrocarburos.</li>
+        </ol>
+        <h4>¿Sabías que una limpieza adecuada disminuye el impacto ambiental?</h4>
+        <p>Es una instancia en la que todos ganan. La limpieza regular de los tanques, siguiendo la normativa específica, disminuye considerablemente el riesgo de contaminación del suelo y del agua. <a href='https://wa.me/+5491162000180?text=%C2%A1Hola%21%20Bienvenido%20a%20La%20Victoria%2C%20Transporte%20de%20Residuos.%20Ingresa%20tu%20consulta%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores.'>Acá te contamos cómo puedes reducir el impacto ambiental desde tu empresa.</a></p>
+        <h4>3 modos inteligentes de eliminar los lodos.</h4>
+        <p>Los lodos o sobrantes resultan eventualmente en líquidos o gases inflamables, y estos son los modos prácticos de deshacerse de ellos:</p>
+        <ol>
+            <li><strong>Eliminarlos con agua:</strong> El agua elimina el líquido inflamable de un tanque si se vacía y se llena el depósito una y otra vez hasta que se logra el descarte por completo.</li>
+            <li><strong>Eliminarlos con aire:</strong> Los vapores inflamables se eliminan si se ventila el espacio que los contiene mientras en paralelo se ingresa aire ventilando de manera continua por sistema de baja presión</li>
+            <li><strong>Eliminarlos con gas inerte:</strong> La acción en la que se inyectan gases como dióxido de carbono o nitrógeno significa que se reduce el peligro de incendio en la eliminación de los elementos sobrantes en el depósito. </li>
+        </ol>
+        <h4>¿Cómo se limpia un tanque de hidrocarburos?</h4>
+        <p>La limpieza de un tanque de almacenamiento consiste en una fluidificación de los barros depositados en el fondo del tanque. Esto se lleva a cabo con la ayuda de personal suficientemente protegido contra los vapores y demás sustancias tóxicas.</p>
+        <p>Ellos se encargan de extraer los contaminantes con la ayuda de bombas neumáticas para finalmente limpiar y micro filtrar el combustible, dejándolo libre de impurezas.</p>
+        <h4>Evita aumentar los costos y poner en riesgo el capital.</h4>
+        <p>Por la naturaleza propia de los hidrocarburos que se transportan en los tanques y camiones, los contenedores ven modificada su estructura y seguridad, lo que deriva en oxidación y aparición posible de microbios que afectan la calidad del combustible.</p>
+        <p>Esta modificación resulta  en un probable aumento de los costos generales planificados y riesgos eventuales de contaminación para los empleados durante la manipulación como también para el ambiente que los rodea. Estar atento a estos cuidados pueden favorecer los movimientos y presencia de tu empresa.</p>
+        <p>En Desagotes La Victoria somos especialistas en limpieza de tanques de combustible y gestión de sus residuos peligrosos.<a href='../sections/servicios.php'>Encontrá el presupuesto a la medida de tus necesidades y cuidá tu inversión.</a></p>
 
     </div>
 
