@@ -285,14 +285,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <span style="font-size: 2em;"><iconify-icon icon="bi:telephone-fill"
                     style="color: blueviolet;"></iconify-icon></span>
                 <h4 style="font-weight: bold; font-size: 1em;">Teléfono</h4>
-                <p class="p1" style="margin: 0.5em 0;">(011) 4551-5191</p>
+                <p class="p1" style="margin: 0.5em 0;">(011) 6200-0180</p>
               </div>
               <div class="boxcontact">
                 <span style="font-size: 2em;"><iconify-icon icon="solar:map-point-bold"
                     style="color: blueviolet;"></iconify-icon></span>
                 <h4 style="font-weight: bold; font-size: 1em;">Dirección</h4>
-                <p class="p1" style="margin: 0.5em 0;">Aguilar 2878, Capital Federal.</p>
-                <!-- <p style="margin: 0.5em 0;">Capital Federal</p> -->
+                <div style='line-height: 0,8;'>
+                  <p class="p1" style="margin: -0.5em 0;">Bolivia 146</p>
+                  <p style="margin: 0.5em 0;">Villa Martelli, Bs As.</p>
+                </div>
               </div>
               <div class="boxcontact">
                 <span style="font-size: 2em;"><iconify-icon icon="carbon:time-filled"

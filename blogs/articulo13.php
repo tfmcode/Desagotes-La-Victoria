@@ -74,6 +74,31 @@
       color: blue;
       text-decoration: none;
     }
+    .navbar-list {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-content: space-around;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .navfooter a {
+        margin: 0.5%;
+        text-decoration: none;
+        color: #fff;
+      /* Color de texto blanco */
+        padding: 10px;
+        display: block;
+    }
+
+    .navfooter a:hover {
+    color: lightblue;
+      /* Cambio de color de texto a blanco al pasar el cursor */
+    }
+
   </style>
 </head>
 
@@ -240,31 +265,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="footer-top">
       <div class="container">
         <div class="row" style="display: flex;  justify-content: space-evenly;   align-items: center;">
-          <div class="col-lg-4 col-md-4 footer-contact">
-            <h4>Consúltenos</h4>
-            <p>
-              Aguilar 2878 <br>
-              Ciudad de Buenos Aires<br>
-              Argentina<br><br>
-              <strong>Teléfono:</strong> +54 11-4551-5191<br>
-              <strong>Email:</strong> info@desagoteslavictoria.com.ar<br>
-            </p>
-
-          </div>
 
           <div class="col-lg-4 col-md-4 footer-contact">
-            <p>
+            <p style="display: flex; justify-content: center;">
               <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
 width: 270px;">
             </p>
           </div>
+          <div class="container">
+            <!-- Primera fila -->
+            <ul class="list-unstyled navbar-list">
+              <li class="navfooter">
+                <a href="../home.php">Inicio</a>
+              </li>
+              <li class="navfooter">
+                <a href="../sections/servicios.php">Servicios</a>
+              </li>
+              <li class="navfooter">
+                <a href="../sections/nosotros.php">Nosotros</a>
+              </li>
+            </ul>
 
+            <!-- Segunda fila -->
+            <ul class="list-unstyled navbar-list">
+              <li class="navfooter">
+                <a href="../sections/trabajos.php">Trabajos</a>
+              </li>
+              <li class="navfooter">
+                <a href="../sections/blog.php">Blogs</a>
+              </li>
+              <li class="navfooter">
+                <a href="../sections/contacto.php">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-newsletter">
           <div class="container">
             <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
               <div class="col-lg-6">
-                <form action="articulo13.php" method="post" role="form"
+                <form action="contacto.php" method="post" role="form"
                   style="display: flex; align-items: center;   justify-content: flex-start;">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
                     required>
@@ -279,7 +319,7 @@ width: 270px;">
           </div>
         </div>
         <div style="    display: flex;
-justify-content: center;">
+    justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
               style="color: white; font-size: 25px; padding-right: 5px;"></i></a>
           <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
@@ -298,7 +338,6 @@ justify-content: center;">
       </div>
     </div>
   </footer><!-- End Footer -->
-
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
