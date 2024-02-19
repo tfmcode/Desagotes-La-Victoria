@@ -399,9 +399,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="container">
         <div class="row" style="display: flex;  justify-content: space-evenly;   align-items: center;">
 
+
           <div class="col-lg-4 col-md-4 footer-contact">
-            <p class='img-fluid1'>
-              <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px; width: 300px;">
+            <p style="display: flex; justify-content: center;">
+              <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
+width: 270px;">
             </p>
           </div>
           <div class="container">
@@ -437,7 +439,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <div class="container">
             <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
               <div class="col-lg-6">
-                <form action="blog.php" method="post" role="form"
+                <form action="nosotros.php" method="post" role="form"
                   style="display: flex; align-items: center;   justify-content: flex-start;">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
                     required>
@@ -452,7 +454,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
         </div>
         <div style="    display: flex;
-justify-content: center;">
+    justify-content: center;">
           <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
               style="color: white; font-size: 25px; padding-right: 5px;"></i></a>
           <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
