@@ -271,11 +271,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
       <div style="    display: flex; flex-direction: column;   justify-content: space-evenly;">
         <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
-          <div class="card" style="width: 18rem;">
-            <img src="../blogs/imagesblogs/Articulo5.jpg" class="card-img-top" alt="...">
+        <div class="card" style="width: 18rem;">
+            <img src="../blogs/imagesblogs/Articulo1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Beneficios de la Limpieza adecuada de tanques de transporte</h5>
-              <a href="../blogs/articulo13.php" style="color: #0d6efd;">Ver más</a>
+              <h5 class="card-title">¿Qué hacer con el aceite usado de tu industria?</h5>
+              <a href="../blogs/articulo1.php" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -286,23 +286,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo14.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Principales residuos de la actividad agroalimentaria</h5>
-              <a href="../blogs/articulo3.php" style="color: #0d6efd;">Ver más</a>
-            </div>
+              <h5 class="card-title">Beneficios de la Limpieza adecuada de tanques de transporte</h5>
+              <a href="../blogs/articulo13.php" style="color: #0d6efd;">Ver más</a>
+            </div> 
           </div>
         </div>
         <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
-          <div class="card" style="width: 18rem;">
+         <div class="card" style="width: 18rem;">
             <img src="../blogs/imagesblogs/Articulo4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Todos hablan de Landfarming ¿De qué se trata?</h5>
               <a href="../blogs/articulo4.php" style="color: #0d6efd;">Ver más</a>
             </div>
-          </div>
+          </div> 
+
           <div class="card" style="width: 18rem;">
-            <img src="../blogs/imagesblogs/Articulo1.jpg" class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo5.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"> 9 preguntas más frecuentes sobre camiones atmosféricos </h5>
               <a href="../blogs/articulo5.php" style="color: #0d6efd;">Ver más</a>
@@ -325,7 +326,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="../blogs/imagesblogs/Articulo9.jpg" class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo8.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"> Beneficios de la Limpieza Profunda en Cámaras Sépticas y Decantadoras de Barros
               </h5>
@@ -360,15 +361,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="card-body">
               <h5 class="card-title">Daño de los residuos acumulados en cámaras sépticas</h5>
               <a href="../blogs/articulo12.php" style="color: #0d6efd;">Ver más</a>
-            </div>
-          </div>
-        </div>
-        <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
-          <div class="card" style="width: 18rem;">
-            <img src="../blogs/imagesblogs/Articulo8.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">¿Qué hacer con el aceite usado de tu industria?</h5>
-              <a href="../blogs/articulo1.php" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
         </div>
