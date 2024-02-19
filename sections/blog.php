@@ -148,6 +148,11 @@
       color: lightblue;
       /* Cambio de color de texto a blanco al pasar el cursor */
     }
+    .card-img-top{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
 
     @media (max-width: 990px) {
       .card3 {
@@ -267,14 +272,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div style="    display: flex; flex-direction: column;   justify-content: space-evenly;">
         <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo5.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Beneficios de la Limpieza adecuada de tanques de transporte</h5>
               <a href="../blogs/articulo13.php" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Beneficios de limpiar los tanques de almacenamiento de hidrocarburos</h5>
               <a href="../blogs/articulo2.php" style="color: #0d6efd;">Ver más</a>
@@ -290,21 +295,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Todos hablan de Landfarming ¿De qué se trata?</h5>
               <a href="../blogs/articulo4.php" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"> 9 preguntas más frecuentes sobre camiones atmosféricos </h5>
               <a href="../blogs/articulo5.php" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo6.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">4 fallas más frecuentes en la cañerías industriales (y cómo detectarlas)</h5>
               <a href="../blogs/articulo6.php" style="color: #0d6efd;">Ver más</a>
@@ -313,14 +318,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo7.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Atención: 4 síntomas del mal funcionamiento cloacal</h5>
               <a href="../blogs/articulo7.php" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo9.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"> Beneficios de la Limpieza Profunda en Cámaras Sépticas y Decantadoras de Barros
               </h5>
@@ -328,7 +333,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo10.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Generación de residuos: ¿Cuánto contaminamos?</h5>
               <a href="../blogs/articulo9.php" style="color: #0d6efd;">Ver más</a>
@@ -337,21 +342,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo11.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Las falencias más comunes en el funcionamiento de la cañerías </h5>
               <a href="../blogs/articulo10.php" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo12.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"> Beneficios de la atención preventiva a los problemas de cañerías</h5>
               <a href="../blogs/articulo11.php" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo13.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Daño de los residuos acumulados en cámaras sépticas</h5>
               <a href="../blogs/articulo12.php" style="color: #0d6efd;">Ver más</a>
@@ -360,7 +365,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo8.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">¿Qué hacer con el aceite usado de tu industria?</h5>
               <a href="../blogs/articulo1.php" style="color: #0d6efd;">Ver más</a>
