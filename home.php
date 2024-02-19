@@ -344,10 +344,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     el mercado.</strong>
                             </p>
                         </div>
-
                         <div class="icon-box">
-                            <!-- <div class="icon"><i class="bx bx-gift"></i></div>
-        <h4 class="title"><a href="">Nemo Enim</a></h4> -->
                             <p class="description"><img src="assets/img/firma.png"></p>
                         </div>
                     </div>
@@ -356,89 +353,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </section><!-- End Why Us Section -->
 
-
-
-        <!-- ======= Why Us Section ======= -->
-        <!-- <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200" id="proceso"
-            style=" padding-top: 0px; ">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2><br><br><strong>Nuestro Proceso</strong><br>Modernas Tecnologías</h2>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-lg-6 video-box">
-                        <img src="assets/img/proceso.jpg" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-
-                        <div class="icon-box">
-                            <div class="icon"><span class="iconify" data-icon="icon-park-outline:one-key"
-                                    data-width="128"></span></div>
-                            <h4 class="title"><a href="">Recepción de Pedido</a></h4>
-                            <p class="description">Recibimos mediante nuestras vías de comunicación las diferentes
-                                solicitudes de nuestros clientes</p>
-                        </div>
-
-                        <div class="icon-box">
-                            <div class="icon"><span class="iconify" data-icon="icon-park-outline:two-key"
-                                    data-width="128"></span></div>
-                            <h4 class="title"><a href="">Asesoría de Cliente</a></h4>
-                            <p class="description">Asesoramos en base a la solicitud del cliente e indicamos el servicio
-                                que mejor se adapta a sus necesidades</p>
-                        </div>
-
-                        <div class="icon-box">
-                            <div class="icon"><span class="iconify" data-icon="icon-park-outline:three-key"
-                                    data-width="128"></span></div>
-                            <h4 class="title"><a href="">Visita Técnica y Diagnóstico</a></h4>
-                            <p class="description">Realizamos la visita técnica y diagnosticamos gratuitamente en el
-                                lugar de trabajo</p>
-                        </div>
-
-                        <div class="icon-box">
-                            <div class="icon"><span class="iconify" data-icon="icon-park-outline:four-key"
-                                    data-width="128"></span></div>
-                            <h4 class="title"><a href="">Cotización</a></h4>
-                            <p class="description">Cotizamos en base a la información recabada y el tipo de trabajo a
-                                realizar</p>
-                        </div>
-
-                        <div class="icon-box">
-                            <div class="icon"><span class="iconify" data-icon="icon-park-outline:five-key"
-                                    data-width="128"></span></div>
-                            <h4 class="title"><a href="">Presupuesto</a></h4>
-                            <p class="description">Una vez enviado el presupuesto aguardamos confirmación por parte del
-                                cliente</p>
-                        </div>
-
-                        <div class="icon-box">
-                            <div class="icon"><span class="iconify" data-icon="icon-park-outline:six-key"
-                                    data-width="128"></span></div>
-                            <h4 class="title"><a href="">Pago</a></h4>
-                            <p class="description">Ponemos a disposición los distintos métodos de pago para hacer una
-                                transacción segura</p>
-                        </div>
-
-                        <div class="icon-box">
-                            <div class="icon"><span class="iconify" data-icon="icon-park-outline:seven-key"
-                                    data-width="128"></span></div>
-                            <h4 class="title"><a href="">Servicio</a></h4>
-                            <p class="description">En plazos y condiciones establecidas en las etapas anteriores,
-                                procedemos con el servicio</p>
-                        </div>
-
-
-                    </div>
-                </div>
-
-
-            </div>
-
-        </section> --><!-- End Why Us Section -->
         <section style="text-align: center;
     background: rgb(45, 143, 255);" data-aos="fade-up" date-aos-delay="200">
             <div class="container">
