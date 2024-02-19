@@ -180,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container  animate__animated animate__fadeInUp">
       <h1>Generación de residuos: ¿Cuánto contaminamos?</h1>
 
       <p>El origen de los desperdicios urbanos es consecuencia de las actividades que el hombre realiza. Por supuesto,

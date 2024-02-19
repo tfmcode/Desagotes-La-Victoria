@@ -181,7 +181,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container animate__animated animate__fadeInUp">
       <h1>Beneficios de limpiar los tanques de almacenamiento de hidrocarburos</h1>
       <p>Si deseas garantizar el correcto almacenamiento, transporte y custodia de las reservas energéticas del país, el
         método más efectivo es realizando una limpieza periódica de los tanques de hidrocarburos.</p>

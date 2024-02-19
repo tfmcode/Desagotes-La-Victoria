@@ -180,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container  animate__animated animate__fadeInUp">
       <h1>Las falencias más comunes en el funcionamiento de la cañerías</h1>
 
       <p>¿Notaste que últimamente las cañerías de tu comercio o industria presentan inconvenientes en su funcionamiento?

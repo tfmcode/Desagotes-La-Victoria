@@ -180,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container animate__animated animate__fadeInUp">
       <h1>¿Sabés por qué es tan importante definir cuáles son los principales desechos generados por la producción
         agroalimentaria?</h1>
       <h3>Estos son los tres principales desechos agroalimentarios:</h3>

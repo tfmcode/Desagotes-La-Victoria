@@ -180,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container  animate__animated animate__fadeInUp">
       <h1>La verdad sobre las cámaras sépticas</h1>
       <p>Las cámaras sépticas son una parte esencial del sistema de tratamiento de aguas residuales. Sin embargo, a
         menudo pasan desapercibidas en la rutina diaria. ¿Pero qué sucede realmente dentro de estas estructuras

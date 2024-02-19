@@ -180,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container  animate__animated animate__fadeInUp">
       <h1>Las 4 fallas más frecuentes en las cañerías industriales (y cómo detectarlas)</h1>
 
       <p>El buen estado de una cañería es vital para el trabajo seguro de una empresa o industria. Un <strong>problema

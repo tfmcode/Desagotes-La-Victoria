@@ -180,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container  animate__animated animate__fadeInUp">
       <h1>Beneficios de la Limpieza Profunda en Cámaras Sépticas y Decantadoras de Barros</h1>
 
       <p>¿Te has puesto a pensar en lo que pasa cuando no mantienes adecuadamente la limpieza de tu cámara séptica? La

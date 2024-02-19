@@ -181,7 +181,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container animate__animated animate__fadeInUp">
       <h1>¿Qué hacer con el aceite usado de tu industria?</h1>
       <p><strong>Un litro de aceite de cocina usado puede contaminar hasta 1000 litros de agua</strong>, ¿te imaginás el
         impacto ecológico que significa cuando hablamos de residuos de aceite vertidos en cantidades industriales? </p>

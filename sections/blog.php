@@ -153,6 +153,50 @@
       height: 200px;
       object-fit: cover;
     }
+    .card-img-top4 {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: center 18%;
+    }
+    .card-img-top13 {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: center 75%;
+    }
+    .card-img-top11 {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: center 100%;
+    }
+    .card-img-top10 {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: center 80%;
+    }
+    .card-img-top9 {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: center 68%;
+    }
+    .card-img-top8 {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: center 80%;
+    }
+    .card-img-top2 {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: center 94%;
+    }
+
+
 
     @media (max-width: 990px) {
       .card3 {
@@ -279,7 +323,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="../blogs/imagesblogs/Articulo2.jpg" class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo2.jpg" class="card-img-top2" alt="...">
             <div class="card-body">
               <h5 class="card-title">Beneficios de limpiar los tanques de almacenamiento de hidrocarburos</h5>
               <a href="../blogs/articulo2.php" style="color: #0d6efd;">Ver más</a>
@@ -295,7 +339,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
          <div class="card" style="width: 18rem;">
-            <img src="../blogs/imagesblogs/Articulo4.jpg" class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo4.jpg" class="card-img-top4" alt="...">
             <div class="card-body">
               <h5 class="card-title">Todos hablan de Landfarming ¿De qué se trata?</h5>
               <a href="../blogs/articulo4.php" style="color: #0d6efd;">Ver más</a>
@@ -319,14 +363,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
           <div class="card" style="width: 18rem;">
-            <img src="../blogs/imagesblogs/Articulo7.jpg" class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo7.jpg" class="card-img-top8" alt="...">
             <div class="card-body">
               <h5 class="card-title">Atención: 4 síntomas del mal funcionamiento cloacal</h5>
               <a href="../blogs/articulo7.php" style="color: #0d6efd;">Ver más</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="../blogs/imagesblogs/Articulo8.jpg" class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo8.jpg" class="card-img-top9" alt="...">
             <div class="card-body">
               <h5 class="card-title"> Beneficios de la Limpieza Profunda en Cámaras Sépticas y Decantadoras de Barros
               </h5>
@@ -334,7 +378,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="../blogs/imagesblogs/Articulo10.jpg" class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo10.jpg" class="card-img-top10" alt="...">
             <div class="card-body">
               <h5 class="card-title">Generación de residuos: ¿Cuánto contaminamos?</h5>
               <a href="../blogs/articulo9.php" style="color: #0d6efd;">Ver más</a>
@@ -343,7 +387,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
           <div class="card" style="width: 18rem;">
-            <img src="../blogs/imagesblogs/Articulo11.jpg" class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo11.jpg" class="card-img-top11" alt="...">
             <div class="card-body">
               <h5 class="card-title">Las falencias más comunes en el funcionamiento de la cañerías </h5>
               <a href="../blogs/articulo10.php" style="color: #0d6efd;">Ver más</a>
@@ -357,7 +401,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="../blogs/imagesblogs/Articulo13.jpg" class="card-img-top" alt="...">
+            <img src="../blogs/imagesblogs/Articulo13.jpg" class="card-img-top13" alt="...">
             <div class="card-body">
               <h5 class="card-title">Daño de los residuos acumulados en cámaras sépticas</h5>
               <a href="../blogs/articulo12.php" style="color: #0d6efd;">Ver más</a>

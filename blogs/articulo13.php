@@ -180,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container  animate__animated animate__fadeInUp">
       <h1>Beneficios de la limpieza adecuada de tanques de transporte</h1>
       <p>¿Sabías que el cuidado de los tanques de transporte puede maximizar el rendimiento de tu empresa? Una simple
         limpieza de las cisternas de almacenamiento puede marcar la diferencia en la eficiencia de tus equipos. En <a

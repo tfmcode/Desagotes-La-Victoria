@@ -180,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container animate__animated animate__fadeInUp">
       <h1>Landfarming: Tratamiento Ambiental</h1>
       <p>El impacto ambiental que provoca la producción petrolífera es notable, pero existe una solución para
         revitalizar los suelos que quedan inutilizados por influencia del derrame de hidrocarburos en las capas

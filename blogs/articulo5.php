@@ -180,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container animate__animated animate__fadeInUp">
       <h1>Las 9 preguntas más frecuentes sobre camiones atmosféricos</h1>
 
       <p>Muchas personas buscan respuestas en Google sobre qué son, para qué se utilizan, cuáles son los diferentes

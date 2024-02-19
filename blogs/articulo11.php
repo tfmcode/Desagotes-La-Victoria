@@ -180,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container  animate__animated animate__fadeInUp">
       <h1>Beneficios de la atención preventiva a los problemas de cañerías</h1>
 
       <p>La atención a los detalles puede darte señales respecto de un desorden en el funcionamiento de las cañerías en

@@ -184,7 +184,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <main id="main">
-    <div class="container">
+    <div class="container  animate__animated animate__fadeInUp">
       <h1>Atención: 4 síntomas del mal funcionamiento cloacal</h1>
       <p>¿Has sentido un olor pestilente proveniente de las cloacas? Presta atención, hay ciertos indicios de que el
         sistema cloacal de tu empresa, industria u hogar está presentando algún tipo de problema.</p>
