@@ -155,12 +155,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-        <a href="../home.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="../index.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="../home.php" style="color: black;">Inicio</a></li>
+          <li><a href="../index.php" style="color: black;">Inicio</a></li>
           <li><a href="../sections/servicios.php" style="color: black;">Servicios</a></li>
           <li><a href="../sections/nosotros.php" style="color: black;">Nosotros</a></li>
           <li><a href="../sections/trabajos.php" style="color: black;">Trabajos</a></li>
@@ -210,7 +210,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <h4>Tips a considerar para evitar inconvenientes:</h4>
 
-      <p>Desde <a href='../home.php'><strong>La Victoria</strong></a> te aconsejamos cómo mantener en óptimas
+      <p>Desde <a href='../index.php'><strong>La Victoria</strong></a> te aconsejamos cómo mantener en óptimas
         condiciones el sistema cloacal:</p>
 
       <ol>
@@ -226,7 +226,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <p>Somos especialistas y ofrecemos servicios de limpieza y mantenimiento preventivo. Nuestros profesionales
         garantizan una limpieza completa y efectiva del sistema, que significa ahorro de tiempo y dinero. En <a
-          href='../home.php'><strong>Desagotes La Victoria</strong></a> tenemos una solución adaptable a tus
+          href='../index.php'><strong>Desagotes La Victoria</strong></a> tenemos una solución adaptable a tus
         requerimientos.</p>
 
     </div>
@@ -266,7 +266,7 @@ width: 270px;">
             <!-- Primera fila -->
             <ul class="list-unstyled navbar-list">
               <li class="navfooter">
-                <a href="../home.php">Inicio</a>
+                <a href="../index.php">Inicio</a>
               </li>
               <li class="navfooter">
                 <a href="../sections/servicios.php">Servicios</a>

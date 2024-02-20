@@ -155,12 +155,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-        <a href="../home.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="../index.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="../home.php" style="color: black;">Inicio</a></li>
+          <li><a href="../index.php" style="color: black;">Inicio</a></li>
           <li><a href="../sections/servicios.php" style="color: black;">Servicios</a></li>
           <li><a href="../sections/nosotros.php" style="color: black;">Nosotros</a></li>
           <li><a href="../sections/trabajos.php" style="color: black;">Trabajos</a></li>
@@ -187,7 +187,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         tipos y cómo funcionan los camiones atmosféricos.</p>
       <p>Incluso, <strong>muchos usuarios indagan sobre su problema de cañerías en su casa o empresa</strong> sin saber
         que lo que están necesitando en realidad es un servicio en destapación o desobstrucción.</p>
-      <p>Desde <a href='../home.php'>La Victoria Destapaciones</a> recopilamos algunas de las búsquedas más frecuentes
+      <p>Desde <a href='../index.php'>La Victoria Destapaciones</a> recopilamos algunas de las búsquedas más frecuentes
         sobre camiones atmosféricos y simplificamos las respuestas de forma que podamos comprenderlo de un modo más
         sencillo.</p>
       <h3>9 preguntas que los usuarios más hacen en Google sobre camiones atmosféricos</h3>
@@ -305,7 +305,7 @@ width: 270px;">
             <!-- Primera fila -->
             <ul class="list-unstyled navbar-list">
               <li class="navfooter">
-                <a href="../home.php">Inicio</a>
+                <a href="../index.php">Inicio</a>
               </li>
               <li class="navfooter">
                 <a href="../sections/servicios.php">Servicios</a>

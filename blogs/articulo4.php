@@ -155,12 +155,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-        <a href="../home.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="../index.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="../home.php" style="color: black;">Inicio</a></li>
+          <li><a href="../index.php" style="color: black;">Inicio</a></li>
           <li><a href="../sections/servicios.php" style="color: black;">Servicios</a></li>
           <li><a href="../sections/nosotros.php" style="color: black;">Nosotros</a></li>
           <li><a href="../sections/trabajos.php" style="color: black;">Trabajos</a></li>
@@ -189,7 +189,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         microorganismos naturales del suelo (como las bacterias) para eliminar, reducir o transformar las sustancias
         contaminantes. Su propósito es minimizar el riesgo para la salud humana y el medio ambiente.</p>
       <h2>Landfarming, una alternativa que reduce el impacto ambiental.</h2>
-      <p>En <a href='../home.php'><strong>Desagotes La Victoria</strong></a> estamos muy interesados en el cuidado y
+      <p>En <a href='../index.php'><strong>Desagotes La Victoria</strong></a> estamos muy interesados en el cuidado y
         protección del medio ambiente, por eso queremos mencionarte los puntos más relevantes de este tratamiento y
         contarte por qué cada vez se está aplicando más en la Argentina y en el mundo:</p>
       <ul>
@@ -267,7 +267,7 @@ width: 270px;">
             <!-- Primera fila -->
             <ul class="list-unstyled navbar-list">
               <li class="navfooter">
-                <a href="../home.php">Inicio</a>
+                <a href="../index.php">Inicio</a>
               </li>
               <li class="navfooter">
                 <a href="../sections/servicios.php">Servicios</a>

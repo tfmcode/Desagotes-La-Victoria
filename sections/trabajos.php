@@ -622,12 +622,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div class="logo">
                 <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-                <a href="../home.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+                <a href="../index.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="../home.php" style="color: black;">Inicio</a></li>
+                    <li><a href="../index.php" style="color: black;">Inicio</a></li>
                     <li><a href="servicios.php" style="color: black;">Servicios</a></li>
                     <li><a href="nosotros.php" style="color: black;">Nosotros</a></li>
                     <li><a href="trabajos.php" style="color: black;">Trabajos</a></li>
@@ -774,7 +774,7 @@ width: 270px;">
         <!-- Primera fila -->
         <ul class="list-unstyled navbar-list">
           <li class="navfooter">
-            <a href="../home.php">Inicio</a>
+            <a href="../index.php">Inicio</a>
           </li>
           <li class="navfooter">
             <a href="servicios.php">Servicios</a>

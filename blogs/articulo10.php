@@ -155,12 +155,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-        <a href="../home.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="../index.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="../home.php" style="color: black;">Inicio</a></li>
+          <li><a href="../index.php" style="color: black;">Inicio</a></li>
           <li><a href="../sections/servicios.php" style="color: black;">Servicios</a></li>
           <li><a href="../sections/nosotros.php" style="color: black;">Nosotros</a></li>
           <li><a href="../sections/trabajos.php" style="color: black;">Trabajos</a></li>
@@ -203,7 +203,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         inmediato, sino que también se pueden detectar y prevenir futuros inconvenientes, lo cual puede ahorrar tiempo y
         dinero a largo plazo.</p>
 
-      <p>La amplia experiencia de <a href='../home.php'><strong>La Victoria</strong></a> nos permite conocer cuáles son
+      <p>La amplia experiencia de <a href='../index.php'><strong>La Victoria</strong></a> nos permite conocer cuáles son
         los inconvenientes que pueden derivar del uso inadecuado de esta clase de químicos.</p>
 
       <h4>A continuación te contamos las derivaciones de una decisión equivocada para resolver un mal funcionamiento u
@@ -271,7 +271,7 @@ width: 270px;">
             <!-- Primera fila -->
             <ul class="list-unstyled navbar-list">
               <li class="navfooter">
-                <a href="../home.php">Inicio</a>
+                <a href="../index.php">Inicio</a>
               </li>
               <li class="navfooter">
                 <a href="../sections/servicios.php">Servicios</a>

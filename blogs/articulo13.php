@@ -155,12 +155,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-        <a href="../home.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="../index.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="../home.php" style="color: black;">Inicio</a></li>
+          <li><a href="../index.php" style="color: black;">Inicio</a></li>
           <li><a href="../sections/servicios.php" style="color: black;">Servicios</a></li>
           <li><a href="../sections/nosotros.php" style="color: black;">Nosotros</a></li>
           <li><a href="../sections/trabajos.php" style="color: black;">Trabajos</a></li>
@@ -184,7 +184,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <h1>Beneficios de la limpieza adecuada de tanques de transporte</h1>
       <p>¿Sabías que el cuidado de los tanques de transporte puede maximizar el rendimiento de tu empresa? Una simple
         limpieza de las cisternas de almacenamiento puede marcar la diferencia en la eficiencia de tus equipos. En <a
-          href='../home.php'><strong>La Victoria</strong></a> entendemos la importancia de mantener las herramientas de
+          href='../index.php'><strong>La Victoria</strong></a> entendemos la importancia de mantener las herramientas de
         trabajo en óptimas condiciones para un desempeño excepcional. Aquí te contamos cómo nuestras soluciones pueden
         potenciar tu negocio.</p>
       <p>Nuestros expertos se especializan en la limpieza interior de tanques de cualquier tipo. Tenemos la experiencia
@@ -202,7 +202,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         manejo puede generar contaminación en el agua y suelo al ser vertidos sin los cuidados recomendados, y a su vez
         resultar en daños en las tuberías.</p>
       <h4>Consejo especial de La Victoria</h4>
-      <p>Desde <a href='../home.php'><strong>Desagotes La Victoria</strong></a> contribuimos a proteger tu salud y el
+      <p>Desde <a href='../index.php'><strong>Desagotes La Victoria</strong></a> contribuimos a proteger tu salud y el
         medio ambiente mediante la gestión responsable de los residuos peligrosos. Juntos podemos crear un futuro más
         limpio y saludable.</p>
       <p>Imagina tu negocio funcionando de manera eficiente, sin problemas derivados del mal funcionamiento de los
@@ -276,7 +276,7 @@ width: 270px;">
             <!-- Primera fila -->
             <ul class="list-unstyled navbar-list">
               <li class="navfooter">
-                <a href="../home.php">Inicio</a>
+                <a href="../index.php">Inicio</a>
               </li>
               <li class="navfooter">
                 <a href="../sections/servicios.php">Servicios</a>

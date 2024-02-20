@@ -638,12 +638,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div class="logo">
                 <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-                <a href="home.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+                <a href="index.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="home.php" style="color: black;">Inicio</a></li>
+                    <li><a href="index.php" style="color: black;">Inicio</a></li>
                     <li><a href="./sections/servicios.php" style="color: black;">Servicios</a></li>
                     <li><a href="./sections/nosotros.php" style="color: black;">Nosotros</a></li>
                     <li><a href="./sections/trabajos.php" style="color: black;">Trabajos</a></li>
@@ -827,7 +827,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <!-- Primera fila -->
                         <ul class="list-unstyled navbar-list">
                             <li class="navfooter">
-                                <a href="../home.php">Inicio</a>
+                                <a href="../index.php">Inicio</a>
                             </li>
                             <li class="navfooter">
                                 <a href="servicios.php">Servicios</a>
@@ -856,7 +856,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="container">
                         <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
                             <div class="col-lg-6">
-                                <form action="home.php" method="post" role="form"
+                                <form action="index.php" method="post" role="form"
                                     style="display: flex; align-items: center;   justify-content: flex-start;">
                                     <input type="email" class="form-control" name="email" id="email"
                                         placeholder="Su correo electrónico" required>
