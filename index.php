@@ -830,23 +830,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <a href="../index.php">Inicio</a>
                             </li>
                             <li class="navfooter">
-                                <a href="servicios.php">Servicios</a>
+                                <a href="./sections/servicios.php">Servicios</a>
                             </li>
                             <li class="navfooter">
-                                <a href="nosotros.php">Nosotros</a>
+                                <a href="./sections/nosotros.php">Nosotros</a>
                             </li>
                         </ul>
 
                         <!-- Segunda fila -->
                         <ul class="list-unstyled navbar-list">
                             <li class="navfooter">
-                                <a href="trabajos.php">Trabajos</a>
+                                <a href="./sections/trabajos.php">Trabajos</a>
                             </li>
                             <li class="navfooter">
-                                <a href="blog.php">Blogs</a>
+                                <a href="./sections/blog.php">Blogs</a>
                             </li>
                             <li class="navfooter">
-                                <a href="contacto.php">Contacto</a>
+                                <a href="./sections/contacto.php">Contacto</a>
                             </li>
                         </ul>
                     </div>
