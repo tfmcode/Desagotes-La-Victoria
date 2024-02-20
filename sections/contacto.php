@@ -107,13 +107,18 @@
     }
 
     @media screen and (max-width: 768px) {
-        .boxcontainer {
-            flex-direction: column;
-            align-items: center;
-          
-        }
+      .boxcontainer {
+        flex-direction: column;
+        align-items: center;
+
+      }
     }
-    </style>
+    @media only screen and (max-width: 768px) {
+      .container {
+        max-width: 90%;
+    }
+    }
+  </style>
 </head>
 
 
@@ -207,9 +212,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center" style="background: none;">
-    <div class="container d-flex justify-content-between align-items-center"
-      style="background: white; border-radius: 20px;">
-      <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
+        <div class="container d-flex justify-content-between align-items-center"
+            style="background: white; border-radius: 20px;">
+            <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
@@ -226,10 +231,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="contacto.php" style="color: black;">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
-      <div class="icons-navbar" style="height: 25px; width: 70px;">
+      <div class="icons-navbar" style="height: 25px; width: 80px;">
         <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
             style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
         <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
+            style="color: black; font-size: 18px;  padding-right: 2px;"></i></a>
+        <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i class="bx bxl-youtube"
             style="color: black; font-size: 18px;  padding-right: 4px;"></i></a>
       </div>
 
@@ -244,7 +251,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="container">
 
         <div class="section-title">
-        <p class="text-primary" style="letter-spacing: 0.3em;">CONTÁCTENOS</p>
+          <p class="text-primary" style="letter-spacing: 0.3em;">CONTÁCTENOS</p>
           <h2>Respuesta inmediata</h2>
         </div>
 
@@ -316,8 +323,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <section class="map mt-2">
       <div class="container-fluid p-0">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.138012472461!2d-58.50759792438584!3d-34.55006085466618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6def0fbb125%3A0x4115aa5569727509!2sCFD%2C%20Bolivia%20146%2C%20B1603%20Villa%20Martelli%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1708389801576!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.138012472461!2d-58.50759792438584!3d-34.55006085466618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6def0fbb125%3A0x4115aa5569727509!2sCFD%2C%20Bolivia%20146%2C%20B1603%20Villa%20Martelli%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1708389801576!5m2!1ses!2sar"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
     </section><!-- End Map Section -->
 
@@ -403,6 +411,8 @@ width: 270px;">
           <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
               style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
           <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i class="bx bxl-linkedin"
+              style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+          <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i class="bx bxl-youtube"
               style="color: white; font-size: 25px;"></i></a>
         </div>
       </div>

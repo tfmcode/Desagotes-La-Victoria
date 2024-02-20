@@ -73,31 +73,36 @@
       color: blue;
       text-decoration: none;
     }
+
     .navbar-list {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        align-content: space-around;
-        flex-wrap: nowrap;
-        flex-direction: row;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-content: space-around;
+      flex-wrap: nowrap;
+      flex-direction: row;
     }
 
     .navfooter a {
-        margin: 0.5%;
-        text-decoration: none;
-        color: #fff;
+      margin: 0.5%;
+      text-decoration: none;
+      color: #fff;
       /* Color de texto blanco */
-        padding: 10px;
-        display: block;
+      padding: 10px;
+      display: block;
     }
 
     .navfooter a:hover {
-    color: lightblue;
+      color: lightblue;
       /* Cambio de color de texto a blanco al pasar el cursor */
     }
-
+    @media only screen and (max-width: 768px) {
+      .container {
+        max-width: 90%;
+    }
+    }
   </style>
 
 </head>
@@ -149,9 +154,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center" style="background: none;">
-    <div class="container d-flex justify-content-between align-items-center"
-      style="background: white; border-radius: 20px;">
-      <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
+        <div class="container d-flex justify-content-between align-items-center"
+            style="background: white; border-radius: 20px;">
+            <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
@@ -168,10 +173,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="../sections/contacto.php" style="color: black;">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
-      <div class="icons-navbar" style="height: 25px; width: 70px;">
+      <div class="icons-navbar" style="height: 25px; width: 80px;">
         <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
             style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
         <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
+            style="color: black; font-size: 18px;  padding-right: 2px;"></i></a>
+        <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i class="bx bxl-youtube"
             style="color: black; font-size: 18px;  padding-right: 4px;"></i></a>
       </div>
 
@@ -202,7 +209,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <p>El impacto ambiental se define por cada una de las intervenciones que provoca la actividad diaria en el medio
         ambiente. Eso teniendo en cuenta la producción de bienes determinados (entre otras cuestiones), resultantes en
-        elementos de contaminación. El más relevante, y en el que <a href='../index.php'><strong>La Victoria</strong></a>
+        elementos de contaminación. El más relevante, y en el que <a href='../index.php'><strong>La
+            Victoria</strong></a>
         puede ayudarte, se refiere a los hábitos de consumo y la generación de desperdicios.</p>
 
       <p>De este modo surge la idea de sostenibilidad. Se trata de la aplicación de modernas acciones que reformulan el
@@ -253,7 +261,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         Victoria.</p>
 
       <p>¿Te interesa consultar costos o pedir un presupuesto acorde a las necesidades de tu empresa?
-        <a><strong>Escríbenos y cotiza tu servicio en La Victoria.</strong></a></p>
+        <a><strong>Escríbenos y cotiza tu servicio en La Victoria.</strong></a>
+      </p>
 
     </div>
 
@@ -341,6 +350,8 @@ width: 270px;">
           <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
               style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
           <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i class="bx bxl-linkedin"
+              style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+          <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i class="bx bxl-youtube"
               style="color: white; font-size: 25px;"></i></a>
         </div>
       </div>
