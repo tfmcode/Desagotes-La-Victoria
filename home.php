@@ -150,19 +150,18 @@
         }
 
         #hero::after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            top: 0;
-            width: 130%;
-            height: 95%;
-            background: linear-gradient(to right,
-                    rgba(30, 67, 86, 0.1),
-                    rgba(30, 67, 86, 0.1)),
-                url("assets/img/Inicio.jpg") center top no-repeat;
-            z-index: 0;
-            border-radius: 0 0 50% 50%;
-            transform: translateX(-50%) rotate(0deg);
+        content: "";
+        position: absolute;
+        left: 32%;
+        top: 0px;
+        width: 146%;
+        height: 96%;
+        background: linear-gradient(to right, rgba(30, 67, 86, 0.1), rgba(30, 67, 86, 0.1)), url(assets/img/Inicio.jpg) center top no-repeat;
+        z-index: 0;
+        border-radius: 0 0 29% 63%;
+        transform: translateX(-53%) translateY(0%)rotate(0deg);
+        background-position: right 19%;
+        background-size: 122%;
         }
 
         #hero::before {
@@ -241,7 +240,44 @@
             text-decoration: none;
         }
 
-        @media (min-width: 1024px) {
+        @media (max-width: 1470px) {
+            #hero::after {
+        content: "";
+        position: absolute;
+        left: 32%;
+        top: 0px;
+        width: 146%;
+        height: 96%;
+        background: linear-gradient(to right, rgba(30, 67, 86, 0.1), rgba(30, 67, 86, 0.1)), url(assets/img/Inicio.jpg) center top no-repeat;
+        z-index: 0;
+        border-radius: 0 0 29% 63%;
+        transform: translateX(-53%) translateY(0%)rotate(0deg);
+        background-position: right 19%;
+        background-size: 122%;
+        }
+
+
+
+        @media (max-width: 1024px) {
+            #hero::after {
+        left: 40%;
+        top: 0;
+        width: 200%;
+        height: 95%;
+        border-radius: 0 0 50% 176%;
+        transform: translateX(-64%) rotate(0deg);
+        }
+
+
+            #hero::before {
+                left: 50%;
+                top: 0;
+                width: 200%;
+                height: 94%;
+                border-radius: 0 0 50% 50%;
+                transform: translateX(-50%) translateY(20px) rotate(4deg);
+            }
+        }
             #hero p {
                 width: 60%;
             }
@@ -254,12 +290,19 @@
 
         @media (max-width: 768px) {
             #hero::after {
-                width: 180%;
-                height: 95%;
-                border-radius: 0 0 50% 50%;
-                transform: translateX(-50%) rotate(0deg);
-            }
-
+    content: "";
+    position: absolute;
+    left: 40%;
+    top: -3px;
+    width: 155%;
+    height: 96%;
+    background: linear-gradient(to right, rgba(30, 67, 86, 0.1), rgba(30, 67, 86, 0.1)), url(assets/img/Inicio.jpg) center top no-repeat;
+    z-index: 0;
+    border-radius: 0 0 31% 64%;
+    transform: translateX(-53%) translateY(0%)rotate(0deg);
+    background-position: right 0%;
+    background-size: 147%;
+}
             #hero::before {
                 top: 0;
                 width: 180%;
@@ -268,20 +311,59 @@
                 transform: translateX(-50%) translateY(20px) rotate(4deg);
             }
         }
+        @media (max-width: 690px) {
+            #hero::after {
+    /* content: ""; */
+    position: absolute;
+    left: 32%;
+    top: -7px;
+    width: 171%;
+    height: 96%;
+    background: linear-gradient(to right, rgba(30, 67, 86, 0.1), rgba(30, 67, 86, 0.1)), url(assets/img/Inicio.jpg) center top no-repeat;
+    z-index: 0;
+    border-radius: 0 0 32% 65%;
+    transform: translateX(-51%) translateY(0%)rotate(0deg);
+    background-position: right 0px;
+    background-size: 158%;
+}
+}
+@media (max-width: 665px) {
+    #hero::after {
+    /* content: ""; */
+    position: absolute;
+    left: 32%;
+    top: -6px;
+    width: 171%;
+    height: 95%;
+    background: linear-gradient(to right, rgba(30, 67, 86, 0.1), rgba(30, 67, 86, 0.1)), url(assets/img/Inicio.jpg) center top no-repeat;
+    z-index: 0;
+    border-radius: 0 0 28% 67%;
+    transform: translateX(-53%) translateY(0%)rotate(0deg);
+    background-position: right 2%;
+    background-size: 155%;
+}
+}
 
         @media (max-width: 575px) {
             #hero h2 {
                 font-size: 30px;
             }
 
+            
             #hero::after {
-                left: 40%;
-                top: 0;
-                width: 200%;
-                height: 95%;
-                border-radius: 0 0 50% 50%;
-                transform: translateX(-50%) rotate(0deg);
-            }
+    /* content: ""; */
+    position: absolute;
+    left: 35%;
+    top: 0px;
+    width: 175%;
+    height: 95%;
+    background: linear-gradient(to right, rgba(30, 67, 86, 0.1), rgba(30, 67, 86, 0.1)), url(assets/img/Inicio.jpg) center top no-repeat;
+    z-index: 0;
+    border-radius: 0 0 29% 63%;
+    transform: translateX(-53%) translateY(0%)rotate(0deg);
+    background-position: right 0%;
+    background-size: 158%;
+}
 
             #hero::before {
                 left: 50%;
@@ -579,6 +661,70 @@
                 font-size: 30px;
             }
         }
+        @media (max-width: 490px) {
+            #hero::after {  
+            position: absolute;
+            left: 25%;
+            top: 0px;
+            width: 199%;
+            height: 95%;
+            background: linear-gradient(to right, rgba(30, 67, 86, 0.1), rgba(30, 67, 86, 0.1)), url(assets/img/Inicio.jpg) center top no-repeat;
+            z-index: 0;
+            border-radius: 0 0 43% 54%;
+            transform: translateX(-41%) translateY(0%)rotate(0deg);
+            background-position: right 0%;
+            background-size: 167%;
+            }
+        }
+        @media (max-width: 440px) {
+            #hero::after {
+        position: absolute;
+        left: 35%;
+        top: 0px width: 188%;
+        height: 95%;
+        width: 224%;
+        background: linear-gradient(to right, rgba(30, 67, 86, 0.1), rgba(30, 67, 86, 0.1)), url(assets/img/Inicio.jpg) center top no-repeat;
+        z-index: 0;
+        border-radius: 0 0 41% 64%;
+        transform: translateX(-53%) translateY(0%)rotate(0deg);
+        background-position: right 0%;
+        background-size: 157%;
+        }
+}
+
+        @media (max-width: 375px) {
+        #hero::after {
+        position: absolute;
+        left: 29%;
+        top: 0px width: 188%;
+        height: 95%;
+        background: linear-gradient(to right, rgba(30, 67, 86, 0.1), rgba(30, 67, 86, 0.1)), url(assets/img/Inicio.jpg) center top no-repeat;
+        z-index: 0;
+        border-radius: 0 0 77% 59%;
+        transform: translateX(-32%) translateY(0%)rotate(0deg);
+        background-position: right 0%;
+        background-size: 206%;
+        }
+        }
+
+        @media (max-width: 310px) {
+            #hero::after {
+    position: absolute;
+    left: 2%;
+    top: 0px width: 188%;
+    width: 221%;
+    height: 95%;
+    background: linear-gradient(to right, rgba(30, 67, 86, 0.1), rgba(30, 67, 86, 0.1)), url(assets/img/Inicio.jpg) center top no-repeat;
+    z-index: 0;
+    border-radius: 0 0 66% 51%;
+    transform: translateX(-22%) translateY(0%)rotate(0deg);
+    background-position: right 25%;
+    background-size: 201%;
+}
+        }       
+
+        
+
     </style>
 
 
