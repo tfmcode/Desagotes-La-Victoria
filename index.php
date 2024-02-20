@@ -728,7 +728,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <h4 class="title"><a href="">Asesoramiento Profesional</a></h4>
                             <p class="description">Al contactarse, nuestro equipo de profesionales, especializados se
                                 encarga de detectar las necesidas en su negocio y ofrecer un servicio a medida de sus
-                                mecesidades.</p>
+                                necesidades.</p>
                         </div>
                     </div>
 
