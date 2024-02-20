@@ -316,7 +316,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <section class="map mt-2">
       <div class="container-fluid p-0">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.230287108302!2d-58.453161923444796!3d-34.57303915588002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c35b52a4e5%3A0xb3283a9804044595!2sAguilar%202878%2C%20C1426DTB%20CABA!5e0!3m2!1ses-419!2sar!4v1694650743906!5m2!1ses-419!2sar"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.138012472461!2d-58.50759792438584!3d-34.55006085466618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6def0fbb125%3A0x4115aa5569727509!2sCFD%2C%20Bolivia%20146%2C%20B1603%20Villa%20Martelli%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1708389801576!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
     </section><!-- End Map Section -->
