@@ -95,7 +95,8 @@
         flex-direction: column;
         align-items: center;
       }
-      .img-fluid1{
+
+      .img-fluid1 {
         display: flex;
         justify-content: center;
       }
@@ -148,47 +149,55 @@
       color: lightblue;
       /* Cambio de color de texto a blanco al pasar el cursor */
     }
-    .card-img-top{
+
+    .card-img-top {
       width: 100%;
       height: 200px;
       object-fit: cover;
     }
+
     .card-img-top4 {
       width: 100%;
       height: 200px;
       object-fit: cover;
       object-position: center 18%;
     }
+
     .card-img-top13 {
       width: 100%;
       height: 200px;
       object-fit: cover;
       object-position: center 75%;
     }
+
     .card-img-top11 {
       width: 100%;
       height: 200px;
       object-fit: cover;
       object-position: center 100%;
     }
+
     .card-img-top10 {
       width: 100%;
       height: 200px;
       object-fit: cover;
       object-position: center 80%;
     }
+
     .card-img-top9 {
       width: 100%;
       height: 200px;
       object-fit: cover;
       object-position: center 68%;
     }
+
     .card-img-top8 {
       width: 100%;
       height: 200px;
       object-fit: cover;
       object-position: center 80%;
     }
+
     .card-img-top2 {
       width: 100%;
       height: 200px;
@@ -214,10 +223,16 @@
         width: 100%;
         /* Hace que las tarjetas ocupen todo el ancho de la pantalla en dispositivos pequeños */
       }
+
       .img-fluid1 {
         display: flex;
         justify-content: center;
       }
+    }
+    @media only screen and (max-width: 768px) {
+      .container {
+        max-width: 90%;
+    }
     }
   </style>
 </head>
@@ -270,18 +285,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center" style="background: none;">
-    <div class="container d-flex justify-content-between align-items-center"
-      style="background: white; border-radius: 20px;">
-      <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
+        <div class="container d-flex justify-content-between align-items-center"
+            style="background: white; border-radius: 20px;">
+            <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-        <a href="../home.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="../index.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="../home.php" style="color: black;">Inicio</a></li>
+          <li><a href="../index.php" style="color: black;">Inicio</a></li>
           <li><a href="servicios.php" style="color: black;">Servicios</a></li>
           <li><a href="nosotros.php" style="color: black;">Nosotros</a></li>
           <li><a href="trabajos.php" style="color: black;">Trabajos</a></li>
@@ -289,10 +304,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="contacto.php" style="color: black;">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
-      <div class="icons-navbar" style="height: 25px; width: 70px;">
+      <div class="icons-navbar" style="height: 25px; width: 80px;">
         <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
             style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
         <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
+            style="color: black; font-size: 18px;  padding-right: 2px;"></i></a>
+        <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i class="bx bxl-youtube"
             style="color: black; font-size: 18px;  padding-right: 4px;"></i></a>
       </div>
 
@@ -315,7 +332,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
       <div style="    display: flex; flex-direction: column;   justify-content: space-evenly;">
         <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
-        <div class="card" style="width: 18rem;">
+          <div class="card" style="width: 18rem;">
             <img src="../blogs/imagesblogs/Articulo1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">¿Qué hacer con el aceite usado de tu industria?</h5>
@@ -334,17 +351,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="card-body">
               <h5 class="card-title">Beneficios de la Limpieza adecuada de tanques de transporte</h5>
               <a href="../blogs/articulo13.php" style="color: #0d6efd;">Ver más</a>
-            </div> 
+            </div>
           </div>
         </div>
         <div class="card3" style="display: flex; justify-content: space-evenly; margin-bottom: 25px;">
-         <div class="card" style="width: 18rem;">
+          <div class="card" style="width: 18rem;">
             <img src="../blogs/imagesblogs/Articulo4.jpg" class="card-img-top4" alt="...">
             <div class="card-body">
               <h5 class="card-title">Todos hablan de Landfarming ¿De qué se trata?</h5>
               <a href="../blogs/articulo4.php" style="color: #0d6efd;">Ver más</a>
             </div>
-          </div> 
+          </div>
 
           <div class="card" style="width: 18rem;">
             <img src="../blogs/imagesblogs/Articulo5.jpg" class="card-img-top" alt="...">
@@ -446,7 +463,7 @@ width: 270px;">
             <!-- Primera fila -->
             <ul class="list-unstyled navbar-list">
               <li class="navfooter">
-                <a href="../home.php">Inicio</a>
+                <a href="../index.php">Inicio</a>
               </li>
               <li class="navfooter">
                 <a href="servicios.php">Servicios</a>
@@ -496,6 +513,8 @@ width: 270px;">
           <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
               style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
           <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i class="bx bxl-linkedin"
+              style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+          <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i class="bx bxl-youtube"
               style="color: white; font-size: 25px;"></i></a>
         </div>
       </div>

@@ -73,31 +73,36 @@
       color: blue;
       text-decoration: none;
     }
+
     .navbar-list {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        align-content: space-around;
-        flex-wrap: nowrap;
-        flex-direction: row;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-content: space-around;
+      flex-wrap: nowrap;
+      flex-direction: row;
     }
 
     .navfooter a {
-        margin: 0.5%;
-        text-decoration: none;
-        color: #fff;
+      margin: 0.5%;
+      text-decoration: none;
+      color: #fff;
       /* Color de texto blanco */
-        padding: 10px;
-        display: block;
+      padding: 10px;
+      display: block;
     }
 
     .navfooter a:hover {
-    color: lightblue;
+      color: lightblue;
       /* Cambio de color de texto a blanco al pasar el cursor */
     }
-
+    @media only screen and (max-width: 768px) {
+      .container {
+        max-width: 90%;
+    }
+    }
   </style>
 
 </head>
@@ -149,18 +154,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center" style="background: none;">
-    <div class="container d-flex justify-content-between align-items-center"
-      style="background: white; border-radius: 20px;">
-      <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
+        <div class="container d-flex justify-content-between align-items-center"
+            style="background: white; border-radius: 20px;">
+            <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-        <a href="../home.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="../index.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="../home.php" style="color: black;">Inicio</a></li>
+          <li><a href="../index.php" style="color: black;">Inicio</a></li>
           <li><a href="../sections/servicios.php" style="color: black;">Servicios</a></li>
           <li><a href="../sections/nosotros.php" style="color: black;">Nosotros</a></li>
           <li><a href="../sections/trabajos.php" style="color: black;">Trabajos</a></li>
@@ -168,10 +173,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="../sections/contacto.php" style="color: black;">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
-      <div class="icons-navbar" style="height: 25px; width: 70px;">
+      <div class="icons-navbar" style="height: 25px; width: 80px;">
         <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
             style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
         <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
+            style="color: black; font-size: 18px;  padding-right: 2px;"></i></a>
+        <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i class="bx bxl-youtube"
             style="color: black; font-size: 18px;  padding-right: 4px;"></i></a>
       </div>
 
@@ -189,7 +196,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         microorganismos naturales del suelo (como las bacterias) para eliminar, reducir o transformar las sustancias
         contaminantes. Su propósito es minimizar el riesgo para la salud humana y el medio ambiente.</p>
       <h2>Landfarming, una alternativa que reduce el impacto ambiental.</h2>
-      <p>En <a href='../home.php'><strong>Desagotes La Victoria</strong></a> estamos muy interesados en el cuidado y
+      <p>En <a href='../index.php'><strong>Desagotes La Victoria</strong></a> estamos muy interesados en el cuidado y
         protección del medio ambiente, por eso queremos mencionarte los puntos más relevantes de este tratamiento y
         contarte por qué cada vez se está aplicando más en la Argentina y en el mundo:</p>
       <ul>
@@ -208,7 +215,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <p>El proceso de landfarming puede llevar desde algunas pocas semanas hasta varios meses. En este sentido,
         <strong>el tratamiento durará más si las concentraciones de los contaminantes son muy altas</strong>, si no son
         adecuadas las condiciones y hay que adecuar el medio (temperatura/humedad), o si los residuos contienen ciertas
-        sustancias que son resistentes a los microorganismos.</p>
+        sustancias que son resistentes a los microorganismos.
+      </p>
       <p>En el caso de una demora mayor, la situación es la siguiente: durante los primeros 4 meses tras una adecuación
         del medio la degradación es más veloz; después <strong>el ritmo disminuye ligeramente luego de la desaparición
           de los hidrocarburos más ligeros</strong>, frente a los más aromáticos, los que mantienen su fuerte presencia
@@ -217,7 +225,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <p>Es una técnica muy segura teniendo en cuenta que los microorganismos que intervienen en la biorrecuperación
         <strong>son presencias naturales en zonas como parques y jardines</strong>. Por otro lado, la cantidad incluida
         de microbios en el área a tratar es solamente la necesaria, con la mirada solamente puesta en inducir la
-        actividad biológica natural.</p>
+        actividad biológica natural.
+      </p>
       <h3>¿Por qué elegir el Landfarming para tu empresa o industria?</h3>
       <p>En condiciones adecuadas, este proceso no genera peligro de contaminación posterior, y puede llevarse a cabo en
         contextos climáticos diferentes, sin perjuicio del éxito de su aplicación.</p>
@@ -267,7 +276,7 @@ width: 270px;">
             <!-- Primera fila -->
             <ul class="list-unstyled navbar-list">
               <li class="navfooter">
-                <a href="../home.php">Inicio</a>
+                <a href="../index.php">Inicio</a>
               </li>
               <li class="navfooter">
                 <a href="../sections/servicios.php">Servicios</a>
@@ -316,6 +325,8 @@ width: 270px;">
           <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
               style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
           <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i class="bx bxl-linkedin"
+              style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+          <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i class="bx bxl-youtube"
               style="color: white; font-size: 25px;"></i></a>
         </div>
       </div>

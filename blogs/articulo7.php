@@ -74,31 +74,36 @@
       color: blue;
       text-decoration: none;
     }
+
     .navbar-list {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        align-content: space-around;
-        flex-wrap: nowrap;
-        flex-direction: row;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-content: space-around;
+      flex-wrap: nowrap;
+      flex-direction: row;
     }
 
     .navfooter a {
-        margin: 0.5%;
-        text-decoration: none;
-        color: #fff;
+      margin: 0.5%;
+      text-decoration: none;
+      color: #fff;
       /* Color de texto blanco */
-        padding: 10px;
-        display: block;
+      padding: 10px;
+      display: block;
     }
 
     .navfooter a:hover {
-    color: lightblue;
+      color: lightblue;
       /* Cambio de color de texto a blanco al pasar el cursor */
     }
-
+    @media only screen and (max-width: 768px) {
+      .container {
+        max-width: 90%;
+    }
+    }
   </style>
 </head>
 
@@ -153,18 +158,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center" style="background: none;">
-    <div class="container d-flex justify-content-between align-items-center"
-      style="background: white; border-radius: 20px;">
-      <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
+        <div class="container d-flex justify-content-between align-items-center"
+            style="background: white; border-radius: 20px;">
+            <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-        <a href="../home.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="../index.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="../home.php" style="color: black;">Inicio</a></li>
+          <li><a href="../index.php" style="color: black;">Inicio</a></li>
           <li><a href="../sections/servicios.php" style="color: black;">Servicios</a></li>
           <li><a href="../sections/nosotros.php" style="color: black;">Nosotros</a></li>
           <li><a href="../sections/trabajos.php" style="color: black;">Trabajos</a></li>
@@ -172,10 +177,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="../sections/contacto.php" style="color: black;">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
-      <div class="icons-navbar" style="height: 25px; width: 70px;">
+      <div class="icons-navbar" style="height: 25px; width: 80px;">
         <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
             style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
         <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
+            style="color: black; font-size: 18px;  padding-right: 2px;"></i></a>
+        <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i class="bx bxl-youtube"
             style="color: black; font-size: 18px;  padding-right: 4px;"></i></a>
       </div>
 
@@ -201,7 +208,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           industria, puede ocasionar inconvenientes más graves a futuro.</strong></p>
       <p>Estos problemas requerirán de reparación y tendrán un costo más elevado, ya que además de mano de obra,
         <strong>requerirá de la interrupción momentánea o permanente de los servicios o producción que su negocio
-          ofrece, con las pérdidas monetarias consecuentes derivadas.</strong></p>
+          ofrece, con las pérdidas monetarias consecuentes derivadas.</strong>
+      </p>
       <h4>Tips de La Victoria para el adecuado funcionamiento del sistema cloacal</h4>
       <ul>
         <li><strong>Control sobre los desperdicios que se vierten en la red.</strong> Echar grasa, aceite, elementos
@@ -250,82 +258,84 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-<div class="footer-top">
-  <div class="container">
-    <div class="row" style="display: flex;  justify-content: space-evenly;   align-items: center;">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row" style="display: flex;  justify-content: space-evenly;   align-items: center;">
 
-      <div class="col-lg-4 col-md-4 footer-contact">
-        <p style="display: flex; justify-content: center;">
-          <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
+          <div class="col-lg-4 col-md-4 footer-contact">
+            <p style="display: flex; justify-content: center;">
+              <img src="../assets/img/logo-grande.png" class="img-fluid" style="    height: 200px;
 width: 270px;">
-        </p>
-      </div>
-      <div class="container">
-        <!-- Primera fila -->
-        <ul class="list-unstyled navbar-list">
-          <li class="navfooter">
-            <a href="../home.php">Inicio</a>
-          </li>
-          <li class="navfooter">
-            <a href="../sections/servicios.php">Servicios</a>
-          </li>
-          <li class="navfooter">
-            <a href="../sections/nosotros.php">Nosotros</a>
-          </li>
-        </ul>
-
-        <!-- Segunda fila -->
-        <ul class="list-unstyled navbar-list">
-          <li class="navfooter">
-            <a href="../sections/trabajos.php">Trabajos</a>
-          </li>
-          <li class="navfooter">
-            <a href="../sections/blog.php">Blogs</a>
-          </li>
-          <li class="navfooter">
-            <a href="../sections/contacto.php">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
-          <div class="col-lg-6">
-            <form action="contacto.php" method="post" role="form"
-              style="display: flex; align-items: center;   justify-content: flex-start;">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
-                required>
-              <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
-              <div class="text-center">
-                <button type="submit"
-                  style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
-              </div>
-            </form>
+            </p>
           </div>
+          <div class="container">
+            <!-- Primera fila -->
+            <ul class="list-unstyled navbar-list">
+              <li class="navfooter">
+                <a href="../index.php">Inicio</a>
+              </li>
+              <li class="navfooter">
+                <a href="../sections/servicios.php">Servicios</a>
+              </li>
+              <li class="navfooter">
+                <a href="../sections/nosotros.php">Nosotros</a>
+              </li>
+            </ul>
+
+            <!-- Segunda fila -->
+            <ul class="list-unstyled navbar-list">
+              <li class="navfooter">
+                <a href="../sections/trabajos.php">Trabajos</a>
+              </li>
+              <li class="navfooter">
+                <a href="../sections/blog.php">Blogs</a>
+              </li>
+              <li class="navfooter">
+                <a href="../sections/contacto.php">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <div class="container">
+            <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
+              <div class="col-lg-6">
+                <form action="contacto.php" method="post" role="form"
+                  style="display: flex; align-items: center;   justify-content: flex-start;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su correo electrónico"
+                    required>
+                  <input type="hidden" name="recaptcha_responseF" id="recaptchaResponseF">
+                  <div class="text-center">
+                    <button type="submit"
+                      style='position: absolute;   top: 0;  right: 0;   bottom: 0; border: 0;   background: none;font-size: 16px;    padding: 0 20px;   margin: 3px;  background: #0d6efd;  color: #fff;    transition: 0.3s;   border-radius: 50px;'>Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="    display: flex;
+justify-content: center;">
+          <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
+              style="color: white; font-size: 25px; padding-right: 5px;"></i></a>
+          <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
+              style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+          <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i class="bx bxl-linkedin"
+              style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+          <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i class="bx bxl-youtube"
+              style="color: white; font-size: 25px;"></i></a>
         </div>
       </div>
     </div>
-    <div style="    display: flex;
-justify-content: center;">
-      <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
-          style="color: white; font-size: 25px; padding-right: 5px;"></i></a>
-      <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
-          style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
-      <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i class="bx bxl-linkedin"
-          style="color: white; font-size: 25px;"></i></a>
-    </div>
-  </div>
-</div>
 
-<div class="container">
-  <div class="copyright">
-    &copy; <strong><span>Servicios La Victoria</span></strong></div>
-  <div class="credits">
-    TFM Code <a href="">Adway Solutions</a>
-  </div>
-</div>
-</footer><!-- End Footer -->
+    <div class="container">
+      <div class="copyright">
+        &copy; <strong><span>Servicios La Victoria</span></strong></div>
+      <div class="credits">
+        TFM Code <a href="">Adway Solutions</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i

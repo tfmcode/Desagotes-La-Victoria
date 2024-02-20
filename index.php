@@ -784,12 +784,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div class="logo">
                 <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-                <a href="home.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+                <a href="index.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="home.php" style="color: black;">Inicio</a></li>
+                    <li><a href="index.php" style="color: black;">Inicio</a></li>
                     <li><a href="./sections/servicios.php" style="color: black;">Servicios</a></li>
                     <li><a href="./sections/nosotros.php" style="color: black;">Nosotros</a></li>
                     <li><a href="./sections/trabajos.php" style="color: black;">Trabajos</a></li>
@@ -797,11 +797,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <li><a href="./sections/contacto.php" style="color: black;">Contacto</a></li>
                 </ul>
             </nav><!-- .navbar -->
-            <div class="icons-navbar" style="height: 25px; width: 70px;">
+            <div class="icons-navbar" style="height: 25px; width: 80px;">
                 <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
                         style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
                 <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i
-                        class="bx bxl-instagram" style="color: black; font-size: 18px;  padding-right: 4px;"></i></a>
+                        class="bx bxl-instagram" style="color: black; font-size: 18px;  padding-right: 2px;"></i></a>
+
+                <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i
+                        class="bx bxl-youtube" style="color: black; font-size: 18px;  padding-right: 4px;"></i></a>
             </div>
 
         </div>
@@ -874,7 +877,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <h4 class="title"><a href="">Asesoramiento Profesional</a></h4>
                             <p class="description">Al contactarse, nuestro equipo de profesionales, especializados se
                                 encarga de detectar las necesidas en su negocio y ofrecer un servicio a medida de sus
-                                mecesidades.</p>
+                                necesidades.</p>
                         </div>
                     </div>
 
@@ -973,26 +976,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <!-- Primera fila -->
                         <ul class="list-unstyled navbar-list">
                             <li class="navfooter">
-                                <a href="../home.php">Inicio</a>
+                                <a href="../index.php">Inicio</a>
                             </li>
                             <li class="navfooter">
-                                <a href="servicios.php">Servicios</a>
+                                <a href="./sections/servicios.php">Servicios</a>
                             </li>
                             <li class="navfooter">
-                                <a href="nosotros.php">Nosotros</a>
+                                <a href="./sections/nosotros.php">Nosotros</a>
                             </li>
                         </ul>
 
                         <!-- Segunda fila -->
                         <ul class="list-unstyled navbar-list">
                             <li class="navfooter">
-                                <a href="trabajos.php">Trabajos</a>
+                                <a href="./sections/trabajos.php">Trabajos</a>
                             </li>
                             <li class="navfooter">
-                                <a href="blog.php">Blogs</a>
+                                <a href="./sections/blog.php">Blogs</a>
                             </li>
                             <li class="navfooter">
-                                <a href="contacto.php">Contacto</a>
+                                <a href="./sections/contacto.php">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -1002,7 +1005,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="container">
                         <div class="row" style="display: flex; justify-content: space-around; align-items: flex-start;">
                             <div class="col-lg-6">
-                                <form action="home.php" method="post" role="form"
+                                <form action="index.php" method="post" role="form"
                                     style="display: flex; align-items: center;   justify-content: flex-start;">
                                     <input type="email" class="form-control" name="email" id="email"
                                         placeholder="Su correo electrónico" required>
@@ -1024,7 +1027,9 @@ justify-content: center;">
                             class="bx bxl-instagram"
                             style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
                     <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i
-                            class="bx bxl-linkedin" style="color: white; font-size: 25px;"></i></a>
+                            class="bx bxl-youtube" style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+                    <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i
+                            class="bx bxl-youtube" style="color: white; font-size: 25px;"></i></a>
                 </div>
             </div>
         </div>

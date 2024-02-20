@@ -73,31 +73,36 @@
       color: blue;
       text-decoration: none;
     }
+
     .navbar-list {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        align-content: space-around;
-        flex-wrap: nowrap;
-        flex-direction: row;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-content: space-around;
+      flex-wrap: nowrap;
+      flex-direction: row;
     }
 
     .navfooter a {
-        margin: 0.5%;
-        text-decoration: none;
-        color: #fff;
+      margin: 0.5%;
+      text-decoration: none;
+      color: #fff;
       /* Color de texto blanco */
-        padding: 10px;
-        display: block;
+      padding: 10px;
+      display: block;
     }
 
     .navfooter a:hover {
-    color: lightblue;
+      color: lightblue;
       /* Cambio de color de texto a blanco al pasar el cursor */
     }
-
+    @media only screen and (max-width: 768px) {
+      .container {
+        max-width: 90%;
+    }
+    }
   </style>
 
 </head>
@@ -149,18 +154,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center" style="background: none;">
-    <div class="container d-flex justify-content-between align-items-center"
-      style="background: white; border-radius: 20px;">
-      <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
+        <div class="container d-flex justify-content-between align-items-center"
+            style="background: white; border-radius: 20px;">
+            <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
-        <a href="../home.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="../index.php"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="../home.php" style="color: black;">Inicio</a></li>
+          <li><a href="../index.php" style="color: black;">Inicio</a></li>
           <li><a href="../sections/servicios.php" style="color: black;">Servicios</a></li>
           <li><a href="../sections/nosotros.php" style="color: black;">Nosotros</a></li>
           <li><a href="../sections/trabajos.php" style="color: black;">Trabajos</a></li>
@@ -168,10 +173,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="../sections/contacto.php" style="color: black;">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
-      <div class="icons-navbar" style="height: 25px; width: 70px;">
+      <div class="icons-navbar" style="height: 25px; width: 80px;">
         <a href="https://www.facebook.com/DesagotesLaVictoria" class="facebook"><i class="bx bxl-facebook"
             style="color: black; font-size: 18px; padding-right: 2px;"></i></a>
         <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
+            style="color: black; font-size: 18px;  padding-right: 2px;"></i></a>
+        <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i class="bx bxl-youtube"
             style="color: black; font-size: 18px;  padding-right: 4px;"></i></a>
       </div>
 
@@ -210,7 +217,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <h4>Tips a considerar para evitar inconvenientes:</h4>
 
-      <p>Desde <a href='../home.php'><strong>La Victoria</strong></a> te aconsejamos cómo mantener en óptimas
+      <p>Desde <a href='../index.php'><strong>La Victoria</strong></a> te aconsejamos cómo mantener en óptimas
         condiciones el sistema cloacal:</p>
 
       <ol>
@@ -226,7 +233,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <p>Somos especialistas y ofrecemos servicios de limpieza y mantenimiento preventivo. Nuestros profesionales
         garantizan una limpieza completa y efectiva del sistema, que significa ahorro de tiempo y dinero. En <a
-          href='../home.php'><strong>Desagotes La Victoria</strong></a> tenemos una solución adaptable a tus
+          href='../index.php'><strong>Desagotes La Victoria</strong></a> tenemos una solución adaptable a tus
         requerimientos.</p>
 
     </div>
@@ -266,7 +273,7 @@ width: 270px;">
             <!-- Primera fila -->
             <ul class="list-unstyled navbar-list">
               <li class="navfooter">
-                <a href="../home.php">Inicio</a>
+                <a href="../index.php">Inicio</a>
               </li>
               <li class="navfooter">
                 <a href="../sections/servicios.php">Servicios</a>
@@ -315,6 +322,8 @@ width: 270px;">
           <a href="https://www.instagram.com/destapacioneslavictoria/" class="instagram"><i class="bx bxl-instagram"
               style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
           <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i class="bx bxl-linkedin"
+              style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+          <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i class="bx bxl-youtube"
               style="color: white; font-size: 25px;"></i></a>
         </div>
       </div>
