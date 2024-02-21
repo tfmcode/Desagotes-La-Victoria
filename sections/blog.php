@@ -151,58 +151,55 @@
     }
 
     .card-img-top {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
+ /*      width: 100%; */
+      height: 250px;
+/*       object-fit: cover;
+ */    }
 
     .card-img-top4 {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center 18%;
+ /*      width: 100%; */
+      height: 250px;
+     /*  object-fit: cover;
+      object-position: center 18%; */
     }
 
     .card-img-top13 {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center 75%;
+/*       width: 100%; */
+      height: 250px;
+/*       object-fit: cover;
+      object-position: center 75%; */
     }
 
     .card-img-top11 {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center 100%;
+/*       width: 100%;
+ */      height: 250px;
+/*       object-fit: cover;
+      object-position: center 100%; */
     }
 
     .card-img-top10 {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center 80%;
+/*       width: 100%; */
+      height: 250px;
+    /*   object-fit: cover;
+      object-position: center 80%; */
     }
 
     .card-img-top9 {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center 68%;
+     /*  width: 100%; */
+      height: 250px;
+     /*  object-fit: cover;
+      object-position: center 68%; */
     }
 
     .card-img-top8 {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center 80%;
+/*       width: 100%; */
+      height: 250px;
+/*       object-fit: cover;
+      object-position: center 80%; */
     }
 
     .card-img-top2 {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center 94%;
+    /*   width: auto; */ height: 250px
     }
 
 
@@ -229,10 +226,11 @@
         justify-content: center;
       }
     }
+
     @media only screen and (max-width: 768px) {
       .container {
         max-width: 90%;
-    }
+      }
     }
   </style>
 </head>
@@ -285,9 +283,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center" style="background: none;">
-        <div class="container d-flex justify-content-between align-items-center"
-            style="background: white; border-radius: 20px;">
-            <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
+    <div class="container d-flex justify-content-between align-items-center"
+      style="background: white; border-radius: 20px;">
+      <i class="bi bi-list mobile-nav-toggle" style="color: black;"></i>
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
@@ -340,7 +338,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="../blogs/imagesblogs/Articulo2.jpg" class="card-img-top2" alt="...">
+            <img src="../blogs/imagesblogs/Articulo2.jpg" class="card-img-top2"  alt="...">
             <div class="card-body">
               <h5 class="card-title">Beneficios de limpiar los tanques de almacenamiento de hidrocarburos</h5>
               <a href="../blogs/articulo2.php" style="color: #0d6efd;">Ver más</a>
