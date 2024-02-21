@@ -961,7 +961,7 @@ justify-content: center;">
                             class="bx bxl-instagram"
                             style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
                     <a href="https://www.linkedin.com/company/desagotes-la-victoria/" class="linkedin"><i
-                            class="bx bxl-youtube" style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
+                            class="bx bxl-linkedin" style="color: white; font-size: 25px; padding-right: 10px;"></i></a>
                     <a href="https://www.youtube.com/@lavictoriatransportederesiduos" class="youtube"><i
                             class="bx bxl-youtube" style="color: white; font-size: 25px;"></i></a>
                 </div>
