@@ -973,7 +973,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <div class="icon-box icon-box-green">
                 <div><img src="../assets/img/expertos.png" width="70"></div>
                 <h4 class="title"><a href="">Expertos</a></h4>
-                <p class="description">60 años de experiencia capacitándonos nos convierten en el equipo más capacitado
+                <p class="description">75 años de experiencia capacitándonos nos convierten en el equipo más capacitado
                   del mercado.</p>
 
               </div>

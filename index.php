@@ -864,7 +864,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <p class="description">Mi misión es acompañar a su empresa en el proceso de mantenimiento
                                 preventivo de sus instalaciones. En este camino, contará con todo lo necesario para su
                                 tranquilidad: Equipos de última generación, personal altamente capacitado y la
-                                experiencia propia de contar con un equipo con más de <strong>65 años de experiencia en
+                                experiencia propia de contar con un equipo con más de <strong>75 años de experiencia en
                                     el mercado.</strong>
                             </p>
                         </div>
