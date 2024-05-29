@@ -99,9 +99,6 @@
     }
   </style>
 
-  <meta name="google-site-verification"
-    content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
-
 </head>
 
 

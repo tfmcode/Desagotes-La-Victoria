@@ -45,8 +45,7 @@
         });
     </script>
 
-    <meta name="google-site-verification"
-        content="google-site-verification=_hKqKGTBLcEraPvwFu8tUNzUJNI9BkeupGXAuiU8QDo" />
+
     <style>
         @media only screen and (max-width: 768px) {
             .container {
