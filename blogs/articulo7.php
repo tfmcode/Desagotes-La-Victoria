@@ -104,42 +104,38 @@
 </head>
 
 <?php
+require_once '../utils/security.php';
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_responseF'])) {
+    // Realizamos la petición de control:
+    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+    $recaptcha_responseF = security($_POST['recaptcha_responseF']);
+    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+    $recaptcha = json_decode($recaptcha);
+    $_email = security($_POST['email']);
+    // Miramos si se considera humano o robot:
+    if ($recaptcha->score >= 0.5) {
+        $from = "info@desagoteslavictoria.com.ar";
+        $to = "info@desagoteslavictoria.com.ar";
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Realizamos la petición de control: 
-  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-  $recaptcha_response = $_POST['recaptcha_response'];
-  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
-  $recaptcha = json_decode($recaptcha);
+        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-  // Miramos si se considera humano o robot: 
-  if ($recaptcha->score >= 0.5) {
-    // Si la verificación de reCAPTCHA es exitosa, procesa el formulario y envía el correo electrónico
-    $_email = $_POST['email'];
-    $from = "info@desagoteslavictoria.com.ar";
-    $to = "info@desagoteslavictoria.com.ar";
-    $subject = "Desagotes La Victoria ==> Consulta desde el Formulario de Contacto";
+        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-    $message = '<br>================================================<br><b>CONSULTA</b><br>================================================<br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
-
-    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
-
-    if (mail($to, $subject, $message, $headers)) {
-      echo '<script type="text/javascript">
-            alert("Será contactado a la brevedad. Gracias!");
-             window.location.href="index.php";
+        if (mail($to, $subject, $message, $headers)) {
+            echo '<script type="text/javascript">
+            alert("Su Consulta será respondida a la brevedad. Gracias!");
+             window.location.href="contacto.php";
            </script>';
+        }
+
+    } else {
     }
-  } else {
-    // Si la verificación de reCAPTCHA falla, puedes manejarlo aquí (puedes agregar un mensaje de error, por ejemplo).
-    echo '<script type="text/javascript">
-            alert("Error: No se ha superado la verificación de reCAPTCHA. Por favor, inténtelo de nuevo.");
-            </script>';
-  }
+
 }
 
 ?>
+
 
 
 <body>

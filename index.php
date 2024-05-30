@@ -665,17 +665,17 @@
 
 
 <?php
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Realizamos la petición de control: 
+require_once './utils/security.php';
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_responseF'])) {
+    // Realizamos la petición de control:
     $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
     $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-    $recaptcha_responseF = $_POST['recaptcha_responseF'];
+    $recaptcha_responseF = security($_POST['recaptcha_responseF']);
     $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
     $recaptcha = json_decode($recaptcha);
-    // Miramos si se considera humano o robot: 
+    $_email = security($_POST['email']);
+    // Miramos si se considera humano o robot:
     if ($recaptcha->score >= 0.5) {
-        $_email = $_POST['email'];
         $from = "info@desagoteslavictoria.com.ar";
         $to = "info@desagoteslavictoria.com.ar";
 
@@ -691,7 +691,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
     } else {
-
     }
 
 }
@@ -966,7 +965,6 @@ justify-content: center;">
                 </div>
             </div>
         </div>
-
         <div class="container">
             <div class="copyright">
                 &copy; <strong><span>Servicios La Victoria</span></strong></div>
@@ -975,7 +973,6 @@ justify-content: center;">
             </div>
         </div>
     </footer><!-- End Footer -->
-
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>

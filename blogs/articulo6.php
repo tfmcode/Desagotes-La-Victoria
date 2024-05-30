@@ -104,38 +104,38 @@
 </head>
 
 <?php
+require_once '../utils/security.php';
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_responseF'])) {
+    // Realizamos la petición de control:
+    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
+    $recaptcha_responseF = security($_POST['recaptcha_responseF']);
+    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
+    $recaptcha = json_decode($recaptcha);
+    $_email = security($_POST['email']);
+    // Miramos si se considera humano o robot:
+    if ($recaptcha->score >= 0.5) {
+        $from = "info@desagoteslavictoria.com.ar";
+        $to = "info@desagoteslavictoria.com.ar";
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Realizamos la petición de control: 
-  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-  $recaptcha_secret = '6LdHrLEUAAAAAF5X3_3TIrJm1Wyh93BllZtXdQGa';
-  $recaptcha_responseF = $_POST['recaptcha_responseF'];
-  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_responseF);
-  $recaptcha = json_decode($recaptcha);
-  // Miramos si se considera humano o robot: 
-  if ($recaptcha->score >= 0.5) {
-    $_email = $_POST['email'];
-    $from = "info@desagoteslavictoria.com.ar";
-    $to = "info@desagoteslavictoria.com.ar";
+        $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
 
-    $message = '<br>================================================<br><b>CONTACTO PARA MAS INFORMACION</b><br>================================================<br><br><b>Email: </b>' . $_email . '<br><br>================================================<br>Enviado OK!<br><br><br><br>';
+        $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
 
-    $headers = "MIME-Version: 1.0" . "\r\nContent-type:text/html;charset=UTF-8" . "\r\nFrom: $from\r\nReply-to: $_email\r\nBcc: cjgorgoretti@gmail.com";
-
-    if (mail($to, $subject, $message, $headers)) {
-      echo '<script type="text/javascript">
+        if (mail($to, $subject, $message, $headers)) {
+            echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
              window.location.href="contacto.php";
            </script>';
+        }
+
+    } else {
     }
-
-  } else {
-
-  }
 
 }
 
 ?>
+
 
 
 <body>
