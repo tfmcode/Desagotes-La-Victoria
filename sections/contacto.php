@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (mail($to, $subject, $message, $headers)) {
       echo '<script type="text/javascript">
             alert("Su Consulta será respondida a la brevedad. Gracias!");
-             window.location.href="index.php";
+             window.location.href="../index.php";
            </script>';
     }
 
